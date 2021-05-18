@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: 127.0.0.1/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://127.0.0.1" type="image/x-icon"><link href="./public/css" rel="stylesheet" type="text/css"><title>Chapter 2 Type of Attack Indicators</title><link rel="stylesheet" href="./public/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./public/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./public/font-awesome.min.css"><style type="text/css" title="ibis-book">@page{margin:1.5em}#sbo-rt-content div{margin:0 .5em 0 .5em}#sbo-rt-content svg{height:98%;width:100%}#sbo-rt-content img{max-height:100%;max-width:100%}#sbo-rt-content a{text-decoration:none}#sbo-rt-content figure img{height:99vh}#sbo-rt-content figure{padding:0;margin:0}#sbo-rt-content .black{background-color:#231F20;color:#FFF;padding:.2em 3em .2em 3em}#sbo-rt-content .bullo{margin-top:.1em;margin-bottom:.1em;margin-left:2.1em;text-indent:-1.1em;text-align:left}#sbo-rt-content .hr-f{margin-top:.5em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .fimage{margin-top:1.5em;margin-bottom:.1em;text-align:center}#sbo-rt-content .figcap{margin-top:.1em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .timage{margin-top:1.5em;margin-bottom:.1em;text-align:left}#sbo-rt-content .tabcap{margin-top:.3em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .inline{vertical-align:middle}#sbo-rt-content .hrc{margin-top:3em;margin-bottom:2.5em;border-top:double .3em;border-bottom:double .3em;padding-top:.3em;padding-bottom:.5em;padding-left:.5em}#sbo-rt-content .note{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .notei{margin-top:.5em;margin-bottom:.5em;text-indent:.01em}#sbo-rt-content .size{color:#C6C8CA;font-size:400%;vertical-align:middle}#sbo-rt-content .sidebarn{margin-top:1em;margin-bottom:1em;border-top:solid .1em;text-indent:.01em}#sbo-rt-content .noindentb{margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .noindent-top{margin-top:2em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .indent{margin-top:.1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .indentb{margin-top:.1em;margin-bottom:1em;text-indent:1.2em}#sbo-rt-content .noindent{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .bull{margin-top:.3em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bull1{margin-top:.3em;margin-bottom:.1em;margin-left:4em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullt{margin-top:1em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullb{margin-top:.1em;margin-bottom:1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .indentt{margin-top:1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .h3{font-size:1.6em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h4{font-size:1.4em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h5{font-size:1.2em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .stitle{font-size:1.2em;margin-top:.5em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .noindentt{margin-top:1.2em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .alpha{margin-top:.1em;margin-bottom:.3em;margin-left:3.9em;text-indent:-1.75em;text-align:left}#sbo-rt-content .cover-image{margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .ded{margin-top:3em;margin-bottom:.3em;text-align:right}#sbo-rt-content .h2{font-size:120%;font-weight:normal;margin-top:-2em;margin-bottom:.5em;text-align:right}#sbo-rt-content .h2chap{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .h2chap1{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .copyright{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .ques{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-1.5em;text-align:left}#sbo-rt-content .ques1{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-2em;text-align:left}#sbo-rt-content .hr-1{margin-top:3em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .h2r1{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:left;text-indent:.01em}#sbo-rt-content .h2r{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:right;text-indent:.01em}#sbo-rt-content .gray{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .toc{margin-top:.7em;margin-bottom:.1em;margin-left:5.5em;text-indent:-5.5em;text-align:left}#sbo-rt-content .toc1{margin-top:.7em;margin-bottom:.1em;margin-left:5.8em;text-indent:-5.8em;text-align:left}#sbo-rt-content .toc-b1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-f{margin-top:.1em;margin-bottom:.1em;margin-left:5.75em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-lev1{margin-top:.1em;margin-bottom:.1em;margin-left:6.65em;text-indent:-1.15em;text-align:left}#sbo-rt-content .toc-lev2{margin-top:.1em;margin-bottom:.1em;margin-left:9.25em;text-indent:-1.15em;text-align:left}#sbo-rt-content .noindent1{margin-top:1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .center{margin-top:1em;margin-bottom:1em;text-align:center}#sbo-rt-content .right{margin-top:1em;margin-bottom:1em;text-align:right}#sbo-rt-content .indexhead{font-size:1.3em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indexmain{margin-top:.1em;margin-bottom:.1em;margin-left:.8em;text-indent:-.8em;text-align:left}#sbo-rt-content .indexsub{margin-top:.1em;margin-bottom:.1em;margin-left:1.9em;text-indent:-.8em;text-align:left}#sbo-rt-content .list{margin-top:.5em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listt{margin-top:1em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listb{margin-top:.5em;margin-bottom:1em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listh{margin-top:.3em;margin-bottom:.3em;margin-left:2.7em;text-indent:.1em;text-align:left}#sbo-rt-content .border1{margin-top:3em;margin-bottom:3em;border-top:double black .3em}#sbo-rt-content .toc-p3{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.65em;text-align:left}#sbo-rt-content .toc-p2{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.3em;text-align:left}#sbo-rt-content .toc-p5{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.15em;text-align:left}#sbo-rt-content .toc-p6{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.5em;text-align:left}#sbo-rt-content .toc-p1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-3.9em;text-align:left}#sbo-rt-content .toc-p4{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.6em;text-align:left}#sbo-rt-content .f1{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .sidebar{margin-top:1em;margin-bottom:1em;border:solid #000 .1em;background-color:#E7E7E8;padding:.5em;text-indent:.01em}#sbo-rt-content .h2pn{font-size:220%;font-weight:normal;margin-top:1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .h2pt{font-size:240%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .f-part{background-color:#000;color:#FFF;padding:.2em 1em .2em 1em}#sbo-rt-content .side-part{margin-top:0;margin-bottom:.2em;border:solid #000 .1em;background-color:#BDBEC1;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .side-part1{margin-top:.2em;margin-bottom:1em;border:solid #000 .1em;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .ch-part{margin-top:.2em;margin-bottom:.1em;margin-left:6.4em;text-indent:-6.4em;text-align:left}#sbo-rt-content .ch-app{margin-top:.2em;margin-bottom:.1em;margin-left:6.7em;text-indent:-6.7em;text-align:left}#sbo-rt-content .s-hang{margin-top:.5em;margin-bottom:.5em;margin-left:2em;text-indent:.1em;text-align:left}#sbo-rt-content .list-q{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:-1em;text-align:left}#sbo-rt-content .list-qh{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:.1em;text-align:left}#sbo-rt-content .gloss{margin-top:.7em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-h{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-t{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indent1{margin-top:.5em;margin-bottom:.5em;text-indent:1.2em}</style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781260464016/chapter/copy.xhtml",
+          "book_id": "9781260464016",
+          "chapter_uri": "copy.xhtml",
+          "position": 0,
+          "user_uuid": "4c928969-b159-43f7-8afb-4290c3ef28c4",
+          "next_chapter_uri": "/library/view/comptia-security-all-in-one/9781260464016/ded.xhtml"
+        
+      },
+      title: "CompTIA Security+ All\u002Din\u002DOne Exam Guide, Sixth Edition (Exam SY0\u002D601)), 6th Edition",
+      author_list: "Wm. Arthur Conklin, Greg White, Dwayne Williams, Roger L. Davis, Chuck Cothren",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><script src="./public/modernizr.8e35451ddb64.js.download"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "127.0.0.1/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/copy.xhtml"><meta name="description" content=" Copyright © 2021 by McGraw Hill. All rights reserved. Except as permitted under the United States Copyright Act of 1976, no part of this publication may be reproduced or distributed ... "><meta property="og:title" content="Copyright Page"><meta itemprop="isPartOf" content="/library/view/comptia-security-all-in-one/9781260464016/"><meta itemprop="name" content="Copyright Page"><meta property="og:url" itemprop="url" content="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/copy.xhtml"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="127.0.0.1/library/cover/9781260464016/"><meta property="og:description" itemprop="description" content=" Copyright © 2021 by McGraw Hill. All rights reserved. Except as permitted under the United States Copyright Act of 1976, no part of this publication may be reproduced or distributed ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="McGraw-Hill"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9781260464016"><meta property="og:book:author" itemprop="author" content="Wm. Arthur Conklin"><meta property="og:book:author" itemprop="author" content="Greg White"><meta property="og:book:author" itemprop="author" content="Dwayne Williams"><meta property="og:book:author" itemprop="author" content="Roger L. Davis"><meta property="og:book:author" itemprop="author" content="Chuck Cothren"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@127.0.0.1Media"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = '4c928969-b159-43f7-8afb-4290c3ef28c4';
+      dataLayer.push({userIdentifier: '4c928969-b159-43f7-8afb-4290c3ef28c4'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '3abb358d-b902-4511-9be4-110be462791b';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//127.0.0.1/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./public/vendor.0eac897f11ed.js.download"></script><script defer="" src="./public/reader.c745ea9296ac.js.download"></script><script async="" src="./public/MathJax.js.download"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style></head>
+
+
+<body class="reading sidenav  scalefonts subscribe-panel library nav-collapsed">
+
+    
+  <noscript> 
+    <iframe src="./public/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="working hide" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition
+      
+    </h1></span></a><div class="toc-contents" style="max-height: 0px;">
+  <div class="sbo-toc">
+    <button type="button" class="sbo-toc-thumb close"><div class="visuallyhidden">Close</div></button>
+      <section class="ios-app-teaser">
+        <ul>
+            <li><a class="js-toc-link toc-link" href="https://itunes.apple.com/gb/app/safari-queue-library-over/id881697395?mt=8" role="button">Install App</a></li>
+            <li><a class="js-toc-link toc-link" href="safaridetail://9781260464016" role="button">Open in App</a></li>
+        </ul>
+      </section>
+      <div class="sbo-book-meta">
+        
+        <span class="cover">
+         <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/">
+          <img src="./public/saved_resource" alt="Cover image for CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition" height="184" width="140">
+        </a>
+        </span>
+        <span class="title">
+          
+            
+          
+
+          <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/">CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition</a>
+        </span>
+        
+        <span class="authors">by Chuck Cothren; Wm. Arthur Conklin; Greg White; Roger L. Davis; Dwayne Williams</span>
+        
+
+        
+        <span class="publishers t-publishers">Published by
+          <!-- Show publisher page link if publisher pages switch is on -->
+          
+            <a class="t-publisher-link toc-link js-toc-link" href="127.0.0.1/library/publisher/mcgraw-hill/">
+              McGraw-Hill</a>, 2021
+          
+        </span>
+        
+
+    
+
+    </div>
+  <ol class="tocList">
+    
+    
+    
+     
+
+     <li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/cover.xhtml">
+        Cover <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1 currently-reading">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/title.xhtml">
+        Title Page <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/copy.xhtml">
+        Copyright Page <span class="minutes">(03:27 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ded.xhtml">
+        Dedication <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/author.xhtml">
+        About the Authors <span class="minutes">(04:36 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/contents.xhtml">
+        Contents <span class="minutes">(19:33 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/preface.xhtml#preface">
+        Preface <span class="minutes">(02:18 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ack.xhtml#ack">
+        Acknowledgments <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/intro.xhtml#intro">
+        Introduction <span class="minutes">(12:39 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/part1.xhtml#part1">
+        Part I Threats, Attacks, and Vulnerabilities <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch1.xhtml#ch1">
+        Chapter 1 Social Engineering Techniques <span class="minutes">(35:39 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2">
+        Chapter 2 Type of Attack Indicators <span class="minutes">(37:57 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch3.xhtml#ch3">
+        Chapter 3 Application Attack Indicators <span class="minutes">(33:21 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch4.xhtml#ch4">
+        Chapter 4 Network Attack Indicators <span class="minutes">(39:06 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch5.xhtml#ch5">
+        Chapter 5 Threat Actors, Vectors, and Intelligence Sources <span class="minutes">(44:51 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch6.xhtml#ch6">
+        Chapter 6 Vulnerabilities <span class="minutes">(31:03 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch7.xhtml#ch7">
+        Chapter 7 Security Assessments <span class="minutes">(23:00 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch8.xhtml#ch8">
+        Chapter 8 Penetration Testing <span class="minutes">(25:18 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/part2.xhtml#part2">
+        Part II Architecture and Design <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch9.xhtml#ch9">
+        Chapter 9 Enterprise Security Architecture <span class="minutes">(26:27 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch10.xhtml#ch10">
+        Chapter 10 Virtualization and Cloud Security <span class="minutes">(25:18 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch11.xhtml#ch11">
+        Chapter 11 Secure Application Development, Deployment, and Automation Concepts <span class="minutes">(27:36 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch12.xhtml#ch12">
+        Chapter 12 Authentication and Authorization <span class="minutes">(33:21 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch13.xhtml#ch13">
+        Chapter 13 Cybersecurity Resilience <span class="minutes">(39:06 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch14.xhtml#ch14">
+        Chapter 14 Embedded and Specialized Systems <span class="minutes">(41:24 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch15.xhtml#ch15">
+        Chapter 15 Physical Security Controls <span class="minutes">(49:27 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch16.xhtml#ch16">
+        Chapter 16 Cryptographic Concepts <span class="minutes">(42:33 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/part3.xhtml#part3">
+        Part III Implementation <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch17.xhtml#ch17">
+        Chapter 17 Secure Protocols <span class="minutes">(20:42 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch18.xhtml#ch18">
+        Chapter 18 Host and Application Security <span class="minutes">(46:00 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch19.xhtml#ch19">
+        Chapter 19 Secure Network Design <span class="minutes">(67:51 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch20.xhtml#ch20">
+        Chapter 20 Wireless Security <span class="minutes">(25:18 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch21.xhtml#ch21">
+        Chapter 21 Secure Mobile Solutions <span class="minutes">(43:42 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch22.xhtml#ch22">
+        Chapter 22 Implementing Cloud Security <span class="minutes">(24:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch23.xhtml#ch23">
+        Chapter 23 Identity and Account Management Controls <span class="minutes">(33:21 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch24.xhtml#ch24">
+        Chapter 24 Implement Authentication and Authorization <span class="minutes">(37:57 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch25.xhtml#ch25">
+        Chapter 25 Public Key Infrastructure <span class="minutes">(55:12 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/part4.xhtml#part4">
+        Part IV Operations and Incident Response <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch26.xhtml#ch26">
+        Chapter 26 Tools/Assess Organizational Security <span class="minutes">(34:30 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch27.xhtml#ch27">
+        Chapter 27 Incident Response Policies, Processes, and Procedures <span class="minutes">(32:12 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch28.xhtml#ch28">
+        Chapter 28 Investigations <span class="minutes">(26:27 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch29.xhtml#ch29">
+        Chapter 29 Mitigation Techniques and Controls <span class="minutes">(20:42 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch30.xhtml#ch30">
+        Chapter 30 Digital Forensics <span class="minutes">(42:33 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/part5.xhtml#part5">
+        Part V Governance, Risk, and Compliance <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31">
+        Chapter 31 Security Controls <span class="minutes">(10:21 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch32.xhtml#ch32">
+        Chapter 32 Regulations, Standards, and Frameworks <span class="minutes">(27:36 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch33.xhtml#ch33">
+        Chapter 33 Organizational Policies <span class="minutes">(36:48 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34">
+        Chapter 34 Risk Management <span class="minutes">(39:06 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35">
+        Chapter 35 Privacy <span class="minutes">(29:54 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/part6.xhtml#part6">
+        Part VI Appendixes and Glossary <span class="minutes">(01:09 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+     <ul class="toc-level-2">
+     
+
+     <li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/appA.xhtml#appA">
+        Appendix A OSI Model and Internet Protocols <span class="minutes">(18:24 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level2">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/appB.xhtml#appB">
+        Appendix B About the Online Content <span class="minutes">(04:36 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+    </li></ul>
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/gloss.xhtml#gloss">
+        Glossary <span class="minutes">(65:33 mins)</span>
+       </a>
+      
+        
+      
+    
+    
+     
+
+     </li><li class="toc-level1">
+        
+        <a class="js-toc-link toc-link" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/index.xhtml#index">
+        Index <span class="minutes">(67:51 mins)</span>
+       </a>
+      
+        
+      
+   </li></ol>
+ </div>
+
+
+
+</div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document"><script src="./public/48743.js.download"></script>
+<script>
+  var userId = "4c928969-b159-43f7-8afb-4290c3ef28c4";
+
+  var userObject = {
+    firstName: "Wane",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-04-28",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="Chapter 1 Social Engineering Techniques.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 1 Social Engineering Techniques</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="Chapter 3 Application Attack Indicators.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 3 Application Attack Indicators</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><section epub:type="chapter">
+<div class="hrc">
+<h2 class="h2" id="ch2"><span id="page_21" epub:type="pagebreak"></span><strong><span class="black"><small>CHAPTER</small> <span class="size">2</span></span></strong></h2>
+<h2 class="h2chap">Type of Attack Indicators</h2>
+<p class="noindent">In this chapter, you will</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Compare and contrast different types of attacks</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Learn to analyze potential indicators to determine the type of attack</p>
+</div>
+<p class="noindent-top">Attacks can be made against virtually any layer or level of software, from network protocols to applications. When an attacker finds a vulnerability in a system, they exploit the weakness to attack the system. The effect of an attack depends on the attacker’s intent and can result in a wide range of effects, from minor to severe. An attack on a system might not be visible on that system because the attack is actually occurring on a different system, and the data the attacker will manipulate on the second system is obtained by attacking the first system. Attacks can be against the user, as in social engineering, or against the application, the network, or the cryptographic elements being employed in a system. This chapter compares and contrasts these types of attacks.</p>
+<p class="indent">Although hacking and viruses receive the most attention in the news, they are not the only methods used to attack computer systems and networks. This chapter addresses many different ways computers and networks are attacked on a daily basis. Each type of attack threatens at least one of the three security requirements: confidentiality, integrity, and availability (the CIA of security).</p>
+<p class="indent">From a high-level standpoint, attacks on computer systems and networks can be grouped into two broad categories: attacks on specific software (such as an application or the operating system) and attacks on a specific protocol or service. Attacks on a specific application or operating system are generally possible because of an oversight in the code (and possibly in the testing of that code) or because of a flaw, or bug, in the code (again indicating a lack of thorough testing). Attacks on specific protocols or services are attempts either to take advantage of a specific feature of the protocol or service or to use it in a manner for which it was not intended. This chapter discusses various forms of attacks of which security professionals need to be aware.</p>
+<p class="noindentt"><strong>Certification Objective</strong>&nbsp;&nbsp;This chapter covers CompTIA Security+ exam objective 1.2: Given a scenario, analyze potential indicators to determine the type of attack.</p>
+<h3 class="h3" id="lev28"><span id="page_22" epub:type="pagebreak"></span>Malware</h3>
+<p class="noindent"><em>Malware</em> refers to software that has been designed for some nefarious purpose. Such software can be designed to cause damage to a system, such as by deleting all files, or it can be designed to create a backdoor into the system to grant access to unauthorized individuals. Generally the installation of malware is done so that it is not obvious to the authorized users. Several different types of malicious software can be used, such as viruses, trojan horses, logic bombs, spyware, and worms, and they differ in the ways they are installed and their purposes.</p>
+<h4 class="h4" id="lev1sec15">Ransomware</h4>
+<p class="noindent"><em>Ransomware</em> is a form of malware that performs some action and extracts a ransom from the user. Ransomware typically encrypts files on a system and then leaves them unusable either permanently, acting as a denial of service, or temporarily until a ransom is paid, thus the name. Ransomware is typically a worm, completely automated, and when targeted as a means of denial of service, the only repair mechanism is to rebuild the system. This can be time consuming and/or impractical in some cases, making this attack mechanism equivalent to the physical destruction of assets.</p>
+<p class="indent">A current ransomware threat, first appearing in 2013, is CryptoLocker. CryptoLocker is a trojan horse that encrypts certain files using RSA public key encryption. When the user attempts to get these files, they are provided with a message instructing them how to purchase the decryption key. Because the system is using 2048-bit RSA encryption, brute force decryption is out of the realm of recovery options. The system is highly automated, and users have a short time window in which to get the private key. Failure to get the key will result in the loss of the data. In 2017, a ransomware worm called NotPetya spread across the globe, hitting only a few firms, but where it hit, it destroyed everything. The reason was, although it looked like and operated like ransomware, there was no decryption key. Earlier in 2017, a strain of ransomware called WannaCry hit many companies, including the UK National Health Service (NHS). This ransomware created havoc by exploiting the EternalBlue vulnerability in Microsoft Windows systems that was exposed by the group known as Shadow Brokers. WannaCry was stopped by a hacker turned white hat, Marcus Hutchins, who found a vulnerability in the WannaCry worm and was able to disable it globally.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Ransomware is a form of malware that locks the user out of their files or even the entire device until an online ransom payment is made to restore access.</p>
+</div>
+<h4 class="h4" id="lev1sec16">Trojans</h4>
+<p class="noindent">A trojan horse, or simply <em>trojan,</em> is a piece of software that appears to do one thing (and may, in fact, actually do that thing) but hides some other functionality. The analogy to the famous story of antiquity is very accurate. In the original case, the object appeared to be a large wooden horse, and in fact it was. At the same time, it hid something much more sinister and dangerous to the occupants of the city of Troy. As long as the horse <span id="page_23" epub:type="pagebreak"></span>was left outside the city walls, it could cause no damage to the inhabitants. However, it had to be taken in by the inhabitants of Troy, and it was inside that the hidden purpose was activated. A computer trojan works in much the same way. Unlike a virus, which reproduces by attaching itself to other files or programs, a trojan is a standalone program that must be copied and installed by the user—it must be “brought inside” the system by an authorized user. The challenge for the attacker is enticing the user to copy and run the program. This generally means that the program must be disguised as something that the user would want to run—a special utility or game, for example. Once it has been copied and is inside the system, the trojan will perform its hidden purpose with the user often still unaware of its true nature.</p>
+<p class="indent">A good example of a trojan is Back Orifice (BO), originally created in 1999 and now offered in several versions. BO can be attached to a number of types of programs. Once it is attached, and once an infected file is run, BO will create a way for unauthorized individuals to take over the system remotely, as if they were sitting at the console. BO is designed to work with Windows-based systems. Many trojans communicate to the outside through a port that the trojan opens, and this is one of the ways trojans can be detected.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Ensure you understand the differences between viruses, worms, trojans, and various other types of threats for the exam.</p>
+</div>
+<h4 class="h4" id="lev1sec17">Worms</h4>
+<p class="noindent">It was once easy to distinguish between a worm and a virus. Recently, with the introduction of new breeds of sophisticated malicious code, the distinction has blurred. <em>Worms</em> are pieces of code that attempt to penetrate networks and computer systems. Once a penetration occurs, the worm will create a new copy of itself on the penetrated system. Reproduction of a worm thus does not rely on the attachment of the virus to another piece of code or to a file, which is the definition of a virus.</p>
+<p class="indent">Viruses were generally thought of as a system-based problem, and worms were network-based. If the malicious code is sent throughout a network, it may subsequently be called a worm. The important distinction, however, is whether the code has to attach itself to something else (a virus) or if it can “survive” on its own (a worm).</p>
+<p class="indent">Some examples of worms that have had high profiles include the Sobig worm of 2003, the SQL Slammer worm of 2003, the 2001 attacks of Code Red and Nimda, and the 2005 Zotob worm that took down CNN Live. Nimda was particularly impressive in that it used five different methods to spread: via e-mail, via open network shares, from browsing infected websites, using the directory traversal vulnerability of Microsoft IIS 4.0/5.0, and most impressively through the use of backdoors left by Code Red II and sadmind worms. Recently, worms have become a tool of choice for ransomware attacks, as they can spread from system to system without operator intervention. The NotPetya worm of 2017 caused an estimated $10 billion in damage.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Worms act like a virus but also have the ability to travel without human action. They do not need help to spread.</p>
+</div>
+<h4 class="h4" id="lev1sec18"><span id="page_24" epub:type="pagebreak"></span>Potentially Unwanted Programs</h4>
+<p class="noindent"><em>Potentially unwanted program (PUP)</em> is a designation used by security companies and antivirus vendors to identify programs that may have adverse effects on a computer’s security or privacy. Frequently these involve adware or spyware components and are used for revenue generation purposes.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;Potentially unwanted programs are a form of malware. The name is one the industry chose because the makers of PUPs claim you read and agreed to their terms as part of a download agreement. It is easy to miss these details when installing programs, and then you have unwanted apps. PUPs can exhibit some very undesired characteristics, such as the following:</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Slowing down your computer</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Displaying a ton of annoying ads</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Adding toolbars that steal space on the browser</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Collecting private information</p>
+</div>
+<p class="indent">A common source of PUPs is third-party download sites for downloading apps—even legitimate apps can be bundled by third-party distributers. The use of an anti-malware solution should catch and enable PUPs to be stopped before installation.</p>
+<h4 class="h4" id="lev1sec19">Fileless Viruses</h4>
+<p class="noindent">Most antivirus/anti-malware solutions find malware through monitoring the filesystem for writes and then filter the writes for known signatures. When a piece of malware operates only in memory, never touching the filesystem, it is much harder to detect. This type of attack is called a <em>fileless virus,</em> or memory-based attack.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Remember that unlike a traditional virus, which attaches itself to a file, a fileless virus lives in memory and will continue to run until the device is powered down.</p>
+</div>
+<h4 class="h4" id="lev1sec20">Command and Control</h4>
+<p class="noindent">Command-and-control servers are used by hackers to control malware that has been launched against targets. Malware infections are seldom a single file on a single machine when an attack occurs in an enterprise. Multiple malware elements, on multiple systems, under various IDs, all working to provide a means for hackers to re-enter a system, are commonly found in enterprises. These malware elements also work to exfiltrate stolen data.</p>
+<h4 class="h4" id="lev1sec21">Bots</h4>
+<p class="noindent">A <em>bot</em> is a functioning piece of software that performs some task, under the control of another program. A series of bots is controlled across the network in a group, and the <span id="page_25" epub:type="pagebreak"></span>entire assembly is called a <em>botnet</em> (combining the terms <em>bot</em> and <em>network</em>). Some botnets are legal and perform desired actions in a distributed fashion. Illegal botnets work in the same fashion, with bots distributed and controlled from a central set of command-and-control servers. Bots can do a wide array of things—from proliferating spam to committing fraud, installing spyware, and more.</p>
+<p class="indent">Botnets continue to advance malware threats. Some of the latest botnets are designed to mine bitcoins, using distributed processing power for gain. One of the more famous botnets is Zeus, a botnet that performs keystroke logging and is used primarily for the purpose of stealing banking information. Zeus has been linked to the delivery of CryptoLocker ransomware. Another famous botnet is Conficker, which has infected millions of machines worldwide. The Conficker botnet is one of the most studied pieces of malware, with a joint industry–government working group convened to battle it.</p>
+<h4 class="h4" id="lev1sec22">Crypto-malware</h4>
+<p class="noindent">The first thought when one sees the term <em>crypto-malware</em> is to think of ransomware. But that would be wrong. Crypto-malware is the name the security industry has given to malware that uses a system’s resources to mine cryptocurrency. This is really just a theft-of-services attack where an attacker is using the CPU cycles of someone else’s computer to do the crypto mining.</p>
+<h4 class="h4" id="lev1sec23">Logic Bombs</h4>
+<p class="noindent">Logic bombs, unlike viruses and trojans, are a type of malicious software that is deliberately installed, generally by an authorized user. A <em>logic bomb</em> is a piece of code that sits dormant for a period of time until some event or date invokes its malicious payload. An example of a logic bomb might be a program that is set to load and run automatically, and that periodically checks an organization’s payroll or personnel database for a specific employee. If the employee is not found, the malicious payload executes, deleting vital corporate files.</p>
+<p class="indent">If the event is a specific date or time, the program will often be referred to as a <em>time bomb</em>. In one famous example, a disgruntled employee left a time bomb in place just prior to being fired from his job. Two weeks later, thousands of client records were deleted. Police were eventually able to track the malicious code to the disgruntled ex-employee, who was prosecuted for his actions. He had hoped that the two weeks that had passed since his dismissal would have caused investigators to assume he could not have been the individual who had caused the deletion of the records.</p>
+<p class="indent">Logic bombs are difficult to detect because they are often installed by authorized users and, in particular, have been installed by administrators who are also often responsible for security. This demonstrates the need for a separation of duties and a periodic review of all programs and services that are running on a system. It also illustrates the need to maintain an active backup program so that if your organization loses critical files to this sort of malicious code, it loses only transactions that occurred since the most recent backup, resulting in no permanent loss of data.</p>
+<h4 class="h4" id="lev1sec24"><span id="page_26" epub:type="pagebreak"></span>Spyware</h4>
+<p class="noindent"><em>Spyware</em> is software that “spies” on users, recording and reporting on their activities. Typically installed without the user’s knowledge, spyware can perform a wide range of activities. It can record keystrokes (commonly called <em>keylogging</em>) when the user logs on to specific websites. It can monitor how a user applies a specific piece of software, such as to monitor attempts to cheat at games. Many uses of spyware seem innocuous at first, but the unauthorized monitoring of a system can be abused very easily. In other cases, the spyware is specifically designed to steal information. Many states have passed legislation banning the unapproved installation of software, but spyware can circumvent this issue through complex and confusing end-user license agreements.</p>
+<h4 class="h4" id="lev1sec25">Keyloggers</h4>
+<p class="noindent">As the name suggests, a <em>keylogger</em> is a piece of software that logs all of the keystrokes that a user enters. Keyloggers in their own respect are not necessarily evil, for you could consider Microsoft Word to be a keylogger. What makes a keylogger a malicious piece of software is when its operation is (1) unknown to the user, and (2) not under the user’s control. Keyloggers have been marketed for a variety of uses—from surveillance over your children’s activity, or the activity of a spouse, to maintaining records of what has been done on a machine. Malicious keyloggers have several specific characteristics: they are frequently hidden from the user’s view, even when looking at Task Manager, and they are used against the end user’s interests. Hackers use keyloggers to obtain passwords and other sensitive pieces of information, enabling them to use these secrets to act as the user without the user’s consent. Keylogger functionality has even been found in legitimate programs, where keystrokes are recorded for “legitimate” purposes and then are stored in a fashion that enables unauthorized users to steal the data.</p>
+<h4 class="h4" id="lev1sec26">Remote-Access Trojans (RATs)</h4>
+<p class="noindent">A <em>remote-access trojan (RAT)</em> is a toolkit designed to provide the capability of covert surveillance and/or the capability to gain unauthorized access to a target system. RATs often mimic the behavior of keyloggers and packet sniffers using the automated collection of keystrokes, usernames, passwords, screenshots, browser history, e-mails, chat logs, and more, but they also do so with a design of intelligence. RATs can also employ malware to infect a system with code that can be used to facilitate the exploitation of a target. Rather than just collect the information, RATs present it to an attacker in a form to facilitate the capability to gain unauthorized access to the target machine. This frequently involves the use of specially configured communication protocols that are set up upon initial infection of the target computer. This backdoor into the target machine can allow an attacker unfettered access, including the ability to monitor user behavior, change computer settings, browse and copy files, access connected systems, and more. RATs are commonly employed by the more skilled threat actors, although there are RATs that are easy enough for even beginners to employ.</p>
+<p class="indent">A RAT should be considered another form of malware, but rather than just being a program, it has an operator behind it, guiding it to do even more persistent damage. RATs can be delivered via phishing e-mails, watering holes, or any of a myriad of other <span id="page_27" epub:type="pagebreak"></span>malware infection vectors. RATs typically involve the creation of hidden file structures on a system and are vulnerable to detection by modern anti-malware programs. There are several major families of RATs, but an exhaustive list would be long and ever increasing. When facing a more skilled adversary, it is not uncommon to find RAT packages that have been modified for specific use, such as the program used in the Ukraine electric grid attack in 2015.</p>
+<h4 class="h4" id="lev1sec27">Rootkit</h4>
+<p class="noindent"><em>Rootkits</em> are a form of malware that is specifically designed to modify the operation of the operating system in some fashion to facilitate nonstandard functionality. The history of rootkits goes back to the beginning of the UNIX operating system, where rootkits were sets of modified administrative tools. Originally designed to allow a program to take greater control over an operating system’s functions when it fails or becomes unresponsive, the technique has evolved and is used in a variety of ways. One high-profile case occurred at Sony BMG Corporation, when rootkit technology was used to provide copy protection technology on some of the company’s CDs. Two major issues led to this being a complete debacle for Sony: First, the software modified systems without the users’ approval. Second, the software opened a security hole on Windows-based systems, creating an exploitable vulnerability at the rootkit level. This led the Sony case to be labeled as <em>malware,</em> which is the most common use of rootkits.</p>
+<p class="indent">A rootkit can do many things—in fact, it can do virtually anything that the operating system does. Rootkits modify the operating system kernel and supporting functions, changing the nature of the system’s operation. Rootkits are designed to avoid, either by subversion or evasion, the security functions of the operating system to avoid detection. Rootkits act as a form of malware that can change thread priorities to boost an application’s performance, perform keylogging, act as a sniffer, hide other files from other applications, or create backdoors in the authentication system. The use of rootkit functionality to hide other processes and files enables an attacker to use a portion of a computer without the user or other applications knowing what is happening. This hides exploit code from antivirus and anti-spyware programs, acting as a cloak of invisibility.</p>
+<p class="indent">Rootkits can load before the operating system loads, acting as a virtualization layer, as in SubVirt and Blue Pill. Rootkits can exist in firmware, and these have been demonstrated in both video cards and expansion cards. Rootkits can exist as loadable library modules, effectively changing portions of the operating system outside the kernel. Further information on specific rootkits in the wild can be found at <a href="http://www.antirootkit.com/">www.antirootkit.com</a>.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Five types of rootkits exist: firmware, virtual, kernel, library, and application level.</p>
+</div>
+<p class="indent">Once a rootkit is detected, it needs to be removed and cleaned up. Because of rootkits’ invasive nature, and the fact that many aspects of rootkits are not easily detectable, most system administrators don’t even attempt to clean up or remove a rootkit. It is far easier to use a previously captured clean system image and reimage the machine than to attempt to determine the depth and breadth of the damage and attempt to fix individual files.</p>
+<h4 class="h4" id="lev1sec28"><span id="page_28" epub:type="pagebreak"></span>Backdoors</h4>
+<p class="noindent">Backdoors were originally (and sometimes still are) nothing more than methods used by software developers to ensure that they can gain access to an application, even if something were to happen in the future to prevent normal access methods. An example would be a hard-coded password that could be used to gain access to the program in the event that administrators forgot their own system password. The obvious problem with this sort of backdoor (also sometimes referred to as a <em>trapdoor</em>) is that, since it is hard-coded, it cannot be removed. Should an attacker learn of the backdoor, all systems running that software would be vulnerable to attack.</p>
+<p class="indent">The term <em>backdoor</em> is also, and more commonly, used to refer to programs that attackers install after gaining unauthorized access to a system to ensure that they can continue to have unrestricted access to the system, even if their initial access method is discovered and blocked. Backdoors can also be installed by authorized individuals inadvertently if they run software that contains a trojan horse (introduced earlier). Common backdoors include NetBus and Back Orifice. Both of these, if running on your system, can allow an attacker remote access to your system—access that allows them to perform any function on your system. A variation on the backdoor is the rootkit, discussed in a previous section, which is established not to gain root access but rather to ensure continued root access.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The Security+ exam objectives include analyzing potential indicators to determine the type of attack, including keyloggers, spyware, bots, RATs, logic bombs, backdoors, and more. To prepare for the exam, you should understand the differences between the many malware attacks discussed in this chapter.</p>
+</div>
+<h3 class="h3" id="lev29">Password Attacks</h3>
+<p class="noindent">The most common form of authentication is the user ID and password combination. While it is not inherently a poor mechanism for authentication, the combination can be attacked in several ways. All too often, these attacks yield favorable results for the attacker, not as a result of a weakness in the scheme, but usually due to the user not following good password procedures.</p>
+<h4 class="h4" id="lev1sec29">Spraying</h4>
+<p class="noindent">Password <em>spraying</em> is an attack that uses a limited number of commonly used passwords and applies them to a large number of accounts. Traditional brute-force attacks attempt to gain unauthorized access to a single account by guessing the password. Spraying is the reverse of this, using a limited number of passwords and trying them against all the accounts. This is a useful attack when you don’t care which account you get and is fairly successful when given a large set of accounts. Defending against this is important in organizations, because if one account is breached, it is the foothold needed to gain entry.</p>
+<h4 class="h4" id="lev1sec30"><span id="page_29" epub:type="pagebreak"></span>Dictionary</h4>
+<p class="noindent">Another method of determining passwords is to use a password-cracking program that uses a list of dictionary words to try to guess the password, hence the name <em>dictionary</em> attack. The words can be used by themselves, or two or more smaller words can be combined to form a single possible password. A number of commercial and public-domain password-cracking programs employ a variety of methods to crack passwords, including using variations on the user ID.</p>
+<p class="indent">These programs often permit the attacker to create various rules that tell the program how to combine words to form new possible passwords. Users commonly substitute certain numbers for specific letters. If the user wants to use the word <em>secret</em> for a password, for example, the letter <em>e</em> could be replaced with the number <em>3</em>, yielding <em>s3cr3t</em>. This password will not be found in the dictionary, so a pure dictionary attack would not crack it, but the password is still easy for the user to remember. If a rule were created that tried all words in the dictionary and then tried the same words substituting the number <em>3</em> for the letter <em>e</em>, however, the password would be cracked.</p>
+<p class="indent">Rules can also be defined so that the password-cracking program will substitute special characters for other characters or combine words. The ability of the attacker to crack passwords is directly related to the method the user employs to create the password in the first place, as well as the dictionary and rules used.</p>
+<p class="indent">A dictionary attack involves the use of a lookup table to try and find an answer. With that in mind, repeated use of passwords, coupled with data breaches, provides a set of passwords to try. This is why unique passwords for security-sensitive sites are so important, because a data breach at one firm could cost you all of your accounts, because the attacker’s job becomes as simple as looking them up.</p>
+<h4 class="h4" id="lev1sec31">Brute Force</h4>
+<p class="noindent">If the user has selected a password that is not found in a dictionary, even if various numbers or special characters are substituted for letters, the only way the password can be cracked is for an attacker to attempt a <em>brute force</em> attack, in which the password-cracking program attempts all possible password combinations.</p>
+<p class="indent">The length of the password and the size of the set of possible characters in the password will greatly affect the time a brute force attack will take. A few years ago, this method of attack was very time consuming, since it took considerable time to generate all possible combinations. With the increase in computer speed, however, generating password combinations is much faster, making it more feasible to launch brute force attacks against certain computer systems and networks.</p>
+<p class="indent">A brute force attack on a password can take place at two levels: it can attack a system, where the attacker is attempting to guess the password at a login prompt, or it can attack the list of password hashes contained in a password file. The first attack can be made more difficult if the account locks after a few failed login attempts. The second attack can be thwarted if the password file is securely maintained so that others cannot obtain a copy of it.</p>
+<h5 class="h5"><span id="page_30" epub:type="pagebreak"></span>Offline</h5>
+<p class="noindent"><em>Offline</em>, brute force attacks can be employed to perform hash comparisons against a stolen password file. This has the challenge of stealing the password file, but if accomplished, it is possible to use high-performance GPU-based parallel machines to try passwords at very high rates and against multiple accounts at the same time.</p>
+<h5 class="h5">Online</h5>
+<p class="noindent">When the brute force attack occurs in real time against a system, it is frequently being done to attack a single account with multiple examples of passwords. Success or failure is determined by the system under attack, and the attacker either gets in or doesn’t. <em>Online</em> brute force attacks tend to be very noisy and easy to see by network security monitoring, and they are also limited by system response time and bandwidth.</p>
+<h4 class="h4" id="lev1sec32">Rainbow Tables</h4>
+<p class="noindent"><em>Rainbow tables</em> are precomputed tables or hash values associated with passwords. Using rainbow tables can change the search for a password from a computational problem to a lookup problem. This can tremendously reduce the level of work needed to crack a given password. The best defense against rainbow tables is <em>salted hashes</em>, as the addition of a salt value increases the complexity of the problem by making the precomputing process not replicable between systems. A <em>salt</em> is merely a random set of characters designed to increase the length of the item being hashed, effectively making rainbow tables too big to compute.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;A <em>salt</em> is a random set of characters designed to increase the length of the item being hashed. It is an effective defense against rainbow table attacks.</p>
+</div>
+<h4 class="h4" id="lev1sec33">Plaintext/Unencrypted</h4>
+<p class="noindent">Passwords that are stored are subject to retrieval. Any time a system can send you a copy of your password, there is a security issue. Plaintext password attacks are those taken against these specific issues. Lest anyone think that this is only a problem from rogue systems or programs, even mainstream systems can fall prey to this trap. Microsoft allows administrators to push out passwords for local accounts via group policy preferences. To protect the passwords, they are encrypted using Advanced Encryption Standard (AES). For reasons of compatibility with other systems, Microsoft published the AES key—see the problem.</p>
+<p class="indent">In Microsoft Windows systems, Mimikatz is a security tool that can extract Kerberos tickets from memory, and it also possesses the ability to extract plaintext passwords from process dumps of the LSASS process. This means that by using the security tools ProcDump and Mimikatz, one can harvest plaintext passwords from a system.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Be sure you are familiar with the various attacks, including spraying, dictionary, brute force, rainbow tables, and plaintext/unencrypted. Understand how they are different and how to recognize each attack.</p>
+</div>
+<h3 class="h3" id="lev30"><span id="page_31" epub:type="pagebreak"></span>Physical Attacks</h3>
+<p class="noindent">Most of the attacks listed in the chapter to this point are logical attacks in that they are attacking the system from a computer logic perspective. <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch1.xhtml#ch1">Chapter 1</a>, “Social Engineering Techniques,” dealt with social engineering attacks—attacks designed to get users to perform actions that lead into a vulnerability being exposed. Another class of attacks, physical attacks, occur when a physical element such as a flash drive is left for someone to use. The act of using these “normal” physical devices initiates an attack sequence.</p>
+<h4 class="h4" id="lev1sec34">Malicious Universal Serial Bus (USB) Cable</h4>
+<p class="noindent">Most users view a USB cable as just a wire, but in fact a USB cable can have embedded electronics in it. “Poisoned” cables have been found with electronics that can deliver malware to machines. This has been found in both normal USB cables and in lightning cables for Apple devices. Demo cables have even been made with embedded Wi-Fi devices, enabling attacks against a Wi-Fi network from the cable itself.</p>
+<h4 class="h4" id="lev1sec35">Malicious Flash Drives</h4>
+<p class="noindent">Malicious USB storage devices have been around for a long time. They have been used to dupe users into picking them up, plugging them into their machine, and accessing an attractive folder such as “HR data” or “Sensitive pictures.” Clicking these folders is the mistake because they deliver to the machine. USB dropping is a well-known means of attack, where the attacker leaves tainted USB devices for people to pick up and use. And once they plug them into the network, the attack is automated. A recent study done on a college campus showed 98 percent of the dropped devices were picked up, and over 45 percent were later used and phoned home their data.</p>
+<p class="indent">For user convenience, operating systems adopted an Auto Run or Auto Play feature on USB devices, enabling content to run when the device was plugged in. As this is an obvious security issue, the ability to automatically execute the autorun.inf file on a USB was disabled post–Windows XP. You can re-enable this setting in Windows 10, through Settings | Devices | AutoPlay, although this is not recommended. In enterprises, this setting can be controlled via group policies that restrict users from changing it.</p>
+<h4 class="h4" id="lev1sec36">Card Cloning</h4>
+<p class="noindent">Should someone get physical possession of your credit card, it is possible to copy the information on the magnetic strip, enabling the person to later make a clone of your card. Smart cards made this more difficult, as the chip itself cannot be cloned. But in the case of a credit card having a damaged chip, many systems resort back to the magnetic strip information, making the cloning attack still a potentially effective scam.</p>
+<p class="indent">Another type of card that can be cloned is the contactless ID card. These cards are used by transit systems, access systems, and even passports. The NFC (near field communications) chip can be read, information copied, and a clone implemented. Rather than implementing the device on an actual card, the current systems use a small electronic device to replicate the functionality. When data is stored on the card, as has been done <span id="page_32" epub:type="pagebreak"></span>in many transit systems, cloning a card can be like collecting the unused fares. These attacks have been shown to be effective in several major cities against several different card systems.</p>
+<h4 class="h4" id="lev1sec37">Skimming</h4>
+<p class="noindent">Skimming devices are physical devices built to intercept a credit card. These devices are placed on credit card readers to skim the data from the card while passing it on to the legitimate reader. Skimmers can collect all the information from a magnetic strip on the card as well as the PIN being entered, enabling a clone to be manufactured. Although smart card–based credit cards are difficult if not impossible to clone, in the US, blocking the smart card features will trip most systems to a downgraded method of just using the magnetic strip data, thus bypassing the security features associated with the smart chip part of the card.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;Credit card skimmers can be found at gas stations and convenience stores. The overlay, shown here, can be discovered by handling the machine in a manner to dislodge it. For example, minor tugging on the physical interface will typically reveal the skimmer.</p>
+</div>
+<p class="center"><img src="./public/I12-01.jpg" alt="Images" width="497" height="327"></p>
+<h3 class="h3" id="lev31">Adversarial Artificial Intelligence (AI)</h3>
+<p class="noindent"><em>Artificial intelligence (AI)</em> is the use of complex models to simulate functions of the brain—in essence, a means to impart analytical abilities to the things we use, from robot vacuum cleaners to smartphone apps, to digital assistants. AI brings power to computer solutions because AI models can analyze more combinations of inputs than a human, and do so faster and with more accuracy. AI-enabled systems are used in anti-malware products to find new threats based on analytical analysis of programmatic behaviors. Can AI also be used to evade defenses? The answer is yes, and this is known as <em>adversarial AI</em>. Just as defenders can write AI-enabled tools, attackers can use AI to enable their attacks, such as phishing, to avoid machine detection.</p>
+<h4 class="h4" id="lev1sec38"><span id="page_33" epub:type="pagebreak"></span>Tainted Training Data for Machine Learning (ML)</h4>
+<p class="noindent"><em>Machine learning (ML)</em> is one of the techniques used in AI. ML works by using a training data set to calibrate the detection model to enable detection on sample data. One of the weaknesses of ML is this training set dependency. The ability of the model to detect is a function of the efficacy of the training data set. A good training data set can build a solid detection model. A deficient training set of data can build a model with holes in it—holes that allow conditions to go undetected. Tainting the training data is one of the attack vectors that attackers can use against ML systems. Over time, as conditions change, an ML algorithm needs retraining or updating to make it effective against differing inputs. Each of these updates represents an opportunity to taint the input data set. Also, if you train the algorithm against normal network traffic, marking it as good when in fact there is an adversary already in that training data set, you effectively blind the algorithm to the attack by having already labeled it as good.</p>
+<h4 class="h4" id="lev1sec39">Security of Machine Learning Algorithms</h4>
+<p class="noindent">Understanding the details of a machine learning algorithm once it is trained is crucial to the security of the algorithm. Should an attacker be able to reproduce the exact same set of parameters, they would be able to create attack data sets that could slip past the ML algorithm. Maintaining security around the parameters of an ML algorithm is essential to maintaining its effectiveness.</p>
+<h3 class="h3" id="lev32">Supply-Chain Attacks</h3>
+<p class="noindent">Everything has a supply chain. Supply chains are the network of suppliers that provide the materials for something to be built. In the case of a computer, the supply chain provides the parts. In the case of a program, the programmers are one part, but the libraries they use are another. The parts that are used—be they physical like a hard drive or logical like a library module—can be tainted, either by accident or on purpose. However, the result is the same: the final product can have vulnerabilities. Knowing this, attackers have learned to attack supply chains and let the normal build process instantiate the attack vector. Manufacturers have shipped PCs with preinstalled malware, courtesy of a hard drive manufacturer, which itself became infected by one of its vendors. The Target data breach case was initiated by an attack on a heating, ventilation, and air conditioning (HVAC) company that was a supplier to Target, and when they connected to Target’s network, the final objectives were achieved. This means that the true attack surface is not just within your firm or your product, but ultimately a function of everyone and everything in your supply chain.</p>
+<h3 class="h3" id="lev33">Cloud-Based vs. On-Premises Attacks</h3>
+<p class="noindent">Attacks against data can happen whether the system is in house (on-premises) or in the cloud (cloud based). Using cloud computing to improve security only works if you choose a cloud vendor with a security solution as part of the package. While big-name <span id="page_34" epub:type="pagebreak"></span>vendors such as Oracle, Microsoft, Google, and Amazon have resources and security knowledge, not all vendors have the same level of protection. Moving computing or storage to the cloud, in itself, does not change the security equation. Cloud computing is merely using someone else’s resources, and you get what you pay for, as in all contracts. Whether you are doing security in house against in-house systems or against cloud-based systems, the objectives and methods are the same. You must define the security you desire and the methods of attaining it, and then follow through, either by doing the work or contracting it. Just sticking something into the cloud does nothing to address security.</p>
+<h3 class="h3" id="lev34">Cryptographic Attacks</h3>
+<p class="noindent">Attacks against the cryptographic system are referred to as <em>cryptographic attacks</em>. These attacks are designed to take advantage of two specific weaknesses. First, users widely view cryptography as “magic,” or otherwise incomprehensible stuff, leading them to trust the results without valid reasons. Second, although understood by computer scientists, algorithmic weaknesses that can be exploited are frequently overlooked by developers.</p>
+<h4 class="h4" id="lev1sec40">Birthday</h4>
+<p class="noindent">The <em>birthday</em> attack is a special type of brute force attack that gets its name from something known as the birthday paradox, which states that in a group of at least 23 people, the chance that two individuals will have the same birthday is greater than 50 percent. Mathematically, we can use the equation 1.25<em>k</em><sup>1/2</sup> (with <em>k</em> equaling the size of the set of possible values), and in the birthday paradox, <em>k</em> would be equal to 365 (the number of possible birthdays). This same phenomenon applies to passwords, with <em>k</em> (the number of passwords) being quite a bit larger than 50, but still a manageable number for computers and today’s storage capacities.</p>
+<h4 class="h4" id="lev1sec41">Collision</h4>
+<p class="noindent">A <em>collision</em> attack is where two different inputs yield the same output of a hash function. Through the manipulation of data, subtle changes are made that are not visible to the user yet create different versions of a digital file. With the creation of many different versions and the use of the birthday attack to find a collision between any two of the many versions, an attacker has a chance to create a file with changed visible content but identical hashes.</p>
+<h4 class="h4" id="lev1sec42">Downgrade</h4>
+<p class="noindent">As part of a Transport Layer Security/Secure Sockets Layer (TLS/SSL) setup, a specification of the cipher suite can be employed. This is done to enable the highest form of encryption that both server and browser can support. In a <em>downgrade</em> attack, the attacker takes advantage of a commonly employed principle to support backward compatibility, to downgrade the security to a lower or nonexistent state.</p>
+<div class="sidebarn">
+<p class="notei"><span id="page_35" epub:type="pagebreak"></span><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The Security+ exam objective for attacks (1.2) is, “Given a scenario, analyze potential indicators to determine the type of attack.” This means that you need to be able to differentiate attacks based on a set of given symptoms and indications. Learning how these attacks are performed, what they look like, and how to recognize specific attacks is essential for the exam.</p>
+</div>
+<h3 class="h3" id="lev35">Chapter Review</h3>
+<p class="noindent">This chapter examined the attack methods used by hackers. Seven major categories of attack were covered: malware, password attacks, physical attacks, adversarial artificial intelligence, supply-chain attacks, cloud-based vs. on-premises attacks, and cryptographic attacks. Each of these sections details several specific attacks.</p>
+<p class="indent">The malware section examined ransomware, trojans, worms, potentially unwanted programs (PUPs), fileless virus attacks, command and control, bots, crypto-malware, logic bombs, spyware, keyloggers, remote-access trojans (RAT), rootkits, and backdoors. The password attack section covered password-spraying attacks, dictionary and brute force attacks, offline and online attacks, rainbow tables, and attacks against plaintext/unencrypted passwords.</p>
+<p class="indent">The section on physical attacks examined attacks using physical manipulation, including malicious USB cables, malicious USB devices, card cloning, and skimming attacks. The section on the adversarial use of artificial intelligence covered the concept of tainting a machine learning system through contaminating the training data. This section also covered the importance of security for machine learning algorithms and parameters.</p>
+<p class="indent">The chapter concluded with sections on supply-chain attacks and cloud-based vs. on-premise attacks. The last section covered cryptographic attacks, including birthday attacks, collision attacks, and downgrade attacks. What is important to remember is that this material is designed to assist you in understanding CompTIA Security+ exam objective 1.2: Given a scenario, analyze potential indicators to determine the type of attack. You need to be prepared to differentiate between the types of attacks.</p>
+<h4 class="h4" id="lev1sec43">Questions</h4>
+<p class="noindent">To help you prepare further for the CompTIA Security+ exam, and to test your level of preparedness, answer the following questions and then check your answers against the correct answers at the end of the chapter.</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans1" id="r_ch2ans1">1</a>.</strong>&nbsp;&nbsp;&nbsp;A disgruntled administrator is fired for negligence at your organization. Thirty days later, your organization’s internal file server and backup server crash at exactly the same time. Examining the servers, you determine that critical operating system files were deleted from both systems. If the disgruntled administrator was responsible for administering those servers during her employment, this is most likely an example of what kind of malware?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Crypto-malware</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Trojan</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Worm</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Logic bomb</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans2" id="r_ch2ans2">2</a>.</strong>&nbsp;&nbsp;&nbsp;<span id="page_36" epub:type="pagebreak"></span>A colleague has been urging you to download a new animated screensaver he has been using for several weeks. While he is showing you the program, the cursor on his screen moves on its own and a command prompt window opens and quickly closes. You can’t tell what if anything was displayed in that command prompt window. Your colleague says, “It’s been doing that for a while, but it’s no big deal.” Based on what you’ve seen, you suspect the animated screensaver is really what type of malware?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;A worm</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;A trojan</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Ransomware</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Spyware</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans3" id="r_ch2ans3">3</a>.</strong>&nbsp;&nbsp;&nbsp;Several desktops in your organization are displaying a red screen with the message “Your files have been encrypted. Pay 1 bitcoin to recover them.” These desktops have most likely been affected by what type of malware?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Spyware</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Spraying</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Ransomware</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Crypto-malware</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans4" id="r_ch2ans4">4</a>.</strong>&nbsp;&nbsp;&nbsp;While port-scanning your network for unauthorized systems, you notice one of your file servers has TCP port 31337 open. When you connect to the port with the security tool netcat, you see a prompt that reads, “Enter password for access:”. Your server may be infected with what type of malware?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;PUP</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Fileless virus</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Backdoor</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Man in the middle attack</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans5" id="r_ch2ans5">5</a>.</strong>&nbsp;&nbsp;&nbsp;While port-scanning your network for unauthorized systems, you notice one of your file servers has TCP port 61337 open. When you use Wireshark and examine the packets, you see encrypted traffic, in single packets, going back and forth every five minutes. The external connection is a server outside of your organization. What is this connection?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Command and control</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Backdoor</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;External backup location</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Remote login</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans6" id="r_ch2ans6">6</a>.</strong>&nbsp;&nbsp;&nbsp;A user in your organization is having issues with her laptop. Every time she opens a web browser, she sees different pop-up ads every few minutes. It doesn’t seem to matter which websites are being visited—the pop-ups still appear. What type of attack does this sound like?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;<span id="page_37" epub:type="pagebreak"></span>A potentially unwanted program (PUP)</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Ransomware</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Worm</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Virus</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans7" id="r_ch2ans7">7</a>.</strong>&nbsp;&nbsp;&nbsp;Users at your organization are complaining about slow systems. Examining several of them, you see that CPU utilization is extremely high and a process called “btmine” is running on each of the affected systems. You also notice each of the affected systems is communicating with an IP address outside your country on UDP port 43232. If you disconnect the network connections on the affected systems, the CPU utilization drops significantly. Based on what you’ve observed, you suspect these systems are infected with what type of malware?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Rainbow tables</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Crypto-malware</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Dictionary</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Hybrid attack</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans8" id="r_ch2ans8">8</a>.</strong>&nbsp;&nbsp;&nbsp;A piece of malware is infecting the desktops in your organization. Every hour, more systems are infected. The infections are happening in different departments and in cases where the users don’t share any files, programs, or even e-mails. What type of malware can cause this type of infection?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Virus</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Trojan</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;RAT</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Worm</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans9" id="r_ch2ans9">9</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following are characteristics of remote-access trojans?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;They can be deployed through malware such as worms.</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;They allow attacks to connect to the system remotely.</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;They give attackers the ability to modify files and change settings.</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;All of the above.</p>
+<p class="ques1"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#ch2ans10" id="r_ch2ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;To test your systems against weak passwords, you as an admin (with proper permissions) test all the accounts using the top 100 commonly used passwords. What is this test an example of?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Dictionary</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Password spraying</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Rainbow tables</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Online</p>
+<h4 class="h4" id="lev1sec44"><span id="page_38" epub:type="pagebreak"></span>Answers</h4>
+<p class="ques"><strong><a id="ch2ans1" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans1">1</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> Because both servers crashed at exactly the same time, this is most likely a logic bomb. A <em>logic bomb</em> is a piece of code that sits dormant for a period of time until some event or date invokes its malicious payload—in this case, 30 days after the disgruntled employee was fired.</p>
+<p class="ques"><strong><a id="ch2ans2" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans2">2</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> The animated screensaver is most likely a trojan. The software appears to do one thing, but contains hidden, additional functionality. Your colleague brought the trojan “inside the walls” when he downloaded and installed the software on his desktop.</p>
+<p class="ques"><strong><a id="ch2ans3" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans3">3</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> This is quite clearly ransomware. The malware has encrypted files on the affected systems and is demanding payment for recovery of the files.</p>
+<p class="ques"><strong><a id="ch2ans4" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans4">4</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> This prompt most likely belongs to a backdoor—an alternate way of accessing the system. The TCP service is listening for incoming connections and prompts for a password when connections are established. Providing the correct password would grant command-line access to the system.</p>
+<p class="ques"><strong><a id="ch2ans5" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans5">5</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> Periodic traffic that looks like a heartbeat on high ports to an unknown server outside the network is suspicious, and this is what many command-and-control signals look like.</p>
+<p class="ques"><strong><a id="ch2ans6" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans6">6</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> This behavior is often seen in a potentially unwanted program—a type of application that has been bundled with others and is performing tasks that are undesired.</p>
+<p class="ques"><strong><a id="ch2ans7" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans7">7</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> These systems are most likely infected with crypto-malware and are now part of a botnet that’s mining cryptocurrency. The systems are running an unknown/unauthorized process, communicating with an external IP address, and using significant resources. These are all classic signs of crypto-malware.</p>
+<p class="ques"><strong><a id="ch2ans8" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans8">8</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> This is most likely a worm attack. Attacks that move across the network, seemingly without user intervention, are commonly worms.</p>
+<p class="ques"><strong><a id="ch2ans9" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans9">9</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> All of these are characteristics of remote-access trojans (RATs). RATs are often deployed through other malware, allow remote access to the affected system, and give the attacker the ability to manipulate and modify the affected system.</p>
+<p class="ques1"><strong><a id="ch2ans10" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#r_ch2ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Using preset passwords against all accounts is an example of password spraying.</p>
+</section>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="Chapter 1 Social Engineering Techniques.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 1 Social Engineering Techniques</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="Chapter 3 Application Attack Indicators.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 3 Application Attack Indicators</div>
+        </a>
+    
+  
+  </div>
+
+</section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          ""
+        
+
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 69px;">
+  <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+  
+    
+    
+    
+    >
+    
+  
+  
+  </ul>
+  
+  
+    
+     
+     / 
+    
+     
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="./public/saved_resource(1)" charset="utf-8"></script>
+    <script src="./public/saved_resource(2)" charset="utf-8"></script>
+  
+
+<div class="font-flyout" style="top: 201.012px; left: 1772px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch2.xhtml#">Reset</a>
+</div>
+</div><div class="annotator-notice"></div></body></html>
