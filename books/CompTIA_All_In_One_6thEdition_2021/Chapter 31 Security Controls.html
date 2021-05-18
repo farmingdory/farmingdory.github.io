@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: 127.0.0.1/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://127.0.0.1" type="image/x-icon"><link href="./public/css" rel="stylesheet" type="text/css"><title>Chapter 31 Security Controls - CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition</title><link rel="stylesheet" href="./public/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./public/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./public/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    @page{margin:1.5em}#sbo-rt-content div{margin:0 .5em 0 .5em}#sbo-rt-content svg{height:98%;width:100%}#sbo-rt-content img{max-height:100%;max-width:100%}#sbo-rt-content a{text-decoration:none}#sbo-rt-content figure img{height:99vh}#sbo-rt-content figure{padding:0;margin:0}#sbo-rt-content .black{background-color:#231F20;color:#FFF;padding:.2em 3em .2em 3em}#sbo-rt-content .bullo{margin-top:.1em;margin-bottom:.1em;margin-left:2.1em;text-indent:-1.1em;text-align:left}#sbo-rt-content .hr-f{margin-top:.5em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .fimage{margin-top:1.5em;margin-bottom:.1em;text-align:center}#sbo-rt-content .figcap{margin-top:.1em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .timage{margin-top:1.5em;margin-bottom:.1em;text-align:left}#sbo-rt-content .tabcap{margin-top:.3em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .inline{vertical-align:middle}#sbo-rt-content .hrc{margin-top:3em;margin-bottom:2.5em;border-top:double .3em;border-bottom:double .3em;padding-top:.3em;padding-bottom:.5em;padding-left:.5em}#sbo-rt-content .note{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .notei{margin-top:.5em;margin-bottom:.5em;text-indent:.01em}#sbo-rt-content .size{color:#C6C8CA;font-size:400%;vertical-align:middle}#sbo-rt-content .sidebarn{margin-top:1em;margin-bottom:1em;border-top:solid .1em;text-indent:.01em}#sbo-rt-content .noindentb{margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .noindent-top{margin-top:2em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .indent{margin-top:.1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .indentb{margin-top:.1em;margin-bottom:1em;text-indent:1.2em}#sbo-rt-content .noindent{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .bull{margin-top:.3em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bull1{margin-top:.3em;margin-bottom:.1em;margin-left:4em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullt{margin-top:1em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullb{margin-top:.1em;margin-bottom:1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .indentt{margin-top:1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .h3{font-size:1.6em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h4{font-size:1.4em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h5{font-size:1.2em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .stitle{font-size:1.2em;margin-top:.5em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .noindentt{margin-top:1.2em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .alpha{margin-top:.1em;margin-bottom:.3em;margin-left:3.9em;text-indent:-1.75em;text-align:left}#sbo-rt-content .cover-image{margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .ded{margin-top:3em;margin-bottom:.3em;text-align:right}#sbo-rt-content .h2{font-size:120%;font-weight:normal;margin-top:-2em;margin-bottom:.5em;text-align:right}#sbo-rt-content .h2chap{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .h2chap1{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .copyright{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .ques{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-1.5em;text-align:left}#sbo-rt-content .ques1{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-2em;text-align:left}#sbo-rt-content .hr-1{margin-top:3em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .h2r1{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:left;text-indent:.01em}#sbo-rt-content .h2r{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:right;text-indent:.01em}#sbo-rt-content .gray{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .toc{margin-top:.7em;margin-bottom:.1em;margin-left:5.5em;text-indent:-5.5em;text-align:left}#sbo-rt-content .toc1{margin-top:.7em;margin-bottom:.1em;margin-left:5.8em;text-indent:-5.8em;text-align:left}#sbo-rt-content .toc-b1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-f{margin-top:.1em;margin-bottom:.1em;margin-left:5.75em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-lev1{margin-top:.1em;margin-bottom:.1em;margin-left:6.65em;text-indent:-1.15em;text-align:left}#sbo-rt-content .toc-lev2{margin-top:.1em;margin-bottom:.1em;margin-left:9.25em;text-indent:-1.15em;text-align:left}#sbo-rt-content .noindent1{margin-top:1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .center{margin-top:1em;margin-bottom:1em;text-align:center}#sbo-rt-content .right{margin-top:1em;margin-bottom:1em;text-align:right}#sbo-rt-content .indexhead{font-size:1.3em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indexmain{margin-top:.1em;margin-bottom:.1em;margin-left:.8em;text-indent:-.8em;text-align:left}#sbo-rt-content .indexsub{margin-top:.1em;margin-bottom:.1em;margin-left:1.9em;text-indent:-.8em;text-align:left}#sbo-rt-content .list{margin-top:.5em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listt{margin-top:1em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listb{margin-top:.5em;margin-bottom:1em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listh{margin-top:.3em;margin-bottom:.3em;margin-left:2.7em;text-indent:.1em;text-align:left}#sbo-rt-content .border1{margin-top:3em;margin-bottom:3em;border-top:double black .3em}#sbo-rt-content .toc-p3{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.65em;text-align:left}#sbo-rt-content .toc-p2{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.3em;text-align:left}#sbo-rt-content .toc-p5{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.15em;text-align:left}#sbo-rt-content .toc-p6{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.5em;text-align:left}#sbo-rt-content .toc-p1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-3.9em;text-align:left}#sbo-rt-content .toc-p4{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.6em;text-align:left}#sbo-rt-content .f1{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .sidebar{margin-top:1em;margin-bottom:1em;border:solid #000 .1em;background-color:#E7E7E8;padding:.5em;text-indent:.01em}#sbo-rt-content .h2pn{font-size:220%;font-weight:normal;margin-top:1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .h2pt{font-size:240%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .f-part{background-color:#000;color:#FFF;padding:.2em 1em .2em 1em}#sbo-rt-content .side-part{margin-top:0;margin-bottom:.2em;border:solid #000 .1em;background-color:#BDBEC1;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .side-part1{margin-top:.2em;margin-bottom:1em;border:solid #000 .1em;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .ch-part{margin-top:.2em;margin-bottom:.1em;margin-left:6.4em;text-indent:-6.4em;text-align:left}#sbo-rt-content .ch-app{margin-top:.2em;margin-bottom:.1em;margin-left:6.7em;text-indent:-6.7em;text-align:left}#sbo-rt-content .s-hang{margin-top:.5em;margin-bottom:.5em;margin-left:2em;text-indent:.1em;text-align:left}#sbo-rt-content .list-q{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:-1em;text-align:left}#sbo-rt-content .list-qh{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:.1em;text-align:left}#sbo-rt-content .gloss{margin-top:.7em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-h{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-t{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indent1{margin-top:.5em;margin-bottom:.5em;text-indent:1.2em}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+
+          "chapter": "/api/v1/book/9781260464016/chapter/ch31.xhtml",
+          "book_id": "9781260464016",
+          "chapter_uri": "ch31.xhtml",
+          "position": 0.0,
+          "user_uuid": "4c928969-b159-43f7-8afb-4290c3ef28c4",
+          "next_chapter_uri": "/library/view/comptia-security-all-in-one/9781260464016/ch32.xhtml"
+
+      },
+      title: "CompTIA Security+ All\u002Din\u002DOne Exam Guide, Sixth Edition (Exam SY0\u002D601)), 6th Edition",
+      author_list: "Wm. Arthur Conklin, Greg White, Dwayne Williams, Roger L. Davis, Chuck Cothren",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><script src="./public/modernizr.8e35451ddb64.js.download"></script><script>
+
+
+
+
+
+          window.PUBLIC_ANNOTATIONS = true;
+
+
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+
+
+
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "127.0.0.1/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml"><meta name="description" content=" CHAPTER 31 Security Controls In this chapter, you will •   Learn about the three categories of security controls •   Explore different types of security controls Security controls are the tools ... "><meta property="og:title" content="Chapter 31 Security Controls"><meta itemprop="isPartOf" content="/library/view/comptia-security-all-in-one/9781260464016/"><meta itemprop="name" content="Chapter 31 Security Controls"><meta property="og:url" itemprop="url" content="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="127.0.0.1/library/cover/9781260464016/"><meta property="og:description" itemprop="description" content=" CHAPTER 31 Security Controls In this chapter, you will •   Learn about the three categories of security controls •   Explore different types of security controls Security controls are the tools ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="McGraw-Hill"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9781260464016"><meta property="og:book:author" itemprop="author" content="Wm. Arthur Conklin"><meta property="og:book:author" itemprop="author" content="Greg White"><meta property="og:book:author" itemprop="author" content="Dwayne Williams"><meta property="og:book:author" itemprop="author" content="Roger L. Davis"><meta property="og:book:author" itemprop="author" content="Chuck Cothren"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@127.0.0.1Media"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+
+      window.medalliaVsgUserIdentifier = '4c928969-b159-43f7-8afb-4290c3ef28c4';
+      dataLayer.push({userIdentifier: '4c928969-b159-43f7-8afb-4290c3ef28c4'});
+      dataLayer.push({loggedIn: 'yes'});
+
+
+        window.medalliaVsgAccountIdentifier = '3abb358d-b902-4511-9be4-110be462791b';
+
+
+        window.medalliaVsgIsIndividual = true;
+
+
+          dataLayer.push({learningAccountType: 'free trial'});
+
+
+
+
+
+
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//127.0.0.1/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./public/vendor.0eac897f11ed.js.download"></script><script defer="" src="./public/reader.c745ea9296ac.js.download"></script><script async="" src="./public/MathJax.js.download"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+
+  <noscript>
+    <iframe src="./public/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+
+
+
+
+
+<a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#container" class="skip">Skip to content</a>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+
+          <div class="nav-container clearfix">
+
+
+
+
+
+          </div>
+
+
+
+  <div class="js-toc">
+
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+
+      CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition
+
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+
+      </ul>
+    </div>
+
+
+
+
+
+    <section role="document">
+
+
+
+
+
+
+  <script defer="" src="./public/djangoMessagesPage.bfaca9fd8619.js.download"></script>
+
+
+        <script src="./public/48743.js.download"></script>
+<script>
+  var userId = "4c928969-b159-43f7-8afb-4290c3ef28c4";
+
+  var userObject = {
+    firstName: "Wane",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-04-28",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+
+
+
+      <a href="Chapter 30 Digital Forensics.html" class="prev nav-link">
+
+        <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+        <span class="visuallyhidden">Previous Chapter</span>
+        <div class="pagination-title t-prev-title">Chapter 30 Digital Forensics</div>
+      </a>
+
+
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+
+
+
+        <a href="Chapter 32 Regulations, Standards, and Frameworks.html" class="next nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 32 Regulations, Standards, and Frameworks</div>
+        </a>
+
+
+  </div>
+
+
+
+<div id="sbo-rt-content" style="transform: none;"><div class="annotator-wrapper"><section epub:type="chapter">
+<div class="hrc">
+<h2 class="h2" id="ch31"><span id="page_571" epub:type="pagebreak"></span><strong><span class="black"><small>CHAPTER</small> <span class="size">31</span></span></strong></h2>
+<h2 class="h2chap">Security Controls</h2>
+<p class="noindent">In this chapter, you will</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Learn about the three categories of security controls</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Explore different types of security controls</p>
+</div>
+<p class="noindent-top">Security controls are the tools used to reduce risk in the enterprise. There are many different types of security controls, and this chapter looks at the different categories and types to provide a means of understanding and classifying controls.</p>
+<p class="noindentt"><strong>Certification Objective</strong>&nbsp;&nbsp;This chapter covers CompTIA Security+ exam objective 5.1: Compare and contrast various types of controls.</p>
+<h3 class="h3" id="lev305">Security Controls</h3>
+<p class="noindent"><em>Security controls</em> are the mechanisms employed to minimize exposure to risk and mitigate the effects of loss. Using the security attributes of confidentiality, integrity, and availability (CIA) associated with data, it is incumbent upon the security team to determine the appropriate set of controls to achieve the security objectives.</p>
+<p class="indent">Controls can be of a variety of types, as described in this chapter. The different categories of controls do not act as a taxonomy, as there are overlapping descriptions and some controls’ categories are passed down from third-party policies and procedures.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/note.jpg"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;The National Institute of Standards and Technology (NIST) provides a catalog of controls in its NIST SP 800-53 series. The current revision, revision 5, lists over 600 controls grouped into 18 functional categories. The 18 functional categories are grouped under three major categories: Management, Technical, and Operational. Although the vast majority of these controls are associated with the electronic security of information, many of them extend into the physical world as well.</p>
+</div>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/exam.jpg"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The types of security controls are commonly tested on the exam—memorization is recommended.</p>
+</div>
+<h3 class="h3" id="lev306"><span id="page_572" epub:type="pagebreak"></span>Categories</h3>
+<p class="noindent">Three categories of security controls are specified in a variety of defining documents, and these categories have become the de facto standard for the cybersecurity industry. The use of <em>categories</em> separates the controls into separate groups based on what the control uses as its lever: managerial activity, operational activity, or technical control. Each of these is described in the following sections. For some controls, it is possible that they have aspects that span more than one category.</p>
+<h4 class="h4" id="lev1sec772">Managerial</h4>
+<p class="noindent"><em>Managerial</em> controls are those that are based on overall risk management. These security controls focus on the management of risk or the management of the cybersecurity system. The use of cybersecurity audits is an example of a managerial control. <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31tab1">Table 31-1</a> lists the managerial controls.</p>
+<p class="timage" id="ch31tab1"><img src="./public/f0572-01.jpg" alt="Images" width="647" height="169" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/f0572-01.jpg"></p>
+<p class="tabcap"><strong>Table 31-1</strong>&nbsp;&nbsp;Managerial Controls</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/note.jpg"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;The NIST SP 800 series refers to managerial controls as <em>management</em> controls.</p>
+</div>
+<h4 class="h4" id="lev1sec773">Operational</h4>
+<p class="noindent">An <em>operational</em> control is a policy or procedure used to limit security risk. These security controls are primarily implemented and executed by people, as opposed to systems. Instructions to guards are an example of an operational control. <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31tab2">Table 13-2</a> lists the operational controls.</p>
+<p class="timage" id="ch31tab2"><img src="./public/f0573-01.jpg" alt="Images" width="647" height="349" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/f0573-01.jpg"></p>
+<p class="tabcap"><strong>Table 31-2</strong>&nbsp;&nbsp;Operational Controls</p>
+<h4 class="h4" id="lev1sec774">Technical</h4>
+<p class="noindent">A <em>technical</em> control uses some form of technology to address a physical security issue. These security controls are primarily implemented and executed by the information system through mechanisms contained in its hardware, software, or firmware components. Biometrics is an example of a technical control. <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31tab3">Table 31-3</a> lists the technical controls.</p>
+<p class="timage" id="ch31tab3"><img src="./public/f0573-02.jpg" alt="Images" width="647" height="177" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/f0573-02.jpg"></p>
+<p class="tabcap"><strong>Table 31-3</strong>&nbsp;&nbsp;Technical Controls</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/exam.jpg"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The main difference between operational and technical controls is that operational controls are those that people initiate and follow, whereas technical controls are typically automated and involve a machine to execute.</p>
+</div>
+<h3 class="h3" id="lev307"><span id="page_573" epub:type="pagebreak"></span>Control Types</h3>
+<p class="noindent">Controls can also be categorized by <em>control type.</em> The cybersecurity industry recognizes several different control types, and while these categories can be descriptive, they are not a taxonomy because they are not necessarily exclusive. Controls can fit into multiple types, depending on deployment and use. A door lock is an example of both a physical control and a preventative control.</p>
+<h4 class="h4" id="lev1sec775">Preventative</h4>
+<p class="noindent">A <em>preventative control</em> is one that prevents specific actions from occurring, such as a mantrap prevents tailgating. Preventative controls act before an event, preventing it from advancing. A firewall is an example of a preventative control, as it can block access to a specific resource.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/exam.jpg"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The key element in passing Exam Objective 5.1 is the ability to compare and contrast various types of controls. How are they alike (compare) and how are they different (contrast)? Understanding the differences can be subtle. For instance, do laws with punishment, if enforced, prevent attacks? Laws may deter attackers, but they do not prevent them from attacking if the deterrent doesn’t dissuade them from deciding to attack.</p>
+</div>
+<h4 class="h4" id="lev1sec776"><span id="page_574" epub:type="pagebreak"></span>Detective</h4>
+<p class="noindent">A <em>detective control</em> is one that facilitates the detection of a physical security breach. Detective controls act during an event, alerting operators to specific conditions. Alarms are common examples of detective controls. An IDS is an example of an IT security alarm that detects intrusions.</p>
+<h4 class="h4" id="lev1sec777">Corrective</h4>
+<p class="noindent">A <em>corrective control</em> is used after an event, in an effort to minimize the extent of damage. Load balancers and redundant systems act to reduce the risk from system overloading and are thus corrective controls. Backups are a prime example of a corrective control, as they can facilitate rapid resumption of operations.</p>
+<h4 class="h4" id="lev1sec778">Deterrent</h4>
+<p class="noindent">A <em>deterrent control</em> acts to discourage the attacker by reducing the likelihood of success from the perspective of the attacker. Any control that increases the cost to an attacker is a deterrent control. An example would be laws and regulations that increase punishment, increasing risk and costs for the attacker. Another example would be the use of salts for password hashes to increase the cost of building rainbow tables.</p>
+<h4 class="h4" id="lev1sec779">Compensating</h4>
+<p class="noindent">A <em>compensating control</em> is one that is used to meet a requirement when there is no control available to directly address the threat. Fire suppression systems do not prevent fire damage, but if properly employed, they can mitigate or limit the level of damage from fire.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/exam.jpg"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The previous five types of controls tend to be exclusive of each other—they describe the point of interaction of the control with the attacker’s tools, techniques, and processes.</p>
+</div>
+<h4 class="h4" id="lev1sec780">Physical</h4>
+<p class="noindent">A <em>physical control</em> is one that prevents specific physical actions from occurring, such as a mantrap prevents tailgating. Physical controls prevent specific human interaction with a system and are primarily designed to prevent accidental operation of something. Physical controls act before an event, preventing it from actually occurring. The use of covers over critical buttons is one example, as is a big red “STOP” button, positioned so it is easily reachable. The former stops inadvertent activation, while the latter facilitates easy activation in an emergency. For further information, <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch15.xhtml#ch15">Chapter 15</a>, “Physical Security,” has a section devoted to physical security controls.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/exam.jpg"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Physical controls are separate from the previous descriptors and can be used independently of them. It is possible to have a control that is a technical, physical, and preventative control (for example, a door lock).</p>
+</div>
+<h3 class="h3" id="lev308"><span id="page_575" epub:type="pagebreak"></span>Chapter Review</h3>
+<p class="noindent">In this chapter, you became acquainted with the different categories and types of security controls. Security controls are divided into three categories: managerial, operational, and technical. Security controls can also be categorized by the type of control. The different types of controls covered in the chapter are preventative, detective, corrective, deterrent, compensating, and physical.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57" data-mfp-src="/library/view/comptia-security-all-in-one/9781260464016/exam.jpg"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Look for the word <em>category</em> or <em>type</em> in the question. Categories are managerial, operational, and technical. Types are preventative, detective, corrective, deterrent, compensating, and physical.</p>
+</div>
+<h4 class="h4" id="lev1sec781">Questions</h4>
+<p class="noindent">To help you prepare further for the CompTIA Security+ exam, and to test your level of preparedness, answer the following questions and then check your answers against the correct answers at the end of the chapter.</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans1" id="r_ch31ans1" class="totri-footnote">1</a>.</strong>&nbsp;&nbsp;&nbsp;Which type of security control is used after the event, in an effort to minimize the extent of damage?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Deterrent</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Corrective</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Preventative</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Detective</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans2" id="r_ch31ans2" class="totri-footnote">2</a>.</strong>&nbsp;&nbsp;&nbsp;Which type of security control is used to meet a requirement when the requirement cannot be directly met?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Preventative</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Physical</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Deterrent</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Compensating</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans3" id="r_ch31ans3" class="totri-footnote">3</a>.</strong>&nbsp;&nbsp;&nbsp;The use of a penetration test to determine vulnerabilities is an example of what category of control?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Operational</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;External</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Managerial</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans4" id="r_ch31ans4" class="totri-footnote">4</a>.</strong>&nbsp;&nbsp;&nbsp;<span id="page_576" epub:type="pagebreak"></span>The use of combination locks as a security control procedure to limit physical security risk is an example of what category of control?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Physical</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Operational</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Corrective</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans5" id="r_ch31ans5" class="totri-footnote">5</a>.</strong>&nbsp;&nbsp;&nbsp;A mantrap is an example of which type security control? (Choose all that apply.)</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Physical</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Corrective</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Administrative</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Preventative</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans6" id="r_ch31ans6" class="totri-footnote">6</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is <em>not</em> a category of security controls?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;People</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Managerial</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Operational</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans7" id="r_ch31ans7" class="totri-footnote">7</a>.</strong>&nbsp;&nbsp;&nbsp;Which category of control is most likely to be automated?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Corrective</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Operational</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Compensating</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans8" id="r_ch31ans8" class="totri-footnote">8</a>.</strong>&nbsp;&nbsp;&nbsp;There is no direct way to detect and respond to a specific threat. What is the best control type to employ for this case?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Corrective</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Preventative</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Compensating</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans9" id="r_ch31ans9" class="totri-footnote">9</a>.</strong>&nbsp;&nbsp;&nbsp;An intrusion detection system is an example of what control type?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Detective</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Compensating</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Operational</p>
+<p class="ques1"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#ch31ans10" id="r_ch31ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;<span id="page_577" epub:type="pagebreak"></span>Which of the following is the fastest category of control when responding to a known threat?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Operational</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Technical</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Administrative</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Managerial</p>
+<h4 class="h4" id="lev1sec782">Answers</h4>
+<p class="ques"><strong><a id="ch31ans1" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans1" class="totri-footnote">1</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Corrective controls are used after the event, in an effort to minimize the extent of damage. A deterrent control acts to influence the attacker by reducing the likelihood of success. A preventative control is one that prevents specific actions from occurring. A detective control is one that facilitates the detection of a security breach.</p>
+<p class="ques"><strong><a id="ch31ans2" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans2" class="totri-footnote">2</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> A compensating control is one that is used to meet a requirement when the requirement cannot be directly met. Fire suppression systems do not prevent fire damage, but if properly employed, they can mitigate or limit the level of damage from fire. A preventative control is one that prevents specific actions from occurring. A physical control is one that prevents specific physical actions from occurring, such as a mantrap prevents tailgating. A deterrent control acts to influence the attacker by reducing the likelihood of success.</p>
+<p class="ques"><strong><a id="ch31ans3" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans3" class="totri-footnote">3</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> A penetration test is a form of risk assessment and thus is a managerial action, as it advises management of the current risk posture associated with a system.</p>
+<p class="ques"><strong><a id="ch31ans4" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans4" class="totri-footnote">4</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> An operational control is a policy or procedure used to limit security risk. The key word in the question is <em>category.</em></p>
+<p class="ques"><strong><a id="ch31ans5" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans5" class="totri-footnote">5</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A</strong> and <strong>D.</strong> It is possible for a specific security control to fall into more than one type. Because a mantrap is a physical barrier that prevents tailgating, it is both a physical control and a preventative control. Corrective controls are used after the event, in an effort to minimize the extent of damage. An administrative control is simply a distractor.</p>
+<p class="ques"><strong><a id="ch31ans6" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans6" class="totri-footnote">6</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> People is not a defined category of security control. Security controls that function through people’s actions are called operational controls.</p>
+<p class="ques"><strong><a id="ch31ans7" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans7" class="totri-footnote">7</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Technical controls are the most likely to be automated, as they are machine based.</p>
+<p class="ques"><strong><a id="ch31ans8" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans8" class="totri-footnote">8</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> Compensating controls are used when there is no direct way to address a risk.</p>
+<p class="ques"><strong><a id="ch31ans9" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans9" class="totri-footnote">9</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> The key word in the question is <em>type,</em> making detective the correct answer. If the question asked for the category, the correct answer would be technical.</p>
+<p class="ques1"><strong><a id="ch31ans10" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#r_ch31ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Technical controls can be automated and can thus be the fastest to respond to an incident.<span id="page_578" epub:type="pagebreak"></span></p>
+</section>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-0" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+
+		<li class="copy"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#">Copy</a></li>
+
+		<li class="add-highlight"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#">Add Highlight</a></li>
+		<li class="add-note"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#">
+			Add Note
+		</a></li>
+
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+
+
+
+    <a href="Chapter 30 Digital Forensics.html" class="prev nav-link">
+
+      <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+      <span class="visuallyhidden">Previous Chapter</span>
+      <div class="pagination-title t-prev-title">Chapter 30 Digital Forensics</div>
+    </a>
+
+
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+
+
+
+        <a href="Chapter 32 Regulations, Standards, and Frameworks.html" class="next nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 32 Regulations, Standards, and Frameworks</div>
+        </a>
+
+
+  </div>
+
+
+
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+
+
+          ""
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 69px;">
+  <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+
+
+
+
+    >
+
+
+
+  </ul>
+
+
+
+
+     /
+
+
+
+
+
+</footer>
+
+
+
+    <script src="./public/saved_resource" charset="utf-8"></script>
+    <script src="./public/saved_resource(1)" charset="utf-8"></script>
+
+
+<div class="font-flyout" style="top: 151.009px; left: 1772px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml#">Reset</a>
+</div>
+</div><div class="annotator-notice">Sorry we could not read the annotations from the store</div></body></html>

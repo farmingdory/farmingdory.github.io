@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: 127.0.0.1/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://127.0.0.1" type="image/x-icon"><link href="./public/css" rel="stylesheet" type="text/css"><title>Chapter 35 Privacy</title><link rel="stylesheet" href="./public/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./public/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./public/font-awesome.min.css"><style type="text/css" title="ibis-book">@page{margin:1.5em}#sbo-rt-content div{margin:0 .5em 0 .5em}#sbo-rt-content svg{height:98%;width:100%}#sbo-rt-content img{max-height:100%;max-width:100%}#sbo-rt-content a{text-decoration:none}#sbo-rt-content figure img{height:99vh}#sbo-rt-content figure{padding:0;margin:0}#sbo-rt-content .black{background-color:#231F20;color:#FFF;padding:.2em 3em .2em 3em}#sbo-rt-content .bullo{margin-top:.1em;margin-bottom:.1em;margin-left:2.1em;text-indent:-1.1em;text-align:left}#sbo-rt-content .hr-f{margin-top:.5em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .fimage{margin-top:1.5em;margin-bottom:.1em;text-align:center}#sbo-rt-content .figcap{margin-top:.1em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .timage{margin-top:1.5em;margin-bottom:.1em;text-align:left}#sbo-rt-content .tabcap{margin-top:.3em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .inline{vertical-align:middle}#sbo-rt-content .hrc{margin-top:3em;margin-bottom:2.5em;border-top:double .3em;border-bottom:double .3em;padding-top:.3em;padding-bottom:.5em;padding-left:.5em}#sbo-rt-content .note{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .notei{margin-top:.5em;margin-bottom:.5em;text-indent:.01em}#sbo-rt-content .size{color:#C6C8CA;font-size:400%;vertical-align:middle}#sbo-rt-content .sidebarn{margin-top:1em;margin-bottom:1em;border-top:solid .1em;text-indent:.01em}#sbo-rt-content .noindentb{margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .noindent-top{margin-top:2em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .indent{margin-top:.1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .indentb{margin-top:.1em;margin-bottom:1em;text-indent:1.2em}#sbo-rt-content .noindent{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .bull{margin-top:.3em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bull1{margin-top:.3em;margin-bottom:.1em;margin-left:4em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullt{margin-top:1em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullb{margin-top:.1em;margin-bottom:1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .indentt{margin-top:1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .h3{font-size:1.6em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h4{font-size:1.4em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h5{font-size:1.2em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .stitle{font-size:1.2em;margin-top:.5em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .noindentt{margin-top:1.2em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .alpha{margin-top:.1em;margin-bottom:.3em;margin-left:3.9em;text-indent:-1.75em;text-align:left}#sbo-rt-content .cover-image{margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .ded{margin-top:3em;margin-bottom:.3em;text-align:right}#sbo-rt-content .h2{font-size:120%;font-weight:normal;margin-top:-2em;margin-bottom:.5em;text-align:right}#sbo-rt-content .h2chap{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .h2chap1{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .copyright{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .ques{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-1.5em;text-align:left}#sbo-rt-content .ques1{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-2em;text-align:left}#sbo-rt-content .hr-1{margin-top:3em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .h2r1{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:left;text-indent:.01em}#sbo-rt-content .h2r{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:right;text-indent:.01em}#sbo-rt-content .gray{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .toc{margin-top:.7em;margin-bottom:.1em;margin-left:5.5em;text-indent:-5.5em;text-align:left}#sbo-rt-content .toc1{margin-top:.7em;margin-bottom:.1em;margin-left:5.8em;text-indent:-5.8em;text-align:left}#sbo-rt-content .toc-b1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-f{margin-top:.1em;margin-bottom:.1em;margin-left:5.75em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-lev1{margin-top:.1em;margin-bottom:.1em;margin-left:6.65em;text-indent:-1.15em;text-align:left}#sbo-rt-content .toc-lev2{margin-top:.1em;margin-bottom:.1em;margin-left:9.25em;text-indent:-1.15em;text-align:left}#sbo-rt-content .noindent1{margin-top:1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .center{margin-top:1em;margin-bottom:1em;text-align:center}#sbo-rt-content .right{margin-top:1em;margin-bottom:1em;text-align:right}#sbo-rt-content .indexhead{font-size:1.3em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indexmain{margin-top:.1em;margin-bottom:.1em;margin-left:.8em;text-indent:-.8em;text-align:left}#sbo-rt-content .indexsub{margin-top:.1em;margin-bottom:.1em;margin-left:1.9em;text-indent:-.8em;text-align:left}#sbo-rt-content .list{margin-top:.5em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listt{margin-top:1em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listb{margin-top:.5em;margin-bottom:1em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listh{margin-top:.3em;margin-bottom:.3em;margin-left:2.7em;text-indent:.1em;text-align:left}#sbo-rt-content .border1{margin-top:3em;margin-bottom:3em;border-top:double black .3em}#sbo-rt-content .toc-p3{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.65em;text-align:left}#sbo-rt-content .toc-p2{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.3em;text-align:left}#sbo-rt-content .toc-p5{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.15em;text-align:left}#sbo-rt-content .toc-p6{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.5em;text-align:left}#sbo-rt-content .toc-p1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-3.9em;text-align:left}#sbo-rt-content .toc-p4{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.6em;text-align:left}#sbo-rt-content .f1{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .sidebar{margin-top:1em;margin-bottom:1em;border:solid #000 .1em;background-color:#E7E7E8;padding:.5em;text-indent:.01em}#sbo-rt-content .h2pn{font-size:220%;font-weight:normal;margin-top:1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .h2pt{font-size:240%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .f-part{background-color:#000;color:#FFF;padding:.2em 1em .2em 1em}#sbo-rt-content .side-part{margin-top:0;margin-bottom:.2em;border:solid #000 .1em;background-color:#BDBEC1;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .side-part1{margin-top:.2em;margin-bottom:1em;border:solid #000 .1em;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .ch-part{margin-top:.2em;margin-bottom:.1em;margin-left:6.4em;text-indent:-6.4em;text-align:left}#sbo-rt-content .ch-app{margin-top:.2em;margin-bottom:.1em;margin-left:6.7em;text-indent:-6.7em;text-align:left}#sbo-rt-content .s-hang{margin-top:.5em;margin-bottom:.5em;margin-left:2em;text-indent:.1em;text-align:left}#sbo-rt-content .list-q{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:-1em;text-align:left}#sbo-rt-content .list-qh{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:.1em;text-align:left}#sbo-rt-content .gloss{margin-top:.7em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-h{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-t{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indent1{margin-top:.5em;margin-bottom:.5em;text-indent:1.2em}</style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+
+          "chapter": "/api/v1/book/9781260464016/chapter/ch31.xhtml",
+          "book_id": "9781260464016",
+          "chapter_uri": "ch31.xhtml",
+          "position": 0.0,
+          "user_uuid": "4c928969-b159-43f7-8afb-4290c3ef28c4",
+          "next_chapter_uri": "/library/view/comptia-security-all-in-one/9781260464016/ch32.xhtml"
+
+      },
+      title: "CompTIA Security+ All\u002Din\u002DOne Exam Guide, Sixth Edition (Exam SY0\u002D601)), 6th Edition",
+      author_list: "Wm. Arthur Conklin, Greg White, Dwayne Williams, Roger L. Davis, Chuck Cothren",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><script src="./public/modernizr.8e35451ddb64.js.download"></script><script>
+
+
+
+
+
+          window.PUBLIC_ANNOTATIONS = true;
+
+
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+
+
+
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "127.0.0.1/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml"><meta name="description" content=" CHAPTER 31 Security Controls In this chapter, you will •   Learn about the three categories of security controls •   Explore different types of security controls Security controls are the tools ... "><meta property="og:title" content="Chapter 31 Security Controls"><meta itemprop="isPartOf" content="/library/view/comptia-security-all-in-one/9781260464016/"><meta itemprop="name" content="Chapter 31 Security Controls"><meta property="og:url" itemprop="url" content="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="127.0.0.1/library/cover/9781260464016/"><meta property="og:description" itemprop="description" content=" CHAPTER 31 Security Controls In this chapter, you will •   Learn about the three categories of security controls •   Explore different types of security controls Security controls are the tools ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="McGraw-Hill"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9781260464016"><meta property="og:book:author" itemprop="author" content="Wm. Arthur Conklin"><meta property="og:book:author" itemprop="author" content="Greg White"><meta property="og:book:author" itemprop="author" content="Dwayne Williams"><meta property="og:book:author" itemprop="author" content="Roger L. Davis"><meta property="og:book:author" itemprop="author" content="Chuck Cothren"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@127.0.0.1Media"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+
+      window.medalliaVsgUserIdentifier = '4c928969-b159-43f7-8afb-4290c3ef28c4';
+      dataLayer.push({userIdentifier: '4c928969-b159-43f7-8afb-4290c3ef28c4'});
+      dataLayer.push({loggedIn: 'yes'});
+
+
+        window.medalliaVsgAccountIdentifier = '3abb358d-b902-4511-9be4-110be462791b';
+
+
+        window.medalliaVsgIsIndividual = true;
+
+
+          dataLayer.push({learningAccountType: 'free trial'});
+
+
+
+
+
+
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//127.0.0.1/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./public/vendor.0eac897f11ed.js.download"></script><script defer="" src="./public/reader.c745ea9296ac.js.download"></script><script async="" src="./public/MathJax.js.download"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+
+  <noscript>
+    <iframe src="./public/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+
+
+
+
+
+<a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#container" class="skip">Skip to content</a>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+
+          <div class="nav-container clearfix">
+
+
+
+
+
+          </div>
+
+
+
+  <div class="js-toc">
+
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+
+      CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition
+
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+
+      </ul>
+    </div>
+
+
+
+
+
+    <section role="document"><script src="./public/48743.js.download"></script>
+<script>
+  var userId = "4c928969-b159-43f7-8afb-4290c3ef28c4";
+
+  var userObject = {
+    firstName: "Wane",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-04-28",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+
+
+
+        <a href="Chapter 34 Risk Management.html" class="prev nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 34 Risk Management</div>
+        </a>
+
+
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+
+
+
+
+  </div>
+
+
+
+<div id="sbo-rt-content"><section epub:type="chapter">
+<div class="hrc">
+<h2 class="h2" id="ch35"><span id="page_633" epub:type="pagebreak"></span><strong><span class="black"><small>CHAPTER</small> <span class="size">35</span></span></strong></h2>
+<h2 class="h2chap">Privacy</h2>
+<p class="noindent">In this chapter, you will</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Explore privacy and sensitive data concepts</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Relate privacy efforts to security efforts</p>
+</div>
+<p class="noindent-top">Data security and privacy practices are interrelated because of the basic premise that to have privacy, you must have security. Privacy is defined as the control you exert over your data, and security is a key element of control. Data privacy in an organization is the prevention of unauthorized use of data held by the organization. One method of ensuring privacy is the through the use of privacy-enhancing techniques. Elements that enable data privacy efforts include properly labeling and handling sensitive data, assigning responsibility for protecting data, and securely storing retained data, all of which are covered in this chapter.</p>
+<p class="noindentt"><strong>Certification Objective</strong>&nbsp;&nbsp;This chapter covers CompTIA Security+ exam objective 5.5: Explain privacy and sensitive data concepts in relation to security.</p>
+<h3 class="h3" id="lev326">Organizational Consequences of Privacy Breaches</h3>
+<p class="noindent">When a company loses data that it has stored on its network, the term used is <em>data breach.</em> Data breaches have become an almost daily news item, and the result is that people are becoming desensitized to their occurrence. Data breaches act as a means of notification that security efforts have failed.</p>
+<p class="indent">Verizon publishes an annual data breach report that examines the types and causes of data breaches over the previous calendar year. These results are presented in multiple forms, by attribution to attack type, attacker type, industry, geographic region, company size, and more, providing a significant level of detailed analysis into the incidents. This report is a framework of what actually happened to real companies with real security programs, or in spite of their security programs. It is an extremely valuable collection of data that can provide guidance with respect to current threat environments and results of actual attacks and errors.</p>
+<h4 class="h4" id="lev1sec871"><span id="page_634" epub:type="pagebreak"></span>Reputation Damage</h4>
+<p class="noindent"><em>Reputation damage</em> is a form of damage against a firm’s brand. Customers exert a choice when they engage in a commerce transaction, and businesses spend a lot of time and resources on building brands that facilitate the purchase decision towards their firm. Having to notify all customers of a breach/disclosure event is truly damaging to a firm’s brands. An online computer vendor, Egghead, suffered a breach/disclosure event near the holiday shopping season, and it saw sales dry up in that critical period, resulting in bankruptcy shortly thereafter.</p>
+<p class="indent">Target Corporation continues to be the example of record for costly breaches, with a breach in 2013 that cost hundreds of millions in dollars and cost multiple senior executives their jobs. Facebook joined this club with their Cambridge Analytica scandal of 2018, where they failed to protect the personal information of their users, and have faced legal and regulatory oversight inquiries, as well as triggering EU data protection directive responses.</p>
+<h4 class="h4" id="lev1sec872">Identity Theft</h4>
+<p class="noindent"><em>Identity theft</em> occurs when a criminal, using stolen information, assumes the identity of another individual to obtain and use credit in the victim’s name. If the data disclosure results in loss of customer personal information, regulations may hold a firm responsible for sharing in the risk of identity theft for the victims. The usual response on the part of a company is to purchase an identity theft protection service policy for the affected individuals of a breach. This can cost over $50 per person affected, making a breach of a million records a costly issue.</p>
+<h4 class="h4" id="lev1sec873">Fines</h4>
+<p class="noindent">Regulatory agencies, such as the Federal Trade Commission (FTC), have the ability to levy fines when regulations are not followed. These fines are not minor. In the EU, General Data Protection Regulation (GDPR) fines can be 4% of a firm’s revenue, and fines in the hundreds of millions of euros have been levied. In the U.S., Equifax was fined nearly $700 million to be paid in restitution to users affected by their data breach.</p>
+<h4 class="h4" id="lev1sec874">IP Theft</h4>
+<p class="noindent">One of the primary targets of an attacker on a system is intellectual property. <em>IP theft</em> is a major organizational consequence when it occurs, because when it occurs, the damage may not become evident until the material is used by a competitor. In organizations with significant levels of IP, it is one of the most important items to be protected against loss. Years of investment, and more years of potential sales and profits, can vanish quickly if IP is stolen and used actively against a firm.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Be aware that organizational consequences of data privacy breaches can result in reputational damage, identify theft, fines, or IP theft.</p>
+</div>
+<h3 class="h3" id="lev327"><span id="page_635" epub:type="pagebreak"></span>Notifications of Breaches</h3>
+<p class="noindent">In an ideal world, there would never be any data breaches, so there would never be a need for processes in the event of data breaches. But it is not an ideal world, and breaches do happen. And even if one hasn’t happened to your firm yet, virtually every government jurisdiction has enacted a series of laws and regulations covering a firm’s responsibilities in the event of a breach. Understanding and being prepared to issue <em>notifications of breaches</em> in accordance with these laws and directives is important, because once a breach occurs, the timelines to do the correct things are short and the penalties can be significant.</p>
+<p class="indent">Breach notification laws and regulations typically have specific definitions of what comprises a breach, what entities are covered, what the specific notification requirements are, and key elements such as delays at the request of law enforcement agencies. Because there are so many differing rules and regulations, the best practice is typically to follow the most stringent regulations, such as California privacy regulations in the U.S. and the GDPR in the EU, to ensure complete coverage.</p>
+<h4 class="h4" id="lev1sec875">Escalation</h4>
+<p class="noindent">When a data breach occurs in the enterprise, it is important to have a process for <em>escalating</em> the incident up through your organization. Most data breaches are discovered as part of some incident response process, and the breach needs to have its own response separate from the initiating incident. Establishing a breach escalation policy, with the accompanying procedures, will ensure proper levels of management attention to this critical process. Failure to escalate a breach to the appropriate authorities can result in outside legal and financial risk, and thus management needs to be made aware of the incident and the progress towards the firm’s responsibilities.</p>
+<h4 class="h4" id="lev1sec876">Public Notifications and Disclosures</h4>
+<p class="noindent">Many laws and regulations covering information breaches require public disclosure of computer security breaches in which unencrypted confidential information of any resident may have been compromised. These laws apply to any person or entity that does business in the regulated jurisdiction, even if located out of state, and that owns or licenses computerized data that includes personal information. This was a requirement of California SB 1386, which was the model law used by many other government entities. While there are no universal laws or regulations in this area, most have some form of public disclosure requirement.</p>
+<h3 class="h3" id="lev328">Data Types</h3>
+<p class="noindent">Data exists in many forms and is stored in systems that are used as part of business processes. Data management is a complex set of tasks that serve the purpose of protecting the data from a wide range of risks, including loss. Managing the large diversity of data types, elements, and their own particular needs from a security perspective is easier to perform if data is grouped into a series of <em>data types</em>. These types can cover basic protection needs, or the sources of the data, and thus are not a taxonomy but rather a set of <span id="page_636" epub:type="pagebreak"></span>management labels used to alert users of specific requirements associated with the data. Two different sets of data types will be discussed in the following sections: a set of labels identifying processing concerns/restrictions and a labeling of elements as to whether they can be traced to specific individuals. Each of these labels assists the business in the proper protection and processing of data in its lifecycle.</p>
+<h4 class="h4" id="lev1sec877">Classifications</h4>
+<p class="noindent">Effective data <em>classification</em> programs include measures to ensure data sensitivity labeling and handling so that personnel know whether data is sensitive and understand the levels of protection required. When the data is inside an information-processing system, the protections should be designed into the system. But when the data leaves this cocoon of protection, whether by printing, downloading, or copying, it becomes necessary to ensure continued protection by other means. This is where data sensitivity labeling assists users in fulfilling their responsibilities. Training to ensure that labeling occurs and that it is used and followed is important for users whose roles can be impacted by this material.</p>
+<p class="indent">Training plays an important role in ensuring proper data handling and disposal. Personnel are intimately involved in several specific tasks associated with data handling and data destruction/disposal and, if properly trained, can act as a security control. Untrained or inadequately trained personnel will not be a productive security control and, in fact, can be a source of potential compromise.</p>
+<p class="indent">A key component of IT security is the protection of the information processed and stored on the computer systems and network. Organizations deal with many different types of information, and they need to recognize that not all information is of equal importance or sensitivity. This requires classification of information into various categories, each with its own requirements for its handling. Factors that affect the classification of specific information include its value to the organization (what will be the impact to the organization if it loses this information?), its age, and laws or regulations that govern its protection. The most widely known system of classification of information is that implemented by the U.S. government (including the military), which classifies information into categories such as Confidential, Secret, and Top Secret. Businesses have similar desires to protect information and often use categories such as Confidential, Private, Public, Proprietary, PII, and PHI. Each policy for the classification of information should describe how it should be protected, who may have access to it, who has the authority to release it and how, and how it should be destroyed. All employees of the organization should be trained in the procedures for handling the information that they are authorized to access.</p>
+<h5 class="h5">Public</h5>
+<p class="noindent"><em>Public</em> data is data that can be seen by the public and has no needed protections with respect to confidentiality. It is important to protect the integrity of public data, lest one communicate incorrect data as being true. Public-facing web pages, press releases, corporate statements—these are examples of public data that still needs protection, but specifically with respect to integrity.</p>
+<h5 class="h5"><span id="page_637" epub:type="pagebreak"></span>Private</h5>
+<p class="noindent">Data is labeled <em>private</em> if its disclosure to an unauthorized party would potentially cause harm or disruption to the organization. Passwords could be considered private. The term <em>private data</em> is usually associated with personal data belonging to a person and less often with corporate entities. The level of damage typically associated with private data is lower than confidential but still significant to the organization.</p>
+<h5 class="h5">Sensitive</h5>
+<p class="noindent"><em>Sensitive</em> data is a generalized term that typically represents data classified as restricted from general or public release. This term is often used interchangeably with confidential data.</p>
+<h5 class="h5">Confidential</h5>
+<p class="noindent">Data is labeled <em>confidential</em> if its disclosure to an unauthorized party would potentially cause serious harm to the organization. This data should be defined by policy, and that policy should include details regarding who has the authority to release the data. Common examples of confidential data include pricing and cost data, customer data, internal business plans, and so on, as the release of these could result in significant loss to the firm.</p>
+<h5 class="h5">Critical</h5>
+<p class="noindent">Data is labeled <em>critical</em> if its disclosure to an unauthorized party would potentially cause extreme harm to the organization. This data should be defined by policy, and that policy should include details regarding who has the authority to release the data. Common examples of critical data include trade secrets, proprietary software code, and new product designs, as the release of these could result in significant loss to the firm. The level of damage from a critical data release would be extreme, material to the business, and could result in the highest levels of loss.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The difference between critical and confidential data lies in the level of potential damage should the information be released.</p>
+</div>
+<h5 class="h5">Proprietary</h5>
+<p class="noindent"><em>Proprietary</em> data is data that is restricted to a company because of potential competitive use. If a company has data that could be used by a competitor for any particular reason (say, internal costs and pricing data), then it needs to be labeled and handled in a manner to protect it from release to competitors. Proprietary data may be shared with a third party that is not a competitor, but in labeling the data “proprietary,” you alert the party you have shared the data with that it is not to be shared further.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Learn the differences between the data sensitivity labels so you can compare and contrast the terms <em>confidential, private, public,</em> and <em>proprietary.</em> The differences are subtle but will be important to determine the correct answer.</p>
+</div>
+<h4 class="h4" id="lev1sec878"><span id="page_638" epub:type="pagebreak"></span>Personally Identifiable Information (PII)</h4>
+<p class="noindent">When information is about a person, failure to protect it can have specific consequences. Business secrets are protected through trade secret laws, government information is protected through laws concerning national security, and privacy laws protect information associated with people. A set of elements that can lead to the specific identity of a person is referred to as <em>personally identifiable information (PII)</em>. By definition, PII can be used to identify a specific individual, even if an entire set is not disclosed.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/caution.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>CAUTION</strong>&nbsp;&nbsp;&nbsp;As little information as the ZIP code, gender, and date of birth can resolve to a single person.</p>
+</div>
+<p class="indent">PII is an essential element of many online transactions, but it can also be misused if disclosed to unauthorized parties. For this reason, it should be protected at all times, by all parties that possess it. And when PII is no longer needed, it should be destroyed in accordance with the firm’s data destruction policy in a complete, nonreversible manner.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;PII refers to information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other personal or identifying information that is linked or linkable to a specific individual.</p>
+</div>
+<h5 class="h5">Health Information</h5>
+<p class="noindentb">The Health Insurance Portability and Accountability Act (HIPAA) regulations define <em>protected health information (PHI)</em> as “any information, whether oral or recorded in any form or medium” that</p>
+<p class="s-hang"><em>“[i]s created or received by a health care provider, health plan, public health authority, employer, life insurer, school or university, or health care clearinghouse”</em> and</p>
+<p class="s-hang"><em>“[r]elates to the past, present, or future physical or mental health or condition of an individual; the provision of health care to an individual; or the past, present, or future payment for the provision of health care to an individual.”</em></p>
+<p class="indentt">HIPAA’s language is built upon the concepts of PHI and Notice of Privacy Practices (NPP). HIPAA describes “covered entities,” including medical facilities, billing facilities, and insurance (third-party payer) facilities. Patients are to have access to their PHI and should have an expectation of appropriate privacy and security associated with medical records. HIPAA mandates a series of administrative, technical, and physical security safeguards for information, including elements such as staff training and awareness as well as specific levels of safeguards for PHI when in use, stored, or in transit between facilities.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Know the difference between PII and PHI, and don’t jump to the wrong one on the exam.</p>
+</div>
+<h5 class="h5"><span id="page_639" epub:type="pagebreak"></span>Financial Information</h5>
+<p class="noindent"><em>Financial information</em> is a major source of PII. Items such as bank accounts, loans, and payment amounts can all be leveraged against knowledge-based authentication systems to achieve access to even more information, such as credit reports. Financial information is one of the most sought-after types of PII because it is the easiest type of information to monetize.</p>
+<h5 class="h5">Government Data</h5>
+<p class="noindent">The U.S. government as well as governments worldwide collect information as part of their operations. Government regulations concerning the collection, storage, and use of government data exist to assist the government agencies in the proper management of data during its lifecycle in government systems. <em>Government data</em> can include PII about people, and this information needs protection in accordance with current rules and regulations.</p>
+<h5 class="h5">Customer Data</h5>
+<p class="noindent"><em>Customer data</em> is the primary source of PII in an enterprise’s systems. This information was collected in response to a specific business need, and it requires appropriate levels of protection to prevent disclosure or release.</p>
+<h3 class="h3" id="lev329">Privacy-Enhancing Technologies</h3>
+<p class="noindent">One principal connection between information security and privacy is that without information security, you cannot have privacy. If privacy is defined as the ability to control information about oneself, then the aspects of confidentiality, integrity, and availability from information security become critical elements of privacy. Just as technology has enabled many privacy-impacting issues, technology also offers the means in many cases to protect privacy. An application or tool that assists in such protection is called a privacy-enhancing technology (PET).</p>
+<p class="indent">Encryption is at the top of the list of PETs for protecting privacy and anonymity. One of the driving factors behind Phil Zimmerman’s invention of PGP was the desire to enable people living in repressive cultures to communicate safely and freely. Encryption can keep secrets secret and is a prime choice for protecting information at any stage in its lifecycle. The development of Tor routing to permit anonymous communications, coupled with high-assurance, low-cost cryptography, has made many web interactions securable and safe from eavesdropping.</p>
+<p class="indent">Other PETs include small application programs called cookie cutters that are designed to prevent the transfer of cookies between browsers and web servers. Some cookie cutters block all cookies, while others can be configured to selectively block certain cookies. Some cookie cutters also block the sending of HTTP headers that might reveal personal information but might not be necessary to access a website, as well as block banner ads, pop-up windows, animated graphics, or other unwanted web elements. Some related PET tools are designed specifically to look for invisible images that set cookies (called web beacons or web bugs). Other PETs are available to PC users, including encryption programs that allow users to encrypt and protect their own data, even on USB keys.</p>
+<h4 class="h4" id="lev1sec879"><span id="page_640" epub:type="pagebreak"></span>Data Minimization</h4>
+<p class="noindent"><em>Data minimization</em> is one of the most powerful privacy-enhancing technologies. In a nutshell, it involves not keeping what you don’t need. Limiting the collection of personal information to that which is directly relevant and necessary to accomplish a specified purpose still allows the transactions to be accomplished, but it also reduces risk from future breaches and disclosures by not keeping “excess” data. In the EU, privacy rules are built around the idea that individuals own the rights to the reuse of their data, and unless they grant it to a company, the right to store and reuse the data beyond the immediate transaction is prohibited. This serves several purposes, but one important outcome is that when a breach/disclosure event occurs, the reach of the PII loss is limited.</p>
+<p class="indent">While you may need to have a reasonable amount of PII to process and ship an order, once that process is concluded, do you need the data? There may be a need for a reasonable period for returns, warranty claims, and so on, but once that period has passed, destroying unneeded PII removes it from the chance of disclosure.</p>
+<h4 class="h4" id="lev1sec880">Data Masking</h4>
+<p class="noindent"><em>Data masking</em> involves the hiding of data by substituting altered values. A mirror version of a database is created, and data modification techniques such as character shuffling, encryption, and word or character substitution are applied to change the data. Another form is to physically redact elements by substituting a symbol such as “*” or “x”. This is seen on credit card receipts where the majority of the digits are removed in this fashion. Data masking makes reverse engineering or detection impossible.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Data masking hides personal or sensitive data but does not render it unusable.</p>
+</div>
+<h4 class="h4" id="lev1sec881">Tokenization</h4>
+<p class="noindent"><em>Tokenization</em> is the use of a random value to take the place of a data element that has traceable meaning. A good example of this is when you have a credit card approval, you do not need to keep a record of the card number, the cardholder’s name, or any of the sensitive data concerning the card verification code (CVC) because the transaction agent returns an approval code, which is a unique token to that transaction. You can store this approval code, the token, in your system, and if there comes a time you need to reference the original transaction, this token provides you with complete traceability to it and yet, if disclosed to an outside party, reveals nothing.</p>
+<p class="indent">Tokens are used all the time in data transmission systems involving commerce because they protect the sensitive information from being reused or shared, yet they maintain the desired nonrepudiation characteristics of the event. Tokenization is not an encryption step because encrypted data can be decrypted. By substituting a nonrelated random value, tokenization breaks the ability for any outside entity to “reverse” the action because there is no connection.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><span id="page_641" epub:type="pagebreak"></span><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Tokenization assigns a random value that can be reversed or traced back to the original data.</p>
+</div>
+<h4 class="h4" id="lev1sec882">Anonymization</h4>
+<p class="noindent"><em>Data anonymization</em> is the process of protecting private or sensitive information by removing identifiers that connect the stored data to an individual. Separating the PII elements such as names, Social Security numbers, and addresses from the remaining data through a data anonymization process retains the usefulness of the data but keeps the connection to the source anonymous. Data anonymization is easier said than done, because data exists in many places in many forms. This permits data aggregators to collect multiple instances and then, through algorithms and pattern matching, de-anonymize the data through multiple cross-references against multiple sources.</p>
+<h4 class="h4" id="lev1sec883">Pseudo-Anonymization</h4>
+<p class="noindent"><em>Pseudo-anonymization</em> is a de-identification method that replaces private identifiers with fake identifiers or pseudonyms (for example, replacing the value of the name identifier “Mark Sands” with “John Doe”). Not all uniquely identifying fields are changed because some, such as date of birth, may need to be preserved to maintain statistical accuracy. Noise can be added to some fields to remove direct connections, but maintaining the approximate value; for example, randomly adding or subtracting three days to/from the actual date of birth preserves the age but de-identifies to the original record. Pseudonymization preserves statistical accuracy and data integrity, allowing the modified data to be used for training, development, testing, and analytics while protecting data privacy.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Be sure you can identify the various privacy-enhancing technologies. Know what they do and how they are implemented.</p>
+</div>
+<h3 class="h3" id="lev330">Roles and Responsibilities</h3>
+<p class="noindent">Multiple personnel in an organization are associated with the control and administration of data. These <em>data roles</em> include data owners, data controllers, data processors, data custodian/stewards, and users. Each of these roles has responsibilities in the protection and control of the data. The leadership of this effort is under the auspices of the data privacy officer.</p>
+<h4 class="h4" id="lev1sec884">Data Owners</h4>
+<p class="noindent">All data elements in an organization should have defined requirements for security, privacy, retention, and other business functions. It is the responsibility of the designated <em>data owner</em> to define these requirements.</p>
+<h4 class="h4" id="lev1sec885"><span id="page_642" epub:type="pagebreak"></span>Data Controller</h4>
+<p class="noindent">The <em>data controller</em> is the person responsible for managing how and why data is going to be used by the organization. In the era of GDPR and other privacy laws and regulations, this is a critical position because, under GDPR and other privacy laws, the data controller is the position responsible for protecting the privacy and rights of the data’s subject, such as the user of a website. Whether the data is primary data or data from a third party, the data controller remains the point of responsibility for specifying how data is going to be used and processed either internally or externally. There can be multiple data controllers in an organization, with responsibilities over different sets of data.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;In the European Union (EU), General Data Protection Regulation (GDPR) classifies the data controller as the data manager. In other words, the data controller manages the data.</p>
+</div>
+<p class="indent">With respect to data with privacy implications, under most privacy regulations and GDPR, the data controller is responsible for deciding the following:</p>
+<p class="bullt">•&nbsp;&nbsp;&nbsp;What data is collected</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Where and how it is used</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;With whom and how data is shared</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;How long the data is kept and how it is disposed at end of life (EOL)</p>
+<h4 class="h4" id="lev1sec886">Data Processor</h4>
+<p class="noindent">The <em>data processor</em> is the entity that processes data given to it by the data controller. Data processors do not own the data, nor do they control it. Their role is the manipulation of the data as part of business processes. Data processors can be personnel or systems; an example of a system is the use of Google Analytics to manipulate certain elements of data, making them useful for business analysts.</p>
+<p class="indent">With respect to data with privacy implications, under most privacy regulations and GDPR, data processors are responsible for the following:</p>
+<p class="bullt">•&nbsp;&nbsp;&nbsp;Developing and implementing IT processes and systems that manage personal data</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Implementing security measures that would safeguard personal data</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Using tools and strategies to properly handle personal data</p>
+<h4 class="h4" id="lev1sec887">Data Custodian/Steward</h4>
+<p class="noindent">A <em>data custodian</em> or <em>data steward</em> is the role responsible for the day-to-day caretaking of data. The data owner sets the relevant policies, and the steward or custodian ensures they are followed.</p>
+<h4 class="h4" id="lev1sec888"><span id="page_643" epub:type="pagebreak"></span>Data Privacy Officer (DPO)</h4>
+<p class="noindent">The <em>data privacy officer (DPO)</em> is the C-level executive who is responsible for establishing and enforcing data privacy policy and addressing legal and compliance issues. Data minimization initiatives are also the responsibility of the data privacy officer. Storing data that does not have any real business value only increases the odds of disclosure. The data privacy officer is responsible for determining the gap between a company’s privacy practices and the required actions to close the gap to an approved level. This is called a privacy impact analysis.</p>
+<p class="indent">The data privacy officer also plays an important role if information on European customers is involved because the EU has strict data protection (privacy) rules. The privacy officer who is accountable for the protection of consumer data from the EU must ensure compliance with EU regulations.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The data privacy officer is responsible for ensuring legal compliance with data privacy regulations.</p>
+</div>
+<h3 class="h3" id="lev331">Information Lifecycle</h3>
+<p class="noindent">Information has a lifecycle—a beginning, a middle, and, at some point, an end. Understanding the lifecycle of information assets—from the point of collection, use, and storage as well as how the assets are shared, protected, and ultimately destroyed—is important if one is to properly handle the information. Not all information has the same time periods, or even steps, associated with it, so lifecycles are unique to different information sources and elements. The lifecycle forms a foundation upon which information management resides.</p>
+<h3 class="h3" id="lev332">Impact Assessment</h3>
+<p class="noindent">A <em>privacy impact assessment</em> (PIA) is a structured approach to determining the gap between desired privacy performance and actual privacy performance. A PIA is an analysis of how PII is handled through business processes and an assessment of risks to the PII during storage, use, and communication. A PIA provides a means to assess the effectiveness of a process relative to compliance requirements and to identify issues that need to be addressed. A PIA is structured with a series of defined steps to ensure a comprehensive review of privacy provisions.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Organizations that collect, use, store, or process personal information are required to conduct a privacy impact assessment.</p>
+</div>
+<p class="indent"><span id="page_644" epub:type="pagebreak"></span>The following steps comprise a high-level methodology and approach for conducting a PIA:</p>
+<p class="listt"><strong>1.</strong>&nbsp;&nbsp;&nbsp;<em>Establish PIA scope.</em> Determine the departments involved and the appropriate representatives. Determine which applications and business processes need to be assessed. Determine applicable laws and regulations associated with the business and privacy concerns.</p>
+<p class="list"><strong>2.</strong>&nbsp;&nbsp;&nbsp;<em>Identify key stakeholders.</em> Identify all business units that use PII. Examine staff functions such as HR, Legal, IT, Purchasing, and Quality Control.</p>
+<p class="list"><strong>3.</strong>&nbsp;&nbsp;&nbsp;<em>Document all contact with PII:</em></p>
+<p class="bull1">•&nbsp;&nbsp;&nbsp;PII collection, access, use, sharing, and disposal</p>
+<p class="bull1">•&nbsp;&nbsp;&nbsp;Processes and procedures, policies, safeguards, data-flow diagrams, and any other risk assessment data</p>
+<p class="bull1">•&nbsp;&nbsp;&nbsp;Website policies, contracts, HR, and administrative for other PII</p>
+<p class="list"><strong>4.</strong>&nbsp;&nbsp;&nbsp;<em>Review legal and regulatory requirements, including any upstream contracts.</em> The sources are many, but some commonly overlooked issues are agreements with suppliers and customers over information-sharing rights.</p>
+<p class="list"><strong>5.</strong>&nbsp;&nbsp;&nbsp;<em>Document gaps and potential issues between requirements and practices.</em> All gaps and issues should be mapped against where the issue was discovered and the basis (requirement or regulation) that the gap maps to.</p>
+<p class="list"><strong>6.</strong>&nbsp;&nbsp;&nbsp;<em>Review findings with key stakeholders to determine accuracy and clarify any issues.</em> Before the final report is written, any issues or possible miscommunications should be clarified with the appropriate stakeholders to ensure a fair and accurate report.</p>
+<p class="list"><strong>7.</strong>&nbsp;&nbsp;&nbsp;<em>Create a final report for management.</em></p>
+<h3 class="h3" id="lev333">Terms of Agreement</h3>
+<p class="noindent">The legal description of <em>terms of agreement</em> (commonly known as <em>terms and conditions</em>) is a set of items that both parties agree upon before some joint activity. This is used all the time with any external-facing interface, where you have the responding party agree to a published terms of agreement document before granting them access or processing their data elements. A typical terms of agreement document includes the terms, the rules, the guidelines of acceptable behavior, and other useful sections to which users must agree in order to use or access an IT resource, such as website, a mobile app, an order placement page, and so on. Important items in the terms of agreement document include legal terms, governing law, agreement to operating rules, what services are offered and under what business conditions, liabilities, remedies for disagreements (for example, arbitration), and business terms such as the right to cancel, refunds, service level agreements, and so on. This becomes a license that binds the parties to the terms the business wishes to enforce.</p>
+<h3 class="h3" id="lev334"><span id="page_645" epub:type="pagebreak"></span>Privacy Notice</h3>
+<p class="noindent">A <em>privacy notice</em> is an exterior-facing statement that describes how the organization collects, uses, retains, and discloses personal information. Privacy notices are also referred to as a privacy statement or a fair processing statement. Special privacy notices are also mandated by specific privacy laws, and a common example of those is the cookies disclosure statement seen on websites that use cookies. The common elements of a privacy notice include the following:</p>
+<p class="bullt">•&nbsp;&nbsp;&nbsp;When you collect personal information</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Why you collect personal information</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;What information is collected</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;How the information will be protected</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;When the information can or will be shared</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;Who to contact and where questions should be directed concerning the notice</p>
+<p class="bull">•&nbsp;&nbsp;&nbsp;How to opt out or opt in</p>
+<p class="bullb">•&nbsp;&nbsp;&nbsp;An effective date of the document</p>
+<p class="indent">An example of a web cookie notice would be, “We use cookies to deliver our online services. Details of the cookies and other tracking technologies we use and instructions on how to disable them are set out in our Cookies Policy. By using this website, you consent to our use of cookies.”</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;The key concept to note is that a privacy policy is internally focused, telling employees what they may do with personal information, whereas a privacy notice is externally facing, telling customers, regulators, and other stakeholders what the organization does with personal information.</p>
+</div>
+<h3 class="h3" id="lev335">Chapter Review</h3>
+<p class="noindent">This chapter began by explaining privacy and sensitive data concepts in relation to security. The first section opened with an examination of the organizational consequences of privacy breaches, including reputational damage, identity theft, fines, and intellectual property theft. This was followed by a discussion of the notification requirements surrounding breaches, including escalation. This section finished with the topics of public notification and disclosure requirements.</p>
+<p class="indent">The next major topic discussed was data types, which was divided into two subsections: classifications and personally identifiable information (PII). Under data classifications, the topics of public, private, sensitive, confidential, critical, and proprietary were presented. Under PII, the subjects of health information, financial information, government data, and customer data were presented.</p>
+<p class="indent"><span id="page_646" epub:type="pagebreak"></span>Privacy-enhancing technologies were presented, including data minimization, data masking, tokenization, anonymization, and pseudo-anonymization. The chapter then moved to the roles and responsibilities of data privacy efforts. In this section, the duties of data owners, data controllers, data processors, data custodians/stewards, and data privacy officers were defined and explained.</p>
+<p class="indent">The chapter wrapped up with an examination of the topics of information lifecycles, impact assessments, terms of agreement, and privacy notices.</p>
+<h4 class="h4" id="lev1sec889">Questions</h4>
+<p class="noindent">To help you prepare further for the CompTIA Security+ exam, and to test your level of preparedness, answer the following questions and then check your answers against the correct answers at the end of the chapter.</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans1" id="r_ch35ans1">1</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is not PII?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Customer name</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Customer ID number</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Customer Social Security number or taxpayer identification number</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Customer birth date</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans2" id="r_ch35ans2">2</a>.</strong>&nbsp;&nbsp;&nbsp;What does a privacy impact assessment do?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;It determines the gap between a company’s privacy practices and required actions.</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;It determines the damage caused by a breach of privacy.</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;It determines what companies hold information on a specific person.</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;It’s a corporate procedure to safeguard PII.</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans3" id="r_ch35ans3">3</a>.</strong>&nbsp;&nbsp;&nbsp;What is privacy?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;One’s ability to control information about oneself</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Being able to keep one’s information secret</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Making data-sharing illegal without consumer consent</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Something that is outmoded in the Internet age</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans4" id="r_ch35ans4">4</a>.</strong>&nbsp;&nbsp;&nbsp;Who is responsible for determining what data is needed by the enterprise?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Data steward</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Data privacy officer</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Data custodian</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Data owner</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans5" id="r_ch35ans5">5</a>.</strong>&nbsp;&nbsp;&nbsp;<span id="page_647" epub:type="pagebreak"></span>Data that is labeled “private” typically pertains to what category?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Proprietary data</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Confidential information</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Legal data</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Personal information</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans6" id="r_ch35ans6">6</a>.</strong>&nbsp;&nbsp;&nbsp;Data that is labeled “proprietary” typically pertains to what category?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Information under legal hold</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Information to be safeguarded by business partners because it contains business secrets</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Personal data</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;PHI and PII together</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans7" id="r_ch35ans7">7</a>.</strong>&nbsp;&nbsp;&nbsp;Information that could disclose the identity of a customer is referred to as what?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Customer identity information (CII)</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Personally identifiable information (PII)</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Privacy protected information (PPI)</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Sensitive customer information (SCI)</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans8" id="r_ch35ans8">8</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is not a privacy-enhancing technology?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Data minimization</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Data masking</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Data disclosure</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Tokenization</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans9" id="r_ch35ans9">9</a>.</strong>&nbsp;&nbsp;&nbsp;What is the term for notifying customers of your privacy policy and its effect on their information?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Impact assessment</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Public notification of disclosure</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Privacy notice</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Terms of agreement</p>
+<p class="ques1"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#ch35ans10" id="r_ch35ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is important to ensure privacy release concerns are properly handled when discovered by an incident response team?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Escalation</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Privacy impact analysis</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Privacy-enhancing technologies</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Public disclosure and notification</p>
+<h4 class="h4" id="lev1sec890"><span id="page_648" epub:type="pagebreak"></span>Answers</h4>
+<p class="ques"><strong><a id="ch35ans1" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans1">1</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> A customer ID number generated by a firm to track customer records is meaningful only inside the firm and is generally not considered to be personally identifiable information (PII). Note that it is important not to use Social Security numbers for this, for obvious reasons.</p>
+<p class="ques"><strong><a id="ch35ans2" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans2">2</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> A privacy impact assessment (PIA) determines the gap between what a company is doing with PII and what its policies, rules, and regulations state it should be doing.</p>
+<p class="ques"><strong><a id="ch35ans3" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans3">3</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> Although all the possible answers have elements of truth to them, privacy is about controlling one’s information, not just hoarding it.</p>
+<p class="ques"><strong><a id="ch35ans4" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans4">4</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> The data owner determines the business need. The privacy officer ensures that laws and regulations are followed, and the custodian/steward maintains the data.</p>
+<p class="ques"><strong><a id="ch35ans5" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans5">5</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> Private data frequently refers to personal data.</p>
+<p class="ques"><strong><a id="ch35ans6" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans6">6</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Proprietary data may be shared with a third party that is not a competitor, but in labeling the data “proprietary,” you alert the party you have shared with that the data is not to be shared further.</p>
+<p class="ques"><strong><a id="ch35ans7" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans7">7</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Any information that can be used to determine identity is referred to collectively as personally identifiable information (PII).</p>
+<p class="ques"><strong><a id="ch35ans8" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans8">8</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> Data disclosures are not privacy-enhancing technologies; they are the resultant effect of an attacker getting access to sensitive data on a system.</p>
+<p class="ques"><strong><a id="ch35ans9" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans9">9</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> The privacy notice is the vehicle used to notify customers of the effects of a firm’s privacy policy on their (the customers’) data.</p>
+<p class="ques1"><strong><a id="ch35ans10" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#r_ch35ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> Escalation is important to ensure that the correct teams respond to a privacy-related incident.</p>
+</section>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+
+
+
+        <a href="Chapter 34 Risk Management.html" class="prev nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 34 Risk Management</div>
+        </a>
+
+
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+
+
+
+
+  </div>
+
+</section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+
+
+          ""
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 69px;">
+  <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+
+
+
+
+    >
+
+
+
+  </ul>
+
+
+
+
+     /
+
+
+
+
+
+</footer>
+
+
+
+    <script src="./public/saved_resource" charset="utf-8"></script>
+    <script src="./public/saved_resource(1)" charset="utf-8"></script>
+
+
+<div class="font-flyout" style="top: 151.009px; left: 1772px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch35.xhtml#">Reset</a>
+</div>
+</div><div class="annotator-notice">Sorry we could not read the annotations from the store</div></body></html>
