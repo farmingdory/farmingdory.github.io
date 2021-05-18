@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: 127.0.0.1/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://127.0.0.1" type="image/x-icon"><link href="./public/css" rel="stylesheet" type="text/css"><title>Chapter 34 Risk Management</title><link rel="stylesheet" href="./public/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./public/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./public/font-awesome.min.css"><style type="text/css" title="ibis-book">@page{margin:1.5em}#sbo-rt-content div{margin:0 .5em 0 .5em}#sbo-rt-content svg{height:98%;width:100%}#sbo-rt-content img{max-height:100%;max-width:100%}#sbo-rt-content a{text-decoration:none}#sbo-rt-content figure img{height:99vh}#sbo-rt-content figure{padding:0;margin:0}#sbo-rt-content .black{background-color:#231F20;color:#FFF;padding:.2em 3em .2em 3em}#sbo-rt-content .bullo{margin-top:.1em;margin-bottom:.1em;margin-left:2.1em;text-indent:-1.1em;text-align:left}#sbo-rt-content .hr-f{margin-top:.5em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .fimage{margin-top:1.5em;margin-bottom:.1em;text-align:center}#sbo-rt-content .figcap{margin-top:.1em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .timage{margin-top:1.5em;margin-bottom:.1em;text-align:left}#sbo-rt-content .tabcap{margin-top:.3em;margin-bottom:1.5em;text-align:left;text-indent:.01em}#sbo-rt-content .inline{vertical-align:middle}#sbo-rt-content .hrc{margin-top:3em;margin-bottom:2.5em;border-top:double .3em;border-bottom:double .3em;padding-top:.3em;padding-bottom:.5em;padding-left:.5em}#sbo-rt-content .note{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .notei{margin-top:.5em;margin-bottom:.5em;text-indent:.01em}#sbo-rt-content .size{color:#C6C8CA;font-size:400%;vertical-align:middle}#sbo-rt-content .sidebarn{margin-top:1em;margin-bottom:1em;border-top:solid .1em;text-indent:.01em}#sbo-rt-content .noindentb{margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .noindent-top{margin-top:2em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .indent{margin-top:.1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .indentb{margin-top:.1em;margin-bottom:1em;text-indent:1.2em}#sbo-rt-content .noindent{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .bull{margin-top:.3em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bull1{margin-top:.3em;margin-bottom:.1em;margin-left:4em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullt{margin-top:1em;margin-bottom:.1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .bullb{margin-top:.1em;margin-bottom:1em;margin-left:2.6em;text-indent:-1.1em;text-align:left}#sbo-rt-content .indentt{margin-top:1em;margin-bottom:.1em;text-indent:1.2em}#sbo-rt-content .h3{font-size:1.6em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h4{font-size:1.4em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .h5{font-size:1.2em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .stitle{font-size:1.2em;margin-top:.5em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .noindentt{margin-top:1.2em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .alpha{margin-top:.1em;margin-bottom:.3em;margin-left:3.9em;text-indent:-1.75em;text-align:left}#sbo-rt-content .cover-image{margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .ded{margin-top:3em;margin-bottom:.3em;text-align:right}#sbo-rt-content .h2{font-size:120%;font-weight:normal;margin-top:-2em;margin-bottom:.5em;text-align:right}#sbo-rt-content .h2chap{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .h2chap1{font-size:250%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .copyright{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .ques{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-1.5em;text-align:left}#sbo-rt-content .ques1{margin-top:.5em;margin-bottom:.3em;margin-left:2em;text-indent:-2em;text-align:left}#sbo-rt-content .hr-1{margin-top:3em;margin-bottom:.1em;border-top:solid .1em}#sbo-rt-content .h2r1{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:left;text-indent:.01em}#sbo-rt-content .h2r{font-size:1.8em;font-weight:normal;margin-top:.3em;margin-bottom:2em;text-align:right;text-indent:.01em}#sbo-rt-content .gray{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .toc{margin-top:.7em;margin-bottom:.1em;margin-left:5.5em;text-indent:-5.5em;text-align:left}#sbo-rt-content .toc1{margin-top:.7em;margin-bottom:.1em;margin-left:5.8em;text-indent:-5.8em;text-align:left}#sbo-rt-content .toc-b1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-f{margin-top:.1em;margin-bottom:.1em;margin-left:5.75em;text-indent:.1em;text-align:left}#sbo-rt-content .toc-lev1{margin-top:.1em;margin-bottom:.1em;margin-left:6.65em;text-indent:-1.15em;text-align:left}#sbo-rt-content .toc-lev2{margin-top:.1em;margin-bottom:.1em;margin-left:9.25em;text-indent:-1.15em;text-align:left}#sbo-rt-content .noindent1{margin-top:1em;margin-bottom:1em;text-indent:.01em}#sbo-rt-content .center{margin-top:1em;margin-bottom:1em;text-align:center}#sbo-rt-content .right{margin-top:1em;margin-bottom:1em;text-align:right}#sbo-rt-content .indexhead{font-size:1.3em;margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indexmain{margin-top:.1em;margin-bottom:.1em;margin-left:.8em;text-indent:-.8em;text-align:left}#sbo-rt-content .indexsub{margin-top:.1em;margin-bottom:.1em;margin-left:1.9em;text-indent:-.8em;text-align:left}#sbo-rt-content .list{margin-top:.5em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listt{margin-top:1em;margin-bottom:.3em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listb{margin-top:.5em;margin-bottom:1em;margin-left:2.8em;text-indent:-1.5em;text-align:left}#sbo-rt-content .listh{margin-top:.3em;margin-bottom:.3em;margin-left:2.7em;text-indent:.1em;text-align:left}#sbo-rt-content .border1{margin-top:3em;margin-bottom:3em;border-top:double black .3em}#sbo-rt-content .toc-p3{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.65em;text-align:left}#sbo-rt-content .toc-p2{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.3em;text-align:left}#sbo-rt-content .toc-p5{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.15em;text-align:left}#sbo-rt-content .toc-p6{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.5em;text-align:left}#sbo-rt-content .toc-p1{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-3.9em;text-align:left}#sbo-rt-content .toc-p4{margin-top:1em;margin-bottom:.1em;margin-left:5.6em;text-indent:-4.6em;text-align:left}#sbo-rt-content .f1{background-color:#D2D3D5;color:#000;padding:.2em .3em .2em .3em}#sbo-rt-content .sidebar{margin-top:1em;margin-bottom:1em;border:solid #000 .1em;background-color:#E7E7E8;padding:.5em;text-indent:.01em}#sbo-rt-content .h2pn{font-size:220%;font-weight:normal;margin-top:1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .h2pt{font-size:240%;font-weight:normal;margin-top:.1em;margin-bottom:.1em;text-align:center}#sbo-rt-content .f-part{background-color:#000;color:#FFF;padding:.2em 1em .2em 1em}#sbo-rt-content .side-part{margin-top:0;margin-bottom:.2em;border:solid #000 .1em;background-color:#BDBEC1;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .side-part1{margin-top:.2em;margin-bottom:1em;border:solid #000 .1em;padding:1em .5em .5em 1em;text-indent:.01em}#sbo-rt-content .ch-part{margin-top:.2em;margin-bottom:.1em;margin-left:6.4em;text-indent:-6.4em;text-align:left}#sbo-rt-content .ch-app{margin-top:.2em;margin-bottom:.1em;margin-left:6.7em;text-indent:-6.7em;text-align:left}#sbo-rt-content .s-hang{margin-top:.5em;margin-bottom:.5em;margin-left:2em;text-indent:.1em;text-align:left}#sbo-rt-content .list-q{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:-1em;text-align:left}#sbo-rt-content .list-qh{margin-top:.2em;margin-bottom:.2em;margin-left:3em;text-indent:.1em;text-align:left}#sbo-rt-content .gloss{margin-top:.7em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-h{margin-top:.1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .note-t{margin-top:1em;margin-bottom:.1em;text-indent:.01em}#sbo-rt-content .indent1{margin-top:.5em;margin-bottom:.5em;text-indent:1.2em}</style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+
+          "chapter": "/api/v1/book/9781260464016/chapter/ch31.xhtml",
+          "book_id": "9781260464016",
+          "chapter_uri": "ch31.xhtml",
+          "position": 0.0,
+          "user_uuid": "4c928969-b159-43f7-8afb-4290c3ef28c4",
+          "next_chapter_uri": "/library/view/comptia-security-all-in-one/9781260464016/ch32.xhtml"
+
+      },
+      title: "CompTIA Security+ All\u002Din\u002DOne Exam Guide, Sixth Edition (Exam SY0\u002D601)), 6th Edition",
+      author_list: "Wm. Arthur Conklin, Greg White, Dwayne Williams, Roger L. Davis, Chuck Cothren",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><script src="./public/modernizr.8e35451ddb64.js.download"></script><script>
+
+
+
+
+
+          window.PUBLIC_ANNOTATIONS = true;
+
+
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+
+
+
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "127.0.0.1/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml"><meta name="description" content=" CHAPTER 31 Security Controls In this chapter, you will •   Learn about the three categories of security controls •   Explore different types of security controls Security controls are the tools ... "><meta property="og:title" content="Chapter 31 Security Controls"><meta itemprop="isPartOf" content="/library/view/comptia-security-all-in-one/9781260464016/"><meta itemprop="name" content="Chapter 31 Security Controls"><meta property="og:url" itemprop="url" content="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch31.xhtml"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="127.0.0.1/library/cover/9781260464016/"><meta property="og:description" itemprop="description" content=" CHAPTER 31 Security Controls In this chapter, you will •   Learn about the three categories of security controls •   Explore different types of security controls Security controls are the tools ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="McGraw-Hill"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9781260464016"><meta property="og:book:author" itemprop="author" content="Wm. Arthur Conklin"><meta property="og:book:author" itemprop="author" content="Greg White"><meta property="og:book:author" itemprop="author" content="Dwayne Williams"><meta property="og:book:author" itemprop="author" content="Roger L. Davis"><meta property="og:book:author" itemprop="author" content="Chuck Cothren"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@127.0.0.1Media"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+
+      window.medalliaVsgUserIdentifier = '4c928969-b159-43f7-8afb-4290c3ef28c4';
+      dataLayer.push({userIdentifier: '4c928969-b159-43f7-8afb-4290c3ef28c4'});
+      dataLayer.push({loggedIn: 'yes'});
+
+
+        window.medalliaVsgAccountIdentifier = '3abb358d-b902-4511-9be4-110be462791b';
+
+
+        window.medalliaVsgIsIndividual = true;
+
+
+          dataLayer.push({learningAccountType: 'free trial'});
+
+
+
+
+
+
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//127.0.0.1/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./public/vendor.0eac897f11ed.js.download"></script><script defer="" src="./public/reader.c745ea9296ac.js.download"></script><script async="" src="./public/MathJax.js.download"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+
+  <noscript>
+    <iframe src="./public/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+
+
+
+
+
+<a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#container" class="skip">Skip to content</a>
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+
+          <div class="nav-container clearfix">
+
+
+
+
+
+          </div>
+
+
+
+  <div class="js-toc">
+
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+
+      CompTIA Security+ All-in-One Exam Guide, Sixth Edition (Exam SY0-601)), 6th Edition
+
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+
+      </ul>
+    </div>
+
+
+
+
+
+    <section role="document"><script src="./public/48743.js.download"></script>
+<script>
+  var userId = "4c928969-b159-43f7-8afb-4290c3ef28c4";
+
+  var userObject = {
+    firstName: "Wane",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-04-28",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+
+
+
+        <a href="Chapter 33 Organizational Policies.html" class="prev nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 33 Organizational Policies</div>
+        </a>
+
+
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+
+
+
+        <a href="Chapter 35 Privacy.html" class="next nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 35 Privacy</div>
+        </a>
+
+
+  </div>
+
+
+
+<div id="sbo-rt-content"><section epub:type="chapter">
+<div class="hrc">
+<h2 class="h2" id="ch34"><span id="page_613" epub:type="pagebreak"></span><strong><span class="black"><small>CHAPTER</small> <span class="size">34</span></span></strong></h2>
+<h2 class="h2chap">Risk Management</h2>
+<p class="noindent">In this chapter, you will</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Explore risk management concepts</p>
+<p class="bullo">•&nbsp;&nbsp;&nbsp;Examine processes used in risk management</p>
+</div>
+<p class="noindent-top">Risk management is a core business function of an enterprise because it is through the risk management process that an enterprise can maximize its return on investments. Understanding the business impact of operations associated with the enterprise is key for business success. This can be accomplished using a business impact analysis. Using the data from the analysis, coupled with a threat analysis and a risk assessment process, the enterprise can come to an understanding of the sources of the risk elements it faces and their level of intensity.</p>
+<p class="noindentt"><strong>Certification Objective</strong>&nbsp;&nbsp;This chapter covers CompTIA Security+ exam objective 5.4: Summarize risk management processes and concepts.</p>
+<h3 class="h3" id="lev320">Risk Types</h3>
+<p class="noindent">Risks can come from a wide range of sources. One way to organize different risks is to categorize them into a series of types. CompTIA Security+ recognizes the following six <em>risk types:</em> external, internal, legacy systems, multiparty, IP theft, and software compliance/licensing. These different types are not exclusive and will be discussed in the following sections.</p>
+<h4 class="h4" id="lev1sec829">External</h4>
+<p class="noindent"><em>External</em> threats come from outside the organization and, by definition, begin without access to the system. Access is reserved for users who have a business need to know and have authorized accounts on the system. Outsiders must first hijack one of these accounts. This extra step and the reliance on external connections typically make external attackers easier to detect.</p>
+<h4 class="h4" id="lev1sec830">Internal</h4>
+<p class="noindent"><em>Internal</em> threats include disgruntled employees and well-meaning employees who make mistakes or have an accident. Internal threats tend to be more damaging, as the <span id="page_614" epub:type="pagebreak"></span>perpetrator has already been granted some form of access. The risk is related to the level of access and the value of the asset being worked on. For instance, if a system administrator working on the domain controller accidently erases a critical value and crashes the system, it can be just as costly as an unauthorized outsider performing a DoS attack against the enterprise.</p>
+<h4 class="h4" id="lev1sec831">Legacy Systems</h4>
+<p class="noindent"><em>Legacy systems</em> are older, pre-existing systems. But age really isn’t the issue—the true issue behind what makes a system a legacy system is the concept of technical debt. Technical debt is the cost occurred over time as a result of not maintaining a system completely. Cutting corners for cost can be legitimized in the now, but over time those cuts amount to issues. Take system modification as an example. If a system has had custom modifications over time to adapt it to a company’s business processes, how do those modifications work when a newer version comes out? A common reason for not updating or upgrading a system is that it will break something or void some warranty in place. Over time, this lack of staying current, or drifting away from the desired state, increases costs. Like all debt, there is interest, and technical debt grows over time to where it can become a major issue in IT projects charged with updating older systems. In a world with constantly evolving threats and risk vectors, the inability to respond is a risk in itself.</p>
+<h4 class="h4" id="lev1sec832">Multiparty</h4>
+<p class="noindent">In traditional risk management, the driving factor under consideration is risk to one’s own enterprise. In a traditional two-party system (an attacker versus a firm), the risk equations are fairly easy to determine and optimize. But when a system has multiple parties, each with its own risk determinations, the management of the overall risk equation gets complicated. If a firm is negotiating to make a major system change, and all the stakeholders are within the firm, then it is still considered a single party, but if the financing for the project is from another firm, and subcontractors are involved, other party determinations of acceptable risk levels become an issue very quickly.</p>
+<h4 class="h4" id="lev1sec833">IP Theft</h4>
+<p class="noindent">If you ask an IT technician about cybersecurity risk, you might get an answer involving data loss, ransomware, viruses, malware, or fraud. These are mostly technical issues, for this is the world most cybersecurity professionals live in. But ask a CEO the same question, and business items such as <em>intellectual property (IP) theft</em> come up right away. IP theft can seriously damage a company’s future health. If a firm spends a lot of resources developing a product or a market and then is undercut by other parties that don’t have to spend those resources, sales can disappear and future revenue streams can dry up. Unlike physical assets, digital assets can be stolen merely through copying, and this is the pathway attackers use for IP data. The attacker will attempt to gain access and copy the data, all the while trying to leave no trace, making the theft not at all obvious until a competitor uses the information and fields a “stolen” product in the form of a copy.</p>
+<p class="indent"><span id="page_615" epub:type="pagebreak"></span>IP theft is hard to attribute, and once the copy is in the marketplace, the only resort is courts via trade secret and patent protection actions. This is a very significant issue with international state-sponsored attacks, as the legal recourses are challenging to use effectively. Investigation and prosecution of IP theft are major items pursued by the FBI as part of its cybersecurity strategy.</p>
+<h4 class="h4" id="lev1sec834">Software Compliance/Licensing</h4>
+<p class="noindent">Software is everywhere; it forms the functional backbone of our systems. The source of this software is via licensing and in many cases trust. Copies of many software products can be made and used without licenses, and this creates <em>software compliance/licensing</em> risk. This form of risk is best battled using policies and procedures that prohibit the activity, followed by internal audits that verify compliance with the policies.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Be able to identify the various risk types—external, internal, legacy systems, multiparty, IP theft, and software compliance/licensing. Know which risk management strategies and processes in the coming sections should be applied to each of the given risk types discussed.</p>
+</div>
+<h3 class="h3" id="lev321">Risk Management Strategies</h3>
+<p class="noindent">Risk management can best be described as a decision-making process. <em>Risk management strategies</em> include elements of threat assessment, risk assessment, and security implementation concepts, all positioned within the concept of business management. In the simplest terms, when you manage risk, you determine what could happen to your business, you assess the impact if it were to happen, and you decide what you could do to control that impact as much as you or your management team deems necessary. You then decide to act or not to act, and, finally, you evaluate the results of your decision. The process may be iterative, as industry best practices clearly indicate that an important aspect of effectively managing risk is to consider it an ongoing process.</p>
+<p class="indent">Risks are absolutes—they cannot be removed or eliminated. You can take actions to change the effects that a risk poses to a system, but the risk itself doesn’t really change, no matter what actions you take to mitigate that risk. A high risk will always be a high risk. However, you can take actions to reduce the impact of that risk if it occurs. A limited number of strategies can be used to manage risk. The risk can be avoided, transferred, mitigated, or accepted.</p>
+<p class="indent">Understand that risk cannot be completely eliminated. A risk that remains after implementing controls is termed a <em>residual risk</em>. You have to further evaluate residual risks to identify where additional controls are required to reduce risk even more. This reinforces the statement earlier in the chapter that the risk management process is iterative.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;You can do four things to respond to risk: accept it, transfer it, avoid it, and mitigate it. Understand the differences, as these will all be presented as possible answer choices for a question, and the scenario details will apply to one better than the others.</p>
+</div>
+<h4 class="h4" id="lev1sec835"><span id="page_616" epub:type="pagebreak"></span>Acceptance</h4>
+<p class="noindent">When you’re analyzing a specific risk, after weighing the cost to avoid, transfer, or mitigate a risk against the probability of its occurrence and its potential impact, the best response is to <em>accept</em> the risk. For example, a manager may choose to allow a programmer to make “emergency” changes to a production system (in violation of good separation of duties) because the system cannot go down during a given period of time. The manager accepts that the risk that the programmer could possibly make unauthorized changes is outweighed by the high-availability requirement of that system. However, there should always be some additional controls, such as a management review or a standardized approval process, to ensure the assumed risk is adequately managed.</p>
+<h4 class="h4" id="lev1sec836">Avoidance</h4>
+<p class="noindent"><em>Avoiding</em> the risk can be accomplished in many ways. Although you can’t remove threats from the environment, you can alter the system’s exposure to the threats. Not deploying a module that increases risk is one manner of risk avoidance.</p>
+<h4 class="h4" id="lev1sec837">Transference</h4>
+<p class="noindent"><em>Transference</em> of risk is when the risk in a situation is covered by another entity. As mentioned previously in this book surrounding issues such as cloud computing, contracts and legal agreements will denote which parties are assuming which risks. This is defining who has responsibilities and who holds the risk—defining the specific transference up front. The mistake many make is assuming the risk transfers. The only risk transference that occurs across these legal agreements is that defined in the contract.</p>
+<p class="indent">Another common example of risk transfer is the protection against fraud that consumers have on their credit cards. The risk is transferred to another party, so people can use their cards in confidence. As in the previous discussion, this transference is in the fine print of the credit card agreement.</p>
+<h5 class="h5">Cybersecurity Insurance</h5>
+<p class="noindent">A common method of transferring risk is to purchase <em>cybersecurity insurance</em>. Insurance allows risk to be transferred to a third party that manages specific types of risk for multiple parties, thus reducing the individual cost.</p>
+<h4 class="h4" id="lev1sec838">Mitigation</h4>
+<p class="noindent">Risk can also be <em>mitigated</em> through the application of controls that reduce the impact of an attack. Controls can alert operators so that the level of exposure is reduced through process intervention. When an action occurs that is outside the accepted risk profile, a second set of rules can be applied, such as calling the customer for verification before committing a transaction. Controls such as these can act to reduce the risk associated with potential high-risk operations.</p>
+<h3 class="h3" id="lev322"><span id="page_617" epub:type="pagebreak"></span>Risk Analysis</h3>
+<p class="noindent">To effectively manage anything, there must be appropriate measurements to guide the course of actions. In the case of risk, this is also true. To manage risk, there needs to be a measurement of loss, and potential loss, and much of this information comes by way of <em>risk analysis</em>. Risk analysis is performed via a series of specific exercises that reveal presence and level of risk across an enterprise. Then, through further analysis, the information can be refined to a workable plan to manage the risk to an acceptable level.</p>
+<h4 class="h4" id="lev1sec839">Risk Register</h4>
+<p class="noindent">A <em>risk register</em> is a list of the risks associated with a system. It also can contain additional information associated with the risk element, such as categories to group like risks, probability of occurrence, impact to the organization, mitigation factors, and other data. There is no standardized form. The Project Management Institute has one format, other sources have different formats. The reference document <em>ISO Guide 73:2009 Risk Management—Vocabulary</em> defines a risk register to be a “record of information about identified risks.”</p>
+<h4 class="h4" id="lev1sec840">Risk Matrix/Heat Map</h4>
+<p class="noindent">A <em>risk matrix</em> or <em>heat map</em> is used to visually display the results of a qualitative risk analysis. This method allows expert judgment and experience to assume a prominent role in the risk assessment process and is easier than trying to exactly define a number for each element of risk. To assess risk qualitatively, you first determine the likelihood of a threat occurring and also the consequence should it occur. You then take the value of each and multiply them together to get the risk value. For a 5-by-5 risk matrix/heat map, as shown in <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34fig1">Figure 34-1</a>, you simply use the numbers 1 to 5 for each of the axes, and this yields risk values from 1 to 25. These values can then be classified as minor, moderate, major, or critical.</p>
+<p class="fimage" id="ch34fig1"><img src="./public/F34-01.jpg" alt="Images" width="856" height="328"></p>
+<p class="hr-f"></p>
+<p class="figcap"><strong>Figure 34-1</strong>&nbsp;&nbsp;Risk matrix/heat map</p>
+<h4 class="h4" id="lev1sec841"><span id="page_618" epub:type="pagebreak"></span>Risk Control Assessment</h4>
+<p class="noindent">A <em>risk control assessment</em> is a tool used by the Financial Industry Regulatory Authority (FINRA) to assess a series of risks associated with their member institutions. Questions are asked about a wide range of topics, including cybersecurity. Answers to these questions paint a fairly detailed picture of the potential risk exposures a firm has, given its policies and practices.</p>
+<h4 class="h4" id="lev1sec842">Risk Control Self-Assessment</h4>
+<p class="noindent"><em>Risk control self-assessment</em> is a technique that employs management and staff of all levels to identify and evaluate risks and associated controls. This information is collected and analyzed to produce a more comprehensive map of risks and the controls in place to address it. Engaging multiple viewpoints in the collection of information, identifying risk exposures and determining corrective actions, provides different perspectives and can uncover unnoticed vulnerabilities.</p>
+<h4 class="h4" id="lev1sec843">Risk Awareness</h4>
+<p class="noindent"><em>Risk awareness</em> is knowledge of risk and consequences. Risk awareness is essential for wide ranges of personnel, with the content tailored to their contributions to the enterprise. For some workers, understanding the risks and defenses against social engineering is important. For others, such as designers of systems, more detailed understanding of risk and the vulnerabilities that cause it are needed. For management and executives, an understanding of the whole risk ecosystem is necessary because they must balance the risk and reward through major system initiatives. Just as the beginning of the famous twelve-step program is acknowledging the problem, becoming aware of risk is important if one is to manage it.</p>
+<h4 class="h4" id="lev1sec844">Inherent Risk</h4>
+<p class="noindent"><em>Inherent risk</em> is defined as the amount of risk that exists in the absence of controls. This can be confusing, as the definition of “no controls” could include no access controls, no door locks, no personnel background checks—in essence an environment that would equate to everything becoming high risk. A better explanation would be that inherent risk is the current risk level given the existing set of controls rather than the hypothetical notion of an absence of any controls. An example might help. Your car has a lot of controls to enable self-driving, yet there is still risk involved. This is the inherent risk; it is associated with the operation of the system within the environment. And as the environment changes, so can the inherent risk—what is considered safe in terms of speed and environment is different between a sunny day with no traffic, a evening with busy traffic and lots of rain, and nighttime with medium traffic. Each of these situations has different inherent risk and may need specific controls to reduce risk to an acceptable level.</p>
+<h4 class="h4" id="lev1sec845">Residual Risk</h4>
+<p class="noindent">The presence of risks in a system is an absolute—they cannot be removed or eliminated. As mentioned previously in this chapter, four actions can be taken to respond to <span id="page_619" epub:type="pagebreak"></span>risk: accept, transfer, avoid, and mitigate. Whatever risk is not transferred, mitigated, or avoided is referred to as <em>residual risk</em> and, by definition, is accepted. You cannot eliminate residual risk, but you can manage risk to drive residual risk to an acceptable level.</p>
+<h4 class="h4" id="lev1sec846">Control Risk</h4>
+<p class="noindent"><em>Control risk</em> is a term used to specify risk associated with the chance of a material misstatement in a company’s financial statements. This risk can be manifested in a couple ways: either there isn’t an appropriate set of internal controls to mitigate a particular risk or the internal controls set in place malfunctioned. Business systems that rely on IT systems have an inherent risk associated with cybersecurity risks. What makes these risks become control risks is when they impact the business function in a manner that results in financial misstatements or errors. In the case of an organization that doesn’t have adequate internal controls in place to prevent and detect fraud or errors, it has a specific issue of control risk as opposed to inherent risk.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Inherent risk is the amount of risk that exists in the absence of controls. Residual risk is the amount of risk that remains after controls are accounted for. Control risk is when the risk specifically affects the financial reporting.</p>
+</div>
+<h4 class="h4" id="lev1sec847">Risk Appetite</h4>
+<p class="noindent">Different firms in different businesses and environments have different risk exposures, but they also have different tolerances for risk. <em>Risk appetite</em> is the term used to describe a firm’s tolerance for risk. Even within a sector, with companies of the same size, operating in roughly the same areas, there can be differences in the level of risk each feels comfortable in accepting. This risk appetite is related to other business elements such as reward and loss. Each company’s executive structure needs to determine the appropriate risk appetite for that firm, and that becomes the upper limit on acceptable risk in the company’s operations.</p>
+<h4 class="h4" id="lev1sec848">Regulations That Affect Risk Posture</h4>
+<p class="noindent">Regulations can have a dramatic effect on risk exposure. Sometimes that effect is a direct action of a regulation, such as financial firms being forced by regulators to have certain levels of encryption to protect certain types of processes. Other times it is less direct, as in specific monitoring required for reporting, and firms change operations to avoid having to report. The breadth of regulations is wide, but some of the common ones associated with cybersecurity include Sarbanes-Oxley, various financial regulations on protecting data, and Payment Card Industry Data Security Standard (PCI-DSS) for credit card data.</p>
+<p class="indent">Regulations drive corporate responses because failing to follow regulations can result in penalties, which represent a loss. Therefore, regulations can be viewed as risks with almost certainty of incurring the loss.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;<span id="page_620" epub:type="pagebreak"></span>It’s important to remember that regulations apply to many areas of cybersecurity. Know that the Sarbanes-Oxley Act of 2002 protects investors from corporate fraud and bad financial reporting, and the Payment Card Industry Data Security Standard (PCI-DSS) is a set of security standards and policies for companies to follow in order to optimize security for consumer payment cards and associated private data.</p>
+</div>
+<h4 class="h4" id="lev1sec849">Risk Assessment Types</h4>
+<p class="noindent">A <em>risk assessment</em> is a method to analyze potential risk based on statistical and mathematical models. You can use any one of a variety of models to calculate potential risk assessment values. A common method is the calculation of the annual loss expectancy (ALE). Calculating the ALE creates a monetary value of the impact. This calculation begins by calculating a single-loss expectancy (SLE), which is presented in detail later in the chapter.</p>
+<h5 class="h5">Qualitative</h5>
+<p class="noindent"><em>Qualitative</em> risk assessment is the process of subjectively determining the impact of an event that affects a project, program, or business. Qualitative risk assessment usually involves the use of expert judgment and models to complete the assessment. This type of risk assessment is highly dependent on expert judgment and experience and can also suffer from biases. The risk matrix/heat map presented earlier is an example of a qualitative risk model.</p>
+<h5 class="h5">Quantitative</h5>
+<p class="noindent"><em>Quantitative</em> risk assessment is the process of objectively determining the impact of an event that affects a project, program, or business. Quantitative risk assessment usually involves the use of metrics and models to complete the assessment. Quantitative risk assessment applies historical information and trends to attempt to predict future performance. This type of risk assessment is highly dependent on historical data and gathering such data can be difficult. Quantitative risk assessment can also rely heavily on models that provide decision-making information in the form of quantitative metrics, which attempt to measure risk levels across a common scale. The models of single-loss expectancy, annual loss expectancy, and annualized rate of occurrence, discussed later in this chapter, are examples of quantitative risk analysis.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Understand the difference between quantitative and qualitative risk assessments. Quantitative means you can actually count something, whereas qualitative is more subjective, with values such as high, medium, and low.</p>
+</div>
+<h4 class="h4" id="lev1sec850">Likelihood of Occurrence</h4>
+<p class="noindent">The <em>likelihood of occurrence</em> is the chance that a particular risk will occur. This measure can be qualitative or quantitative, as just discussed. For qualitative measures, the likelihood of occurrence is typically defined on an annual basis so that it can be compared <span id="page_621" epub:type="pagebreak"></span>to other annualized measures. If defined quantitatively, it is used to create rank-order outcomes.</p>
+<h4 class="h4" id="lev1sec851">Impact</h4>
+<p class="noindent">The <em>impact</em> of an event is a measure of the actual loss when a threat exploits a vulnerability. Federal Information Processing Standard (FIPS) 199 defines three levels of impact using the terms high, moderate, and low. The impact needs to be defined in terms of the context of each organization, as what is high for some firms may be low for much larger firms. The common method is to define the impact levels in terms of important business criteria. Impacts can be in terms of cost (dollars), performance (service level agreement [SLA] or other requirements), schedule (deliverables), or any other important item. Impact can also be categorized in terms of the information security attribute that is relevant to the problem: confidentiality, integrity, and availability.</p>
+<p class="indent">Risk is the chance of something not working as planned and causing an adverse impact. Impact is the cost associated with a realized risk. Impact can be in many forms—from human life, as in injury or death, to property loss, to loss of safety, financial loss, or loss of reputation. Losses are seldom absolute and can come in all sizes and combinations. Different levels of risk can result in different levels of impact. Sometimes external events can have an effect on the impact. If everyone in the industry has been experiencing a specific type of loss, and your firm had time and warning to mitigate it, but didn’t, the environment defined by these outside factors may well indeed increase the impact to your firm from this type of event. For instance, failing to patch a system can have serious impacts to an organization, as recent data breaches have shown. But failure to patch a system, when you know it will be used against you, is even worse, as it almost invites further attacks.</p>
+<h5 class="h5">Life</h5>
+<p class="noindent">Many IT systems are involved in healthcare, and failures of some of these systems can and have resulted in injury and death to patients. IT systems are also frequently integral to the operation of machines in industrial settings, and their failure can have similar impacts. Injury and loss of <em>life</em> are outcomes that backups cannot address and can result in consequences beyond others. As part of a business impact analysis (BIA), you would identify these systems and ensure that they are highly redundant, to avoid impact to life.</p>
+<h5 class="h5">Property</h5>
+<p class="noindent"><em>Property</em> damage can be the result of unmitigated risk. Property damage to company-owned property, property damage to property of others, and even environmental damage from toxic releases in industrial settings are all examples of damage that can be caused by IT security failures. This can be especially true in companies that have manufacturing plants and other cyber physical processes. If you think property damage can’t happen to your organization because it only has office computers, consider the Shamoon malware that destroyed the computing resources of Saudi Aramco to the point that the company had to buy replacement equipment, as reimaging to a clean state was not a guaranteed, or timely, solution.</p>
+<h5 class="h5"><span id="page_622" epub:type="pagebreak"></span>Safety</h5>
+<p class="noindent"><em>Safety</em> is the condition of being protected from or unlikely to cause danger, risk, or injury. Safety makes sense from both a business risk perspective and when you consider the level of concern one places for the well-being of people. In a manufacturing environment, with moving equipment and machines that can present a danger to workers, government regulations drive specific actions to mitigate risk and make the workplace as safe as possible. Computers are increasingly becoming involved in all aspects of businesses, and they can impact safety. Failures that lead to safety issues will cause work stoppages and increase losses that could otherwise have been avoided. Unsafe conditions that are the result of computer issues will face the same regulatory wrath that unsafe plants have caused in manufacturing—fines and criminal complaints.</p>
+<h5 class="h5">Finance</h5>
+<p class="noindent"><em>Finance</em> is in many ways the final arbiter of all activities because it is how we keep score. We can measure the gains through sales and profit, and we can measure the losses through unmitigated risks. We can take most events, put a dollar value on them, and settle the books. Where this becomes an issue is when the impacts exceed the expected costs associated with the planned residual risks because then the costs directly impact profit. Impacts to a business ultimately become a financial impact. What starts as a missed patch allows ransomware to infiltrate a system. This results in a business impact that eventually adds costs, which should have been avoided.</p>
+<h5 class="h5">Reputation</h5>
+<p class="noindent">Corporate <em>reputation</em> is important in marketing. Would you deal with a bank with a shoddy record of accounting or losing personal information? How about online retailing? Would the customer base think twice before entering their credit card information after a data breach? These are not purely hypothetical questions; these events have occurred, and corporate reputations have been damaged as a result, thus costing the firms in customer base and revenue.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Risk is instantiated as impact. Impacts can have effects on life, property, safety, reputation, and finances. Typically, multiple impacts occur from an incident, and finance always pays the bill. Be prepared to parse a question to determine whether its focus is risk, impact, or a specific consequence.</p>
+</div>
+<h4 class="h4" id="lev1sec852">Asset Value</h4>
+<p class="noindent">The <em>asset value (AV)</em> is the amount of money it would take to replace an asset. This term is used with the exposure factor (EF), a measure of how much of an asset is at risk, to determine the single-loss expectancy (SLE).</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Understand the terms SLE, ALE, and ARO and how they are used to calculate a potential loss. You may be given a scenario, asked to calculate the SLE, ALE, or ARO, and presented answer choices that include values that would result from incorrect calculations.</p>
+</div>
+<h4 class="h4" id="lev1sec853"><span id="page_623" epub:type="pagebreak"></span>Single-Loss Expectancy (SLE)</h4>
+<p class="noindent">The <em>single-loss expectancy (SLE)</em> is the value of a loss expected from a single event. It is calculated using the following formula:</p>
+<p class="center">SLE = asset value (AV) × exposure factor (EF)</p>
+<p class="noindent">Exposure factor (EF) is a measure of the magnitude of loss of an asset.</p>
+<p class="indent">For example, to calculate the exposure factor, assume the asset value of a small office building and its contents is $2 million. Also assume that this building houses the call center for a business, and the complete loss of the center would take away about half of the capability of the company. Therefore, the exposure factor is 50 percent, and the SLE is calculated as follows:</p>
+<p class="center">$2 million × 0.5 = $1 million</p>
+<h4 class="h4" id="lev1sec854">Annualized Loss Expectancy (ALE)</h4>
+<p class="noindent">After the SLE has been calculated, the <em>annual loss expectancy (ALE)</em> is then calculated simply by multiplying the SLE by the likelihood or number of times the event is expected to occur in a year, which is called the annualized rate of occurrence (ARO):</p>
+<p class="center">ALE = SLE × ARO</p>
+<p class="indent">This represents the expected losses over the course of a year based on the ALE. If multiple events are considered, the arithmetic sum of all of the SLEs and AROs can be calculated to provide a summation amount.</p>
+<h4 class="h4" id="lev1sec855">Annualized Rate of Occurrence (ARO)</h4>
+<p class="noindent">The <em>annualized rate of occurrence (ARO)</em> is a representation of the frequency of the event, measured in a standard year. If the event is expected to occur once in 20 years, then the ARO is 1/20. Typically, the ARO is defined by historical data, either from a company’s own experience or from industry surveys. Continuing our example, assume that a fire at this business’s location is expected to occur about once in 20 years. Given this information, the ALE is</p>
+<p class="center">$1 million × 1/20 = $50,000</p>
+<p class="indent">The ALE determines a threshold for evaluating the cost/benefit ratio of a given countermeasure. Therefore, a countermeasure to protect this business adequately should cost no more than the calculated ALE of $50,000 per year.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;Numerous resources are available to help in calculating ALE. There are databases that contain information to help businesses (member institutions) manage exposure to loss from natural disasters such as hurricanes, earthquakes, and so forth. These databases include information on property perils such as fire, lightning, vandalism, windstorm, hail, and so forth, and even include granular information to help evaluate, for example, the effectiveness of your building’s sprinkler systems.</p>
+</div>
+<h3 class="h3" id="lev323"><span id="page_624" epub:type="pagebreak"></span>Disasters</h3>
+<p class="noindent"><em>Disasters</em> are major events that cause disruptions. The timescale of the disruption can vary, as can the level of disruption, but the commonality is that the external event that caused the disruption is one that cannot be prevented. Foreseen, yes, but prevented, not necessarily. Common disasters include weather-related events and events that everyone knows will happen eventually, just not where or when. Person-made disasters can be as simple as a misconfiguration that results in the loss of a significant amount of data. By definition, “person-made” indicates the disaster is the result of the action of some person. Foreseeable, yes; preventable, to a degree yes, but even accidents can happen. Having risk management and mitigation strategies in place for disasters is important.</p>
+<p class="indent">At the time this book was written, the world was gripped by the COVID-19 pandemic. Worldwide, offices, businesses, schools, churches, and various gathering locations went into a lockdown for months. Employees worked from home, if they could, via the Internet. The outcome is still ongoing as of the summer of 2020, but the effect is plain to see—a global pandemic will be one of the largest disasters ever experienced by the current generation and is changing many businesses and business processes.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;Per FEMA, roughly 40 to 60 percent of small businesses never reopen their doors following a disaster. Following a disaster, 90 percent of smaller companies fail within a year unless they can resume operations within five days.</p>
+</div>
+<h4 class="h4" id="lev1sec856">Environmental</h4>
+<p class="noindent">One of the largest sources of threats is from the environment. <em>Environmental</em> changes can come from a wide variety of sources—weather, lightning, storms, and even solar flares—and these can cause changes to the system in a manner that disrupts normal operations. These changes can increase risk. While IT security measures cannot change the environmental factors that can impact operations, they can have an effect on the risk associated with the environmental issue. Making systems resilient can reduce impacts and mitigate these sources of risk to the enterprise. And there are times when these effects can be felt at a distance; for instance, how can you back up to a remote site if the remote site is down due to power outage as a result of a fallen branch from a storm?</p>
+<h4 class="h4" id="lev1sec857">Person-made</h4>
+<p class="noindent"><em>Person-made</em> threats are those that are attributable to the actions of a person. But these threats aren’t limited to hostile actions by an attacker; they include accidents by users and system administrators. Users can represent one of the greatest risks in an IT system. More files are lost by accidental user deletion than by hackers deleting files, and to the team trying to restore the lost files, the attribution has no bearing on the restoration effort. User actions, such as poor cyber hygiene and password reuse, have been shown to be the starting point for many major cybersecurity events over the past several years. A system administrator that improperly configures a backup, the error being discovered when the backup was needed and there is no data on the backup to recover, can easily be a disaster. <span id="page_625" epub:type="pagebreak"></span>It is not a result of hostile activity, but destructive nonetheless. Proper controls to manage the risk to a system must include controls against both accidental and purposeful acts.</p>
+<h4 class="h4" id="lev1sec858">Internal vs. External</h4>
+<p class="noindent">As mentioned previously in the chapter, threats can come from internal and external sources. Internal threats have their origin within an organization, whereas external risks come from the outside. When disasters are examined, they can be seen to have originated either within the company or outside the company. While it is easy to always blame an outside force, in many cases, internal policies and procedures increase a firm’s risk profile for easily understood external risks. If supply chain decisions are made to go with a single overseas vendor for a minor price advantage, with no backup, and then a disaster strikes the country of the supplier, is this an internal or external risk? It can be viewed as both, but an internal policy decision drives the risk of going with a single vendor.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;When performing a threat assessment, be sure to consider environmental, person-made, and internal threats. On the exam, carefully read the scenario preceding the question to differentiate which of these threat sources is the best answer, as multiple sources are common, but one is usually the higher risk.</p>
+</div>
+<h3 class="h3" id="lev324">Business Impact Analysis</h3>
+<p class="noindent"><em>Business impact analysis (BIA)</em> is the process used to determine the sources and relative impact values of risk elements in a process. It is also the name often used to describe a document created by addressing the questions associated with sources of risk and the steps taken to mitigate them in the enterprise. The BIA also outlines how the loss of any of your critical functions will impact the organization. This section explores the range of terms and concepts related to conducting a BIA.</p>
+<h4 class="h4" id="lev1sec859">Recovery Time Objective (RTO)</h4>
+<p class="noindent">The term <em>recovery time objective (RTO)</em> is used to describe the target time that is set for the resumption of operations after an incident. This is a period of time that is defined by the business, based on the needs of the business. A shorter RTO results in higher costs because it requires greater coordination and resources. This term is commonly used in business continuity and disaster recovery operations.</p>
+<h4 class="h4" id="lev1sec860">Recovery Point Objective (RPO)</h4>
+<p class="noindent"><em>Recovery point objective (RPO)</em>, a totally different concept from RTO, is the time period representing the maximum period of acceptable data loss. The RPO defines the frequency of backup operations necessary to prevent unacceptable levels of data loss. A simple example of establishing RPO is to answer the following questions: How much data can you afford to lose? How much rework is tolerable?</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/note.jpg" alt="Images" width="70" height="65"></p>
+<p class="note"><strong>NOTE</strong>&nbsp;&nbsp;&nbsp;<span id="page_626" epub:type="pagebreak"></span>RTO and RPO are seemingly related but in actuality measure different things entirely. The RTO serves the purpose of defining the requirements for business continuity, while the RPO deals with backup frequency. It is possible to have an RTO of 1 day and an RPO of 1 hour, or an RTO of 1 hour and an RPO of 1 day. The determining factors are the needs of the business.</p>
+</div>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;Know the difference between RTO and RPO. The RTO serves the purpose of defining the requirements for business continuity, while the RPO deals with backup frequency.</p>
+</div>
+<h4 class="h4" id="lev1sec861">Mean Time to Repair (MTTR)</h4>
+<p class="noindent"><em>Mean time to repair (MTTR)</em> is a common measure of how long it takes to repair a given failure. This is the average time, and it may or may not include the time needed to obtain parts. The CompTIA Security+ Acronyms list indicates <em>mean time to recover</em> as an alternative meaning for MTTR. In either case, MTTR is calculated as follows:</p>
+<p class="center">MTTR = (total downtime) / (number of breakdowns)</p>
+<p class="indent">Availability is a measure of the amount of time a system performs its intended function. Reliability is a measure of the frequency of system failures. Availability is related to, but different than, reliability and is typically expressed as a percentage of time the system is in its operational state. To calculate availability, both the MTBF and the MTTR are needed:</p>
+<p class="center">Availability = MTBF / (MTBF + MTTR)</p>
+<p class="indent">Assuming a system has an MTBF of 6 months and the repair takes 30 minutes, the availability would be the following:</p>
+<p class="center">Availability = 6 months / (6 months + 30 minutes) = 99.9884%</p>
+<h4 class="h4" id="lev1sec862">Mean Time Between Failures (MTBF)</h4>
+<p class="noindent"><em>Mean time between failures (MTBF)</em> is a common measure of reliability of a system and is an expression of the average time between system failures. The time between failures is measured from the time a system returns to service until the next failure. The MTBF is an arithmetic mean of a set of system failures:</p>
+<p class="center">MTBF = ∑ (start of downtime – start of uptime) / number of failures</p>
+<p class="indent">Mean time to failure (MTTF) is a variation of MTBF, one that is commonly used instead of MTBF when the system is replaced in lieu of being repaired. Other than the semantic difference, the calculations are the same, and the meaning is essentially the same.</p>
+<div class="sidebarn">
+<p class="notei"><img class="inline" src="./public/exam.jpg" alt="Images" width="70" height="57"></p>
+<p class="note"><strong>EXAM TIP</strong>&nbsp;&nbsp;&nbsp;<span id="page_627" epub:type="pagebreak"></span>Although MTBF and MTTR may seem similar, they measure different things. Exam questions may ask you to perform simple calculations. Incorrect answer choices will reflect simple mistakes in the ratios, so calculate carefully.</p>
+</div>
+<h4 class="h4" id="lev1sec863">Functional Recovery Plans</h4>
+<p class="noindent">Accidents, disasters, and interruptions to business processes happen. This is why we have business continuity plans (BCPs). But what comes next? <em>Functional recovery plans</em> represent the next step—the transition from operations under business continuity back to normal operations. Just as the transition to business continuity operations needs to be planned, so too does the functional recovery plan. While the transition to disaster operations is fast, and planning is based on prioritized assessment of the level of critical importance with respect to continuing operations, the basis for the functional recovery plan is different. The functional recovery plan can be much more organized and staged over time, working to drive consistent efficiencies as opposed to speed. This can be done function by function and is driven by the function needs.</p>
+<h4 class="h4" id="lev1sec864">Single Point of Failure</h4>
+<p class="noindent">A key principle of security is defense in depth. This layered approach to security is designed to eliminate any specific single point of failure (SPOF). A <em>single point of failure</em> is any system component whose failure or malfunctioning could result in the failure of the entire system. An example of a single point of failure would be a single connection to the Internet—fine for a small business, but not so for a large enterprise with servers providing content to customers. Redundancies have costs, but if the alternative cost is failure, then implementing levels of redundancy is acceptable. For mission-essential systems, single points of failure are items that need to be called to management’s attention, with full explanation of the risk and costs associated with them. In some scenarios, avoiding a single point of failure may not be possible or practical, in which case everyone in the organization with responsibility for risk management should understand the nature of the situation and the resultant risk profile.</p>
+<h4 class="h4" id="lev1sec865">Disaster Recovery Plan (DRP)</h4>
+<p class="noindent">A <em>disaster recovery plan (DRP)</em> is the plan a firm creates to manage the business impact of a disaster and to recover from its impacts. The details for disaster recovery plans are covered in <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch27.xhtml#ch27">Chapter 27</a>, “Incident Response Policies and Procedures.”</p>
+<h4 class="h4" id="lev1sec866">Mission-Essential Functions</h4>
+<p class="noindent">When examining risk and impacts to a business, it is important to identify mission-essential functions from other business functions. In most businesses, the vast majority of daily functions, although important, are not mission essential. <em>Mission-essential functions</em> <span id="page_628" epub:type="pagebreak"></span>are those that, should they not occur or be performed properly, will directly affect the mission of the organization. In other terms, mission-essential functions are those that must be restored first after a business impact to enable the organization to restore its operations. The reason that identification of these functions is vital for risk management is simple: you should spend the majority of your effort protecting the functions that are essential. Other functions may need protection, but their impairment will not cause the immediate impact that impairment of a mission-essential function would.</p>
+<h4 class="h4" id="lev1sec867">Identification of Critical Systems</h4>
+<p class="noindent">A part of identifying mission-essential functions is identifying the systems and data that support the functions. <em>Identification of critical systems</em> enables the security team to properly prioritize defenses to protect the systems and data in a manner commensurate with the associated risk. It also enables the proper sequencing of restoring operations to ensure proper restoration of services.</p>
+<h4 class="h4" id="lev1sec868">Site Risk Assessment</h4>
+<p class="noindent">Risk assessments can have specific characteristics associated with different sites. This is the basis for a <em>site risk assessment,</em> which is simply a risk assessment tailored for a specific site. In organizations with multiple locations, with differing systems and operations, having tailored risk assessments that are specific to the risks associated with each site provides information for the firm. There may be some elements that overall are specific to the firm, but the development and inclusion of the risks associated with each site provide an actionable document that can be used effectively.</p>
+<h3 class="h3" id="lev325">Chapter Review</h3>
+<p class="noindent">In this chapter, you became acquainted with examining risk from a business impact analysis (BIA) point of view. The chapter opened with an examination of risk types, including external, internal, legacy systems, multiparty, IP theft, and software compliance/licensing. The next section discussed risk management strategies, where acceptance, avoidance, transference (including cybersecurity insurance), and mitigation were covered.</p>
+<p class="indent">The subject of risk analysis formed the bulk of the chapter, where the topics were risk registers, risk matrix/heat map, risk control assessment, risk control self-assessment, and risk awareness. The next topics presented were inherent risk, residual risk, control risk, and risk appetite. These were followed by regulations that affect risk posture and risk assessment types, including qualitative and quantitative. The section then moved on to the quantitative calculation of risk using likelihood of occurrence, impact, asset value, single-loss expectancy (SLE), annual loss expectancy (ALE), and annualized rate of occurrence (ARO).</p>
+<p class="indent">Disasters were covered next, including environmental and person-made, and internal versus external risks were examined.</p>
+<p class="indent"><span id="page_629" epub:type="pagebreak"></span>The chapter wrapped up with an examination of business impact analysis. In this section, the technical topics covered were recovery time objective (RTO), recovery point objective (RPO), mean time to repair (MTTR), and mean time between failures (MTBF). The next items discussed were functional recovery plans, single points of failure, disaster recovery plans (DRPs), mission-essential functions, identification of critical systems, and site risk assessments.</p>
+<h4 class="h4" id="lev1sec869">Questions</h4>
+<p class="noindent">To help you prepare further for the CompTIA Security+ exam, and to test your level of preparedness, answer the following questions and then check your answers against the correct answers at the end of the chapter.</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans1" id="r_ch34ans1">1</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is the name often used to describe the process of addressing the questions associated with sources of risk, their impacts, and the steps taken to mitigate them in the enterprise?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Risk assessment</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Business impact analysis</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Threat assessment</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Penetration test</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans2" id="r_ch34ans2">2</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following terms is used to describe the target time that is set for the resumption of operations after an incident?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;RPO</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;MTBF</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;RTO</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;MTTR</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans3" id="r_ch34ans3">3</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is a common measure of how long it takes to fix a given failure?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;MTTR</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;RTO</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;RPO</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;MTBF</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans4" id="r_ch34ans4">4</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is a system component whose failure or malfunctioning could result in the failure of the entire system?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Mean time between failures</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Single point of failure</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Single-loss expectancy</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Likelihood of occurrence</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans5" id="r_ch34ans5">5</a>.</strong>&nbsp;&nbsp;&nbsp;<span id="page_630" epub:type="pagebreak"></span>Which of the following is the process of subjectively determining the impact of an event that affects a project, program, or business?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Likelihood of occurrence</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Functional recovery plan</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Qualitative risk assessment</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Quantitative risk assessment</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans6" id="r_ch34ans6">6</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following describe mission-essential functions? (Choose all that apply.)</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Functions that, if they do not occur, would directly affect the mission of the organization</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Functions that, if they are not accomplished properly, would directly affect the mission of the organization</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Functions that are considered essential to the organization</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;The routine business functions</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans7" id="r_ch34ans7">7</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is the best description of risk?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;The cost associated with a realized risk</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;The chance of something not working as planned</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Damage that is the result of unmitigated risk</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;The level of concern one places on the well-being of people</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans8" id="r_ch34ans8">8</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following impacts is in many ways the final arbiter of all activities because it is how we “keep score”?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Reputation</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Safety</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Finance</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Life</p>
+<p class="ques"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans9" id="r_ch34ans9">9</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following is a representation of the frequency of an event, measured in a standard year?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Annual loss expectancy (ALE)</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Annualized rate of occurrence (ARO)</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Single-loss expectancy (SLE)</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Annualized expectancy of occurrence (AEO)</p>
+<p class="ques1"><strong><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#ch34ans10" id="r_ch34ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;Which of the following represents a method of transferring risk to a third party?</p>
+<p class="alpha"><strong>A.</strong>&nbsp;&nbsp;&nbsp;Applying controls that reduce risk impact</p>
+<p class="alpha"><strong>B.</strong>&nbsp;&nbsp;&nbsp;Creating a record of information about identified risks</p>
+<p class="alpha"><strong>C.</strong>&nbsp;&nbsp;&nbsp;Developing and forwarding the results of a risk matrix/heat map</p>
+<p class="alpha"><strong>D.</strong>&nbsp;&nbsp;&nbsp;Purchasing cybersecurity insurance</p>
+<h4 class="h4" id="lev1sec870"><span id="page_631" epub:type="pagebreak"></span>Answers</h4>
+<p class="ques"><strong><a id="ch34ans1" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans1">1</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Business impact analysis (BIA) is the name often used to describe a document created by addressing the questions associated with sources of risk and the steps taken to mitigate them in the enterprise. A risk assessment is a method to analyze potential risk based on statistical and mathematical models. A common method is the calculation of the annual loss expectancy (ALE). A threat assessment is a structured analysis of the threats that confront an enterprise. Penetration tests are used by organizations that want a real-world test of their security.</p>
+<p class="ques"><strong><a id="ch34ans2" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans2">2</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> The term <em>recovery time objective (RTO)</em> is used to describe the target time that is set for the resumption of operations after an incident. Recovery point objective (RPO) represents the maximum time period of acceptable data loss. Mean time between failures (MTBF) is a common measure of reliability of a system and is an expression of the average time between system failures. Mean time to repair (MTTR) is a common measure of how long it takes to repair a given failure.</p>
+<p class="ques"><strong><a id="ch34ans3" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans3">3</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A.</strong> Mean time to repair (MTTR) is a common measure of how long it takes to repair a given failure. Recovery time objective (RTO) describes the target time that is set for the resumption of operations after an incident. Recovery point objective (RPO) represents the maximum time period of acceptable data loss. Mean time between failures (MTBF) is a common measure of reliability of a system and is an expression of the average time between system failures.</p>
+<p class="ques"><strong><a id="ch34ans4" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans4">4</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> A single point of failure is any aspect of a system that, if triggered, could result in the failure of the entire system. Mean time between failures (MTBF) is a common measure of reliability of a system and is an expression of the average time between system failures. Single loss expectancy (SLE) is the expected loss from the occurrence of a risk on an asset. The likelihood of occurrence is the chance that a particular risk will occur.</p>
+<p class="ques"><strong><a id="ch34ans5" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans5">5</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>C.</strong> Qualitative risk assessment is the process of subjectively determining the impact of an event that affects a project, program, or business. The likelihood of occurrence is the chance that a particular risk will occur. Functional recovery plans represent the transition from operations under business continuity back to normal operations. Quantitative risk assessment is the process of objectively determining the impact of an event that affects a project, program, or business.</p>
+<p class="ques"><strong><a id="ch34ans6" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans6">6</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>A, B,</strong> and <strong>C.</strong> Mission-essential functions are those that, should they not occur or be performed properly, will directly affect the mission of the organization. This is where you spend the majority of your effort—protecting the functions that are essential. It is important to separate mission-essential functions from other business functions.</p>
+<p class="ques"><strong><a id="ch34ans7" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans7">7</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> Risk is the chance of something not working as planned and causing an adverse impact. Impact is the cost associated with a realized risk. Property damage can be the result of unmitigated risk. Safety is when you consider the level of concern one places on the well-being of people.</p>
+<p class="ques"><strong><a id="ch34ans8" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans8">8</a>.</strong>&nbsp;&nbsp;&nbsp;<span id="page_632" epub:type="pagebreak"></span><strong>C.</strong> Finance is in many ways the final arbiter of all activities because it is how we keep score. The others are important but are not considered the final arbiter.</p>
+<p class="ques"><strong><a id="ch34ans9" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans9">9</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>B.</strong> The annualized rate of occurrence (ARO) is a representation of the frequency of the event, measured in a standard year. The annual loss expectancy (ALE) is calculated by multiplying the single-loss expectancy (SLE) by the likelihood or number of times the event is expected to occur in a year. The SLE is calculated by multiplying the asset value times the exposure factor. Annualized expectancy of occurrence (AEO) is not a term used in the cybersecurity industry.</p>
+<p class="ques1"><strong><a id="ch34ans10" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#r_ch34ans10">10</a>.</strong>&nbsp;&nbsp;&nbsp;<strong>D.</strong> A common method of transferring risk is to purchase cybersecurity insurance. Insurance allows risk to be transferred to a third party that manages specific types of risk for multiple parties, thus reducing the individual costs. Applying controls that reduce risk impact describes risk mitigation. A risk register is “a record of information about identified risks,” as defined by the reference document <em>ISO Guide 73:2009 Risk Management—Vocabulary.</em> A risk matrix/heat map is used to visually display the results of a qualitative risk analysis.</p>
+</section>
+</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+
+
+
+        <a href="Chapter 33 Organizational Policies.html" class="prev nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 33 Organizational Policies</div>
+        </a>
+
+
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+
+
+
+        <a href="Chapter 35 Privacy.html" class="next nav-link">
+
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 35 Privacy</div>
+        </a>
+
+
+  </div>
+
+</section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+
+
+          ""
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 69px;">
+  <a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+
+
+    
+
+    >
+
+
+
+  </ul>
+  
+
+
+    
+     /
+
+    
+
+
+
+</footer>
+
+
+
+    <script src="./public/saved_resource" charset="utf-8"></script>
+    <script src="./public/saved_resource(1)" charset="utf-8"></script>
+
+
+<div class="font-flyout" style="top: 151.009px; left: 1772px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="127.0.0.1/library/view/comptia-security-all-in-one/9781260464016/ch34.xhtml#">Reset</a>
+</div>
+</div><div class="annotator-notice">Sorry we could not read the annotations from the store</div></body></html>
