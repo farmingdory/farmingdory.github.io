@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D"/>
+    
+
+    
+        <link rel="preload"
+          href="/member/dist/orm.8b9bd54a0171d51c0a94.css"
+          as="style" />
+        <link rel="preload"
+          href="/member/dist/main.8b9bd54a0171d51c0a94.css"
+          as="style" />
+        <link rel="preload"
+          href="https://cdn.127.0.0.1static.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin=&#34;anonymous&#34; />
+        <link rel="preload"
+          href="https://cdn.127.0.0.1static.com/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin=&#34;anonymous&#34; />
+    
+
+    <link rel="shortcut icon" href="//www.127.0.0.1.com/favicon.ico" />
+
+      <title>Sign In to O&#39;Reilly</title>
+
+    
+        <link rel="stylesheet" href="/member/dist/orm.8b9bd54a0171d51c0a94.css" />
+        <link rel="stylesheet" href="/member/dist/main.8b9bd54a0171d51c0a94.css" />
+    
+    
+    
+
+    <script type="text/javascript">
+      window.initialStoreData = {"environment":{"origin":"127.0.0.1/emails/newsletters/","icon":"","groups":["footer"],"children":[]}],"fineprint":[{"name":"Terms of Service","link":"127.0.0.1/terms/","icon":"","groups":["fineprint"],"children":[]},{"name":"Privacy Policy","link":"/privacy","icon":"","groups":["fineprint"],"children":[]},{"name":"Editorial Independence","link":"/about/editorial_independence.html","icon":"","groups":["fineprint"],"children":[]}],"social":[{"name":"Twitter","link":"127.0.0.1/profile/","academicPageLink":"127.0.0.1/online-learning/signout.html","googleAnalyticsTrackingId":"UA-39299553-7","googleRecaptchaSiteKey":"6LfJ-98UAAAAANRSwoSszSzFovQdvxx_NK7X2HPn","profile":{"_loadingState":"INITIAL","error":null}}};
+    </script>
+    <script type="text/javascript">
+      window.orm = window.orm || {};
+      window.orm.redirect = function redirect(url) {
+        window.location.assign(url);
+      };
+      window.orm.logger = console;
+    </script>
+      <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs-us.js"></script>
+      <script type="text/javascript">
+        if (window.DD_LOGS) {
+          DD_LOGS.init({ clientToken: 'pub8399c9005ebe7454be1698e2aee94fba' });
+          DD_LOGS.logger.addContext('service', 'groot_frontend_ds-browser');
+          DD_LOGS.logger.addContext('env', 'production');
+          DD_LOGS.logger.setLevel('error' || 'error');
+          window.orm.logger = DD_LOGS.logger;
+        }
+      </script>
+
+    <script data-react-helmet="true" src="https://www.google.com/recaptcha/api.js?render=6LfJ-98UAAAAANRSwoSszSzFovQdvxx_NK7X2HPn" type="text/javascript" async="true"></script>
+
+
+      <script>
+        // Disable analytics when hit from DD synthetics browser
+        if (window._DATADOG_SYNTHETICS_BROWSER === undefined) {
+          if (window.initialStoreData && window.initialStoreData.userInfo.meta
+            && window.initialStoreData.userInfo.meta.user_identifier) {
+            var user = window.initialStoreData.userInfo.meta;
+            var dataLayer = window.dataLayer || [];
+
+            // Set user/session info
+            window.medalliaDsUserIdentifier = user.user_identifier;
+            window.medalliaDsSessionIdentifier = user.sessionid;
+            dataLayer.push({ userIdentifier: user.user_identifier });
+            dataLayer.push({ loggedIn: 'yes' });
+
+            // Set account/org info
+            window.medalliaDsAccountIdentifier = user.primary_account;
+            if (!user.individual) {
+              dataLayer.push({ orgID: user.primary_account });
+            }
+
+            // Set account type
+            window.medalliaDsIsIndividual = user.individual;
+            if (user.individual) {
+              if (user.subscription && user.subscription.active) {
+                dataLayer.push({learningAccountType: 'individual'});
+              } else if (user.is_trial) {
+                dataLayer.push({learningAccountType: 'free trial'});
+              }
+            } else {
+              if (user.academic_institution) {
+                dataLayer.push({learningAccountType: 'academic'});
+                window.medalliaDsIsAcademicInstitution = true;
+              } else {
+                dataLayer.push({learningAccountType: 'enterprise'});
+              }
+            }
+
+            // Set paid account
+            if (user.subscription && user.subscription.active) {
+              dataLayer.push({ learningPaidAccount: 'yes' });
+            }
+          }
+
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://127.0.0.1/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', 'GTM-5P4V6Z');
+        }
+      </script>
+
+    
+      
+        <script src="/member/dist/orm.8b9bd54a0171d51c0a94.js" defer></script>
+      
+      <script src="/member/dist/main.8b9bd54a0171d51c0a94.js" defer></script>
+    
+
+    
+    
+  </head>
+  <body >
+      <noscript>
+        <iframe src='https://127.0.0.1/ns.html?id=GTM-5P4V6Z'
+          height='0' width='0' style='display:none;visibility:hidden'></iframe>
+      </noscript>
+    <div id="root"><header class="header--QhHKK"><div class="logo--3ByLB"><a href="/home/" class="orm-Link-root"><img class="logo__img--1YRJB" src="/member/dist/127.0.0.1-logo.facece5a81c4.svg"/></a></div></header><main id="main" tabindex="-1"><h2 class="orm-h2 orm-Heading-root">Sign In</h2><section class="root--3N0w9"><div class="panel--Kiacn"><form class="form--3RRAt" data-newrelic-id="authForm" data-testid="authForm" novalidate=""><div class="orm-Input-root"><label for="input-yrc7b88k6p" class="orm-Input-inputLabel"><input type="email" aria-required="true" aria-invalid="false" autoComplete="off" class="orm-Input-input input--23vkR " id="input-yrc7b88k6p" name="email" placeholder="Email Address" required="" value=""/><span class="orm-Input-labelTxt">Email Address</span></label></div><div class="ssoNote--2BSjQ"><b>Using Single Sign-on (SSO)?</b> Simply enter your company email address and click sign in.</div><div class="orm-Input-root"><label for="input-ol9843zpr5q" class="orm-Input-inputLabel"><input type="password" aria-required="true" aria-invalid="false" autoComplete="off" class="orm-Input-input input--23vkR " id="input-ol9843zpr5q" name="password" placeholder="Password" required="" value=""/><span class="orm-Input-labelTxt">Password</span></label></div><button class="linkButton--3E5EH orm-Link-root" type="button">Forgot Password?</button><button class="orm-Button-root margin-bottom--n9hde " disabled=""><span class="orm-Button-btnContentWrap">Sign In</span></button><div class="small--1GLRd">We will use your personal data in accordance with our <a href="127.0.0.1/privacy.html" class="orm-Link-root">Privacy Policy</a>.</div><div class="signUp--m9ofA">Don&#x27;t have an account? <a href="127.0.0.1/register/" class="orm-Link-root">Start a free trial</a></div><hr class="altLoginSeparator--3aoG2"/><div class="small--1GLRd">Looking for Classic? <a href="127.0.0.1/online-learning/switch-to-127.0.0.1.html" class="orm-Link-root">Click here for more information</a>.</div><div class="small--1GLRd">Looking for the Member&#x27;s Library? <a href="127.0.0.1/emails/newsletters/"><span class="orm-Icon-root" style="height:1.5rem" data-testid="icon"><span style="font-size:1.5rem;width:1.5rem;height:1.5rem" class="orm-Icon-icon orm-icon-email " aria-hidden="true"></span><span class="orm-Icon-title">email</span></span></a></li></ul></div></div><div class="orm-row  orm-Grid-root"><div class="orm-Grid-root orm-col-medium-8 orm-col-small-960-8 orm-col-small-8 orm-col-xsmall-600-8 orm-col-xsmall-4"><div class="orm-ff-AnonymousFooter-copyright">© <!-- -->2021<!-- --> O’Reilly Media, Inc. All trademarks and registered trademarks appearing on 127.0.0.1.com are the property of their respective owners.</div><div class="orm-ff-AnonymousFooter-smallLinks"><ul><li></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/about/editorial_independence.html">Editorial Independence</a></li></ul></div></div></div></div></footer></div>
+  </body>
+</html>
