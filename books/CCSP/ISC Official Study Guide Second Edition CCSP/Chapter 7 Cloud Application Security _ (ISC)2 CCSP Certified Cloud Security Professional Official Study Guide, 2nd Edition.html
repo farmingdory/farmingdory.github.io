@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603375">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 7 Cloud Application Security | (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+        <script src="public/orm.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+
+
+
+  <meta itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603375/" data-react-helmet="true"><meta property="og:url" itemprop="url" content="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition","type":"book","identifier":"9781119603375","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603375-/Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2019-12-24","title":"Chapter 7 Cloud Application Security"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 7 Cloud Application Security" data-react-helmet="true"><meta property="og:title" content="Chapter 7 Cloud Application Security" data-react-helmet="true"><meta itemprop="name" content="Chapter 7 Cloud Application Security" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+Chapter 7
+Cloud Application Security
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.3...." data-react-helmet="true"><meta name="twitter:description" content="
+
+Chapter 7
+Cloud Application Security
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.3...." data-react-helmet="true"></head>
+  <body>
+
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper orm-ff-Shell-slim"><a href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root orm-ff-SearchBarView-slim"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-withIcon"><label for="input-09sh73wvp1zl" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-09sh73wvp1zl" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 6 Responsibilities in the Cloud</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 7 Cloud Application Security</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 8 Operations Elements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="title--1b0fU">Chapter 8 Operations Elements</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="149" id="Page_149"></span><a id="start"></a><span class="chapterNumber">Chapter 7</span>
+<br><span class="chapterTitle">Cloud Application Security</span></h1>
+</header>
+<section id="c07-sec-0001">
+<p><b>THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:</b></p>
+<ul id="c07-list-0001">
+<li><b>Domain 1: Cloud Concepts, Architecture, and Design</b>
+<ul>
+<li>1.3. Understand Security Concepts Relevant to Cloud Computing
+<ul>
+<li>1.3.2. Access Control</li>
+<li>1.3.6. Common Threats</li>
+</ul></li></ul></li>
+<li><b>Domain 3: Cloud Platform and Infrastructure Security</b>
+<ul>
+<li>3.4. Design and Plan Security Controls
+<ul>
+<li>3.4.4. Identification, Authentication, and Authorization in Cloud Infrastructure</li>
+</ul></li></ul></li>
+<li><b>Domain 4: Cloud Application Security</b>
+<ul>
+<li>4.1. Advocate Training and Awareness for Application Security
+<ul>
+<li>4.1.1. Cloud Development Basics</li>
+<li>4.1.2. Common Pitfalls</li>
+<li>4.1.3. Common Cloud Vulnerabilities</li>
+</ul></li>
+<li>4.2. Describe the Secure Software Development Lifecycle (SDLC) Process
+<ul>
+<li>4.2.1. Business Requirements</li>
+<li>4.2.2. Phases and Methodologies</li>
+</ul></li>
+<li>4.3. Apply the Software Development Lifecycle (SDLC)
+<ul>
+<li>4.3.1. Avoid Common Vulnerabilities During Development</li>
+<li>4.3.2. Cloud-specific Risks</li>
+<li>4.3.3. Quality Assurance</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="150" id="Page_150"></span>4.3.4. Threat Modeling</li>
+<li>4.3.5. Software Configuration Management and Versioning</li>
+</ul></li>
+<li>4.4. Apply Cloud Software Assurance and Validation
+<ul>
+<li>4.4.1. Functional Testing</li>
+<li>4.4.2. Security Testing Methodologies</li>
+</ul></li>
+<li>4.5. Use Verified Secure Software
+<ul>
+<li>4.5.1 Approved Application Programming Interfaces (API)</li>
+<li>4.5.2. Supply-Chain Management</li>
+</ul></li>
+<li>4.6. Comprehend the Specifics of Cloud Application Architecture
+<ul>
+<li>4.6.1. Supplemental Security Components</li>
+<li>4.6.2. Cryptography</li>
+<li>4.6.3. Sandboxing</li>
+<li>4.6.4. Application Virtualization and Orchestration</li>
+</ul></li>
+<li>4.7. Design Appropriate Identity and Access Management (IAM) Solutions
+<ul>
+<li>4.7.1. Federated Identity</li>
+<li>4.7.2. Identity Providers</li>
+<li>4.7.3. Single Sign-On</li>
+<li>4.7.4. Multifactor Authentication</li>
+</ul></li></ul></li>
+<li><b>Domain 5: Cloud Security Operations</b>
+<ul>
+<li>5.2. Operate Physical and Logical Infrastructure for Cloud Environment
+<ul>
+<li>5.2.2. Secure Network Configuration</li>
+</ul></li>
+<li>5.3. Manage Physical and Logical Infrastructure for Cloud Environment
+<ul>
+<li>5.3.7. Network Security Controls</li>
+</ul></li>
+<li>5.4. Implement Operational Controls and Standards
+<ul>
+<li>5.4.8. Deployment Management</li>
+</ul></li></ul></li></ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="151" id="Page_151"></span><img src="public/clogo.jpg" alt="" width="150" height="150"> In this chapter, we continue to explore cloud computing by learning about application design and architecture for the cloud as well as application testing and validation to ensure our cloud applications are secure. In the cloud context, applications are the main focus of the software as a service (SaaS) model. These web applications are the software that is consumed as part of the cloud offering. We will discuss and review their design, architecture, validation, processes, and lifecycle as well as the tools used to build and deploy successful cloud applications.</p>
+<p>We also examine the importance of training and awareness and issues involved with moving to or building applications for the cloud environment. Finally, there is an in-depth look at the software development lifecycle, identity and access management, cloud application architecture, and software assurance and validation.</p></section>
+<section id="c07-sec-0002">
+<h2><a id="usec0002"></a>Training and Awareness</h2>
+<p>Training and awareness relates directly to application developers and how programmers need to have sufficient understanding of risks in the cloud environment to properly design secure software.</p>
+<p>Because applications manipulate data, we must determine the sensitivity of our data or we may end up using it in such a way that we unnecessarily expose data. For instance, does the data or the results of its manipulation and processing contain personally identifiable information (PII) such as name, address, Social Security number, or health information? If so, the application, along with the data to be stored and manipulated, may not be a good fit for a cloud application solution. Moving an application to the cloud may or may not reduce risks, which is why it is so important to evaluate your situation and application before migration.</p>
+<p>It is also important to consider the responsibilities associated with using cloud data. When we begin discussing cloud applications, data concerns must be adequately addressed as it is vital that the data owner understand very clearly the responsibilities of each of the players in this endeavor. See <a id="figureanchor7-1" role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure7-1">Figure 7.1</a>.</p>
+<figure>
+<img class="center" src="public/c07f001.jpg" alt="The figure shows a graphical depiction of the general gradations of the various arrangements (customer/provider responsibilities, by service model)." width="800" height="514">
+<figcaption>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="152" id="Page_152"></span><span class="figureLabel"><a id="figure7-1" role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor7-1"><b>Figure 7.1</b></a> Customer/provider responsibilities, by service Model</span></p>
+</figcaption>
+</figure>
+<p>As you can see from <a role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure7-1">Figure 7.1</a>, there are differing responsibilities for each service and delivery model. However, under current laws, the data owner is always legally responsible for securing data. This is true even when the provider is tasked with financial liability according to the contract.</p>
+<p>On the other hand, if the nature and sensitivity of the data is such that it changes constantly or is of little real value, then moving the associated applications and related data to the cloud may make good sense, both from a computing and storage perspective and more importantly from the business perspective. An example of this might be a wholesaler that uses images of products with SKUs so that customers can order items online. As long as the actual purchase occurs in a different application, the catalog of items would be of little value to anyone other than the customer placing the order. In addition, as prices change rapidly, any associated prices would also be worth very little. Therefore, the catalog application and its associated images and pricing could more than likely be easily moved to the cloud and secured with minimal effort and risk.</p>
+<p>There are also instances where it makes more sense to move an application into the cloud because the security is <i>better</i>. For instance, many banking institutions host their primary, or what is called their “core banking” application, in the cloud specifically because they do not have the resources, experience, and tools to securely manage the applications themselves. The core application is generally what they use for day-to-day teller transactions, deposit, withdrawals, and so forth. Cloud providers of these core services generally have 24×7 staff who monitor everything and are highly trained and skilled in these areas, providing resources many companies simply cannot afford. For these specific providers, there are also regulatory incentives to ensure that data is secure and that applications work as designed. Even in instances where they may have code issues, it is usually a matter of <span epub:type="pagebreak" role="doc-pagebreak" title="153" id="Page_153"></span>the application <i>not</i> doing something as opposed to it performing a transaction that would cause problems. These applications are thoroughly tested before being allowed to touch a customer’s account information.</p>
+<p>An often-used term for moving an entire application to the cloud without any significant changes is <i>forklifting</i>. This refers to the idea of moving an existing legacy enterprise application to the cloud with little or no code changes. These are often self-contained stand-alone applications that have operated successfully in the enterprise environment. However, dependency on infrastructure aspects of the legacy enterprise that might not be replicated in the cloud can cause serious problems in transition efforts. Other issues such as the use of proprietary libraries that the cloud environment does not also have can also inhibit transition efforts. In addition to the fact that not all apps are natively ready for the cloud, many cannot move to the cloud at all without some type of extensive code changes. Last, many applications, particularly office applications such as accounting and word processing programs, now have alternative cloud-based versions, minimizing or eliminating the need to move those applications at all.</p>
+<p>Developers often face challenges when working in a new and unfamiliar environment. For instance, they may be used to working in a certain language or framework that may not be available to them on a particular platform. Developers working in the traditional IT environment may not be used to the particular risks, threats, and vulnerabilities associated with cloud computing. Moreover, there may be a lack of pertinent documentation for moving specific applications to the cloud; developers might not know how to approach migration. This is even more true for proprietary applications exclusive to the developers’ organization. Developers might have a steep learning curve for their own professional skills and knowledge if they’ve never worked in the cloud before, and they might not have the time, budget, or discipline to conduct suitable training.</p>
+<section class="feature3" id="c07-feafxd-0001">
+<p class="h4" style="background-color: #E7E7E8;">The Treacherous 12</p>
+<p>The Cloud Security Alliance (CSA) publishes a report about every three years on the top threats associated with cloud computing. The 2016 report (the most current as of publication of this book) is titled <i>The Treacherous 12, Cloud Computing Top Threats in 2016</i>: <a class="codeLabel" href="https://cloudsecurityalliance.org/artifacts/the-treacherous-twelve-cloud-computing-top-threats-in-2016/">https://cloudsecurityalliance.org/artifacts/ the-treacherous-twelve-cloud-computing-top-threats-in-2016/</a>. This is a compilation by the CSA Top Threats Working Group, which consists of some of the most noted experts in the industry. These experts from around the world and many different backgrounds come together to conduct research into data breaches and malicious intrusions, publish surveys, and develop this list. Often, threats included in previous versions of the Top Threats list still appear in the current list; we know what the problems are, yet we continue to make the same mistakes repeatedly.</p>
+</section>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="154" id="Page_154"></span>These are some of the issues and challenges that developers and administrators face when migrating to the cloud:</p>
+<p><b>Multitenancy </b>This is the concept of sharing resources with other cloud customers simultaneously.</p>
+<p><b>Third-Party Admins </b>Administrators in the cloud data center have physical access to the devices that contain customer data, but they are not under the control of the customers.</p>
+<p><b>Deployment Models (Public, Private, Community, Hybrid) </b>In many cloud deployments, the customer will no longer have control of the physical hardware that contains their data; in the traditional environment, software developers did not have to consider or contend with the possibility that the programs would be running on hardware that was not owned and/or controlled by the organization using the software.</p>
+<p><b>Service Models (IaaS, PaaS, and SaaS) </b>Developers may or may not have control over the particular infrastructure, platform, or even application stack that they must work with.</p>
+<p>Another area of complexity and concern for the CCSP is that of understanding the appropriate use and design of encryption technologies in the cloud and with cloud applications. Encryption is one of the more effective control mechanisms for securing digital data and, in many cases, is the only viable option for the cloud customer for securing data because the customer won’t have administrative or physical control of the cloud resources and infrastructure.</p>
+<p>Not all applications will run effectively or securely in the cloud. They must be examined on a case-by-case basis with these factors and characteristics in mind.</p><section id="c07-sec-0003">
+<h3><a id="usec0003"></a>Common Cloud Application Deployment Pitfalls</h3>
+<p>Common pitfalls that developers face when deploying cloud applications include whether the same functionality will be available on-premises versus off-premises, poor documentation and training, tenancy separation, and the use of secure and validated APIs are all significant challenges developers face in deploying applications in the cloud environment. We’ll examine these issues in the following sections.</p><section id="c07-sec-0004">
+<h4><a id="usec0004"></a>On-Premises Apps Do Not Always Transfer (and Vice Versa)</h4>
+<p>On-premises applications (or “on-prem” applications as they are often called) are usually designed to be run in a traditional enterprise environment where data is accessed, processed, and stored locally. Moving these to the cloud is not always practical or even possible.</p>
+<p>Traditional enterprise application developers often do not have to contend with speed or bandwidth issues due to running on a local area network (LAN). A lack of routing involvement and high-speed switches make these very quick and responsive even if code is sometimes not well written. One example would be when the application makes numerous calls in order to assemble a single piece of data, as opposed to making a single call and collecting it all at once. These design issues can slow a cloud application down to the point that it <span epub:type="pagebreak" role="doc-pagebreak" title="155" id="Page_155"></span>simply does not function properly. These calls create numerous sessions and take up processor and memory resources, and eventually entire systems can slow to a crawl.</p>
+<p>Traditional on-premises applications are not typically asked to share resources such as CPU, RAM, and bandwidth, allowing poorly designed code to run adequately on a faster local network but then failing to meet expectations when moved to the cloud.</p></section>
+<section id="c07-sec-0005">
+<h4><a id="usec0005"></a>Poor Documentation</h4>
+<p>The lack of proper documentation is not a new risk introduced by cloud computing, but it is instead a harsh reality in our field. Developers are constantly being goaded to rush applications into production, while documentation is a slow, methodical process that does not add to functionality or performance. Moreover, the skills necessary for software design don’t often overlap into the skillset for technical documentation, so the two efforts are largely performed by different people, which adds another layer of complication and delay to the process.</p>
+<p>Moreover, in organizations that use custom, proprietary software in a traditional environment, it is very possible that no documentation exists for moving the application to the cloud because it has never been tried before. During migration, developers do not have any guidance to assist them in this situation.</p></section>
+<section id="c07-sec-0006">
+<h4><a id="usec0006"></a>Not All Apps Are Cloud Ready</h4>
+<p>Some applications, specifically database applications, might run even better in the cloud. Typically cloud storage is faster than older enterprise spinning disks, and the data usually has a much smaller distance to travel in order to reach compute and storage components because they are all stored in the same logical units.</p>
+<p>However, they are not all ready for the cloud. Often, code must be reevaluated and altered in order to run effectively in the cloud. Encryption may be needed that had not been used in the past, and a host of other issues exist. Even though some apps will eventually run successfully in the cloud, they are not always immediately ready and may require code or configuration changes in order to work effectively.</p></section>
+<section id="c07-sec-0007">
+<h4><a id="usec0007"></a>Tenancy Separation</h4>
+<p>In the traditional enterprise, where all infrastructure and resources are owned and controlled by the organization, there is no risk of other tenants accessing the organization’s data through inadvertent “data bleed” between applications, OSs, guest images, and users. The exact opposite is true of the cloud environment: all those possibilities exist, so the risk of each must be addressed by significant use of countermeasures that ensure access control, process isolation, and denial of guest/host escape attempts…and all these countermeasures will be dependent on remote administration (and will most likely require significant negotiation and cooperation with the provider).</p></section>
+<section id="c07-sec-0008">
+<h4><a id="usec0008"></a>Use of Secure, Validated APIs</h4>
+<p>One feature that makes cloud-based operations so desirable is the flexibility to use current data sets in new and novel ways; this capability is offered and enhanced through the <span epub:type="pagebreak" role="doc-pagebreak" title="156" id="Page_156"></span>deployment of a wide variety of APIs, many of which can be chosen by the cloud customer and more that can be selected by the user (on the user’s own platform or device, in a BYOD environment). Although the variety of options is enticing, it brings an attendant risk: the APIs used to provide this capability might be of questionable origin.</p>
+<p>It behooves the cloud customer to formalize a policy and process for vetting, selecting, and deploying only those APIs that can be validated in some fashion—a method for determining the trustworthiness of the source and the software itself. This process should be included in the organization’s acquisition and development program as well as the change management effort.</p></section>
+</section>
+</section>
+<section id="c07-sec-0009">
+<h2><a id="usec0009"></a>Cloud-Secure Software Development Lifecycle (SDLC)</h2>
+<p>The cloud-secure software development lifecycle (SDLC) has the same foundational structure as the traditional SDLC, although there are some factors when dealing with the cloud that need to be taken into account. Just like data, software has a useful lifecycle based on phases or stages of development and use (see <a id="figureanchor7-2" role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure7-2">Figure 7.2</a>). Although the name and number of stages can be debated, they generally include the following core stages (although some models forego secure operations and disposal or use slightly different names for the stages):</p><ol id="c07-list-0002">
+<li>Defining</li>
+<li>Designing</li>
+<li>Development</li>
+<li>Testing</li>
+<li>Secure Operations</li>
+<li>Disposal</li>
+</ol>
+<figure>
+<img class="center" src="public/c07f002.jpg" alt="The figure shows a circular representation of the cloud-secure software development life cycle (SDLC). The first arrow is labeled as “Disposal,” the second arrow as “Designing,” the third arrow as “Development,” the fourth arrow as “Testing,” the fifth arrow as “Secure Operations,” and the sixth arrow as “Defining” (in lock-wise direction)." width="734" height="600">
+<figcaption>
+<p><span class="figureLabel"><a id="figure7-2" role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor7-2"><b>Figure 7.2</b></a> The cloud-secure software development lifecycle (SDLC)</span></p>
+</figcaption>
+</figure>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="157" id="Page_157"></span>In the definition phase, we are focused on identifying the business requirements of the application, such as accounting, database, or customer relationship management. Regardless of the application’s purpose, it is vital that the definition phase describe aspects of the business needs. We try to refrain from choosing any specific tools or technologies at this point; the temptation to do so creates a situation where we have a foregone conclusion (“We’re going to use Tech X”) instead of truly considering all possibilities that might best satisfy the business requirements.</p>
+<p>In the design phase, we begin to develop user stories (what the user will want to accomplish and how to go about it), what the interface will look like, and whether it will require the use or development of any APIs.</p>
+<p>The development phase is where the code is written. The code takes into account the previously established definition and design parameters. Some testing of code snippets may occur in this phase to determine whether the code is working as designed. However, major testing will occur later in the process.</p>
+<p>In the testing phase of application development, activities such as initial penetration testing and vulnerability scanning against the application are performed. We will use techniques and tools for both dynamic and static testing or dynamic application security testing (DAST) and static application security testing (SAST). We will look at these testing methods later in the chapter. Generally, at least two types of testing take place: functional and security testing. Functional testing should ensure that the software performs whatever tasks it was intended for, completely and accurately, in a manner resistant to loss/interruption. Security testing ensures that whatever controls were included in the software are working effectively and accomplishing their purpose.</p>
+<p>Once all the other stages are finished, the application would then enter into what some call the <i>secure operations phase</i>. This is after thorough testing has been successfully completed and the application and its environment are deemed secure.</p>
+<p>The disposal phase is not included in the CCSP CBK but is worthy of mention here. Once the software has reached the end of its useful life or has been replaced by a newer or different application, it must then be securely disposed of. Most software companies have a published software lifecycle as part of their customer-facing information. It includes life spans of the applications with specifics about things like how long and what kind of security patches will be available to the customer. Software that is no longer supported by the vendor poses a risk to the enterprise in many ways, particularly because the vendor will no longer offer security patches for newly discovered vulnerabilities.</p>
+<p>Most web and cloud applications are a bit different than traditional applications in that they can often be updated in place continually and may stay in service for a very long time.</p>
+<p>Throughout development, the process itself should be managed and inspected in such a way as to reduce the possibility of introducing errors or harming the end product. This management/inspection is referred to as <i>quality assurance</i> (QA).</p><section id="c07-sec-0010">
+<h3><a id="usec0010"></a>Configuration Management for the SDLC</h3>
+<p>It is crucial to apply configuration/change management (CM) practices and processes to software in conjunction with the SDLC. Proper version control, documentation, and managerial/project oversight of the software package is necessary to ensure that requirements are <span epub:type="pagebreak" role="doc-pagebreak" title="158" id="Page_158"></span>being met, problems are addressed, and fixes to problems are retained in subsequent versions so the problems don’t recur. (Some of these aspects, particularly version control and documentation, can be tricky when using Agile software development; see the Agile discussion later in this chapter.)</p>
+<p>As a new asset, the software should be entered into the organization’s inventory and formal CM process as early as possible (indeed, the CM board should have had to approve the initiation of the project). Many of the SDLC phases and practices should synchronize fully with the organization’s CM process (such as testing before entering production and long-term maintenance and operational support).</p></section>
+</section>
+<section id="c07-sec-0011">
+<h2><a id="usec0011"></a>ISO/IEC 27034-1 Standards for Secure Application Development</h2>
+<p>The International Organization for Standardization (ISO) has created an approach organizations can use for tracking security controls used in their software. ISO/IEC 27034-1 provides an overview of application security that introduces definitive concepts, principles, and processes involved in application security. In doing so, it describes two documents an organization can use internally as inventories of controls.</p>
+<p>The Organizational Normative Framework (ONF) is the framework for all components of application security controls and best practices catalogued and leveraged by the organization. The application normative frameworks (ANFs) are the subsets of the ONF for each specific application. The ANF shares the applicable parts of the ONF needed to achieve an application’s required level of security and the level of trust desired.</p>
+<p>The ANF-to-ONF relationship is a one-to-one relationship; every application has an ANF that maps back to the ONF. However, the ONF-to-ANF relationship is one-to-many. The ONF has many ANFs, but the ANF has only one ONF. Make sure you understand this concept.</p>
+<section class="feature3" id="c07-feafxd-0002">
+<p class="h4" style="background-color: #E7E7E8;">ONF/ANF Example</p>
+<p>Company X has three software applications, Programs A, B, and C. Each of the Programs has these controls:</p>
+<p class="listHead">Program A</p>
+<ul id="c07-list-0003">
+<li>Password</li>
+<li>Encryption</li>
+<li>Process isolation</li>
+<li>Input validation</li>
+</ul>
+<p class="listHead"><span epub:type="pagebreak" role="doc-pagebreak" title="159" id="Page_159"></span>Program B</p>
+<ul id="c07-list-0004">
+<li>Password</li>
+<li>Integrity check</li>
+<li>Screencap disabling</li>
+</ul>
+<p class="listHead">Program C</p>
+<ul id="c07-list-0005">
+<li>Password</li>
+<li>Integrity check</li>
+</ul>
+<p>Each list, for each Program, is that software’s ANF. Company X has three ANFs, one for each software application.</p>
+<p>The company also has an ONF; the list of all the controls used in all the Programs within the company. It looks like this:</p>
+<ul id="c07-list-0006">
+<li>Password</li>
+<li>Encryption</li>
+<li>Integrity check</li>
+<li>Integrity check process isolation</li>
+<li>Screencap disabling</li>
+<li>Input validation</li>
+</ul>
+</section>
+</section>
+<section id="c07-sec-0012">
+<h2><a id="usec0012"></a>Identity and Access Management (IAM)</h2>
+<p>IAM is about the people, processes, and procedures used to create, manage, and destroy identities of all kinds. IAM systems typically consist of several components. First, they allow creation of identification mechanisms. IAM then allows the organization to verify or authenticate users’ identities prior to granting access to systems/assets. Once authenticated, the users are then authorized and given subsequent access to resources. The user is generally managed through a central user repository.</p>
+<p>IAM functionality is often divided into identity management and access management:</p>
+<p><b>Identity Management </b>Identity management is the process whereby individuals are given access to system resources by associating user rights with a given identity. <i>Provisioning</i> is the first phase of identity management, where each subject is issued a unique identity assertion (something that serves as an identification, such as a user ID). During this process, the user is usually also issued a password for use in authenticating the identity assertion. The entity issuing the password and identity assertion will retain a record of each for use <span epub:type="pagebreak" role="doc-pagebreak" title="160" id="Page_160"></span>in recognizing the user later (when the user logs in to resources with that user ID/password combination). The generation, storage, and security controls of these passwords are collectively known as <i>password management</i>.</p>
+<p><b>Access Management </b>Access management is the part of the process that deals with controlling access to resources once they have been granted. Access management identifies who a user is and what they are allowed to access each time they attempt to access a resource. This is accomplished through a combination of means:</p>
+<ul class="none">
+<li>
+<p><b>Authentication </b>Establishes identity by asking who you are and determining whether you are a legitimate user (often by combining the use of an identity assertion and an authentication factor; for example, a user ID and password).</p>
+<p><b>Authorization </b>Evaluates what you have access to after authentication occurs (in many cases, this means comparing the identity assertion against an access control list [ACL]).</p>
+<p><b>Policy Management </b>Serves as the enforcement arm of authentication and authorization and is established based on business needs and senior management decisions.</p>
+<p><b>Federation </b>An association of organizations that facilitate the exchange of information as appropriate about users and access to resources, allowing them to share resources across multiple organizations.</p>
+<p><b>Identity Repositories </b>The directory services for the administration of user accounts and their associated attributes.</p>
+</li>
+</ul>
+<p>These components are stored in what is called an identity repository directory. The schema used is much more detailed and has many more uses, and it must be heavily protected. A breach of this component would be devastating to the organization.</p>
+<p>Besides identity repositories and their directories, other core facets of IAM include federated identity management, federation standards, federated identity providers, various types of single sign-on (SSO), multifactor authentication, and supplemental security components. These concepts will be explored in the following sections.</p><section id="c07-sec-0013">
+<h3><a id="usec0013"></a>Identity Repositories and Directory Services</h3>
+<p>Identity repositories are the store of information or attributes of identities. Directory services are how those identities and attributes are managed. They allow the administrator to customize user roles, identities, and so on. All of this becomes even more important when we deal with federation, as there must be a consistent means of accessing these identities and their associated attributes in order to work across disparate systems.</p>
+<p>Here are some of the most widely used directory services:</p>
+<ul id="c07-list-0007">
+<li>X.500 and LDAP</li>
+<li>Microsoft Active Directory</li>
+<li>Novell eDirectory</li>
+<li>Metadata replication and synchronization</li>
+</ul></section>
+<section id="c07-sec-0014">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="161" id="Page_161"></span><a id="usec0014"></a>Single Sign-On (SSO)</h3>
+<p>When an organization has a variety of resources that each require authentication, usage and utilization can become cumbersome for users, especially when they have to keep track of passwords and user IDs that have different requirements (length, complexity, and so forth). Single sign-on (SSO) is a way to address this and simplify the operational experience for the user.</p>
+<p>While there are several ways to implement SSO, the term generally refers to a situation where the user signs in once, usually to an authentication server, and then, when the user wants to access the organization’s resources (say, on different servers throughout the environment), each resource will query the authentication server to determine if the user is logged in and properly authenticated; the authentication server then approves the request and the resource server grants the user access. All of this should be transparent to the user, streamlining their use of the resources on the network. Theoretically, the user could log in just once per day, when they sit down at their desk to begin work, and never have to reenter any additional sign-on credentials.</p>
+<p>This convenience does not, of course, come without costs and risks: SSO solutions are difficult to implement and maintain; an attacker gaining a user’s single credential will have access to multiple systems; and the impact of losing an SSO server will be much greater than losing an individual system.</p></section>
+<section id="c07-sec-0015">
+<h3><a id="usec0015"></a>Federated Identity Management</h3>
+<p>Federated identity management (or <i>federation</i>, in general) is much the same as normal identity management except it is used to manage identities across disparate organizations. You can think of it as single sign-on (SSO) for multiple organizations.</p>
+<p>Let’s look at an example. A group of research universities want to share their research data. They can create a federation so that a scientist signing in at their own university, on their own system, can then access all the research resources of the other universities in the federation without having to present other, new identity and authentication credentials.</p>
+<p>There are two general types of federation: the web-of-trust model and use of a third-party identifier.</p>
+<p>In the web of trust, each member of the federation (that is, each organization that wants to share resources and users) has to review and approve each other member for inclusion in the federation. While it’s a good method to be sure that everyone else in the federation reaches your particular level of trust, this can become costly and unwieldy once the federation reaches a significant number of member organizations—it just doesn’t scale well.</p>
+<p>By using a third-party identifier, on the other hand, the member organizations outsource their responsibilities to review and approve each other to some external party (that each of them trust, of course) who will take on this responsibility on behalf of all the members. This is a popular model in the cloud environment, where the identifier role can often be combined with other functions (for instance, crypto key management) and outsourced to a cloud access security broker (CASB).</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="162" id="Page_162"></span>When discussing federation, we apply the terms <i>identity provider</i> and <i>relying parties</i>. The identity provider is the entity that provisions and authenticates identity assertions (validating users, provisioning user IDs and passwords, managing both, deprovisioning them, and so forth), and the relying party is any member of the federation that shares resources based on authenticated identities.</p>
+<p>In the web-of-trust model, the identity provider is each member of the federation (provisioning identity assertions for each of their users, respectively) <i>and</i> they are also the relying parties (sharing resources with each other, based on those authenticated identities).</p>
+<p>In the trusted third-party model of federation, the identity provider is the trusted third party, and the relying parties are each member organization within the federation.</p></section>
+<section id="c07-sec-0016">
+<h3><a id="usec0016"></a>Federation Standards</h3>
+<p>There are a number of federation standards, but the most widely used one is Security Assertion Markup Language (SAML). The latest version of SAML is SAML 2.0. It is XML-based and consists of a framework for communicating authentication, authorization or entitlement information, and attribute information across organizations. In other words, it is a means for users from outside organizations to be verified and validated as authorized users inside or with another organization without the user having to create identities in both locations.</p>
+<p>Some of the other standards that exist in this area are as follows:</p>
+<p><b>WS-Federation </b>This uses the term <i>realms</i> in explaining its capabilities to allow organizations to trust each other’s identity information across organizations.</p>
+<p><b>OAuth </b>Often used in authorization with mobile apps, the OAuth framework provides third-party applications limited access to HTTP services.</p>
+<p><b>OpenID Connect </b>This is an interoperable authentication protocol based on the OAuth 2 specification. It allows developers to authenticate their users across websites and applications without having to manage usernames and passwords.</p></section>
+<section id="c07-sec-0017">
+<h3><a id="usec0017"></a>Multifactor Authentication</h3>
+<p>Multifactor authentication has become more popular and widespread in recent years due to increased demand for better authorization security and decreased costs of the technology. Many banks have used such technology since the early 2000s to facilitate secure wire transfers.</p>
+<p>Multifactor authentication is composed of, at a minimum, two of the following aspects: something you know, something you are, or something you have. Something you know can be a password, passphrase, and so on. Something you have can be something like a number-generating key fob, a smartphone capable of receiving text messages, or even a verified phone number unique to an individual that can receive a number or key. Something you are is a biometric trait of yourself, as a living creature. This could be as unique and specific as your DNA fingerprint or as cursorily general as a photograph.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="163" id="Page_163"></span>The authentication solutions featuring the “know” and “have” aspects are especially useful with remote access security where presenting a biometric factor would be awkward because they help to prevent an unauthorized user from accessing an account or data without both pieces of the authentication mechanism. It is one thing to steal or guess a password for an account, but it is much harder for someone to obtain both a password and a key generated by a device to which only the user has access.</p></section>
+<section id="c07-sec-0018">
+<h3><a id="usec0018"></a>Supplemental Security Components</h3>
+<p>There are a few additional security components the CCSP candidate should be familiar with. The first is firewalls. The firewall is designed as the access point for traffic entering or leaving the perimeter of a network. Firewalls come in a variety of designs and capabilities. Early versions were limited to simply using port or IP address blocking, with no ability to see inside the packets traversing the interface. Then <i>stateful inspection</i> came into the picture, which allowed firewalls to prevent inbound traffic from entering unless the connection had been initiated from inside the network.</p>
+<p>Today’s application-aware firewalls are far superior to their predecessors. However, attackers and attacks are constantly evolving, which led to the web application firewall (WAF).</p>
+<p>These firewalls are deployed in addition to any network firewall and are designed to protect specific web-based applications. PCI DSS requires them as a way of protecting against credit card data egress from a web application that may be handling online transactions. These firewalls are specific enough that they know the way the application should be behaving and can detect even the slightest unusual activity and bring it to a stop. In addition, WAFs can also provide protection against such network-based attacks as DoS or DDoS attacks. WAFs function at Layer 7 of the OSI model.</p>
+<p>Another form of protection is database activity monitoring (DAM). Again, as with the web application firewall, the idea is to have a piece of software or a dedicated appliance watching databases for any type of unusual requests or activity and then to be able to send alerts and even take actions to stop malicious activity. These DAMs can be either agent-based or network-based, meaning an agent resides on the machine or instance of the database or a network component monitors traffic to and from the database.</p>
+<p>API gateways are also an important part of a layered defense. They can be used to impose such controls on API activity as these:</p>
+<ul id="c07-list-0008">
+<li>Acting as an API proxy so as to not directly expose the API</li>
+<li>Implementing access control to the API</li>
+<li>Limiting connections so that bandwidth is available for all applications, which can also help in the event of an internal DoS attack</li>
+<li>API logging</li>
+<li>Gathering metrics from API access logs</li>
+<li>Additional API security filtering</li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="164" id="Page_164"></span>XML gateways work in much the same way, except they work around <i>how</i> sensitive data and services are exposed to APIs. They can be either software- or hardware-based and can implement some types of data loss prevention (DLP).</p></section>
+</section>
+<section id="c07-sec-0019">
+<h2><a id="usec0019"></a>Cloud Application Architecture</h2>
+<p>It is important that we examine the mechanisms that make application security and software development for the cloud work as well as the weaknesses and vulnerabilities associated with each. The CCSP candidate needs to understand how to evaluate and discover these, from the perspective of a cloud customer.</p>
+<p>Application programming interfaces (APIs) are the coding components that allow applications to speak to one another, generally through a web interface of some kind and preferably in a safe and secure manner. The cloud security professional should know how to determine risks and threats associated with the use of APIs.</p><section id="c07-sec-0020">
+<h3><a id="usec0020"></a>Application Programming Interfaces</h3>
+<p>There are two common types of application programming interfaces (APIs) in use with cloud-based applications that the CCSP candidate must understand. The first is RESTful APIs. REST stands for Representational State Transfer. It is a software approach designed to scale the capabilities of web-based applications. It is based on guidelines and best practices for creating these scalable web applications. Other characteristics of the REST approach include the following:</p>
+<ul id="c07-list-0009">
+<li>Low processing/traffic overhead (“lightweight”)</li>
+<li>Uses simple URLs/URIs</li>
+<li>Not reliant on any single programming language</li>
+<li>Scalable</li>
+<li>Offers outputs in many formats (CSV, JSON, and so on)</li>
+<li>Efficient, which means it uses smaller messages than alternative approaches, such as SOAP</li>
+</ul>
+<p>The following situations are among those in which REST works well:</p>
+<ul>
+<li>When bandwidth is limited</li>
+<li>When stateless operations are used</li>
+<li>When caching is needed</li>
+</ul>
+<p>SOAP is the other API approach you should be familiar with. Simple Object Access Protocol (SOAP) is a protocol specification providing for the exchange of structured information or data in web services. It also works over other protocols such as SMTP, FTP, and HTTP.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="165" id="Page_165"></span>Some of the characteristics of SOAP include the following:</p>
+<ul id="c07-list-0011">
+<li>Standards-based</li>
+<li>Reliant on XML</li>
+<li>Highly intolerant of errors</li>
+<li>Slower</li>
+<li>Built-in error handling</li>
+</ul>
+<p>Here are some examples of where SOAP works or fits in better:</p>
+<ul>
+<li>Asynchronous processing</li>
+<li>Format contracts</li>
+<li>Stateful operations</li>
+</ul>
+<p>Neither API format is necessarily better than the other. It is important to understand that regardless of what type of API you use to offer web services, you are granting another application access to the primary application and any data it may have access to. This can present many security challenges for end users unable to evaluate the security of any specific API, or even which API (or APIs) they are using. This can lead to data leakage or other problems if the APIs in question have not been sufficiently vetted and validated to ensure they provide adequate security.</p></section>
+<section id="c07-sec-0021">
+<h3><a id="usec0021"></a>Tenancy Separation</h3>
+<p><i>Multitenancy</i> refers to the concept that multiple cloud customers may share the same host devices and underlying resources. It is vitally important that configurations be made in such a way as to ensure logical isolation of the various tenants; otherwise, data leakage and corruption could occur.</p></section>
+<section id="c07-sec-0022">
+<h3><a id="usec0022"></a>Cryptography</h3>
+<p>Although we will not be discussing the specifics of encryption here, the CCSP candidate must be familiar with the different types of encryption, the places where it is used, and the use case for each. Data is typically encrypted either when it is at rest or when it is in transit, and both types of encryption can be effectively used as part of overall cloud security.</p>
+<p><b>Encryption of Data at Rest </b>Data at rest, whether it be short-term or long-term storage, should be protected from multitenancy issues and similar problems. Encrypting data at rest is a great way to prevent unauthorized access to data. Data stored in a multitenant environment poses a risk that did not exist in the traditional environment; a government/law enforcement/regulatory entity might seize a particular hardware component while investigating one tenant and end up with data belonging to various tenants. If each tenant applies its own cryptography, those tenants not under investigation should remain protected from unauthorized disclosure in this type of situation.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="166" id="Page_166"></span><b>Encryption of Data in Transit </b>Encryption of data in transit is necessary to mitigate against intermediaries (often referred to as the man-in-the-middle attack).</p>
+<p>There are a number of encryption technologies that you should also know about:</p>
+<p><b>Transport Layer Security (TLS) </b>TLS is a protocol designed to ensure privacy when communicating between applications. This can occur between two servers or between a client and a web server.</p>
+<p><b>Secure Sockets Layer (SSL) </b>Invented and first adopted by Netscape back in the mid-1990s, SSL was originally meant to encrypt data transmissions between two endpoints, such as two servers or a server and a user. SSL was deprecated in 2015 and replaced with TLS, but SSL is still used in many enterprises since it was ubiquitous and upgrading or transitioning can be costly and time-consuming.</p>
+<p><b>Whole-Instance Encryption </b>Also known as whole-disk encryption, this is the idea of encrypting all of a system’s data at rest in one instance. Rather than designated folders being used for encrypted material, the entire storage medium is encrypted. With the advent of stronger and faster processors, even a small smart device can be totally encrypted without significantly harming performance. Whole-disk encryption protects data on the device in the event the device itself is lost or stolen.</p>
+<p><b>Volume Encryption </b>Much like encrypting an entire device, volume encryption refers to only encrypting a partition on a hard drive as opposed to the entire disk. This is useful when the entire disk does not need to be encrypted as only the protected sections have data of any value.</p>
+<p>Customers or users can also add another layer of protection by encrypting specific files or folders. This way, the customer holds the keys to unencrypt the data should the disk or volume be breached in some manner.</p>
+<p>Keep in mind that the primary requirement for securing any encryption scheme is the safe storage and management of the keys used to encrypt and decrypt.</p></section>
+<section id="c07-sec-0023">
+<h3><a id="usec0023"></a>Sandboxing</h3>
+<p>In context of computing, the term <i>sandbox</i> can mean a couple of things.</p>
+<p>A physical sandbox is a test environment of isolated devices and cabling, completely distinct from the production environment. (In fact, there is often space, actual empty space, between the physical sandbox/testbed, so we refer to the two environments—production and test—as “airgapped”). The benefit of a physical sandbox is that errors/vulnerabilities introduced there will not contaminate/affect the production environment.</p>
+<p>A logical sandbox is an isolated memory space where untrusted/untested code can be run in isolation from the underlying hardware so that detrimental aspects of the program do not affect the machine/other programs.</p>
+<p>Either type of sandbox might be used during the SDLC for testing code in development or for security purposes such as performing forensics analysis on malware or experimenting with patches/updates before they are deployed in the production environment.</p></section>
+<section id="c07-sec-0024">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="167" id="Page_167"></span><a id="usec0024"></a>Application Virtualization</h3>
+<p><i>Application virtualization</i> is a somewhat misunderstood term. The idea of application virtualization has to do with running applications in a trusted virtual environment. It is somewhat like sandboxing, but instead of sandboxing a process, application virtualization allows you to run full applications in a protected space. In addition, because you are doing this virtually, you can run applications that would otherwise not run on the host system. An excellent example is the Linux application WINE. WINE is itself an application virtualization platform that then provides a Linux machine with the ability to run Windows-based applications. This also provides for a space where new apps can be tested, for instance with Windows, without allowing the application to touch what would normally be the external Windows machine. Microsoft App-V and XenApp also allow users to perform application virtualization.</p></section>
+</section>
+<section id="c07-sec-0025">
+<h2><a id="usec0025"></a>Cloud Application Assurance and&nbsp;Validation</h2>
+<p>To effectively test web applications, we need to be familiar with a number of application security testing methods and tools. In the following sections, we explore a variety of common approaches.</p><section id="c07-sec-0026">
+<h3><a id="usec0026"></a>Threat Modeling</h3>
+<p>There are several threat modeling tools such as Trike, AS/NZS 4360, and CVSS. However, for the purposes of the CCSP exam, we will cover only the STRIDE model.</p>
+<p>Created by Microsoft some time ago, the STRIDE threat model has been widely adopted throughout the industry. The model provides a standardized way of describing threats by their attributes. Developers can use this model to attempt to discover flaws and vulnerabilities in the software they’re creating.</p>
+<p>The STRIDE acronym stands for the following:</p>
+<p><b>S (Spoofing) </b>Can the identity of the entity using the application be obscured in some way? Does the user have the capability to appear as a different user?</p>
+<p><b>T (Tampering) </b>Does the application allow a user to make unauthorized modifications to actual data, affecting the integrity of information or communications?</p>
+<p><b>R (Repudiation) </b>Is the user capable of denying they took part in a transaction, or does the application track and log the user’s actions?</p>
+<p><b>I (Information Disclosure) </b>Does the application reveal information (either the data being processed, or information about the application’s function) while it runs?</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="168" id="Page_168"></span><b>D (Denial of Service) </b>Is there a way to shut down the application through unauthorized means? This might include crashing, overloading, or restarting the application.</p>
+<p><b>E (Elevation of Privilege) </b>Can a user change their level of permissions in order to perform unauthorized action (such as gaining administrative control of the application)?</p>
+<p>The “user” in each of these categories may be a legitimate employee who is granted access to the application or someone who has gained unauthorized access. The various threats may be the result of accidental input by a user or intentional effort to misuse the application.</p>
+<p>STRIDE is particularly useful as part of the SDLC in attempting to identify vulnerabilities throughout the build process. The STRIDE model enables us to do this. When we are evaluating cloud application security, these six concepts help in identifying and classifying threats or vulnerabilities and help form a common language used to describe them. That way, we can systematically address them through better coding techniques or other control mechanisms.</p>
+<section class="feature3" id="c07-feafxd-0003">
+<h4 style="background-color: #E7E7E8;">STRIDE Resources</h4>
+<p>Microsoft has made the STRIDE model and suggestions for its implementation freely available on its website: <a class="codeLabel" href="https://msdn.microsoft.com/en-us/library/ee823878(v=cs.20).aspx">https://msdn.microsoft.com/en-us/library/ee823878(v=cs.20).aspx</a></p>
+<p>An example of how STRIDE might be used to evaluate the potential attacks on a web commerce server is provided as well: <a class="codeLabel" href="https://msdn.microsoft.com/en-us/library/ee798544(v=cs.20).aspx">https://msdn.microsoft.com/en-us/library/ee798544(v=cs.20).aspx</a></p>
+<p>Microsoft also offers an automated tool designed to aid in applying the STRIDE model to any software. It is available, free of charge, from Microsoft’s website: <a class="codeLabel" href="https://docs.microsoft.com/en-us/azure/security/azure-security-threat-modeling-tool">https://docs .microsoft.com/en-us/azure/security/azure-security-threat-modeling-tool</a></p>
+</section>
+<p>Threat modeling helps prepare for some of the more common application vulnerabilities that developers will encounter when working with cloud applications, which include the following:</p>
+<p><b>Injection </b>When a malicious user attempts to inject a string of some type into a field in order to manipulate the application’s actions or reveal unauthorized data. Examples include such things as SQL, LDAP, and OS injections. If the injection is successful, either unauthorized data is seen or other manipulative actions are taken.</p>
+<p><b>Broken Authentication </b>When a malicious user is able to break a session and steal items like tokens, passwords, or keys. This then allows the malicious user to hijack the system.</p>
+<p><b>Cross-Site Scripting (XSS) </b>XSS is one of the most widely seen application flaws, next to injections. XSS occurs when an application allows untrusted data to be sent to a web <span epub:type="pagebreak" role="doc-pagebreak" title="169" id="Page_169"></span>browser without proper validation or escaping. This then allows the malicious user to execute code or hijack sessions in the user’s browser.</p>
+<p><b>Insecure Direct Object Access </b>Involves a reference to an internal object, like a file, without access control checks or other controls in place to ensure attackers cannot manipulate data.</p>
+<p><b>Security Misconfigurations </b>Security misconfigurations are often unintentional, caused by authorized entities, and a result of basic human error.</p>
+<p><b>Sensitive Data Exposure </b>The disclosure of information such as PII, medical data, credit card material, and so on. Without proper controls in place (such as encryption, data masking, tokenization, and so on), sensitive data can be leaked by an application or system.</p>
+<p><b>Missing Function-Level Access Control </b>An application should always verify function-level access privileges before granting access of that functionality to the user interface (UI). If this is not implemented properly, malicious users may be able to forge requests that will allow them functionality without authorization.</p>
+<p><b>Cross-Site Request Forgery (CSRF) </b>A CSRF manipulates a logged-on user’s browser to send a forged HTTP request along with cookies and other authentication information in an effort to force the victim’s browser to generate a request that a vulnerable application thinks is a legitimate request from the user.</p>
+<p><b>Using Components with Known Vulnerabilities </b>This can occur when developers use application/programming libraries of known components but do not heed security comments or fail to understand the context in which the component will eventually be used in production.</p>
+<p><b>Invalidated Redirects and Forwards </b>Oftentimes developers will use redirects without validation, which may expose applications to untrusted data or other applications. Without this validation, malicious users can alter the redirects to point the user to malicious sites such as phishing sites.</p>
+<p>This list largely comes from the Open Web Application Security Project’s (OWASP) Top Ten Critical Application Web Application Security Risks effort. OWASP updates the list almost every other year; as of the time of publication of this book, the most current list was from 2017 and can be found here: <a class="codeLabel" href="http://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">www.owasp.org/index.php/Category:OWASP_Top_Ten_Project</a>.</p>
+<p>I highly recommend the CCSP candidate review the source material available from OWASP.</p></section>
+<section id="c07-sec-0027">
+<h3><a id="usec0027"></a>Quality of Service</h3>
+<p>There is always a trade-off between security and productivity; every control that offers a security benefit to an organization will also impede productivity, often by degrading quality of service (QoS).</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="170" id="Page_170"></span>Encryption is an excellent example. Enabling encryption in most databases causes a slowdown in performance due to the processing power required for the encryption and decryption process to occur; it may also limit the ability to query the database because encrypted data can’t be catalogued or interrogated in the same way plaintext can. Another example is running host-based intrusion detection systems (HIDSs) on a server. Usually this requires the viewing of all connections and data coming into and leaving the device, which can have a significant impact on performance.</p></section>
+<section id="c07-sec-0028">
+<h3><a id="usec0028"></a>Software Security Testing</h3>
+<p>Testing the security aspects of software requires a specialized skillset. In this section, we review some of the methodologies, testing concepts, and tools used to verify and validate that we have the appropriate controls.</p>
+<p>We begin with penetration testing and vulnerability scanning. Although both are quite useful and have their place in the realm of application testing, they serve very different purposes and are used in different ways.</p>
+<p>Vulnerability scanning involves searching the environment for known flaws, often with an automated tool. Vulnerability scanning does not necessarily identify configuration errors (although some may be encountered and discovered) but is more of a set of vulnerability definitions compared against the application or network being scanned. These types of scanners are also often employed by hackers as part of ongoing reconnaissance for vulnerabilities to be used later in attacks. However, when we perform vulnerability scanning to test our own system, no exploitation occurs and, as long as the scans are performed properly, no damage should occur. Sometimes errors occur, but usually at worst the system will need a reboot.</p>
+<p>The downside, of course, to vulnerability scanning is that it can only detect the vulnerabilities for which it has definitions—that is, known vulnerabilities. Any vulnerabilities not currently known and included in the scanning tool can later become zero-day exploits if and when attackers figure out how to use them.</p>
+<p>Penetration testing is designed to find vulnerabilities and to then exploit them to the point of actually gaining unauthorized access to systems or data. These tests usually begin with a reconnaissance and/or vulnerability scan to identify system weaknesses and then move on to the penetration phase. Penetration testing might be distinguished from vulnerability scanning in that it includes an active component (the penetration of the environment), whereas vulnerability scanning is almost exclusively passive.</p>
+<section class="feature3" id="c07-feafxd-0004">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> It is extremely important to mention again that under no circumstances should you ever attempt any type of vulnerability scanning or penetration testing against an application or system without full authorization to do so. You could be violating several laws and get into some very deep trouble. In addition, you might even jeopardize your ISP account if they do not allow such activity in your end-user license agreement (EULA). Get permission first.</p>
+</section>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="171" id="Page_171"></span>In addition to testing the environment as a suitably secure place for the application to function, we need to test the application itself to determine whether it has inherent security weaknesses and flaws. There are two general approaches:</p>
+<p><b>White-Box Testing (Static Application Security Testing [SAST]) </b>SAST entails reviewing the source code. This requires a testing team with two kinds of skills and knowledge: how to read the code the program was written with and a deep understanding of security. Personnel with both capabilities are rare (and expensive). We also have to be careful not to use the same developers who wrote the code in performing the test; the testing team needs to be composed of people with entirely “fresh” eyes and no inherent conflict of interest.</p>
+<p><b>Black-Box Testing (Dynamic Application Security Testing [DAST]) </b>DAST entails testing the program as it functions, in runtime. In black-box testing, the source code is not reviewed; instead, the testing team uses inputs and results from the application itself, as it’s running.</p>
+<p>Because white-box and black-box testing can reveal different security issues, it’s usually best to employ both in the testing regimen. See <a id="figureanchor7-3" role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure7-3">Figure 7.3</a> for some of the testing issues of SAST and DAST.</p>
+<figure>
+<img class="center" src="public/c07f003.jpg" alt="The figure shows two overlapping circles, inscribed in a big circle, illustrating the testing issues of SAST and DAST. The circle on the left-hand side is labeled as “SAST Suitable,” the circle on the right-hand side is labeled as “DAST Suitable,” and the overlapped portion is labeled as “DAST and SAST.” " width="800" height="430">
+<figcaption>
+<p><span class="figureLabel"><a id="figure7-3" role="doc-backlink" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor7-3"><b>Figure 7.3</b></a> Testing Issues</span></p>
+</figcaption>
+</figure>
+<section class="feature3" id="c07-feafxd-0005">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Although SAST and DAST are completely different types of testing methodology, they are often used in conjunction to observe or test the applications from more than one perspective.</p>
+</section>
+</section>
+<section id="c07-sec-0029">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="172" id="Page_172"></span><a id="usec0029"></a>Approved APIs</h3>
+<p>APIs are a large part of cloud application development because they allow other applications to consume web services from the application, thereby expanding its capabilities. In addition, they provide for automation and integration with third-party tools, again aimed at extending the functionality of the application. However, this does not come without risk. There are both consumers and providers of web services provided by APIs, and they each present special considerations.</p>
+<p>When consuming APIs, the customer is relying on the API vendor to have included appropriate security controls and conducted testing and validation to ensure the integrity and security of the application. However, there is often little opportunity to ascertain this in advance. For instance, there are no certifications of APIs. You are reliant on the vendor’s promise that data exchanges have been tested and validated.</p>
+<p>One of the most significant problems with using APIs is that not everyone who creates them uses the same level of scrutiny. APIs are sometimes coded with little or no validation or security testing. Consumption of these APIs without any type of validation can lead to data leakage, poor authentication, and authorization and application failure. In addition, manipulating an unsecured API could at the worst lead to a data breach. What’s more, when an application is updated or changed, the API may expose items that were not exposed before.</p>
+<p>One way to overcome these issues is to ensure that organizational processes are in place that allow for constant testing and review of APIs.</p></section>
+<section id="c07-sec-0030">
+<h3><a id="usec0030"></a>Software Supply Chain (API) Management</h3>
+<p>Another issue that is becoming more pronounced is that of software supply chain management. Developers are finding ways to leverage APIs with third-party applications. This is what APIs are designed to do. The problem lies in third-party developers who build applications leveraging upstream APIs and then adding their own to be consumed by yet another application, and so on. This chain of APIs can quickly spin out of control to the point that the end consumer has almost no way of knowing what other applications may or may not be sending data upstream and vice versa. Often, the consumer will overlook these deficiencies if the functionality offered by the application is appealing enough.</p>
+<p>Suggested ways of dealing with these issues include auditing/contractual language for acquired applications as well as security reviews for developed apps to ensure they only make use of authorized APIs.</p></section>
+<section id="c07-sec-0031">
+<h3><a id="usec0031"></a>Securing Open-Source Software</h3>
+<p>There is a philosophical disagreement in the InfoSec community about whether proprietary software (where the source code is hidden from everyone except the vendor) is preferable and more secure than the open-source variety (where the source code is published and anyone can review it, make modifications, and publish derivative versions).</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="173" id="Page_173"></span>Both offer some value. However, it is generally agreed that open-source programs are more flexible, provide largely the same protections, and have a greater range of functionality than their proprietary counterparts (think Mozilla Firefox versus Microsoft Internet Explorer).</p>
+<p>Perhaps one of the main points in favor of proprietary options is the possibility that liability will map back to the vendor—that breaches or other impacts due to failures in the program can be blamed on the vendor, who may be held accountable (although it’s difficult to point to examples where this has occurred). Another benefit might be the active and constant efforts of vendors to update and secure their proprietary applications.</p>
+<p>Conversely, the benefit of choosing open-source programs often includes a reduced price (or, indeed, having it free of charge) and the opportunity to review, for yourself, the code to test it for security vulnerabilities. Open-source code also allows the user to make whatever modifications they choose in order to add or enhance functionality.</p>
+<section class="feature3" id="c07-feafxd-0006">
+<h4 style="background-color: #E7E7E8;">Agility</h4>
+<p>Many software vendors are implementing something called <i>Agile development</i>. This framework is designed to greatly speed up the development of software so that it can be delivered in a more timely manner to the customer. In these instances, open-source libraries are sometimes considered the most expedient and cost-effective way to accomplish this in the short run. The customer gets the software quicker and cheaper and with all the functionality they have requested. The problem is that Agile focuses on timely delivery and not longevity or security of the application. These elements are not necessarily overlooked, but they are not a core part of the Agile development process. This can easily lead to the situation where vulnerabilities are later discovered with no means to correct the issues short of redesigning or rebuilding the application.</p>
+</section>
+</section>
+<section id="c07-sec-0032">
+<h3><a id="usec0032"></a>Application Orchestration</h3>
+<p>When two or more applications must interact in order to successfully complete a business process/transaction, there are two general approaches we can take:</p>
+<ul id="c07-list-0013">
+<li>Link elements of the applications directly, so that the output of one (or step of one) is the input of another.</li>
+<li>Abstract the functions of the applications such that their inputs/outputs can be handled distinctly from the way the programs work, often with another set of code/software.</li>
+</ul>
+<p>The first option can lead to additional problems, such as creating unnecessary dependencies and increasing the difficulty of version control and testing. Therefore, the second option, referred to as application orchestration, is often preferable.</p>
+<p>Orchestration often requires that data from the various participating applications be converted to a new format (or formats) so that the information can work in the orchestration. It may also involve creating a new overlay/interface with the data/applications so that <span epub:type="pagebreak" role="doc-pagebreak" title="174" id="Page_174"></span>the interaction can be managed. Finally, new or intermediary protocols might be necessary so that the processes can be negotiated between the applications.</p></section>
+<section id="c07-sec-0033">
+<h3><a id="usec0033"></a>The Secure Network Environment</h3>
+<p>Cloud applications will also need to run in a secure environment. The CCSP should understand basic networking practices to appreciate/perceive the methods used inside cloud data centers. These include the following items:</p>
+<ul id="c07-list-0014">
+<li><b>VLAN:</b> A virtual local area network; a logical means of isolating particular portions or segments of a network, even though the machines may all be physically connected. Member devices in a VLAN can only communicate directly with other members of the same VLAN, unless the traffic first passes through a portal/gateway leading outside the VLAN.</li>
+<li><b>DHCP:</b> When assigning IP addresses to devices, we can use a permanent, specific address for a given device; this is called static addressing. An alternative to static addressing is assigning an IP to a specific device for only a certain duration, temporarily; this is dynamic addressing. The method we use for the latter is the Dynamic Host Configuration Protocol (DHCP). A DHCP in an environment selects an IP address from the allowed range (the range of IP addresses owned by the organization), assigns it to a specific device, and keeps a record of which devices have which addresses; when the use of the address is terminated, the address goes back into the pool of allowed addresses, and the DHCP server can reassign it to another machine (or the same machine).</li>
+<li><b>DNS:</b> The Domain Name Service is how computers translate IP addresses to domain names. DNS functions through the use of hierarchical, distributed tables; when a change is made to how a domain name relates to a specific IP address, the change is registered at the top domain of the DNS hierarchy and then filters down to all other DNS servers. When a user wants to communicate with another machine, the user’s machine (or, often, the application on the user’s machine) queries a device with a DNS table (often at the user’s ISP) to get the correct address. Security extensions (DNSSEC) add to security by providing origin authority, data integrity, and authenticated denial of service, reducing susceptibility to spoofing.</li>
+<li><b>VPN:</b> A remote user can be granted permissions to the IT environment even though the connection is over an untrusted network (such as the Internet). This is accomplished through the use of a virtual private network (VPN). The VPN is an encrypted tunnel between the remote user and the IT environment. A tunnel is an encapsulated communication; one protocol embedded inside another protocol. This connection is then encrypted to add protections against intermediaries/attackers observing the communication.</li>
+</ul></section>
+</section>
+<section id="c07-sec-0034">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="175" id="Page_175"></span><a id="usec0034"></a>Summary</h2>
+<p>This chapter discussed awareness of application training and deployment issues, the application software development lifecycle, how to verify software through testing, how to select trusted software, how to design and use identity and access management systems, appropriate cloud application architecture, and cloud software assurance and validation.</p></section>
+<section id="c07-sec-0035">
+<h2><a id="usec0035"></a>Exam Essentials</h2>
+<p><b>Understand the differences between ANF and ONF. </b>An ONF is the catalog of all application security controls used in all the applications throughout an organization. It is composed of ANFs, subordinate lists of controls used in each individual application in the organization.</p>
+<p><b>Be able to articulate the components of the STRIDE threat model. </b>The STRIDE threat model contains six threat categories:</p>
+<ul id="c07-list-0015">
+<li>Spoofing</li>
+<li>Tampering</li>
+<li>Repudiation</li>
+<li>Information disclosure</li>
+<li>Denial of service</li>
+<li>Elevation of privilege</li>
+</ul>
+<p><b>Be able to describe the stages of the SDLC. </b>Be sure to understand the stages in a common SDLC model. The SDLC consists of the following stages:</p>
+<ul id="c07-list-0016">
+<li>Defining</li>
+<li>Designing</li>
+<li>Developing</li>
+<li>Testing</li>
+<li>Secure Operations</li>
+<li>Disposal</li>
+</ul>
+<p><b>Understand identity and access management and how it fits into the cloud environment. </b>IAM plays a critical role in managing users with the advent of role-based access. Understand the importance of this and federated identities.</p>
+<p><b>Comprehend the specifics of cloud application architecture. </b>Not all applications are designed to run in the cloud. Be sure to understand the differences in architecture when designing or attempting to move applications.</p></section>
+<section id="c07-sec-0036">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="176" id="Page_176"></span><a id="usec0036"></a>Written Labs</h2>
+<p>You can find the answers to the written labs in <a href="Appendix A Answers to Written Labs _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix A</a>.</p>
+<ol id="c07-list-0017">
+<li>Identify one cloud application that you use and identify any and all APIs in use. Be sure to include third-party APIs that may be used that cannot be identified or validated.</li>
+<li>Describe the similarities and differences between the cloud software development lifecycle and other models.</li>
+<li>Identify and describe at least two components of the cloud application architecture.</li>
+<li>Describe the functions of an identity management solution in the cloud environment.</li>
+</ol><section class="exercises">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="177" id="Page_177"></span><a id="c07-exsec-0001"></a>Review Questions</h2>
+<p>You can find the answers to the review questions in <a href="Appendix B Answers to Review Questions _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix B</a>.</p>
+<ol class="questionList">
+<li class="essay">
+<div class="question">
+<p>Which of the following best represents the REST approach to APIs?</p><ol id="c07-list-0018" class="upper-latin">
+<li>Built on protocol standards</li>
+<li>Lightweight and scalable</li>
+<li>Relies heavily on XML</li>
+<li>Only supports XML output</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is not commonly included in the phases of SDLC?</p><ol id="c07-list-0019" class="upper-latin">
+<li>Define</li>
+<li>Reject</li>
+<li>Design</li>
+<li>Test</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is <i>not</i> a component of the of the STRIDE model?</p><ol id="c07-list-0020" class="upper-latin">
+<li>Spoofing</li>
+<li>Repudiation</li>
+<li>Information disclosure</li>
+<li>External pen testing</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following best describes SAST?</p><ol id="c07-list-0021" class="upper-latin">
+<li>White-box testing</li>
+<li>Black-box testing</li>
+<li>Gray-box testing</li>
+<li>Red-team testing</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following confirms that the identity assertion belongs to the entity presenting it?</p><ol id="c07-list-0022" class="upper-latin">
+<li>Identification</li>
+<li>Authentication</li>
+<li>Authorization</li>
+<li>Inflammation</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following best describes a sandbox?</p><ol id="c07-list-0023" class="upper-latin">
+<li>An isolated space where transactions are protected from malicious software</li>
+<li>A space where you can safely execute malicious code to see what it does</li>
+<li>An isolated space where untested code and experimentation can safely occur separate from the production environment</li>
+<li>An isolated space where untested code and experimentation can safely occur within the production environment</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="178" id="Page_178"></span>Identity and access management (IAM) is a security discipline intended to ensure ___________________.</p><ol id="c07-list-0024" class="upper-latin">
+<li>All users are properly authorized</li>
+<li>The right individual gets access to the right resources at the right time for the right reasons</li>
+<li>All users are properly authenticated</li>
+<li>Unauthorized users will get access to the right resources at the right time for the right reasons</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In a federated identity arrangement using a trusted third-party model, who is the identity provider and who is the relying party?</p><ol id="c07-list-0025" class="upper-latin">
+<li>A contracted third party/the various member organizations of the federation</li>
+<li>The users of the various organizations within the federation/a CASB</li>
+<li>Each member organization/a trusted third party</li>
+<li>Each member organization/each member organization</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following best describes the Organizational Normative Framework (ONF)?</p><ol id="c07-list-0026" class="upper-latin">
+<li>A container for components of an application’s security controls and best practices catalogued and leveraged by the organization</li>
+<li>A framework of containers for all components of application security controls and best practices catalogued and leveraged by the organization</li>
+<li>A subset of application security controls and best practices catalogued and leveraged by the organization</li>
+<li>A framework of containers for some of the components of application security controls and best practices catalogued and leveraged by the organization</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>APIs typically are built with REST or ___________________.</p><ol id="c07-list-0027" class="upper-latin">
+<li>XML</li>
+<li>SSL</li>
+<li>SOAP</li>
+<li>TEMPEST</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The ANF is best described as which of the following?</p><ol id="c07-list-0028" class="upper-latin">
+<li>A stand-alone framework for storing security practices for the ONF</li>
+<li>A subset of the ONF</li>
+<li>A superset of the ONF</li>
+<li>The complete ONF</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following best describes SAML?</p><ol id="c07-list-0029" class="upper-latin">
+<li>A standard for developing secure application management logistics</li>
+<li>A standard for exchanging authentication and authorization data between security domains</li>
+<li>A standard for exchanging usernames and passwords across devices</li>
+<li>A standard used for directory synchronization</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="179" id="Page_179"></span>Which of the following best describes the purpose and scope of ISO/IEC 27034-1?</p><ol id="c07-list-0030" class="upper-latin">
+<li>Describes international privacy standards for cloud computing</li>
+<li>Provides an overview of application security that introduces definitive concepts, principles, and processes involved in application security</li>
+<li>Serves as a newer replacement for NIST 800-53 r4</li>
+<li>Provides an overview of network and infrastructure security designed to secure cloud applications</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following terms means “to perceive software from the perspective of the attacker in order to locate/detect potential vulnerabilities”?</p><ol id="c07-list-0031" class="upper-latin">
+<li>Rendering</li>
+<li>Galloping</li>
+<li>Agile</li>
+<li>Threat modeling</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Database activity monitoring (DAM) can be ___________________.</p><ol id="c07-list-0032" class="upper-latin">
+<li>Host-based or network-based</li>
+<li>Reactive or imperative</li>
+<li>Used in the place of encryption</li>
+<li>Used in place of data masking</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>WAFs operate at OSI Layer ___________________.</p><ol id="c07-list-0033" class="upper-latin">
+<li>1</li>
+<li>3</li>
+<li>5</li>
+<li>7</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Multifactor authentication consists of at least two items. Which of the following best represents this concept?</p><ol id="c07-list-0034" class="upper-latin">
+<li>A complex password and a secret code</li>
+<li>Complex passwords and an HSM</li>
+<li>A hardware token and a magnetic strip card</li>
+<li>Something you know and something you have</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>SOAP is a protocol specification providing for the exchange of structured information or data in web services. Which of the following is <i>not</i> true of SOAP?</p><ol id="c07-list-0035" class="upper-latin">
+<li>Standards-based</li>
+<li>Reliant on XML</li>
+<li>Extremely fast</li>
+<li>Works over numerous protocols</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="180" id="Page_180"></span>DAST requires ___________________.</p><ol id="c07-list-0036" class="upper-latin">
+<li>Money</li>
+<li>Compartmentalization</li>
+<li>A runtime environment</li>
+<li>Recurring inflation</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Physical sandboxing provides which of the following?</p><ol id="c07-list-0037" class="upper-latin">
+<li>The production environment</li>
+<li>An airgapped test environment that isolates untrusted code for testing in a nonproduction environment</li>
+<li>Emulation</li>
+<li>Virtualization</li>
+</ol></div>
+</li></ol>
+</section></section>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+</body></html>

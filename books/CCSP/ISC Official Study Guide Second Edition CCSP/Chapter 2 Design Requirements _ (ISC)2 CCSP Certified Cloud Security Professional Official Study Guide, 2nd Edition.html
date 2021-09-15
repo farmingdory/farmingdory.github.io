@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 2 Design Requirements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603375">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 2 Design Requirements | (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+
+
+        <script src="public/orm.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+
+
+
+  <meta itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603375/" data-react-helmet="true"><meta property="og:url" itemprop="url" content="Chapter 2 Design Requirements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition","type":"book","identifier":"9781119603375","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603375-/Chapter 2 Design Requirements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2019-12-24","title":"Chapter 2 Design Requirements"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 2 Design Requirements" data-react-helmet="true"><meta property="og:title" content="Chapter 2 Design Requirements" data-react-helmet="true"><meta itemprop="name" content="Chapter 2 Design Requirements" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+Chapter 2
+Design Requirements
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.4...." data-react-helmet="true"><meta name="twitter:description" content="
+
+Chapter 2
+Design Requirements
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.4...." data-react-helmet="true"></head>
+  <body>
+
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper"><a href="Chapter 2 Design Requirements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-large orm-Input-withIcon"><label for="input-09sh73wvp1zl" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-09sh73wvp1zl" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 1 Architectural Concepts _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 1 Architectural Concepts</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 2 Design Requirements</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="title--1b0fU">Chapter 3 Data Classification</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="25" id="Page_25"></span><a id="start"></a><span class="chapterNumber">Chapter 2</span>
+<br><span class="chapterTitle">Design Requirements</span></h1>
+</header>
+<section id="c02-sec-0001">
+<p><b>THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:</b></p>
+<ul id="c02-list-0001">
+<li><b>Domain 1: Cloud Concepts, Architecture, and Design</b>
+<ul id="c02-list-0002">
+<li>1.4. Understand Design Principles of Secure Cloud Computing
+<ul id="c02-list-0003">
+<li>1.4.5. Security Considerations for Different Cloud Categories</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 3: Cloud Platform and Infrastructure Security</b>
+<ul id="c02-list-0004">
+<li>3.3. Analyze Risks Associated with Cloud Infrastructure
+<ul id="c02-list-0005">
+<li>3.3.1. Risk Assessment and Analysis</li>
+</ul></li>
+<li>3.5. Plan Disaster Recovery (DR) and Business Continuity (BC)
+<ul>
+<li>3.5.1. Risks Related to the Cloud Environment</li>
+<li>3.5.2. Business Requirements</li>
+</ul></li></ul></li></ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="26" id="Page_26"></span><img src="public/clogo.jpg" alt="" width="150" height="150"> I mentioned the asset inventory and BIA in <a href="Chapter 1 Architectural Concepts _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapter 1</a>, “Architectural Concepts.” It bears repeating: security decisions are driven by business requirements. This is neither new nor unique to the cloud. In this chapter, we will discuss many of the inputs for those security decisions and the business activities we undertake to determine the requirements.</p></section>
+<section id="c02-sec-0002">
+<h2><a id="usec0002"></a>Business Requirements Analysis</h2>
+<p>Security does not happen in stasis; we need information in order to conduct security activities in a proper and efficient manner. There are certain things we need to know in order to decide how we will handle risks within our organization. These include the following:</p>
+<ul id="c02-list-0008">
+<li>An inventory of all assets</li>
+<li>A valuation of each asset</li>
+<li>A determination of critical paths, processes, and assets</li>
+<li>A clear understanding of risk appetite</li>
+</ul><section id="c02-sec-0003">
+<h3><a id="usec0003"></a>Inventory of Assets</h3>
+<p>To protect our assets, we first have to know what they are. Everything owned or controlled by the organization can be considered an asset, and assets take many different forms. Assets can be tangible items, such as IT hardware, retail inventory, buildings, and vehicles. Assets can also be intangible, such as intellectual property, public perception, and goodwill with business partners and vendors. Personnel can also be considered assets, because of the skills, training, and productivity they provide to the organization.</p>
+<p>In order to protect all our assets, we have to know what they are and, to a lesser extent, where they are and what they do. If we lose track of something under our control, it becomes impossible to secure that thing.</p>
+<p>Therefore, the first step in creating a good security program would be to perform a thorough, comprehensive inventory. There are many methods and tools for doing so, such as <span epub:type="pagebreak" role="doc-pagebreak" title="27" id="Page_27"></span>surveys, interviews, audits, and so forth. In performing an IT inventory, we can also incorporate automation into the process, enhancing our capabilities and efficiency.</p></section>
+<section id="c02-sec-0004">
+<h3><a id="usec0004"></a>Valuation of Assets</h3>
+<p>While we are ascertaining the number, location, and type of assets, we also want to determine the value of each. We need to be able to know which of the assets provide the intrinsic value of our organization and which support this value.</p>
+<section class="feature3" id="c02-feafxd-0001">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Tip" width="52" height="43"> We need to know the value of the assets we protect so we know how much time, money, and effort to expend to protect them. We do not put a $10 lock on a $5 bicycle.</p>
+</section>
+<p>This is a process known as business impact analysis (BIA). We determine a value for every asset (usually in terms of money, but sometimes according to priority/rank, customer perception, or other measures), what it would cost the organization if we lost that asset (either temporarily or permanently), what it would cost to replace or repair that asset, and any alternate methods for dealing with that loss.</p>
+<p>There are various ways to assign cost: we can use the insured value, the replacement cost, or some other method of making that valuation. Usually, we allow the data owners—that is, the individual line-of-business managers responsible for their respective data—to determine the value of the information under their control.</p>
+<section class="feature3" id="c02-feafxd-0002">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Usually, the data owner for a given data set is the business manager in charge of that data. This is generally the head of the department that collected or created that data.</p>
+</section>
+<p>There are some risks associated with letting the data owners assign value to their assets. The most significant of these is the tendency of data owners to overvalue assets that belong to them. Ask anyone in the organization which department is the most important, and they will say that it is theirs.</p>
+<p>The data owner is also tasked with assigning a category and/or classification to their data, usually when it is created. We will discuss this in <a href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapter 3</a>, “Data Classification.”</p></section>
+<section id="c02-sec-0005">
+<h3><a id="usec0005"></a>Determination of Criticality</h3>
+<p>Once the inventory and valuation is complete, the BIA effort continues with a determination made by senior management regarding criticality. Criticality denotes those aspects of the organization without which the organization could not operate or exist. These could include tangible assets, intangible assets, specific business processes, data pathways, or even essential personnel.</p>
+<section class="feature3" id="c02-feafxd-0003">
+<h4 style="background-color: #E7E7E8;"><span epub:type="pagebreak" role="doc-pagebreak" title="28" id="Page_28"></span><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> Criticality Examples</h4>
+<p>Here are some examples of critical aspects in organizations:</p>
+<ul id="c02-list-0009">
+<li><b>Tangible Assets:</b> The organization is a rental car company; cars are critical to its operations—if it has no cars to rent to customers, it can’t do business.</li>
+<li><b>Intangible Assets:</b> The organization is a music production firm; music is the intellectual property of the company—if the ownership of the music is compromised (for instance, the copyright is challenged and the company loses ownership, or the encryption protecting the music files is removed and the music can be copied without protection), the company has nothing of value and will not survive.</li>
+<li><b>Processes:</b> The organization is a fast-food restaurant noted for its speed; the process of taking orders, preparing and delivering food, and taking payment is critical to its operations—if the restaurant cannot complete the process for some reason (for instance, the registers fail so that the restaurant cannot accept payment), the restaurant cannot function.</li>
+<li><b>Data Paths:</b> The organization is an international shipping line; matching orders to cargo carriers is critical to its operations. If the company cannot complete its logistical coordination—assigning cargo requests to carriers with sufficient capacity—it cannot provide its services and will not survive.</li>
+<li><b>Personnel:</b> The organization is a surgical provider; the surgeon is critical to the existence of the company—if the surgeon cannot operate, there is no company.</li>
+</ul>
+</section>
+<p>Senior management has the proper perspective for making determinations of criticality. The security professional, however, should have a good understanding of the overall mission and function of the organization, in order to better serve and advise the organization in securing critical elements.</p>
+<p>Another function of the BIA process that can support the security effort is the identification of single points of failure (SPOFs). If there is any chokepoint in a process, procedure, or production chain—a place where an entire workflow would halt because of the loss of a single element—that’s a SPOF. SPOFs, especially in critical paths, pose a significant risk to the organization and ought be addressed as soon as they are identified. Like critical aspects, SPOFs can be caused by hardware, software, processes, or personnel.</p>
+<p>Methods for dealing with SPOFs include the following:</p>
+<ul id="c02-list-0010">
+<li>Adding redundancies so that if the SPOF goes out of service, a replacement is immediately available</li>
+<li>Creating alternative processes to take the place of SPOFs in times of outage</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="29" id="Page_29"></span>Cross-training personnel so that they can fill many roles</li>
+<li>Consistently and thoroughly backing up data in a manner from which it can be easily and quickly restored</li>
+<li>Load sharing/balancing for the IT assets</li>
+</ul>
+<p>In a cloud environment, customers should expect that the provider has no SPOFs within their facilities and architecture; part of the benefit of moving to the cloud is the ability of cloud providers to offer a robust and resilient service that is not susceptible to failures due to SPOFs. The customer can therefore focus on attenuating any SPOFs on their own side of the operation: accessing and using the data in the cloud. It is important to note that not all SPOFs are part of critical aspects, and not all critical aspects of an organization contain SPOFs.</p>
+<section class="feature3" id="c02-feafxd-0004">
+<h4 style="background-color: #E7E7E8;">Quantitative and Qualitative Risk Assessments</h4>
+<p>Two similar yet different approaches for assessing risk are qualitative risk assessments and quantitative risk assessments. Both methods typically employ a set of methods, principles, or rules for assessing risk. Qualitative risk assessments use nonnumerical categories that are relative in nature, such as high, medium, and low. Quantitative assessments use specific numerical values such as 1, 2, and 3.</p>
+</section>
+</section>
+<section id="c02-sec-0006">
+<h3><a id="usec0006"></a>Risk Appetite</h3>
+<p>Again, this is not a new concept, and the use of cloud services does not significantly change anything about it. It bears mentioning here because of the importance of the concept to the overall practice of security and its inclusion in the CCSP Common Body of Knowledge (CBK).</p>
+<p><i>Risk appetite</i> is the level, amount, or type of risk that the organization finds acceptable. This varies wildly from organization to organization, based on innumerable factors both internal and external, and can change over time.</p>
+<p>Here’s a quick review of some risk fundamentals:</p>
+<ul id="c02-list-0011">
+<li><i>Risk</i> is the likelihood an impact will be realized.</li>
+<li>Risk can be reduced but never eliminated.</li>
+<li>Organizations accept a level of risk that allows operations to continue in a successful manner.</li>
+<li>It is legal and defensible to accept risks higher than the norm, or greater than your competitors, except risks to health and human safety; these risks <i>must</i> be addressed to the industry standard or the regulatory scheme to which your organization adheres.</li>
+</ul>
+<section class="feature3" id="c02-feafxd-0005">
+<h4 style="background-color: #E7E7E8;"><span epub:type="pagebreak" role="doc-pagebreak" title="30" id="Page_30"></span><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> Health and Human Safety Risks</h4>
+<p>An organization cannot accept risks to health and human safety that are beyond industry standards and known best practices; to do so would be unethical, and it would expose the organization to a great deal of liability (which creates its own risk, which must also be considered). There are a few exceptions to this rule; the military is one example, where loss of life and limb are an expected outcome from operations and an acceptable risk.</p>
+<p>However, individuals can accept such risks on their own behalf. For instance, commercial fishing has consistently been among the professions with the highest fatality rates in the United States for the past 100 years (in terms of number of hours worked per death), yet there is no shortage of people willing to engage in that industry. For the individual workers, the level of risk is both known and acceptable. From an organizational perspective, however, the relatively high possibility of fatal accidents does not obviate the need for ensuring adherence to industry best practices (perhaps life vests, tether lines, and so forth) and does not remove all liability.</p>
+</section>
+<p>Organizations have four main ways to address risk:</p>
+<p><b>Avoidance </b>This isn’t really a method for handling risk; it means leaving a business opportunity because the risk is simply too high and cannot be compensated for with adequate control mechanisms—a risk that exceeds the organization’s appetite.</p>
+<p><b>Acceptance </b>The opposite of avoidance; the risk falls within the organization’s risk appetite, so the organization continues operations without any additional efforts regarding the risk.</p>
+<p><b>Transference </b>The organization pays someone else to accept the risk, at a lower cost than the potential impact that would result from the risk being realized; this is usually in the form of insurance. This type of risk is often associated with things that have a low probability of occurring but a high impact should they occur.</p>
+<p><b>Mitigation </b>The organization takes steps to decrease the likelihood or the impact of the risk (and often both); this can take the form of controls/countermeasures and is usually where security practitioners are involved.</p>
+<p>Risk is involved in every activity. We can manage risk, attenuate it, even minimize it, but there is always an element of risk in operations. When we choose to mitigate risk by applying countermeasures and controls, the remaining, leftover risk is called <i>residual risk</i>. The task of the security program is to reduce residual risk until it falls within the acceptable level of risk according to the organization’s risk appetite.</p>
+<p>The risk appetite of an organization is set by senior management and is the guide for all risk-management activities in the organization. The security practitioner must have a <span epub:type="pagebreak" role="doc-pagebreak" title="31" id="Page_31"></span>thorough understanding of the risk appetite of the organization in order to perform their functions properly and efficiently.</p>
+<p>Once the business requirements have been determined, and the BIA has been completed, the information acquired can and should be reused throughout many of the organization’s security-related efforts. For instance, the BIA results can be utilized in the risk assessment, the selection of specific security controls throughout the environment, and the business continuity/disaster recovery (BC/DR) plans; knowing the critical aspects of the organization and the values of all assets is essential to accomplishing these tasks.</p></section>
+</section>
+<section id="c02-sec-0007">
+<h2><a id="usec0007"></a>Security Considerations for Different Cloud Categories</h2>
+<p>In traditional (non-cloud) environments, we had bright-line definitions of the organization’s IT perimeter: everything inside the perimeter belonged to the organization, including data, hardware, and risk; everything outside was someone else’s problem. We could even point at a specific location, a given cable leaving the facility or campus, and know that it, there, was the place where our control ended and someone else’s began. We could armor our defenses at the interface between the internal environment and external factors, building up a demilitarized zone (DMZ).</p>
+<p>This is not readily the case with cloud computing. In the cloud motif, our data resides inside an IT environment owned by someone else, riding on a hardware infrastructure that does not belong to us and is largely outside our control. Our users operate programs and machines that we have limited access to and knowledge of. It is therefore difficult to know exactly where the boundaries exist in cloud models, where our risks are, and how far they extend.</p>
+<p>In the following sections, I’ll apply a notional perspective of cloud computing boundaries. But it is extremely important to remember this: currently, according to most of the world’s privacy laws and regulations, the cloud customer <i>is always ultimately legally liable for any loss of data</i>. This is true even if the cloud provider demonstrates negligence or malice.</p>
+<section class="feature3" id="c02-feafxd-0006">
+<p><img style="vertical-align: middle;" src="public/warn.jpg" alt="Image of Warning" width="69" height="40"> The cloud customer can seek restitution if the cloud provider fails in some way, causing damage to the customer. For instance, if the cloud provider hires an administrator who then illegally sells access to data belonging to the cloud customer, the customer can sue the provider for damages. <i>However, the cloud customer is still legally responsible for all mandates applicable to the loss, such as complying with data breach notification laws in that jurisdiction</i>. This requirement does not cease just because the cloud customer has outsourced operations to the cloud provider.</p>
+</section>
+<p>So what do these boundaries look like in the different cloud models?</p><section id="c02-sec-0008">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="32" id="Page_32"></span><a id="usec0008"></a>IaaS Considerations</h3>
+<p>Infrastructure as a service&nbsp;(IaaS) is the cloud model in which the cloud customer has the most responsibility and authority. The provider is responsible for the data center’s buildings and land, connectivity and power, and the hardware assets the customer’s programs and data will reside on. The customer, however, is in charge of everything from the operating system and up; all software will be installed and administered by the customer, and the customer will supply and manage all the data.</p>
+<p>In terms of security, the cloud customer is still losing the degree of authority they would have had in a traditional IT environment. For instance, the customer obviously does not get to select the specific IT assets used in the cloud, so the security of the acquisition process (during which we normally vet vendors and suppliers) must be entrusted to the cloud provider. The cloud customer may also lose some ability to monitor network traffic inside the data center—the cloud provider might not be willing to allow the customer to place monitoring equipment or sensors on the provider’s infrastructure and also might refuse to share traffic data they, the provider, have collected themselves.</p>
+<p>This makes auditing difficult, which also affects security policy and regulatory compliance. An organization migrating to the cloud will necessarily have to drastically adapt its security policy to reflect the new constraints and will have to find some way to provide the requisite deliverables to appease regulators. This must be negotiated at the outset of migration, and early communication with regulators is highly advisable. For instance, if regulators insist on scheduled audits of the environment where data processing takes place, what form will those audits take if the organization cannot now directly audit network traffic and event logs?</p>
+<p>In IaaS, though, the cloud customer may still collect and review event logs from the software, including the OS, which still lends a great deal of insight into the usage and security of the data.</p></section>
+<section id="c02-sec-0009">
+<h3><a id="usec0009"></a>PaaS Considerations</h3>
+<p>With platform as a service&nbsp;(PaaS), the cloud customer loses still more control of the environment, because the cloud provider is now responsible for installing, maintaining, and administering the OSs as well as the underlying hardware. This will entail further modification of the customer’s security policy and additional efforts to ensure regulatory compliance.</p>
+<p>The cloud customer still, however, gets to monitor and review software events, since the programs running on the OS will belong to the customer. The responsibilities for updating and maintaining the software will also be the customer’s. However, updates and administration of the OS now fall to the provider, which, while posing a loss of control for operational and security purposes on the customer’s part, may also represent a cost savings and increase of efficiency.</p></section>
+<section id="c02-sec-0010">
+<h3><a id="usec0010"></a>SaaS Considerations</h3>
+<p>With software as a service (SaaS), of course, most of the control of the environment is ceded to the provider. The cloud customer will not have ownership of the hardware or the <span epub:type="pagebreak" role="doc-pagebreak" title="33" id="Page_33"></span>software or the administration of either; the customer only supplies and processes data to and in the system.</p>
+<p>For all relevant intents and purposes, the cloud customer, as an organization, has taken the role and responsibilities of what a common user would have in a legacy environment: few administrative rights, few privileged accounts, and very few permissions and responsibilities.</p>
+<p>The customer remains liable for all statutory and contractual obligations related to the safeguarding of the data but, in this case, has little control over how that data is protected. The cloud provider is now almost exclusively responsible for all system maintenance, all security countermeasures, and the vast majority of policy (and implementation of that policy) affecting the data.</p></section>
+<section id="c02-sec-0011">
+<h3><a id="usec0011"></a>General Considerations</h3>
+<p>In all three models, the customer is giving up an essential form of control: physical access to the devices on which the data resides. This is a massive and serious increase of risk and loss of assurance; anyone who can physically access the location of the data can eventually take it, with or without permission.</p>
+<p>Can we implement means to reduce the likelihood of breaches as a result of this risk? Of course—and we need to do so, in order to demonstrate due care. Such measures might include ensuring the cloud provider performs strict background checks and continual monitoring of all personnel with access to the data center, extreme physical security measures at the data center location, encryption of data processed and stored in the cloud, assignment of contractual liability to the provider (bearing in mind that legal liability remains with the customer, however), and so forth. It is important to remember, though, that the residual risk of losing physical access always remains, even when controls are utilized or other risk reduction methods are used. The following section will discuss these further.</p>
+<p>It is worth noting that there are no defined mandates or uniform solutions ubiquitous throughout the industry; each provider will be different, and each contract will be different, so each set of rights and responsibilities will vary according to what the customer and provider negotiate.</p></section>
+</section>
+<section id="c02-sec-0012">
+<h2><a id="usec0012"></a>Design Principles for Protecting Sensitive Data</h2>
+<p>The following sections review some basic secure architectural methods. Bear in mind that this is not an exhaustive list, and these techniques alone will not suffice to protect an organization and its data, but they can serve as a guideline for IT infrastructure controls.</p><section id="c02-sec-0013">
+<h3><a id="usec0013"></a>Hardening Devices</h3>
+<p>In the traditional IT environment, devices in the DMZ (that notional area where the internal network is public-facing and connects with the outside world) were secured as a matter <span epub:type="pagebreak" role="doc-pagebreak" title="34" id="Page_34"></span>of practice; we knew and understood that these boxes were more likely to suffer intrusion attempts, and we hardened them accordingly.</p>
+<p>For the cloud environment, it is probably best to adhere to this same practice, both from the cloud provider side of the equation and as cloud users. It is probably best to treat all resources in a cloud environment as if they are in the DMZ and harden them accordingly. In treating all cloud-related devices as if they are in the DMZ, we are forming good habits and a conceptual way of viewing the cloud.</p>
+<p>The cloud provider should ensure that all devices in the data center are secured such that the following conditions are met:</p>
+<ul id="c02-list-0012">
+<li>All guest accounts are removed.</li>
+<li>All unused ports are closed.</li>
+<li>No default passwords remain.</li>
+<li>Strong password policies are in effect.</li>
+<li>Any admin accounts are significantly secured and logged.</li>
+<li>All unnecessary services are disabled.</li>
+<li>Physical access is severely limited and controlled.</li>
+<li>Systems are patched, maintained, and updated according to vendor guidance and industry best practices.</li>
+</ul>
+<p>These concepts should not be in any way new to security practitioners, but they continue to have a significant value in the cloud motif.</p>
+<p>The cloud customer has a similar and related, but different, list of tasks. Customers must bear in mind the risks related to the way they access the cloud, which often takes the form of a bring your own device (BYOD) environment and always involves remote access. BYOD existed before the current ubiquity of cloud computing, and many of those known security practices can be employed to good effect in our current models.</p>
+<p>For instance, cloud customers should ensure that all assets in their BYOD infrastructure that access the cloud should:</p>
+<ul id="c02-list-0013">
+<li>be protected with some form of anti-malware/security software;</li>
+<li>have remote wipe/remote lock capability in the event of loss/theft, with the user granting written permission to the organization to wipe/lock via a signed authorized use policy;</li>
+<li>utilize some form of local encryption;</li>
+<li>be secured with strong access controls (a password, or perhaps a biometric) in a multifactor configuration;</li>
+<li>have and properly employ VPN solutions for cloud access;</li>
+<li>have some sort of data loss, leak prevention, and protection (DLP) solution installed.</li>
+</ul>
+<p>The organization may also want to consider containerization software options for personally owned user devices as a means to isolate their personal data from the organization’s information.</p>
+<section class="feature3" id="c02-feafxd-0007">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="35" id="Page_35"></span><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> It’s not only physical devices that need to be hardened—we have to think of virtual devices in the same manner we’d consider their physical counterparts. Because cloud computing relies so heavily on virtualization for load balancing and scalability, it is important to remember that virtual instances will require strong protection both when active (so that data being processed can’t be detected by other instances/users) and while stored (as files, because they contain so much material attackers would like to acquire and they are so portable). In terms of configuration, they also have to be hardened in all the same ways we secure physical machines.</p>
+</section>
+</section>
+<section id="c02-sec-0014">
+<h3><a id="usec0014"></a>Encryption</h3>
+<p>I’ve mentioned encryption already, and you can expect to see more references throughout the book; it’s impossible to divest modern security practices from various uses of encryption. This is as true in the cloud as it was in the traditional IT environment.</p>
+<p>We will cover cloud data security, and the associated encryption mechanisms, in <a href="Chapter 4 Cloud Data Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapter 4</a>. For the purposes of this specific discussion (basic cloud design requirements), suffice it to say that encryption should be utilized as follows:</p>
+<ul id="c02-list-0014">
+<li>In the cloud data center for:
+<ul id="c02-list-0015">
+<li>data at rest, which includes long-term storage/archiving/backups, protecting near-term stored files (such as snapshots of virtualized instances), preventing unauthorized access to specific datasets by authorized personnel (for instance, securing fields in databases so that database admins can manage software but not modify/view content);</li>
+<li>secure sanitization (cryptographic erasure/cryptoshredding)</li>
+</ul></li>
+<li>In communications between cloud providers and users for:
+<ul id="c02-list-0016">
+<li>creating secure sessions,</li>
+<li>ensuring the integrity and confidentiality of data in transit</li>
+</ul></li>
+</ul>
+<section class="feature3" id="c02-feafxd-0008">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Eventually, we’d like to be able to process data in the cloud while it’s encrypted, without having to decrypt it, so that it is never exposed, even temporarily, to anyone other than the authorized users. Although this capability is not currently available, ongoing research shows promise. This technology is known as <i>homomorphic encryption</i>, and it’s worth knowing the term and understanding the possibility, even though it’s still in the experimental stages.</p>
+</section>
+</section>
+<section id="c02-sec-0015">
+<h3><a id="usec0015"></a>Layered Defenses</h3>
+<p>This is another concept that is not new, but it’s one that carries over into the cloud. Also referred to as <i>defense in depth</i>, it is the practice of having multiple overlapping means <span epub:type="pagebreak" role="doc-pagebreak" title="36" id="Page_36"></span>of securing the environment with a variety of methods. These should include a blend of administrative, logical, technical, and physical controls.</p>
+<p>From a cloud provider perspective, a layered defense should entail the following:</p>
+<ul id="c02-list-0017">
+<li>Strong personnel controls involving background checks and continual monitoring</li>
+<li>Technological controls such as encryption, event logging, and access control enforcement</li>
+<li>Physical controls related to both the overall campus, the various facilities, the areas within the data center where data is processed and stored, individual racks and particular devices, and portable media entering and leaving the campus</li>
+<li>Governance mechanisms and enforcement, such as strong policies and regular, thorough audits</li>
+</ul>
+<p>From a cloud customer perspective, similar efforts should include the following items:</p>
+<ul id="c02-list-0018">
+<li>Training programs for staff and users that include good coverage of security topics</li>
+<li>Contractual enforcement of policy requirements</li>
+<li>Use of encryption and logical isolation mechanisms on BYOD assets</li>
+<li>Strong remote access control methods, perhaps including multifactor authentication</li>
+</ul>
+<section class="feature3" id="c02-feafxd-0009">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> When considering secure architectures and designs, it is often helpful to&nbsp;refer to existing guidance; there is no reason to rediscover and reinvent every aspect of security for yourself when many publications and tools already exist. Some you might find useful:</p>
+<ul id="c02-list-0019">
+<li>The Cloud Security Alliance Cloud Controls Matrix (<a class="codeLabel" href="https://cloudsecurityalliance.org/group/cloud-controls-matrix/">https://cloudsecurityalliance.org/group/cloud-controls-matrix/</a>)</li>
+<li>The National Institute of Standards and Technology&nbsp;(NIST)’s Risk Management Framework (SP 800-37) (<a class="codeLabel" href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r1.pdf">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r1.pdf</a>)</li>
+<li>ISACA’s COBIT</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="c02-sec-0016">
+<h2><a id="usec0016"></a>Summary</h2>
+<p>In this chapter, we have gone into some depth discussing how an organization determines its business requirements and critical paths and what that information is used for, in terms of security. We also covered the nominal boundaries of the various cloud service models and the rights and responsibilities related to each, from both the customer and provider perspectives. In addition, we touched on basic cloud architectural and design concepts for protecting sensitive data. In upcoming chapters, we will explore the latter topic in more detail.</p></section>
+<section id="c02-sec-0017">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="37" id="Page_37"></span><a id="usec0017"></a>Exam Essentials</h2>
+<p><b>Know how to determine business requirements. </b>Understand the function and purpose of the business impact analysis and how it enables the organization to ascertain the inventory, value, and criticality of organizational assets.</p>
+<p><b>Be familiar with the boundaries of each of the cloud service models. </b>Know which party is responsible for specific controls in each of the various models. Realize that there is a significant amount of room to negotiate contractual definitions of the responsibilities and rights of both the cloud provider and cloud customer for all of the models.</p>
+<p><b>Understand how cloud architecture and design supports sensitive data security. </b>Be familiar with how hardening devices, encryption, and defense in depth enhances the protection of data in the cloud. Know where to find frameworks, models, and guidance for secure cloud design.</p></section>
+<section id="c02-sec-0018">
+<h2><a id="usec0018"></a>Written Labs</h2>
+<p>You can find the answers to the written labs in <a href="Appendix A Answers to Written Labs _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix A</a>.</p>
+<ol id="c02-list-0020">
+<li>Download FEMA’s Business Impact Analysis Worksheet at <a class="codeLabel" href="https://www.fema.gov/media-library/assets/documents/89526">https://www.fema.gov/media-library/assets/documents/89526</a>.</li>
+<li>Choose a department/function within your organization to use in this exercise; it&nbsp; can be anything you want, whether or not it has to do with IT provision or cloud computing.</li>
+<li>Choose a hypothetical risk/threat to use in the exercise; this might be a natural disaster, or it could be an attack by malicious actors, or anything else you prefer.</li>
+<li>Fill out the form using the business function and risk/threat, using information as accurately and realistically as possible.</li>
+</ol><section class="exercises">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="38" id="Page_38"></span><a id="c02-exsec-0001"></a>Review Questions</h2>
+<p>You can find the answers to the review questions in <a href="Appendix B Answers to Review Questions _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix B</a>.</p><section class="questionSet">
+<ol class="questionList">
+<li class="essay">
+<div class="question">
+<p>Gathering business requirements can aid the organization in determining all of these facets of organizational assets except ___________________.</p><ol id="c02-list-0021" class="upper-latin">
+<li>Full inventory</li>
+<li>Usefulness</li>
+<li>Value</li>
+<li>Criticality</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The BIA can be used to provide information about all the following elements except ___________________.</p><ol id="c02-list-0022" class="upper-latin">
+<li>Risk analysis</li>
+<li>Secure acquisition</li>
+<li>BC/DR planning</li>
+<li>Selection of security controls</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In which cloud service model is the customer required to maintain the OS?</p><ol id="c02-list-0023" class="upper-latin">
+<li>CaaS</li>
+<li>SaaS</li>
+<li>PaaS</li>
+<li>IaaS</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In which cloud service model is the customer required to maintain and update only the applications?</p><ol id="c02-list-0024" class="upper-latin">
+<li>CaaS</li>
+<li>SaaS</li>
+<li>PaaS</li>
+<li>IaaS</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In which cloud service model is the customer only responsible for the data?</p><ol id="c02-list-0025" class="upper-latin">
+<li>CaaS</li>
+<li>SaaS</li>
+<li>PaaS</li>
+<li>IaaS</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="39" id="Page_39"></span>The cloud customer and provider negotiate their respective responsibilities and rights regarding the capabilities and data of the cloud service. Where is the eventual agreement codified?</p><ol id="c02-list-0026" class="upper-latin">
+<li>RMF</li>
+<li>Contract</li>
+<li>MOU</li>
+<li>BIA</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In attempting to provide a layered defense, the security practitioner should convince senior management to include security controls of which type?</p><ol id="c02-list-0027" class="upper-latin">
+<li>Technological</li>
+<li>Physical</li>
+<li>Administrative</li>
+<li>All of the above</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is considered an administrative control?</p><ol id="c02-list-0028" class="upper-latin">
+<li>Access control process</li>
+<li>Keystroke logging</li>
+<li>Door locks</li>
+<li>Biometric authentication</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is considered a technological control?</p><ol id="c02-list-0029" class="upper-latin">
+<li>Firewall software</li>
+<li>Fireproof safe</li>
+<li>Fire extinguisher</li>
+<li>Firing personnel</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is the best example of a physical control?</p><ol id="c02-list-0030" class="upper-latin">
+<li>Carpets</li>
+<li>Ceilings</li>
+<li>Doors</li>
+<li>Fences</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In a cloud environment, encryption should be used for all the following except ___________________.</p><ol id="c02-list-0031" class="upper-latin">
+<li>Long-term storage of data</li>
+<li>Near-term storage of virtualized images</li>
+<li>Secure sessions/VPN</li>
+<li>Profile formatting</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="40" id="Page_40"></span>The process of hardening a device should include all the following except ___________________.</p><ol id="c02-list-0032" class="upper-latin">
+<li>Improve default accounts</li>
+<li>Close unused ports</li>
+<li>Delete unnecessary services</li>
+<li>Strictly control administrator access</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The process of hardening a device should include which of the following?</p><ol id="c02-list-0033" class="upper-latin">
+<li>Encrypting the OS</li>
+<li>Updating and patching the system</li>
+<li>Using video cameras</li>
+<li>Performing thorough personnel background checks</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is an experimental technology that is intended to create the possibility of processing encrypted data without having to decrypt it first?</p><ol id="c02-list-0034" class="upper-latin">
+<li>Homomorphic</li>
+<li>Polyinstantiation</li>
+<li>Quantum-state</li>
+<li>Gastronomic</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Risk appetite for an organization is determined by which of the following?</p><ol id="c02-list-0035" class="upper-latin">
+<li>Reclusion evaluation</li>
+<li>Senior management</li>
+<li>Legislative mandates</li>
+<li>Contractual agreement</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the risk left over after controls and countermeasures are put in place?</p><ol id="c02-list-0036" class="upper-latin">
+<li>Null</li>
+<li>High</li>
+<li>Residual</li>
+<li>Pertinent</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>All the following are ways of addressing risk except ___________________.</p>
+<ol id="c02-list-0037" class="upper-latin">
+<li>Acceptance</li>
+<li>Reversal</li>
+<li>Mitigation</li>
+<li>Transfer</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="41" id="Page_41"></span>To protect data on user devices in a BYOD environment, the organization should consider requiring all the following except ___________________.</p>
+<ol id="c02-list-0038" class="upper-latin">
+<li>DLP agents</li>
+<li>Local encryption</li>
+<li>Multifactor authentication</li>
+<li>Two-person integrity</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Devices in the cloud data center should be secure against attack. All the following are means of hardening devices except ___________________.</p>
+<ol id="c02-list-0039" class="upper-latin">
+<li>Using a strong password policy</li>
+<li>Removing default passwords</li>
+<li>Strictly limiting physical access</li>
+<li>Removing all admin accounts</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following best describes risk?</p><ol id="c02-list-0040" class="upper-latin">
+<li>Preventable</li>
+<li>Everlasting</li>
+<li>The likelihood that a threat will exploit a vulnerability</li>
+<li>Transient</li>
+</ol></div>
+</li></ol>
+</section></section></section>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+</body></html>

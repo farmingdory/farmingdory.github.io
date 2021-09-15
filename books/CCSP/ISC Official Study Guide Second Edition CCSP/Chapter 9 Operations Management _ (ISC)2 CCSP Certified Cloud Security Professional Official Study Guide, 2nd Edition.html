@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 9 Operations Management _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603375/"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603375">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 9 Operations Management | (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+
+        <script src="public/orm.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+
+
+
+  <meta property="og:url" itemprop="url" content="Chapter 9 Operations Management _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition","type":"book","identifier":"9781119603375","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603375-/Chapter 9 Operations Management _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2019-12-24","title":"Chapter 9 Operations Management"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 9 Operations Management" data-react-helmet="true"><meta property="og:title" content="Chapter 9 Operations Management" data-react-helmet="true"><meta itemprop="name" content="Chapter 9 Operations Management" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+Chapter 9
+Operations Management
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.1...." data-react-helmet="true"><meta name="twitter:description" content="
+
+Chapter 9
+Operations Management
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.1...." data-react-helmet="true"></head>
+  <body>
+
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper"><a href="Chapter 9 Operations Management _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-large orm-Input-withIcon"><label for="input-gajfzetogy9" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-gajfzetogy9" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 8 Operations Elements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 8 Operations Elements</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 9 Operations Management</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 10 Legal and Compliance Part 1 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="title--1b0fU">Chapter 10 Legal and Compliance Part 1</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="209" id="Page_209"></span><a id="start"></a><span class="chapterNumber">Chapter 9</span>
+<br><span class="chapterTitle">Operations Management</span></h1>
+</header>
+<p><b>THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:</b></p>
+<ul>
+<li><b>Domain 1: Cloud Concepts, Architecture, and Design</b>
+<ul>
+<li>1.1. Understand Cloud Computing Concepts
+<ul>
+<li>1.1.2. Cloud Computing Roles</li>
+</ul></li>
+<li>1.4. Understand Design Principles of Secure Cloud Computing
+<ul>
+<li>1.4.2. Cloud Based Disaster Recovery (DR) and Business Continuity (BC) Planning</li>
+</ul></li></ul></li>
+<li><b>Domain 3: Cloud Platform and Infrastructure Security</b>
+<ul>
+<li>3.4. Design and Plan Security Controls
+<ul>
+<li>3.4.1. Physical and Environmental Protection</li>
+</ul></li>
+<li>3.5. Plan Disaster Recovery (DR) and Business Continuity (BC)
+<ul>
+<li>3.5.1. Risks Related to the Cloud Environment</li>
+<li>3.5.2. Business Requirements</li>
+<li>3.5.3. Business Continuity/Disaster Recovery Strategy</li>
+<li>3.5.4. Creation, Implementation, and Testing of the Plan</li>
+</ul></li></ul></li>
+<li><b>Domain 5: Cloud Security Operations</b>
+<ul>
+<li>5.3. Manage Physical and Logical Infrastructure for Cloud Environment
+<ul>
+<li>5.3.3. Patch Management</li>
+<li>5.3.4. Performance and Capacity Monitoring</li>
+<li>5.3.5. Hardware Monitoring</li>
+</ul></li>
+<li>5.4. Implement Operational Controls and Standards
+<ul>
+<li>5.4.1. Change Management</li>
+<li>5.4.2. Continuity Management</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="210" id="Page_210"></span>5.4.3. Information Security Management</li>
+<li>5.4.4 Continual Service Improvement Management</li>
+<li>5.4.7 Release Management</li>
+<li>5.4.9. Configuration Management</li>
+<li>5.4.11. Availability Management</li>
+<li>5.4.12. Capacity Management</li>
+</ul></li>
+<li>5.7. Manage Security Operations
+<ul>
+<li>5.7.3. Log Capture and Analysis</li>
+</ul></li></ul></li></ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="211" id="Page_211"></span><img src="public/clogo.jpg" alt="" width="150" height="150"> This chapter covers the essential aspects of operations monitoring, capacity, maintenance, change and configuration management, and BC/DR for cloud data centers.</p>
+<p>In other chapters, I often referred to the cloud customer as “your organization” or made other related associations (using <i>your</i> or <i>we</i> to indicate the cloud customer's perspective in many matters). In this chapter, the focus is almost exclusively on the cloud provider, specifically the provider's data center. I may refer to actions associated with the provider with the same pronouns used for the customer elsewhere (<i>you</i>, <i>your</i>, or <i>we</i>); hopefully, context will prevent any misunderstanding.</p>
+<p>In this chapter, we'll discuss the various practices cloud data center operators should use to optimize performance and enhance durability of their infrastructure and systems. This will include coverage of systems monitoring, the configuration and change management program and BC/DR from a vendor perspective.</p>
+<h2><a id="c09-sec-001"></a>Monitoring, Capacity, and Maintenance</h2>
+<p>It's important for data center operators to know how their hardware, software, and network are being utilized and what demand is being placed on all the relevant resources. This information helps data center operators know how to better apportion and allocate all those items in order to fulfill customer needs (and maintain compliance with SLAs).</p>
+<h3>Monitoring</h3>
+<p>Software, hardware, and network components need to be evaluated in real time to understand which systems may be nearing capacity and so the organization can respond as quickly as possible when problems arise. This can and should be done with several of the possible tools at the operator's disposal:</p>
+<p><b>OS Logging</b> Most operating systems have integral toolsets for monitoring performance and events. Aside from the security uses mentioned elsewhere in the book, the cloud vendor can set OS logs to alert administrators when usage approaches a level of capacity utilization or performance degradation that may affect SLA parameters. These can include CPU usage, memory usage, disk space (virtual or tangible), and disk I/O timing (an indicator of slow writing/reading to/from the disk).</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="212" id="Page_212"></span><b>Hardware Monitoring</b> As with the OS, many vendors include performance-monitoring tools in common device builds. These can be used to measure such performance indicators as CPU temperature, fan speed, voltages (consumption and throughput), CPU load and clock speed, and drive temperature. Commercial products are also available to collect and supply this data and provide alerts if this functionality is not integral to the devices from the manufacturer.</p>
+<p><b>Network Monitoring</b> In addition to the OS and the devices themselves, the various network elements need to be monitored. These include not only the hardware and the software, but the distribution facets such as cabling and software-defined networking (SDN) control planes. The provider should ensure that current capacity meets customer needs and increased customer demand to assure that the flexibility and scalability traits of cloud computing are still provided. The provider should also ensure that the network is not overburdened or subjected to unacceptable latency.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> As with all log data, the performance monitoring information can be fed into a SEIM, SEM, or SIM system for centralized analysis and review.</p>
+</section>
+<p>In addition to the hardware and software, it is important to monitor ambient conditions within the data center. In particular, temperature and humidity are essential data points for optimizing operations and performance. It's important to capture a realistic portrayal of the temperature within the data center, perhaps by averaging measurements across several thermometric devices located throughout the airflow process. For performance monitoring purposes, our target metrics will be the standards created by Technical Committee 9.9 of the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE), published in 2016. ASHRAE offers extremely detailed recommendations for <br>a wide variety of aspects of the data center, including the IT equipment, power supply, and battery backups, all of which can be quite useful to a data center operator or security practitioner. These are available free of charge from the ASHRAE website: <a class="codeLabel" href="https://tc0909.ashraetcs.org/documents/ASHRAE_TC0909_Power_White_Paper_22_June_2016_REVISED.pdf">https://tc0909.ashraetcs.org/documents/ASHRAE_TC0909_Power_White_Paper_22<br>_June_2016_REVISED.pdf</a>. It's also a generally good read and worth investing some of your time reviewing.</p>
+<p>While there are many specific and detailed recommendations, the general ASHRAE recommended ranges for a data center are as follows:</p>
+<ul>
+<li><b>Temperature:</b> 64° to 81° F (18° to 27° C)</li>
+<li><b>Humidity:</b> Dew point of 42° to 59° F (5.5° to 15° C), relative humidity of 60%</li>
+</ul>
+<p>While these ranges give a general notion of the condition of the ambient environment within a data center, the ASHRAE guidance is a lot more detailed regarding specific ranges, based on the type, age, and location of the equipment. The operator should determine which guidance is most applicable to their facility. Moreover, ASHRAE offers this advice solely from a platform-agnostic perspective. Data center operators must also take into account any guidance and recommendations from device manufacturers regarding ambient ranges affecting performance parameters for their specific products.</p>
+<section class="feature3">
+<h4 style="background-color: #E7E7E8;"><span epub:type="pagebreak" role="doc-pagebreak" title="213" id="Page_213"></span>Effects of Ambient Temperature and Ambient Humidity</h4>
+<p>What roles do temperature and humidity play, in terms of affecting equipment performance?</p>
+<p>An ambient temperature that is too high may allow equipment to overheat. High-capacity electrical components generate a great deal of waste heat, and the devices can be sensitive to conditions that exceed their operating parameters. An ambient temperature that is too low can be a risk to health and human safety; touching bare metal at the freezing point can burn or remove skin; moreover, people working in such conditions would simply be uncomfortable and unhappy, conditions that lead to dissatisfaction, which in turn lead to security risks.</p>
+<p>An ambient humidity that is too high can promote corrosion of metallic components as well as mold and other organisms. An ambient humidity that is too low can enhance the possibility of static discharge, which might affect both personnel and equipment as well as increase the potential for fires.</p>
+</section>
+<h3>Maintenance</h3>
+<p>Continual uptime requires maintaining the overall environment constantly. This also includes maintaining individual components both on a scheduled basis and at unscheduled times as necessary. In the following sections, we'll discuss general maintenance matters, updates, upgrades, and patch management.</p>
+<h4>General Maintenance Concepts</h4>
+<p>The operational modes of data centers can be perceived as two categories: normal and maintenance mode. Realistically, the data center, taken holistically, will constantly be in maintenance mode, as ongoing maintenance of specific systems and components is necessary for continuous uptime. Therefore, a cloud data center can be expected to be considered in constant normal mode, with various individual systems and devices continually in maintenance mode to ensure constant operations. This is especially true for Tier 3 and 4 data centers, where redundant components, lines, and systems allow for maintenance to occur simultaneously with uninterrupted critical operations.</p>
+<p>Let's instead look at systems and devices in terms of the normal and maintenance modes. When a system or device is put into maintenance mode, the data center operator must ensure the following tasks are successful:</p>
+<p><b>All operational instances are removed from the system/device before entering maintenance mode.</b> We don't want to affect any transactions in a customer's production environment. We therefore must migrate any virtualized instances off the specific systems and devices where they might be hosted before we begin maintenance activities.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="214" id="Page_214"></span><b>Prevent all new logins.</b> For the same reason as the previous task, we don't want customers logging into the affected systems and devices.</p>
+<p><b>Ensure logging is continued, and begin enhanced logging.</b> Administrator activities are much more powerful, and therefore rife with risk, than the actions of common users. It is therefore recommended that you log administrator actions at a greater rate and level of detail than those of users. Maintenance mode is an administrative function, so the increased logging is necessary.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Before moving a system or device from maintenance mode back to normal operation, it is important to test that it has all the original functionality necessary for customer purposes, that the maintenance was successful, and that proper documentation of all activity is complete.</p>
+</section>
+<h4>Updates</h4>
+<p>Industry best practice includes ensuring we comply with all vendor guidance regarding specific products. In fact, failing to adhere to vendor specifications can be a sign that the operator has failed in providing necessary due care, whereas documented adherence to vendor instructions can demonstrate due diligence.</p>
+<p>In addition to configuration prior to deployment (discussed as part of the section “Change and Configuration Management [CM]” later in this chapter), vendors will issue ongoing maintenance instructions, often in the form of updates. This can be both in the form of application packages for software and firmware installs for hardware. The former can also be in the form of patches, which we'll discuss specifically is a later section.</p>
+<p>The update process should be formalized in the operator's governance (as should <i>all</i> processes, and they should all spawn from policy). It should include the following elements, at a minimum:</p>
+<p><b>Document how, when, and why the update was initiated.</b> If promulgated by the vendor, annotate the details of the communication, including date, update code or number, explanation, and justification; some of this may be included by reference, such as with a URL to the vendor's page announcing the update instructions.</p>
+<p><b>Move the update through the change management (CM) process.</b> All modifications to the facility should be through the CM methodology and documented as such. Details on the CM process are included later in this chapter, but it should be stressed that sandbox testing be included as part of CM before the update is applied.</p>
+<ol>
+<li>Put the systems and devices into maintenance mode. Observe the recommendations in the previous section of this chapter.</li>
+<li>Apply the update to the necessary systems and devices. Annotate the asset inventory to reflect the changes.</li>
+<li>Verify the update. Run tests on the production environment to ensure all necessary systems and devices have received the update. If any were missed, repeat the installation until it is complete.</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="215" id="Page_215"></span>Validate the modifications. Ensure that the intended results of the update have taken effect and that the updated systems and devices interact appropriately with the rest of the production environment.</li>
+<li>Return to normal operations. Resume regular business.</li>
+</ol>
+<h4>Upgrades</h4>
+<p>In this context, we distinguish updates from upgrades with this purpose: updates are applied to existing systems and components, whereas upgrades are the replacement of older elements with newer ones. The upgrade process should largely map to the one for updates, including formalization in governance, CM methodology, testing, and so forth. Particular attention in upgrading needs to be placed on documenting the changes in the asset inventory, not only adding the new elements but annotating the removal and secure disposal of the old ones. This, of course, means that secure disposal is one element of the upgrade process that is not included in updates.</p>
+<h4>Patch Management</h4>
+<p>Patches are a variety of updates most commonly associated with software. We distinguish them here by their frequency: software vendors commonly issue patches both for immediate response to a given need (such as a newfound vulnerability) and for routine purposes (fixing, adding, or enhancing functionality) on a regular basis.</p>
+<p>The patch management process must be formalized in much the same manner as updates and upgrades, with its inclusion in policy and so forth. However, patches incur additional risks and challenges, so this discussion is set aside to deal with those specifically. The following subsections relate suggestions and considerations to take into account when managing patches for a cloud data center.</p>
+<h5>Timing</h5>
+<p>When a vendor issues a patch, there is a binary risk faced by all those affected: if they fail to apply the patch, they may be seen to be failing in providing due care for those customers utilizing the unpatched products; if the patch is applied in haste, it may adversely affect the production environment, harming the customer's ability to operate. The latter case is especially true when patches are issued in response to a newfound vulnerability and the vendor was rushed to identify the flaw, find and create a solution, publish the fix, and issue the patch. In the rush to deal with the problem (even more especially when the vulnerability is well publicized and garners public attention), the patch may cause other vulnerabilities or affect other systems by reducing some interoperability or interface capability.</p>
+<p>It is therefore difficult to know exactly when to apply patches relative to how soon after they were issued. It is contingent upon the operator to make this decision only after weighing the merits of either choice.</p>
+<p>In some environments (and with some vendors), it may be desirable to schedule a set patching day/time (per week or per month, for instance) so that it is a regular, anticipated occurrence. In this way, the various participants can coordinate the activity, the change control process can accommodate the required modifications, and specific types of patches can be prioritized and applied in a defined manner.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="216" id="Page_216"></span>Of course, sometimes the customer has little to no control of when some patches might take place, particularly with some platform or vendor updates. If the customer knows this might be an issue with a particular vendor or software, they can try to plan ahead about how they might deal with such situations.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/warn.jpg" alt="Image of Warning" width="69" height="40"> A data center operator may be tempted to allow others in the field to apply the patch first in order to determine its effect and outcome based on the experiences of competitors. The risk in that option is that in the meantime, loss or harm might be caused by or occur via the vulnerability the patch was meant to remediate. This might lend strong support in a lawsuit to recover damages because those customers harmed by the loss can rightly claim that the provider knew of the risk, did not take the steps of due diligence made by others in the field, and allowed harm to come through negligence. This might even support claims for additional or punitive damages. Again, while the tactic may be sound, it carries this additional risk.</p>
+</section>
+<h5>Implementation: Automated or Manual</h5>
+<p>Patches can be applied with mechanized tools or by personnel. There are obvious benefits and risks for both methods. The operator will have to decide which to use on both a general basis (by policy) and for each case when a patch is issued if the circumstances demand. The risks and benefits for each include the following:</p>
+<p><b>Automated</b> A mechanized approach will allow for much faster delivery to far more targets than a manual approach. Patch tools might also include a reporting function that annotates which targets have received the patch, cross-referenced against the asset inventory, and have an alerting function to inform administrators which targets have been missed. Without a capable human observer, however, the tool might not function thoroughly or properly, the patches might be misapplied, or the reports might be inaccurate or portray an inaccurate picture of completeness.</p>
+<p><b>Manual</b> Trained and experienced personnel may be more trustworthy than a mechanized tool and might understand when anomalous activity occurs. However, with the vast number of elements that will need to be patched in a cloud data center, the repetitiveness and boredom of the patch process may lead even a seasoned administrator to miss a number of targets. Moreover, the process will be much, much slower than the automated option and may not be as thorough.</p>
+<h5>Dates</h5>
+<p>As the patch is pushed throughout the environment, the actual date/time stamp may become an important—and misleading—matter in acquiring and acknowledging receipt. For example, say that an automated tool requires an agent that is installed locally on each target. If certain targets are not running when the patch happens and won't be operating until the next calendar day (according to the internal clock on the target), the local agent <span>may not receive the patch because it may check against the central controller for patches </span><i>for </i><i>the current day</i>.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="217" id="Page_217"></span>This problem can be compounded when patch agents are set to check for patches according to a time specified by the internal clock and different targets have internal clocks set to differing time zones (in the case, say, of customers who are geographically dispersed).</p>
+<p>This problem is not limited to automated tools, either. If a manual method is used, the administrators may be applying a patch at a given time/date when not all customers and users have their targets operating, so those targets might not receive the patch, and the administrators might not realize that targets that don't currently appear in scans may need to be patched at some later time/date. Moreover, if patches are being applied manually, the process will necessarily be extended so that administrators can be sure to reach all potential targets as they come online.</p>
+<p>All these possibilities are escalated in a cloud arrangement because of the wide use of virtualization. All virtualized instances saved as images and not currently instantiated during patch delivery will be receiving the patch only after they are next booted. This means that the process will endure until all virtual machines have been made live, which could represent a significant amount of time after the decision to implement the patch. The result is a relatively long delay between the time the operator decides to implement the patch and the time of 100 percent completion. This reflects poorly on the process and the operator, especially in the eyes of regulators and courts.</p>
+<p>Perhaps the optimum technique is to combine the benefits of each method, using both manual and automated approaches. Manual oversight is valuable in determining applicability of patches and testing patches for suitability in the environment, while automated tools can be used to propagate patches and ensure uniform application.</p>
+<p>Regardless of the approach taken, patching (as with all forms of maintenance) should be mentioned in the SLA, and an agreed-upon schedule and threshold of patches is an important contractual consideration.</p>
+<h2><a id="c09-sec-002"></a>Change and Configuration Management (CM)</h2>
+<p>Data center operators, like anyone who owns an IT network, need to develop and maintain a realistic concept of what assets they control, the state of those assets, and explicit information about each asset. This goes beyond (but includes) the asset inventory—the hardware, software, and media they own. It also includes documented records of configuration for all these elements, including versioning, deviations, exceptions, and the rationale for each, as well as a formal process for determining how, when, and why modifications need to be made.</p>
+<p>There are two foundational and interrelated processes used to accomplish this effort: change management and configuration management. Configuration management entails documenting the approved settings for systems and software, which helps establish baselines within the organization. Change management is the process used to review, approve, and document any modifications to the environment. In one sense, configuration management is just the first change to a specific system/program; the two practices are linked.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="218" id="Page_218"></span>Realistically, in many organizations both sets of functions are accomplished by a single process and body. For the purposes of our discussion of operational functions, I'm going to aggregate them and put them under one label: CM. I'll do this to simplify the information, even though a cloud vendor should probably have the wherewithal and functional and personnel specialization sufficient to provide both as separate activities. The purposes of both are so similar in intent and procedure as to be understood as one concept.</p>
+<h3>Baselines</h3>
+<p>CM, regardless of the flavor, begins with baselining, which is a way of taking an accurate account of the desired standard state. For change management, that's a depiction of the network and systems, based on a comprehensive, detailed asset inventory. For configuration management, it's a standard build for all systems, from the settings in the OS to the setup of each application.</p>
+<p>The baseline is a general-purpose map of the network and systems, based on the required functionality as well as security. Security controls should be incorporated in the baseline, with a thorough description of each one's purpose, dependencies, and supporting rationale (that is, a statement explaining what we hope to accomplish with each control). It is absolutely essential to include the controls so that we are fully informed about risk management as we consider modifications to the environment through the CM process. If we're changing the control set in any way or adding new systems and functionality to the environment, we need to know if there will be any resultant increased risk and, therefore, if we need to add any compensatory controls to manage the new risk levels.</p>
+<p>While creating the baseline, it's helpful to get input from all stakeholders: the IT department, the security office, management, and even users. The baseline should be an excellent reflection of the risk appetite of the organization and provide the optimum balance of security and operational functionality.</p>
+<p>Preferably, the baseline should suit the largest population of systems in the organization. If it's going to be used as a template (particularly in configuration management), we'll get the most value from it if it applies to the greatest number of covered systems. However, it may be useful or pragmatic to have a number of baselines that are based on each department's, office's, or project's needs, but it is still essential to ensure that each distinct baseline supports necessary mandates and requirements. It would be inopportune to have an entire department fail a regulatory compliance audit because that department's baseline lost a category of security coverage.</p>
+<h3>Deviations and Exceptions</h3>
+<p>It is important to continually test the baselines to determine that all assets are accounted for and to detect anything that differs from the baseline. Any such deviations, intentional or unintentional, authorized or unauthorized, must be documented and reviewed, as deviations pose additional risks/vulnerabilities to the organization. These deviations might be the result of faulty patch management processes, a rogue device set up by a particular office or user, an intrusion by external attackers, or poor versioning and administrative practices. <span epub:type="pagebreak" role="doc-pagebreak" title="219" id="Page_219"></span>It is the duty of those personnel who are assigned CM roles to determine the cause and any necessary follow-up activity. (CM roles are discussed in the next section.)</p>
+<p>While the baseline serves as the standard against which to compare and validate all systems in the organization, it is best not to use it as an absolute. There will be a significant number of requests for exceptions for particular users, offices, and projects that need functionality not accorded by the general baseline.</p>
+<p>Make sure that the baseline is flexible and practical and that the exception request process is timely and responsive to the needs of the organization and its users. A cumbersome, slow exception process will lead to frustrated users and managers, which can, in turn, lead to unauthorized workarounds implemented without the permission of the CM authority.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/warn.jpg" alt="Image of Warning" width="69" height="40"> An adversarial, unresponsive exception process will undermine security efforts of the organization. Everyone will find a way to perform their job functions, regardless of whether their workarounds are approved or are the most secure means of performing those functions. Uninformed personnel, acting out of desperation, are more likely to make rogue modifications that lack the proper security countermeasures than would the trained, skilled professionals whose job it is to secure the environment. It is much better to compromise the sanctity of the baseline with full cooperation than to mandate that no exceptions will be allowed or to make the process burdensome and complicated for users and offices. Remember: It is the job of security practitioners to support operations, not to hinder those engaged in productivity.</p>
+</section>
+<p>Tracking exceptions and deviations is useful for another essential purpose in addition to ensuring regulatory compliance and security control coverage: if enough exception requests are being made that all ask for the same or similar functionality that deviates from the baseline, <i>change the baseline.</i> The baseline is not serving the purpose if it continually needs routine modification for repeated, equivalent requests. Moreover, addressing exception requests takes more time and effort than modifying the baseline to incorporate new, additional security controls to allow for the excepted functionality.</p>
+<h3>Roles and Process</h3>
+<p>The CM process (as with all processes) should be formalized in the organization's governance. This policy should include provisions for creating processes and procedures that provide the following:</p>
+<ul>
+<li>Composition of the CM board (CMB, or sometimes CCB, for change control board)</li>
+<li>The process, in detail</li>
+<li>Documentation requirements</li>
+<li>Instructions for requesting exceptions</li>
+<li><span>Assignment of CM tasks, such as validation scanning, analysis, and deviation notification</span></li>
+<li>Procedures for addressing deviations, upon detection</li>
+<li>Enforcement measures and responsibility</li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="220" id="Page_220"></span>The CMB should be composed of representatives from all stakeholders within the organization. Recommended representatives include personnel from the IT, security, legal, management, finance and acquisition, and HR departments/offices, in addition to general users. Any other participants that the organization deems useful can certainly be included in the CMB.</p>
+<p><span>The CMB will be responsible for reviewing change and exception requests. The board will </span><span>determine if the change will enhance functionality and productivity, whether the change is </span><span>funded, what potential security impacts the change will incur, and what additional measures (in terms of funding, training, security controls, or staffing) might be necessary to make the change successful and reasonable.</span></p>
+<p>The CMB should meet often enough that changes and exception requests are not delayed unduly so that users and departments are not frustrated by the process. However, it should not meet so often that the time set aside for the CMB becomes work; the personnel involved in the CMB all have other primary duties, and participation in the CMB will impact their productivity. In some cases, depending on the organization, the CMB meets on an ad hoc basis, responding only when change and exception requests meet a certain threshold. This can entail some risk, however, as CMB members might lose some familiarity with the process in the interim, and scheduling a meeting of the CMB with so many disparate offices might be awkward if a meeting of the CMB is not a regular, prioritized occurrence. As with much of the material addressed in this book, this is a trade-off of risk and benefit, and the organization should decide accordingly.</p>
+<p>The process has two forms: one that will occur once and the other, which is repetitious. The former is the initial baseline effort; the latter is the normal operational mode. A baseline will be created for each type of system in the environment.</p>
+<p>The initial process should look something like this (amended as necessary for each organization's individual circumstances):</p>
+<ol>
+<li><b>Full Asset Inventory:</b> In order to know what is being managed, it's crucial to know what you have. This effort need not be independent of all other similar efforts and may in fact be aided by information pulled from other sources, such as the business impact analysis (BIA). The systems affected by each baseline need to be determined.</li>
+<li><b>Codification of the Baseline:</b> This should be a formal action, including all members of the CMB (and perhaps more, for the initial effort; each department and project may want to contribute and participate because the baseline will affect all their future work). The baseline should be negotiated in terms of cost-benefit and risk analyses. Again, it is quite reasonable to use existing sources to inform this negotiation, including the organization's risk management framework, enterprise and security architecture, and&nbsp;so on.</li>
+<li><b>Secure Baseline Build:</b> A version of the baseline, as codified by the CMB, is constructed and stored for later use.</li>
+<li><b>Deployment of New Assets:</b> When a new asset is acquired (for instance, a new host purchased for use by a new employee), the relevant baseline configuration needs to be installed on that asset, in accordance with CM policy and procedures and CMB guidance.
+</li>
+</ol>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="221" id="Page_221"></span>In the normal operational mode of the organization, the CM process is slightly different:</p>
+<ol>
+<li><b>CMB Meetings:</b> The CMB meets to review and analyze change and exception requests. The CMB can authorize or disallow requests, and it can require additional effort before authorization. For instance, the CMB can task the security office to perform additional detailed security analysis of the potential impact resulting if the request were authorized, or the CMB might require the requestor to budget additional funding for the request if the CMB determines the request would require supplemental training, administration, and security controls compared to what the requestor initially expected.</li>
+<li><b>CM Testing:</b> If the CMB authorizes a request, the new modification must be tested before deployment. Usually, such testing should take place in an isolated sandbox network that mimics all the systems, components, infrastructure, traffic, and processing of the production network, without ever touching the production network. Testing should determine whether there is any undue impact on security, interoperability, or functionality expected as a result of the modification.</li>
+<li><b>Deployment:</b> The modification is made in accordance with appropriate guidance and is reported to the CMB upon completion.</li>
+<li><b>Documentation: </b>All modifications to the environment are documented and reflected in the asset inventory (and, as necessary, in the baseline).</li>
+</ol>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Secure disposal of an asset is also a modification to the IT environment and therefore needs to be reflected in the asset inventory and reported to the CMB.</p>
+</section>
+<h3>Release Management</h3>
+<p>As a supporting process to change management, release management (RM) is a software engineering process concerned with arranging all required elements to successfully, repeatably, and verifiably release new software versions. The scope of RM includes planning, scheduling, and deploying new software, and it encompasses all environments that code may pass through, including development, QA/testing and staging—everything up to the production environment, at which point the software enters active maintenance. The progression of code and related activities from requirements (often called user stories) to coding, testing, and then to production is known as the pipeline. </p>
+<p>RM has grown along with the rise in popularity of Agile software development practices, which aim to deliver functional software more quickly using short development cycles. Waterfall, an older software development methodology, focused heavily on gathering all requirements and delivering them all at once, while Agile focuses on small units of work that can be achieved in a short amount of time, then iterated to deliver additional functionality. </p>
+<p>DevOps has also grown as organizations adopt agile. More frequent software releases have driven the need for tighter coordination between engineers developing software, operations staff responsible for maintaining the software, and users who drive the requirements <span epub:type="pagebreak" role="doc-pagebreak" title="222" id="Page_222"></span>for software. DevOps aims to create cross-functional teams to ensure smoother, more predictable software delivery by encouraging tighter collaboration and more feedback. </p>
+<p>While the increased speed of Agile software development has made users happy (no more waiting a year for a new system module to go live), it has created some headaches for security practitioners. There simply isn't time to do many traditional activities like pen testing when new software is going live on a daily or sometimes even hourly basis. To compensate, security practitioners must make use of automation to decrease the time it takes to perform security functions.</p>
+<p>Continuous Integration/Continuous Delivery (CI/CD) incorporates heavy use of automation to dramatically shorten the software delivery pipeline. The ultimate goal is to get newly developed software live and running as quickly as possible after an engineer completes their work, sometimes within minutes of code being written. To achieve this, automated testing is used extensively to ensure the newly written code will not introduce bugs into the production environment. Security testing needs to be reevaluated to identify how needed security checks can be integrated with the CI/CD pipeline.</p>
+<p>Security automation in CI/CD must include both administrative and technical controls. Examples of administrative controls include checking that new software has a verifiable set of requirements and approvals (i.e., a developer is delivering code that meets a defined user need rather than unwanted functionality) and that all processes have been followed (e.g., a peer review must be conducted). Automated technical controls can include checks such as passing a static code analysis or successful completion of a vulnerability scan run against a live version of the new code in a staging environment.</p>
+<h2><a id="c09-sec-003"></a>IT Service Management and Continual Service Improvement</h2>
+<p>ITIL (formerly the Information Technology Infrastructure Library) comprises a set of practices businesses can use in designing, maintaining, and improving their IT services. This is known as IT service management (ITSM), and the practices can be implemented for any IT function, such as delivering email collaboration capabilities to employees, designing new customer-facing applications, or even the process of migrating from on-prem to cloud infrastructure.</p>
+<p>ISO/IEC 20000-1, Information technology — Service management, also defines a set of operational controls and standards that organizations can use to manage IT services. The ISO standard defines a service management system (SMS) designed to support the practice of ITSM, as well as suggested processes, procedures, and organizational capabilities required. Note this is very similar to the approach in ISO 27001, which describes an information security management system (ISMS) and needed support for enabling security. ISO 20000-1 can be used to manage ITSM using a variety of approaches, including ITIL and the ISACA COBIT framework.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="223" id="Page_223"></span>The goal of ITSM is to identify user needs, design an IT service that meets those needs, successfully deploy it, then enter a cycle of continuous improvements. Continual service improvement management aims to ensure that IT services provide ongoing business value, and that the services are updated as needed to respond to changing business requirements. Obviously, the shift to cloud computing is a major example of business requirements driving changes to IT services. </p>
+<p>Although ITIL was designed in an era when most infrastructure was maintained and used exclusively on-prem, the general principles are quite useful when choosing new or evaluating existing cloud services. Both ITIL and ISO 20000-1 place a heavy emphasis on ensuring that IT services always deliver business value, so these are some key areas/questions to consider for continual service improvement in cloud environments:</p>
+<ul>
+<li>Which type of cloud service model best meets your organization's needs? Has a vendor developed an SaaS platform that can reduce the resources your organization must expend to keep systems up and running?</li>
+<li>Are your users on the move? A more mobile workforce makes secure network design more challenging. Rather than a VPN from your main office to the cloud environment, you may need to provide secure cloud access to users anywhere in the world.</li>
+<li>Do the selected services meet your organization's compliance needs? Expansion into new markets might bring new privacy or security requirements, which will drive changes in the cloud services your organization is using.</li>
+<li>Are your SLA goals being met? SLA metrics should be tied to requirements for the system, and a cloud provider's inability to meet those requirements might necessitate a change of providers.</li>
+<li>Do new cloud services provide cost, time, or resource savings? For example, many cloud PaaS database offerings include automatic data replication and high availability, which removes the need for separate backup/recovery procedures and equipment. Rather than conduct BC/DR exercises yourself, your organization may rely on a provider's SOC 2 Type 2 audit report for assurance of resiliency.</li>
+</ul>
+<p>Continual service improvement relies heavily on metrics to identify needed improvements and to measure the effectiveness of any changes implemented. For example, page load time for a web app might be a key metric. Choosing a new distributed cloud web hosting service that significantly reduces page loads delivers an improvement in the user experience for that web app.</p>
+<h2><a id="c09-sec-004"></a>Business Continuity and Disaster Recovery (BC/DR)</h2>
+<p>Business continuity and disaster recovery (BC/DR) has been addressed in other chapters of this book, relative to specific topics. Here, we cover some of the general aspects and approaches, with some additional focus on facility continuity.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="224" id="Page_224"></span>There is no total agreement within our industry on the exact definitions of the terms <i>business continuity</i>, <i>disaster recovery</i>, <i>event</i>, or even simply <i>disaster</i> for that matter. For the purposes of this discussion and to create awareness of the (ISC)<sup>2</sup> perspective on the matter, I'll use the following explanations:</p>
+<ul>
+<li><i>Business continuity efforts</i> are concerned with maintaining critical operations during any interruption in service, whereas <i>disaster recovery</i> efforts are focused on the resumption of operations after an interruption due to disaster. The two are related and in many organizations are rolled into one effort.</li>
+<li>An <i>event</i> is any unscheduled adverse impact to the operating environment. An event is distinguished from a <i>disaster</i> by the duration of impact. We consider an event's impact to last three days or less; a disaster's impact lasts longer. An event can become a disaster. Causes of either/both can be anthropogenic (caused by humans), natural forces, internal or external, malicious or accidental.</li>
+</ul>
+<p>Because they can be so similar, I'll discuss BC/DR efforts together for most of the coverage of the topic and only make distinctions when needed.</p>
+<h3>Primary Focus</h3>
+<p>The paramount importance in BC/DR planning and efforts should be health and human safety, as in all security matters. There is no justification for prioritizing any asset to any degree higher than personnel, except in very, very limited cases. These are limited to organizations dealing with national security, and, even in those cases, are likewise limited to situations where human harm and loss of life might only be necessary to prevent greater losses (such as in the protection of assets that might result in vast devastation, such as nuclear, biological, or chemical products).</p>
+<p>With that in mind, any BC/DR efforts should prioritize notification and evacuation as well as protection and egress.</p>
+<p>Notification should take several redundant and differing forms to ensure widest and most thorough dissemination. Suggestions for possible notification avenues include telephone call tree rosters, website postings, and SMS blasts. Notification should include the organization's personnel, the public, and regulatory and response agencies, depending on who might be affected by the circumstance.</p>
+<p>Evacuation, protection, and egress methods will depend on the particular physical layout of the campus and facility. Some aspects that are generally included in addressing these needs include the following:</p>
+<p><b>Getting the People Out</b> There should be no obstruction or delay of personnel leaving the facility. All doors along the emergency path should fail safe (that is, they can be opened from the inside, allowing egress, even if they are still secure from the outside, preventing ingress). Sufficient lighting should be considered.</p>
+<p><b>Getting the People Out Safely</b> Sprinkler systems along the egress route should be set to inundate the area and not be restricted due to other considerations (such as property damage). Non-water fire-suppression systems (such as gas) cannot risk human life and must <span epub:type="pagebreak" role="doc-pagebreak" title="225" id="Page_225"></span>have additional controls (for instance, a last-out switch, which prevents the gas from being released until the final person triggers it on the way out of the affected area). Communicate the emergency plans to all personnel, and train them in execution of the plan.</p>
+<p><b>Designing for Protection</b> Other architectural, engineering, and local construction code concerns must meet local needs, such as facilities that are built to withstand and resist environment hazards (tornadoes in the Midwestern United States, flooding along the coasts, and so on).</p>
+<h3>Continuity of Operations</h3>
+<p>After we've seen to health and human safety concerns, our primary <i>business</i> focus should be continuity of critical operations.</p>
+<p>To begin with, we have to determine what the organization's critical operations <i>are.</i> In a cloud data center, that will usually be dictated by the customer contracts and SLAs. This simplifies delineation of those elements necessary to support critical needs. Other extant sources can be extremely useful in this portion of the effort, most particularly the BIA, which informs us which assets would cause the greatest adverse impact if lost or interrupted. For instance, in a cloud data center, our main focus should be on connectivity, utilities, and processing capacity. These are, therefore, our critical operations. Other ancillary business functions, such as marketing, sales, finance, HR, and so on, might be wholly dismissed or greatly reduced without lasting impact to the organization and can be considered noncritical.</p>
+<p>In formulating this inventory of critical assets, it is important to consider all elements that support critical functions, not limited to the hardware and tangible assets, but also specific personnel, software libraries, documentation, fundamental data, and so forth, without which we could not continue critical operations.</p>
+<h3>The BC/DR Plan</h3>
+<p>As with all plans, the BC/DR plan should be formalized in and derive from the organization's governance. Policy should dictate roles, terms of the plan, enforcement, and execution.</p>
+<p>The plan should include both a general, exhaustive, detailed description of all aspects of BC/DR efforts and also limited, simple, straightforward procedures for enacting the plan and all response activities. Because the two categories of documentation differ so widely in content and purpose, they can often be included in the plan as appendices or attachments and referenced for the purpose of describing how and when each will be used (the detailed content for planning and after-action purposes; the simple procedures for use during the reaction to the event and disaster itself).</p>
+<p>The plan should include the following:</p>
+<p><b>A List of the Items from the Asset Inventory Deemed Critical</b> This should include necessary hardware, software, and media, including versioning data and applicable patches.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="226" id="Page_226"></span><b>The Circumstances Under Which an Event or Disaster Is Declared</b> Response comes with a cost. It is important to distinguish normal administration functions from event or disaster response because the formal response will obligate resources and affect productivity. Careful attention and explanation should be made for balancing the risks and benefits of overreaction and underreaction in terms of response: too frequently, and productivity will needlessly be adversely affected; too rarely, and response activities may be hindered by delays for the sake of caution.</p>
+<p><b>Who Is Authorized to Make the Declaration</b> An authority needs to be named (an individual, role, or office) for the purpose of formal declaration of an event or disaster. We want to avoid the possibility of overreaction by allowing just anyone to initiate a formal response (like an emergency brake line in public transit), and we want to ensure that initiation is instigated by someone who is informed, qualified, trained, and responsible for making such a determination.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Tip" width="52" height="43"> An authorized party must also formally declare a cessation of BC/DR ­activity and resumption of normal operations. This should only be done when there is a high degree of assurance that all safety and health hazards have been abated and operating conditions and risks have returned to normal. ­Resuming standard operations too soon can exacerbate the existing event or disaster or cause a new one.</p>
+</section>
+<p><b>Essential Points of Contact</b> This should include the contact information of offices responsible for BC/DR activity and tasks as well as any external entities that may be involved (regulators, law enforcement, corporate authorities, press, vendors, customers, and so on). These should be as specific as possible to reduce difficulty in locating appropriate contacts during an actual response.</p>
+<p><b>Detailed Actions, Tasks, and Activities</b> Checklists can be quite helpful for BC/DR procedures. Checklists serve several purposes. They describe the specific actions necessary, they can be aligned in order of execution, and they can constitute a record, after the activity is complete, of actions taken, by whom, and when (if each checklist step is annotated with the time and initials of the person completing the action as it occurs). Checklists also serve another fundamental requirement of BC/DR plans used during a response action: they allow for someone to conduct the appropriate actions, even if that person has not had specific training or experience with that plan in that organization. Of course, it is always preferable to have the personnel assigned to BC/DR roles trained and practiced in the specific plan, but, especially during disasters or events, the assigned personnel are not always available.</p>
+<p>All these elements can be included by reference. That is, each piece can be split out as an attachment or appendix to the BC/DR policy proper. The basic elements of all policies (explanation and rationale for the policy, enforcement activities, relevant regulations, and so on) can make up the body of the policy, as it will be less subject to continual changing and updating.</p>
+<section class="feature3">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="227" id="Page_227"></span><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Updating the BC/DR policy will be a continual process. Many of the listed elements, as you can see, will be in almost constant flux (the points of contact information, specific personnel assigned particular tasks, the list of the current state of critical assets), so the relevant parts of the plan (the specific appendices and attachments) need to receive updates from the offices that have the pertinent data. For instance, the current state of critical assets might be updated by the CMB, as part of the CM process. The CMB will be in the best position to know all the current versions of systems and components. Often, required CM updates can be detected during regular tests of the plan (see “Testing,” later in this chapter).</p>
+</section>
+<h3>The BC/DR Kit</h3>
+<p>There should be a container that holds all the necessary documentation and tools to conduct a proper BC/DR response action. This kit should be secure, durable, and compact. The container may be tangible or virtual. The contents might contain hard-copy versions of the appropriate documentation or electronic copies.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> I recommend that the BC/DR kit exist in both tangible hard-copy and virtual electronic versions, because I am paranoid by habit, nature, and trade. </p>
+</section>
+<p>The kit should have a duplicate in at least one other location, depending on the plan. If the plan calls for reconstitution of critical operations at an off-site location, there should be a mirrored kit in that location. Otherwise, having at least two identical kits on-site, in different locations, aids in reducing the consequences of one being unreachable and destroyed.</p>
+<p>The kit should contain the following:</p>
+<ul>
+<li>A current copy of the plan, with all appendices and addenda</li>
+<li>Emergency and backup communication equipment. These can take whatever form suits the purpose, location, and nature of the organization: cell phones, handheld radios, laptop with satellite modem, and so on.</li>
+<li>Copies of all appropriate network and infrastructure diagrams and architecture</li>
+<li>Copies of all requisite software for creating a clean build of the critical systems, if necessary, with media containing appropriate updates and patches for current versioning</li>
+<li>Emergency contact information (not already included in the plan). This might include a full notification list.</li>
+<li>Documentation tools and equipment. Again, these can take many forms: pens and paper, laptop and portable printer, voice recorder, and so on.</li>
+<li>A small amount of emergency essentials (flashlight, water, rations, and so on)</li>
+<li>Fresh batteries sufficient for operating all powered equipment in the kit for at least <br>24 hours</li>
+</ul>
+<p>Obviously, keeping the kit stocked and current requires a level of effort similar to that of maintaining the plan itself (and includes the plan itself, as it is updated).</p>
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="228" id="Page_228"></span>Relocation</h3>
+<p>Depending on the nature of the event and disaster and the specifics of the plan, the organization may choose to evacuate and relocate those personnel involved in critical operations to a specified alternate operating location. Prior to the existence of cloud capabilities for the purpose of backing up and restoring data at a secure, off-site location, hot and warm and cold sites were used for this purpose, and a skeleton crew of critical personnel were assigned to travel to the recovery site for the duration of the contingency operations and recovery.</p>
+<p>With the advent of ubiquitous availability of cloud backup resources, the relocation site can be anywhere not affected by the event and disaster, as long as it has sufficient facilities for housing the personnel involved and bandwidth sufficient for the purpose. For instance, a hotel outside the area of effect could serve the purpose if it offers broadband capabilities and is additionally useful in that it also fulfills the function of safe lodging for the critical personnel.</p>
+<p>If the organization considers relocation for BC/DR purposes, the plan might include these aspects:</p>
+<ul>
+<li>Tasking and activities should include representatives from the HR and finance department, as travel arrangements and payments will be necessary for all personnel involved in the relocation.</li>
+<li>Sufficient support should be provided for relocating dependents and family members of the personnel involved in critical operations for the duration of the response. When a disaster affects a locality, everyone involved will rightfully be concerned with their loved ones first and foremost. If this concern is not alleviated, their morale and focus on the tasks at hand will be diminished. It is better to assume the additional costs related to this option so as to gain the full attention of the personnel involved in the response.</li>
+<li>The distance of the relocation is, like all things related to the practice of security, a balance. You want the relocation site to be far enough away that it is not affected by whatever caused the interruption to standard operations but not so far that the hazard, risk, delay, and expense of travel makes its utility unappealing or infeasible.</li>
+<li>Joint operating agreements and memoranda of understanding can be used to establish cost-effective relocation sites at facilities belonging to other operations in the local area if the event or disaster only affects your organization's campus (in the event of highly localized events and disasters, such as a building fire).&nbsp;</li>
+</ul>
+<section class="feature3">
+<h4 style="background-color: #E7E7E8;">BC/DR Terminology</h4>
+<p class="FeaturePara">There are several BC/DR concepts that you need to understand:</p>
+<p><b>MAD (Maximum Allowable Downtime)</b> How long it would take for an interruption in service to kill an organization, measured in time. For instance, if a company would fail because it had to halt operations for a week, then its MAD is one week. This is also <span epub:type="pagebreak" role="doc-pagebreak" title="229" id="Page_229"></span>sometimes referred to as maximum tolerable downtime (MTD). Related to this is the mean time to repair (MTTR), which is the average amount of time it takes to repair a damaged system or device that is down.</p>
+<p><b>RTO (Recovery Time Objective)</b> The BC/DR goal for recovery of operational capability after an interruption in service, measured in time. This does not have to include full operations (recovery); the capability can be limited to critical functions for the duration of the contingency event. The RTO <i>must</i> be less than the MAD. For example, a company might have an MAD of one week, while the company's BC/DR plan includes and supports an RTO of six days.</p>
+<p><b>RPO (Recovery Point Objective)</b> The BC/DR goal for limiting the loss of data from an unplanned event. Confusingly, this is often measured in time. For instance, if an organization is doing full backups every day and is affected by some sort of disaster, that organization's BC/DR plan might include a goal of resuming critical operations at an alternate operating site with the last full backup, which would be an RPO of 24 hours. The recovery point objective for that organization would be the loss of no more than one day's worth of data.</p>
+<p><b>ALE (Annual Loss Expectancy)</b> Annual loss expectancy (ALE) describes the amount an organization should expect to lose on an annual basis due to any one type of incident. ALE is calculated by multiplying the annual rate of occurrence (ARO) by the single loss expectancy (SLE). The annual rate of occurrence (ARO) is the rate of occurrence of a specific event or security incident one could expect in any given 12-month period. A single loss expectancy (SLE) is the amount of expected damage or loss from any single specific security incident.</p>
+</section>
+<h3>Power</h3>
+<p>Interruptions to the normal power supply often result from events or disasters (or are themselves a reason to declare an event or disaster), so BC/DR plans and activities must take emergency power supply into account.</p>
+<p>Near-term emergency power usually takes the form of battery backups, often as uninterruptible power supply (UPS) systems. These can be small units, feeding only particular individual devices or racks, or they can be large, supplying power to entire systems. Failover for these should be close to immediate, with appropriate line conditioning so that transitioning from utility power to UPS does not adversely affect the powered devices in any way. The line conditioner function in UPS often serves as an additional component of normal operations, dampening surges and dips in utility power automatically.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Note" width="52" height="43"> If you ever see an exam question about the expected duration of UPS power, the answer will be, “UPS should last long enough for graceful shutdown of affected systems.” Battery backup should only be relied on to provide immediate and near-term power supply. Any power interruption for a longer period should be provided by other systems, such as generators.</p>
+</section>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="230" id="Page_230"></span>Short-term contingency power can be provided by generators. For the cloud data center, sufficient generator power is necessary for all critical systems and infrastructure, including HVAC and emergency lighting as well as fire suppression systems. For the higher-tier centers, redundant power is necessary, duplicating the minimum power required to ensure uninterrupted critical operations.</p>
+<p>Generators that supply close to immediate power when utility electricity is interrupted have automatic transfer switches. Transfer switches sense when the utility provision fails, break the connection to the utility, start the generator, and provide generator power to the facility. An automatic transfer switch is <i>not</i> a viable replacement for a UPS, and the two should be used in conjunction, not in lieu of each other. Ideally, the generator and transfer switch should be rated to successfully provide sufficient power well within the duration of expected battery life of the UPS. Realistically, generators with transfer switches can be expected to provide power in less than a minute from loss of utility power.</p>
+<p>Generators need fuel; this is usually gasoline, diesel, natural gas, or propane. Appropriate storage, supply, and maintenance of fuel should also be described and included in the BC/DR plan. As fuel is flammable, health and human safety concerns must be addressed in the storage and supply designs. For all data centers, the Uptime Institute recommends that a&nbsp;minimum of at least 12 hours of fuel for all generators, powering all critical functions, be&nbsp;available. Resupply of additional fuel should be scheduled and performed within those 12 hours. Supply contracts and appropriate notification information for the supplier should be included in the BC/DR plan and procedure checklists. For BC/DR purposes, the plan should anticipate at least 72 hours of generator operation before other alternatives are available.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Gasoline and diesel spoil, even with conditioning treatments that extend useful fuel life. If your generators use these types of fuel, the plan must also include tasking and contracts for regular resupply and refresh within the spoilage period. Some fuels, such as propane, do not spoil; you may want to consider these when considering backup power alternatives.</p>
+</section>
+<p>All fuel storage should be in secure containers and locations. Fuel and generators should be far removed from the path of vehicles, ideally outside normal traffic areas (with a provision made for secure vehicle access for resupply purposes).</p>
+<h3>Testing</h3>
+<p>Much like having backups without trying to restore, or having logs without doing log review and analysis, having a BC/DR plan is close to useless unless it is tested on a regular basis. Because testing the BC/DR will necessarily cause interruption to production, different forms of testing can be utilized for different purposes, adjusting the operational impact while achieving specific goals. You should be familiar with the following testing methods:</p>
+<p><b>Tabletop Testing</b> The essential participants (those who will take part in actual BC/DR activities and are formally tasked with such responsibilities) work together at a scheduled time (either together in a single room or remotely via some communication capability) to describe how they would perform their tasks in a given BC/DR scenario. This is the InfoSec <span epub:type="pagebreak" role="doc-pagebreak" title="231" id="Page_231"></span>equivalent of role-playing games, and it has the least impact on production of the testing alternatives.</p>
+<p><b>Dry Run</b>  The organization as a whole takes part in a scenario at a scheduled time, describing their responses during the test and performing some minimal actions (for instance, perhaps running the notification call tree to ensure all contact information is current) but without performing all the actual tasks. This has more impact on productivity than tabletop testing.</p>
+<p><b>Full Test</b> The entire organization takes part in an unscheduled, unannounced practice scenario, performing their full BC/DR activities. As this could include system failover and facility evacuation, this test is the most useful for detecting shortcomings in the plan, but it has the greatest impact (to the extent it can cause a full, genuine interruption of service) on productivity.</p>
+<section class="feature3">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Tip" width="52" height="43"> In all forms of testing, it behooves the organization to use moderators. These personnel will act as guides and monitors of the response activity, provide scenario inputs to heighten realism and introduce some element of chaos (to simulate unplanned deviations from the procedures due to potential effects of the event and disaster), and document performance and any plan shortcomings. The moderators should not be tasked with <br>BC/DR response activities for actual situations. Anyone with formal tasking should be a participant in the test. It might be useful to employ external <span>consultants to serve as moderators so that all organizational personnel can </span>take part in the exercise.</p>
+</section>
+<h2><a id="c09-sec-005"></a>Summary</h2>
+<p>In this chapter, we've reviewed several essential elements of operations management for cloud data centers. We discussed the importance of monitoring system and component performance, performing routine maintenance (to include patching), and certain risks and benefits associated with each. Issues related to environmental conditions such as temperature, humidity, and backup power supply were included. I also detailed specific approaches and methods for BC/DR planning and testing.</p>
+<h2><a id="c09-sec-006"></a>Exam Essentials</h2>
+<p><b>Understand systems and component monitoring.</b> Make sure you are familiar with the importance and purpose of monitoring aspects of all infrastructure, hardware, software, and media in the data center, including:</p>
+<ul>
+<li>Temperature</li>
+<li>Humidity</li>
+<li>Event logging</li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="232" id="Page_232"></span><b>Have a thorough understanding of maintenance strategies and procedures.</b> These strategies and procedures include maintenance mode versus normal operations, the process for conducting updates and upgrades, and the risks and benefits of manual versus automated patch management.</p>
+<p><b>Know the purpose and general method of change management.</b> Know the purpose and general method of CM. Understand the composition of the CMB and how it functions.</p>
+<p><b>Understand all aspects of BC/DR strategy, planning, and testing.</b> Focus on the BC/DR strategy, planning, and testing especially as it pertains to a cloud data center. Know about backup power considerations and methods for testing BC/DR plan efficacy.</p>
+<h2><a id="c09-sec-007"></a>Written Labs</h2>
+<p>You can find the answers to the written labs in <a href="Appendix A Answers to Written Labs _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix A</a>. </p>
+<ol>
+<li>Do a web search for power generators suitable for commercial use. Find at least three.</li>
+<li>Using the ASHRAE standards, determine the suitability of each generator for a cloud data center operating modern IT equipment. The specific load and capacity of the data center can be of your own choosing. Be sure to state any assumptions and simulated input.</li>
+<li>In a short paper (less than one page), compare and contrast the three generators that you found in your first lab question. Include in your rationale (as a minimum) load capacity, price, and fuel consumption.</li>
+</ol>
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="233" id="Page_233"></span><a id="c09-sec-008"></a>Review Questions</h2>
+<p>You can find the answers in <a href="Appendix B Answers to Review Questions _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix B</a>.</p>
+<ol class="questionList">
+<li class="essay">
+<div class="question">
+<p>Which form of BC/DR testing has the <i>most</i> impact on operations?</p>
+<ol class="upper-latin">
+<li>Tabletop</li>
+<li>Dry run</li>
+<li>Full test</li>
+<li>Structured test</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>Which form of BC/DR testing has the <i>least</i> impact on operations?</p>
+<ol class="upper-latin">
+<li>Tabletop</li>
+<li>Dry run</li>
+<li>Full test</li>
+<li>Structured test</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>Which characteristic of liquid propane increases its desirability as a fuel for backup <br>generators?</p>
+<ol class="upper-latin">
+<li>Burn rate</li>
+<li>Price</li>
+<li>Does not spoil</li>
+<li>Flavor</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>How often should the CMB meet?</p>
+<ol class="upper-latin">
+<li>Whenever regulations dictate</li>
+<li>Often enough to address organizational needs and reduce frustration with delay</li>
+<li>Every week</li>
+<li>Annually</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>Adhering to ASHRAE standards for humidity can reduce the possibility of __________.</p>
+<ol class="upper-latin">
+<li>Breach</li>
+<li>Static discharge</li>
+<li>Theft</li>
+<li>Inversion</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>A UPS should have enough power to last how long?</p>
+<ol class="upper-latin">
+<li>12 hours</li>
+<li>10 minutes</li>
+<li>One day</li>
+<li>Long enough for graceful shutdown</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="234" id="Page_234"></span>A generator transfer switch should bring backup power online within what timeframe?</p>
+<ol class="upper-latin">
+<li>10 seconds</li>
+<li>Before the recovery point objective is reached</li>
+<li>Before the UPS duration is exceeded</li>
+<li>Three days</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>Which characteristic of automated patching makes it attractive?</p>
+<ol class="upper-latin">
+<li>Cost</li>
+<li>Speed</li>
+<li>Noise reduction</li>
+<li>Capability to recognize problems quickly</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>Which tool can reduce confusion and misunderstanding during a BC/DR response?</p>
+<ol class="upper-latin">
+<li>Flashlight</li>
+<li>Controls matrix</li>
+<li>Checklist</li>
+<li>Call tree</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>When deciding whether to apply specific updates, it is best to follow __________ in order to demonstrate due care.</p>
+<ol class="upper-latin">
+<li>Regulations</li>
+<li>Vendor guidance</li>
+<li>Internal policy</li>
+<li>Competitors' actions</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>The CMB should include representations from all of the following offices except: ___________________.</p>
+<ol class="upper-latin">
+<li>Regulators</li>
+<li>IT department</li>
+<li>Security office</li>
+<li>Management</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>For performance purposes, OS monitoring should include all of the following except ___________________.</p>
+<ol class="upper-latin">
+<li>Disk space</li>
+<li>Disk I/O usage</li>
+<li>CPU usage</li>
+<li>Print spooling</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="235" id="Page_235"></span>Maintenance mode requires all of these actions excepty ___________________.</p>
+<ol class="upper-latin">
+<li>Remove all active production instances</li>
+<li>Initiate enhanced security controls</li>
+<li>Prevent new logins</li>
+<li>Ensure logging continues</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>What is one of the reasons a baseline might be changed?</p>
+<ol class="upper-latin">
+<li>Numerous change requests</li>
+<li>Power fluctuation</li>
+<li>To reduce redundancy</li>
+<li>Natural disaster</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>In addition to battery backup, a UPS can offer which capability?</p>
+<ol class="upper-latin">
+<li>Communication redundancy</li>
+<li>Line conditioning</li>
+<li>Breach alert</li>
+<li>Confidentiality</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>Deviations from the baseline should be investigated and __________.</p>
+<ol class="upper-latin">
+<li>Documented</li>
+<li>Enforced</li>
+<li>Revealed</li>
+<li>Encouraged</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>The baseline should cover which of the following?</p>
+<ol class="upper-latin">
+<li>As many systems throughout the organization as possible</li>
+<li>Data breach alerting and reporting</li>
+<li>A process for version control</li>
+<li>All regulatory compliance requirements</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>A localized incident or disaster can be addressed in a cost-effective manner by using which of the following?</p>
+<ol class="upper-latin">
+<li>UPS</li>
+<li>Generators</li>
+<li>Joint operating agreements</li>
+<li>Strict adherence to applicable regulations</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="236" id="Page_236"></span>Generator fuel storage for a cloud data center should last for how long, at a minimum?</p>
+<ol class="upper-latin">
+<li>10 minutes</li>
+<li>Three days</li>
+<li>Indefinitely</li>
+<li>12 hours</li>
+</ol>
+</div></li>
+<li class="essay">
+<div class="question">
+<p>The BC/DR kit should include all of the following except ___________________.</p>
+<ol class="upper-latin">
+<li>Flashlight</li>
+<li>Documentation equipment</li>
+<li>Fuel for the backup generators</li>
+<li>Annotated asset inventory</li>
+</ol></div></li>
+</ol>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" style="height:1.75rem" data-testid="icon"><span style="font-size:1.75rem;width:1.75rem;height:1.75rem" class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" style="height:1.75rem" data-testid="icon"><span style="font-size:1.75rem;width:1.75rem;height:1.75rem" class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" style="height:1.75rem" data-testid="icon"><span style="font-size:1.75rem;width:1.75rem;height:1.75rem" class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" style="height:1.5rem" data-testid="icon"><span style="font-size:1.5rem;width:1.5rem;height:1.5rem" class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+</body></html>

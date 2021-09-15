@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603375">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 6 Responsibilities in the Cloud | (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+        <script src="public/orm.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+
+
+
+  <meta itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603375/" data-react-helmet="true"><meta property="og:url" itemprop="url" content="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition","type":"book","identifier":"9781119603375","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603375-/Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2019-12-24","title":"Chapter 6 Responsibilities in the Cloud"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 6 Responsibilities in the Cloud" data-react-helmet="true"><meta property="og:title" content="Chapter 6 Responsibilities in the Cloud" data-react-helmet="true"><meta itemprop="name" content="Chapter 6 Responsibilities in the Cloud" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+Chapter 6
+Responsibilities in the Cloud
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.3...." data-react-helmet="true"><meta name="twitter:description" content="
+
+Chapter 6
+Responsibilities in the Cloud
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.3...." data-react-helmet="true"></head>
+  <body>
+
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper orm-ff-Shell-slim"><a href="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root orm-ff-SearchBarView-slim"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-withIcon"><label for="input-09sh73wvp1zl" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-09sh73wvp1zl" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 5 Security in the Cloud</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 6 Responsibilities in the Cloud</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 7 Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="title--1b0fU">Chapter 7 Cloud Application Security</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="123" id="Page_123"></span><a id="start"></a><span class="chapterNumber">Chapter 6</span>
+<br><span class="chapterTitle">Responsibilities in the Cloud</span></h1>
+</header>
+<section id="c06-sec-0001">
+<p><b>THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:</b></p>
+<ul id="c06-list-0001">
+<li><b>Domain 1: Cloud Concepts, Architecture, and Design</b>
+<ul id="c06-list-0002">
+<li>1.3. Understand Security Concepts Relevant to Cloud Computing
+<ul id="c06-list-0003">
+<li>1.3.4. Network Security</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 2: Cloud Data Security</b>
+<ul id="c06-list-0005">
+<li>2.8. Design and Implement Auditability, Traceability, and Accountability of Data Events
+<ul id="c06-list-0006">
+<li>2.8.1. Definition of Event Sources and Requirement of Identity Attribution</li>
+</ul></li></ul></li>
+<li><b>Domain 3: Cloud Platform and Infrastructure Security</b>
+<ul id="c06-list-0007">
+<li>3.1. Comprehend Cloud Infrastructure Components
+<ul id="c06-list-0008">
+<li>3.1.2. Network and Communications</li>
+<li>3.1.3. Compute</li>
+<li>3.1.6. Management Plane</li>
+</ul></li>
+<li>3.4. Design and Plan Security Controls
+<ul id="c06-list-0009">
+<li>3.4.2. System and Communication Protection</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 4: Cloud Application Security</b>
+<ul id="c06-list-0010">
+<li>4.5. Use Verified Secure Software
+<ul id="c06-list-0011">
+<li>4.5.3. Third Party Software Management</li>
+<li>4.5.4. Validated Open-Source Software</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 5: Cloud Security Operations</b>
+<ul id="c06-list-0012">
+<li>5.1 Implement and Build Physical and Logical Infrastructure for Cloud Environment
+<ul id="c06-list-0013">
+<li>5.1.1. Hardware Specific Security Configuration Requirements</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="124" id="Page_124"></span>5.1.2. Installation and Configuration of Virtualization Management Tools</li>
+<li>5.1.3. Virtual Hardware Specific Security Configuration Requirements</li>
+<li>5.1.4. Installation of Guest Operating System (OS) Virtualization Toolsets</li>
+</ul></li>
+<li>5.2. Operate Physical and Logical Infrastructure for Cloud Environment
+<ul id="c06-list-0014">
+<li>5.2.3. Operating System (OS) Hardening Through the Application of Baselines</li>
+<li>5.2.4. Availability of Standalone Hosts</li>
+<li>5.2.5. Availability of Clustered Hosts</li>
+<li>5.2.6. Availability of Guest Operating System (OS)</li>
+</ul></li>
+<li>5.3. Manage Physical and Logical Infrastructure for Cloud Environment
+<ul id="c06-list-0015">
+<li>5.3.1 Access Controls for Remote Access</li>
+<li>5.3.2. Operating System (OS) Baseline Compliance Monitoring and Remediation</li>
+<li>5.3.6. Configuration of Host and Guest Operating System (OS) Backup and Restore Functions</li>
+<li>5.3.7. Network Security Controls</li>
+<li>5.3.8. Management Plane</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 6: Legal, Risk, and Compliance</b>
+<ul id="c06-list-0016">
+<li>6.3. Understand Audit Process, Methodologies, and Required Adaptations for a Cloud Environment
+<ul id="c06-list-0017">
+<li>6.3.1. Internal and External Audit Controls</li>
+<li>6.3.3. Identify Assurance Challenges of Virtualization and the Cloud</li>
+<li>6.3.7. Audit Planning</li>
+</ul></li>
+<li>6.4. Understand Implications of Cloud to Enterprise Risk Management
+<ul id="c06-list-0018">
+<li>6.4.1. Assess Providers Risk Management Programs</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="125" id="Page_125"></span><img src="public/clogo.jpg" alt="" width="150" height="150"> Contracted cloud computing is unlike other operational modes and also unlike other managed IT service arrangements. In the case of cloud computing, the data owner ostensibly owns the information being stored and processed but does not have control over how it is stored and processed or who specifically handles the information (in terms of administration). Perhaps most intriguing of all, the data owner does not actually have physical access to the places and devices where that information <i>is</i>. The customer has all the responsibility and liability for protecting the information according to legal standards and regulation but often cannot mandate the actual protections and security measures in order to accomplish this. This leads to a very complex situation with a number of unique considerations.</p>
+<p>It’s tough to think of an equivalent scenario. Perhaps one that comes close is brokered financial investment, where you give your money to someone else who manages it, invests it how they think best, and uses whatever security measures they determine are most beneficial to protect it. You don’t have control over where the money goes or which particular security controls are implemented. You might shop around between investment brokers, trying to find one that offers better protections than all the rest, but it’s probably unlikely you’ll find much variety, much less be able to dictate the terms of the broker’s operations. Depending on what kind of investment vehicle is being used, you might have no assurances that the money is protected from malfeasance and negligence on the part of the broker—many types of investments are not subject to insurance.</p>
+<p>What about how the cloud customer is still liable for regulatory infractions and breaches that result in loss of PII, even if the root cause was the cloud vendor’s wrongdoing? The financial-investment analogy is a bit stretched, but it still holds true: if someone gives you their money to invest for them, and you give it to a third party, and the third party loses it, you are still responsible for the loss of the money. In that respect, the cloud customer receives assets of value from their clientele (in the form of PII) and then gives it to a third party (the cloud vendor) while still remaining responsible for negative outcomes associated with those assets.</p>
+<p>Because of the novelty of this arrangement and because the field of cloud computing itself is so new, many of the aspects that protect and support the financial industry do not yet exist in the cloud environment and the details are still getting sorted out. Perhaps most important, the case law that has shaped the financial sector—those thousands of cases involving finance that have been tried and ruled on over the past few hundred years— simply have not yet occurred in the IT and InfoSec realm and won’t for some time.</p>
+<p>So the relationships between the cloud customer and the cloud vendor, and the end client and the regulators, are not at all yet solidified and codified in a manner readily understood by anyone in terms of conclusive results in the event of unusual occurrences. In fact, it might be said that we don’t know what to expect as usual or unusual in this field, quite yet.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="126" id="Page_126"></span>In this chapter, we will explore some of the ways that these relationships are currently taking form and what to expect in terms of what each party wants and how they will prefer to operate. We’re going to examine the roles involved in the arrangement, including third parties, and we’ll also cover some of the contractual elements and technologies that make the relationship work, particularly application programming interfaces (APIs).</p></section>
+<section id="c06-sec-0002">
+<h2><a id="usec0002"></a>Foundations of Managed Services</h2>
+<p>Some element of adversarial relationship exists between the cloud customer and cloud vendor because they have somewhat different goals. The cloud customer wants to maximize their computing capabilities and security of information while minimizing their costs. The cloud vendor wants to maximize its profits while minimizing what it has to provide (which is expressed in terms of computing capabilities and security of information).</p>
+<p>There is a great deal of obvious tension between these goals, which is why negotiation of the contract and the SLAs is vital. Luckily, there is also a great deal of overlap, which makes the relationship tenable and profitable for both parties. It is in the vendor’s best interest not to allow security breaches. Repeated security failings would sour the market for its product/brand and expose it to continual lawsuits, which reduces profits. It is in the vendor’s best interest to provide excellent service and exceed customer expectations because doing so attracts clients and increases market share.</p>
+<p>The ambiguous areas are where the risks exist and where both parties must establish strong delineation of duties and responsibilities in order to protect themselves and their stakeholders (see <a id="figureanchor6-1" role="doc-backlink" href="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure6-1">Figure 6.1</a>). As I’ve mentioned throughout this book, the type of service model/platform affects the nature and extent of each party’s rights and tasks.</p>
+<figure>
+<img class="center" src="public/c06f001.jpg" alt="The figure shows a graphical depiction of the general gradations of the various arrangements (responsibilities by service model)." width="800" height="514">
+<figcaption>
+<p><span class="figureLabel"><a id="figure6-1" role="doc-backlink" href="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor6-1"><b>Figure 6.1</b></a> Responsibilities by service model</span></p>
+</figcaption>
+</figure></section>
+<section id="c06-sec-0003">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="127" id="Page_127"></span><a id="usec0003"></a>Business Requirements</h2>
+<p>The primary intent for the cloud customer should be to meet business requirements. This could involve increasing efficiency, meeting regulatory needs, and ensuring durability of capabilities during contingencies, but it should always involve reducing cost. Even if the cloud customer is a nonprofit entity and is not interested in maximizing profits, it is in the interest of all stakeholders to minimize expenses and maximize productivity.</p>
+<p>Other business requirements will vary, depending on the industry and particular organization. Business drives all other considerations (including security) and is the primary focus of all decisions. In order to determine what is and is not a business requirement, senior management can make use of the artifacts created in various processes, including business impact analysis, risk analysis, asset inventory, and so on. To translate those requirements into cloud contract elements, SLAs, and operational functions, senior managers in a cloud customer organization can seek guidance and input from both internal and external sources.</p>
+<p>When the business requirements have been converted into functional needs, they can be calibrated by contract terms and SLAs. These elements of legal agreement between the parties codify particular responsibilities and expectations of each, and related pricing.</p><section id="c06-sec-0004">
+<h3><a id="usec0004"></a>Business Requirements: The Cloud Provider Perspective</h3>
+<p>What sort of business goals and operating requirements does the provider face, and how are those achieved? In a very simplistic way, that question can be answered with two short responses: be profitable and ensure all customer needs (in the form of contracts and SLAs) are being met. A more complex explanation should include a discussion of the physical establishment of the cloud provider’s data center and equipment, the security aspects involved in that physical plant and architecture, and the logical design and security aspects of the data center.</p><section id="c06-sec-0005">
+<h4><a id="usec0005"></a>Cloud Provider Responsibilities: The Physical Plant</h4>
+<p>The cloud provider needs a data center from which to provide services to its customers. The physical plant of the data center will include the campus on which the data center facility is located, the physical components inside that facility, and the services that support and connect them.</p>
+<p>One of the first decisions a cloud provider will have to make is whether to build or buy a facility in which to situate the data center. As with all decisions, each option has benefits and risks.</p>
+<p>In purchasing a piece of property and building an entirely new data center, the cloud provider gets to dictate every aspect of the facility, ensuring it is absolutely suited to the purpose. The provider will have much more control of how the facilities are designed, which can lead to better control over physical access to the property and buildings as well as optimized performance of the systems within the data center. This, however, is often much more expensive than purchasing or leasing an existing facility. It also requires a long-term plan for continued growth and development of the business, which often involves purchasing a larger piece of land than is initially needed for the first data center, with the <span epub:type="pagebreak" role="doc-pagebreak" title="128" id="Page_128"></span>understanding that additional data centers (or additional facilities) might be built on that same property in the future to increase capacity as the business grows.</p>
+<p>The alternative, of course, is to purchase or lease an existing facility and retrofit it to the needs of the cloud provider. Although this may be less costly, especially in the short term, it may include limitations that ownership would not. For instance, if the property is being leased, the owner may not approve of all changes the provider (as a tenant) would like to make. Even if the property is owned by the provider, other external forces might limit the extent and type of changes the provider desires. This is particularly true in metropolitan settings, where zoning limitations and municipal building codes might be strict and very specific.</p>
+<section class="feature3" id="c06-feafxd-0001">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> One popular method of avoiding the restrictions that often come with locating a physical plant in an urban setting is to locate the data center in a remote, rural setting. There are often less controls on development in these areas, and the property itself is almost always much cheaper. A factor the provider must consider, however, is the additional costs that are quite likely in situating a business in remote areas, such as creating robust, redundant utility connections for connectivity and power services.</p>
+</section>
+<p>Whichever method the provider selects, other aspects of the location itself must be taken into consideration, such as proximity to customers, ability to attract suitable personnel to staff that location, and the location’s propensity for natural disasters and civil unrest.</p>
+<p>Regardless of the build or buy decision the provider has made, the provider has to fill the facility with the physical devices that constitute a data center. While the specific vendors and manufacturers of the devices inside a cloud data center may differ from provider to provider, there are some general characteristics that will be common to most. These include the following:</p>
+<p><b>Secure Hardware Components </b>Because of the ubiquitous use of virtualization in the cloud environment, hardware devices will have to be configured properly to ensure secure implementation of hypervisors, virtual machines, and virtual OSs. This can and should include configuring specific BIOS settings on each hardware component that follow vendor and manufacturer guidance, installing centralized virtualization management toolsets on each device, and, if cryptoprocessing will be used, ensuring the hardware has the proper settings for utilization of the Trusted Platform Module (TPM) standard. BIOS is the firmware flashed into the processor of a computer, and the TPM standard dictates how processors can be used specifically for cryptographic functions.</p>
+<section class="feature3" id="c06-feafxd-0002">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> The notional perspective of cloud data center components usually divides the interior physical plant into three groups: compute, storage, and networking. Compute nodes are the physical host devices where customers will create virtual machines to process operational data. Storage nodes are where the data is securely stored, for either near-term or long-term purposes. Networking is all the equipment used for connecting the other nodes—the hardware devices such as routers and switches and the cables that connect them.</p>
+</section>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="129" id="Page_129"></span><b>Manage Hardware Configuration </b>As with OS baselining (which we’ll discuss later in this chapter), a template for the secure configuration of each specific device should be constructed, and it should be replicated whenever a new device of that particular type is added to the environment. The baseline hardware configuration should be saved in a secure manner and kept current through the formal change management process (including any required patches and updates). This is true for each of the nodes, regardless of purpose, including the compute and storage nodes, networking devices, and anything used to connect and monitor each of the nodes.</p>
+<p><b>Set Hardware to Log Events and Incidents </b>While the granularity and specificity of which system events to capture might differ from device to device or customer to customer, the provider should ensure that sufficient data related to the activity on each machine is being saved for possible future use (including incident investigation and forensic purposes). This event data should be sufficient to determine exactly what occurred and the identity of the users involved in each event (which is also known as attribution).</p>
+<p><b>Determine Compute Component Composition by Customer Need </b>Some cloud customers might not be suited to a multitenant environment and would prefer to have their data processed and stored in and on only devices specifically and exclusively assigned to them (the customer). While the use of stand-alone hosts is outside the norm for cloud data centers, most cloud providers will offer the option, albeit at an increased service fee (the provider will have to deploy and administer those devices and data sets separately from other customers within the same data center, which increases the cost of provision). Unlike stand-alone hosts assigned to specific customers, clustered hosts will provide scalable management benefits, allowing customers who opt for the multitenant environment to realize significant cost savings. Both stand-alone and clustered hosts must be configured and supported in such a way as to maintain high availability. This includes ensuring redundancy of the components themselves and the services that support them.</p>
+<p><b>Configure Secure Remote Administrative Access </b>It is very likely that either the provider or the customer (or both) will have to access the hardware in order to perform some administrative function. This access will quite often be in the form of a remote connection and will therefore require particular security controls to ensure only authorized users are performing permitted actions. Security enhancements for remote access control might include implementing session encryption for the access connection, strong authentication for remote users and administrators, and enhanced logging on privileged accounts.</p></section>
+<section id="c06-sec-0006">
+<h4><a id="usec0006"></a>Cloud Provider Responsibilities: Secure Logical Framework</h4>
+<p>In addition to securing the hardware components, the cloud provider must ensure that the logical elements are likewise protected. This includes the following:</p>
+<p><b>Installation of Virtual OSs </b>The provider must ensure that the virtual OSs installed in the data center (on virtual or hardware hosts) are configured and installed in a secure manner. In addition, as virtual OSs are deployed in the environment, virtualization management tools should be installed concurrently, to ensure the provider’s ability to monitor the virtual environment for both performance and security issues and to enforce configuration <span epub:type="pagebreak" role="doc-pagebreak" title="130" id="Page_130"></span>policy. This is particularly important for creating and maintaining a secure hypervisor configuration—a weak hypervisor could allow malicious actors to access and attack many of the virtual assets and a great deal of the production data.</p>
+<p><b>Secure Configuration of Various Virtualized Elements </b>In addition to the tangible hardware used in the data center, any virtual elements must also be configured in a secure fashion to attenuate potential risks such as data leakage and malicious aggregation. This is not limited to virtual hosts and OSs, but it should also include any virtualized networking or storage assets.</p></section>
+<section id="c06-sec-0007">
+<h4><a id="usec0007"></a>Cloud Provider Responsibilities: Secure Networking</h4>
+<p>Of course, in addition to securing the hardware and logical configurations, the provider will have to ensure that the networking architecture and components are secure. This will often involve many of the same tactics and methods used in the traditional (non-cloud) environment as well as some cloud-specific permutations. A brief overview of these areas follows.</p><section id="c06-sec-0008">
+<h5><a id="usec0008"></a>Firewalls</h5>
+<p><i>Firewalls</i> are tools that limit communications based on some criteria. They can be either hardware or software, or a combination of both. Firewalls can be stand-alone devices or integrated into other network nodes such as hosts and servers. The criteria for determining which traffic is allowed and which is not can take the form of rules (such as which services or protocols are allowed, which ports are to be used, from whom and when traffic should be allowed, and so forth), or behavior-sensing algorithms (the firewall is taught which behavior is “normal,” for both the environment and the user, and deviations from the normal baseline are noted by the firewall), or stateful inspection (the firewall understands the expected pattern of conversation in a protocol and recognizes deviations), or even inspection of content.</p></section>
+<section id="c06-sec-0009">
+<h5><a id="usec0009"></a>IDS/IPS</h5>
+<p>Intrusion detection systems (IDSs) and intrusion prevention systems (IPSs) are very similar to firewalls in that they monitor network traffic. These can also use defined rule sets, behavior-based algorithms, content, or stateful inspection to detect anomalous activity. The explicit difference between an IDS and an IPS is that an IDS only reports suspicious activity, alerting responders (such as the security office), whereas the IPS can be set to take defensive action when suspicious activity is recognized (such as closing ports and services) in addition to sending alerts. In the modern environment, most of these solutions serve both purposes.</p></section>
+<section id="c06-sec-0010">
+<h5><a id="usec0010"></a>Honeypots</h5>
+<p>A <i>honeypot</i> is a tool used to detect, identify, isolate, and analyze attacks by distracting attackers. This is usually a dummy machine with useless data, partially secured and configured as if it was a realistic portion of the production environment. When attackers penetrate it and attempt nefarious activity (such as installing rootkits or other malware, <span epub:type="pagebreak" role="doc-pagebreak" title="131" id="Page_131"></span>escalating their privileges, or disabling functionality), the security team can monitor and record the attackers’ behavior. This information can be used for defensive purposes in the actual production environment or as evidence in litigation and prosecution actions.</p></section>
+<section id="c06-sec-0011">
+<h5><a id="usec0011"></a>Vulnerability Assessments</h5>
+<p>A <i>vulnerability assessment</i> is a scan of the network in order to detect known vulnerabilities. These can, of course, be automated so that they’re scalable for networks of any appreciable size. The unfortunate flaw in vulnerability assessments is that they will only detect known vulnerabilities. Any extant vulnerabilities that are not part of the scan will go unnoticed. Vulnerability assessments can’t prevent attackers from discovering previously unknown vulnerabilities in systems and attacking them. These forms of attacks are often referred to as zero-day exploits.</p></section>
+<section id="c06-sec-0012">
+<h5><a id="usec0012"></a>Communication Protection</h5>
+<p>The connections between the various nodes and between the data center and the rest of the world must also be secured. Establishing access control and protection for remote access and data in transit can be accomplished in several ways:</p>
+<p><b>Encryption </b>Data can be encrypted across the network, reducing the possibility that someone who does not have authorized access (an external attacker, perhaps, or a malicious insider) would be able to acquire raw data in plaintext. If network traffic was encrypted with a sufficient work factor (a measure of the time and/or resources an attacker would require to break encryption), it would not reveal sensitive data even if someone captured it. Remote connections can also be encrypted, providing the same kind of protection for user access. Of course, encryption comes with a cost: the processing overhead increases with the volume of encrypted data, some other security controls (such as IRM, egress monitoring tools, and IDS/IPS solutions) might not function in the same manner because they cannot recognize the content of the traffic, and key storage is always an issue.</p>
+<p><b>Virtual Private Networks (VPNs) </b>Creating a secure tunnel across untrusted networks (such as the Internet) can aid in obviating man-in-the-middle attacks such as eavesdropping and interception of sensitive data, particularly when combined with encryption.</p>
+<p><b>Strong Authentication </b>As with the other aspects of securing the cloud data center, authentication schema such as the use of robust tokens and requiring multifactor authentication can reduce the likelihood of unauthorized users gaining access and can be used to restrict authorized users to permitted activities.</p>
+<section class="feature3" id="c06-feafxd-0003">
+<h4 style="background-color: #E7E7E8;">Management Plane</h4>
+<p>Virtualization, cloud-specific logical configurations, and software-defined networking (SDN) are widely used. Consequently, cloud data center elements such as hardware, logical configuration, and networking elements will most likely be managed through a centralized management and control interface, often referred to as the <i>management plane</i> or <span epub:type="pagebreak" role="doc-pagebreak" title="132" id="Page_132"></span>the <i>control plane</i>. This interface gives a great deal of control to the administrators, analysts, and architects who will design, oversee, manage, and troubleshoot the cloud data center. The management plane can be used in each of the physical, logical, and networking areas of the data center for various tasks, such as the following types of tasks:</p>
+<ul id="c06-list-0019">
+<li><b>Physical:</b> Applying, detecting, and enforcing hardware baseline configurations</li>
+<li><b>Logical:</b> Scheduling tasks, optimizing resource allocation, maintaining and updating software and virtualized hardware</li>
+<li><b>Networking:</b> All network management and administration tasks (except, of course, direct physical procedures, such as connecting cabling to boxes)</li>
+</ul>
+<p>Of course, the management plane also poses a significant center of risk as well as a potential single point of failure. The cloud provider must take great pains to ensure that the management plane is configured correctly and securely, that sufficient redundancy exists for every aspect of the management plane so that there is no interruption of service, and that extremely strong access control is implemented for the management plane to attenuate possible attempts to subvert or invade it.</p>
+</section>
+</section>
+</section>
+<section id="c06-sec-0013">
+<h4><a id="usec0013"></a>Cloud Provider Responsibilities: Mapping and Selection of Controls</h4>
+<p>No matter what design and architecture options are employed in the cloud data center, the cloud provider (like any IT infrastructure owner or operator) must apply the proper security controls according to the relevant regulatory frameworks and the planned usage. This is especially true of, but not limited to, regulation concerning personally identifiable information (PII).</p>
+<p>Published governance should guide the selection of appropriate controls for every aspect of data center operation (physical, logical, administrative, personnel, intangible, and tangible assets). All security policy should be based on this guidance, and all controls should be justified according to the particular regulations and standards applicable to the data center and its customers.</p>
+<p>There are many types of regulation and appropriate standards, and they are discussed throughout this book. The cloud provider must understand which are applicable to the data center (in terms of both location and operation) and to the customers (in terms of both location and operations). For instance, each physical location will be subject to the jurisdiction of relevant laws. The “physical location” includes <i>both</i> where the data center is physically situated <i>and</i> the location of each cloud customer.</p>
+<p>For example, a cloud data center in Park City, with customers in Omaha and Edina, would be subject to not only the data breach notification and privacy laws in Utah but also those of Nebraska and Minnesota, <i>as well as</i> any municipal codes regarding privacy and data protection for those particular cities.</p>
+<p>In addition to physical location, the type of operations taking place in the cloud data center will dictate which regulations are applicable (and therefore, which controls are <span epub:type="pagebreak" role="doc-pagebreak" title="133" id="Page_133"></span>required). A cloud customer processing, say, medical information, would be subject to HIPAA, whereas those processing credit card transactions would be subject to PCI regulation (and a cloud customer doing both will require controls sufficient for fulfilling both).</p>
+<p>There are guides and matrices of controls required by almost all relevant regulations available, usually for free. One of particular use in the cloud environment is the <i>Cloud Security Alliance Cloud Controls Matrix (CSA CCM)</i>, at <a class="codeLabel" href="https://cloudsecurityalliance.org/group/cloud-controls-matrix/">https://cloudsecurityalliance .org/group/cloud-controls-matrix/</a>, detailed elsewhere in this book. It maps requisite controls and control groups to specific contractual and legislated regulation and it is extremely useful.</p></section>
+</section>
+</section>
+<section id="c06-sec-0014">
+<h2><a id="usec0014"></a>Shared Responsibilities by Service Type</h2>
+<p>Again, referring to <a role="doc-backlink" href="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure6-1">Figure 6.1</a>, we can review what portions of the cloud environment will be tasked to which party. This is, of course, a description of the general case for many or most cloud customer–provider relationships, but it’s not prescriptive by any means.</p><section id="c06-sec-0015">
+<h3><a id="usec0015"></a>IaaS</h3>
+<p>Because the cloud provider is only hosting the hardware and utilities, its sole responsibility will be for physical security of the facility and systems. Both parties will share the responsibility for securing the infrastructure. Admittedly, this will be to a lesser extent for the cloud provider because the cloud customer will be installing the OS, which can significantly affect the security of the underlying systems, and the customer will be responsible for this aspect of infrastructure security. The customer will have sole responsibility for all other security aspects.</p></section>
+<section id="c06-sec-0016">
+<h3><a id="usec0016"></a>PaaS</h3>
+<p>In a PaaS model, the cloud customer will be installing programs on top of operating systems loaded and managed by the cloud vendor. The vendor might offer a variety of OSs, allowing the customer to ensure interoperability on a number of platforms. This can be extremely useful if the customer anticipates end users in a heterogeneous environment (for instance, in a BYOD configuration, with users accessing systems through different web browsers on a multitude of devices).</p>
+<p>Therefore, in PaaS, the cloud provider will still maintain physical security control of the facility and hardware but will now also be responsible for securing and maintaining the OS. The cloud customer will remain obligated to provide all other security.</p></section>
+<section id="c06-sec-0017">
+<h3><a id="usec0017"></a>SaaS</h3>
+<p>As you can expect, in SaaS modes, the cloud provider will have to maintain physical security for the underlying infrastructure and OS as in the previous models but will have to <span epub:type="pagebreak" role="doc-pagebreak" title="134" id="Page_134"></span>secure the programs as well. In this case, the cloud customer will only be left with very specific aspects of security: access and administration.</p>
+<p>Because the customer is the nominal data owner, the customer will always have ultimate control of who has authorization to view and manipulate the data (with the exception of those who have physical access to the hosts on which it resides, which always remains with the provider). In no circumstance will this fall to the purview of the cloud provider. Even if the task of provisioning access and accounts is contracted to the provider, the customer is still legally and ethically responsible for the security of the data itself.</p></section>
+</section>
+<section id="c06-sec-0018">
+<h2><a id="usec0018"></a>Shared Administration of OS, Middleware, or Applications</h2>
+<p>In the PaaS and SaaS modes, both the cloud provider and customer will have to share some elements of control over the software elements to a greater or lesser extent. For instance, in PaaS, the customer will make updates and modifications to software they have installed (and sometimes designed) and administer on the hosted systems. The cloud provider might have some role to play in this process, as the hardware may need to be adjusted accordingly to allow for any new functionality, and that is the sole responsibility of the provider. Moreover, the provider may have to ensure security controls still function and provide the level of desired coverage upon adoption of the updates.</p><section id="c06-sec-0019">
+<h3><a id="usec0019"></a>Operating System Baseline Configuration and Management</h3>
+<p>Perhaps one of the most useful practices for creating a secure cloud environment will be a carryover from the traditional data center—creating secure baseline configurations of the OS.</p>
+<p>The operating system is, itself, a large attack surface, offering a great many potential avenues for malicious actors if not set correctly. As with the hosts themselves, the operating systems in a secure environment should be hardened—that is, configured in a secure manner. Hardening the operating system can include the following (and more):</p>
+<ul id="c06-list-0020">
+<li>Removing unnecessary services and libraries</li>
+<li>Closing unused ports</li>
+<li>Limiting administrator access</li>
+<li>Ensuring default accounts are removed</li>
+<li>Ensuring event/incident logging is enabled</li>
+</ul>
+<p>It would be cumbersome to perform the activities necessary to reach this configuration on each OS, individually and manually, so instead it is preferable to create one template, <span epub:type="pagebreak" role="doc-pagebreak" title="135" id="Page_135"></span>the secure OS baseline, and replicate that baseline whenever a new machine is deployed (and, in the virtual environment, whenever a new user image is created). This can be done with automated tools. We can also use those tools (or similar ones) to continually check the environment to ensure all current images and machines have an OS that meets the baseline configuration. Any OS configuration that differs from the baseline and is detected by the monitoring tool should be addressed accordingly (this might include patching or a reinstallation/rollback of the entire OS configuration).</p>
+<p>Deviations from the baseline might have legitimate purposes. Some specialized uses and users may require adjustments to the baseline for their business tasks. In such cases, the deviation should be formally approved by the change/configuration management process and limited to situations, OS instances, and machines where that function is necessary. Configuration monitoring tools should be adjusted accordingly and the asset inventory updated so that these particular cases are not constantly setting off alerts and so that administrators don’t accidentally apply the baseline configuration.</p>
+<p>In cloud environments, where virtualization and multiple disparate customers are so prevalent, it is also important to feature the capability for capturing (and restoring) the OS of any customer and virtual guest in order to ensure the customer’s particular needs are being met. There are a number of methods for copying and backing up the guest OS, such as taking snapshots of the virtual image; using software tools that install agents on the virtual machine for that purpose; and centralized, agentless configuration management solutions. When a customer needs to replicate a specific OS, the saved configuration can be copied from the backup onto the same virtual machine or others. The cloud provider and cloud customer will have to negotiate and determine how often OS configuration backups are being made and for which systems.</p>
+<section class="feature3" id="c06-feafxd-0004">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> VMs are saved as files when not in use; patches can’t be applied to these files, so any VM taken out of storage and put into production needs to be checked against configuration versions to determine if there were patches applied to the environment while it was stored.</p>
+</section>
+<section class="feature3" id="c06-feafxd-0005">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> All backups (not just of the OS configuration) need to be tested. The organization must restore from the backup in order to ensure that the backup method works properly, that it captures what it is designed to copy, and that integrity is maintained. If a restoration is not performed, the backup can be considered nonexistent.</p>
+</section>
+<p>Aside from maintaining the OS, baselining and configuration management are likewise important for other applications. The provider and the customer have to determine who will be responsible for establishing the secure build of the configuration template as well as performing version control activities.</p>
+<p>Version control for applications includes following vendor recommendations, applying requisite patches and upgrades, ensuring interoperability with the rest of the environment, <span epub:type="pagebreak" role="doc-pagebreak" title="136" id="Page_136"></span>and documenting all changes and developments. Documentation is particularly important in support of efforts to provide consistency across the environment, to sufficiently track the current software state for business continuity and disaster recovery (BC/DR), and for any necessary forensic and discovery activities.</p>
+<section class="feature3" id="c06-feafxd-0006">
+<h4 style="background-color: #E7E7E8;">The Benefit of Many Eyeballs</h4>
+<p>When choosing applications and APIs for the cloud environment, cloud customers may be tempted to use software from vendors they’ve never done business with before and have no prior knowledge of because it offers something of enhanced value, such as a particular functionality or very low price. There is obviously a risk to using software from unverified or unvalidated sources: unknown and untested software could contain vulnerabilities and attack vectors that would otherwise be controlled for in the formal secure development or acquisition process.</p>
+<p>One possible method for attenuating this possibility is the use of crowdsourcing— determining from other users (current and past) what their experience with particular software offered in the form of results, good or bad. This can be taken a bit further, with a decision to trust open-source programs over those with proprietary code. It is far more likely that open-source software has been vetted, verified, and validated by more people with more perspectives than even professionally developed software from known sources with rigorous testing methods. Leveraging the expertise of the community for evaluation purposes is a powerful tool.</p>
+</section>
+<p>In addition to version control for software settings, maintaining proper documentation and licensing for third-party software is also essential. Most commercial software is subject to copyright protections (although there are some packages that are freeware or shareware or have other distribution protections, such as copyleft), and only authorized, licensed versions should be used within the organization. The security office is often also tasked with the role of software custodian, maintaining a library/record of all licenses/permissions.</p></section>
+</section>
+<section id="c06-sec-0020">
+<h2><a id="usec0020"></a>Shared Responsibilities: Data Access</h2>
+<p>Of course, in all models, the cloud customer (and their users) will need access and the ability to modify the data. This will require some degree of sharing administration capabilities, however minimal. For instance, the data may be processed in a database, and the database administrator may be in the employ of the cloud provider or the cloud customer, or there may be database administrators in both organizations and they might have shared or overlapping duties.</p>
+<p>The data owner (cloud customer) will always retain fundamental liability for data protection and will therefore be the end arbiter of granting access and permissions for that data set. This may be implemented via a number of methods: direct administration of user <span epub:type="pagebreak" role="doc-pagebreak" title="137" id="Page_137"></span>identity and authorization processes; contracting the tasks to the cloud provider, under strict instructions and through a specified verification procedure; or perhaps contracting out the duties to a third party, such as a cloud access security broker (CASB), who will perform these administrative tasks on the customer’s behalf.</p>
+<p>Let’s review some examples of processes that might facilitate each method.</p><section id="c06-sec-0021">
+<h3><a id="usec0021"></a>Customer Directly Administers Access</h3>
+<p>If the cloud customer retains control of these duties, then the customer will provision, manage, and remove user accounts without input or cooperation from the cloud provider. This could be performed by administrators working within the customer’s organization, remotely accessing the OS on the cloud host devices and manipulating the access control systems (say, updating the ACLs) manually. When a new user needs an account, the entire operation is initiated, executed, and completed within the cloud customer’s organization.</p>
+<p>In IaaS, this would always be the case because the cloud provider has no oversight or control of the OS. With PaaS and SaaS, however, this will be a bit more complicated because the cloud provider is obligated (and invested) to control the OS and software completely. Ceding administrative access to the customer will require a great deal of trust and additional controls and will almost certainly be limited to this very specific purpose.</p>
+<p>The elements of this process must be spelled out, in great detail, in the contract and SLAs between the customer and provider.</p></section>
+<section id="c06-sec-0022">
+<h3><a id="usec0022"></a>Provider Administers Access on Behalf of the Customer</h3>
+<p>In this type of situation, any new user must submit a request to the provider, either directly or through some point of contact within the customer organization. The provider will need to verify the request is legitimate and correct by contacting the customer through a predetermined process and then create the account and assign the appropriate permissions.</p></section>
+<section id="c06-sec-0023">
+<h3><a id="usec0023"></a>Third-Party (CASB) Administers Access on Behalf of the Customer</h3>
+<p>The CASB will have some of the duties and access relegated to the other parties in the previous examples. The user will make the request to the CASB or to a local administrator, and the CASB will verify the account and then assign the appropriate access and permissions.</p></section>
+</section>
+<section id="c06-sec-0024">
+<h2><a id="usec0024"></a>Lack of Physical Access</h2>
+<p>The cloud provider will typically not have any reason to allow the customer physical access to the facility and devices containing the customer’s data. In fact, the provider will have every reason to prevent this. There will be a great many customers, with various levels of <span epub:type="pagebreak" role="doc-pagebreak" title="138" id="Page_138"></span>trust, and the more people who have knowledge of the physical location, security controls, and layout of the data center, the greater the risk to the data and operations.</p>
+<p>From the customer’s perspective, this is both beneficial and challenging. It is beneficial because it increases the customer’s trust in the provider (the customer has limited access, but <i>all</i> customers have limited access, including other customers who may be hostile to or competitive with each other). It is challenging because the customer is forced to rely on the provider’s assertions of security without the customer having any means to reliably validate and verify those assertions for themselves.</p><section id="c06-sec-0025">
+<h3><a id="usec0025"></a>Audits</h3>
+<p>In a traditional environment, audits serve a valuable function, determining that controls were selected properly, the controls function properly, and the organization is in compliance with a given standard or mandate. Here is a brief overview of auditing terminology and concepts:</p>
+<ul id="c06-list-0021">
+<li><b>Internal Audit:</b> An audit (review of the environment) is performed by employees of the organization. The results of the audit (typically, an audit report) can be used by management to adjust control selection/implementation or as evidence of due diligence (often required by certain customers/regulators).</li>
+<li><b>External Audit:</b> An external audit is performed by auditors from outside the organization, typically a licensed/chartered accountancy (an accounting firm). The external audit offers additional benefits beyond what the internal audit yields. External auditors are perceived (often rightly so) as being independent from the target organization, not succumbing to internal pressures and politics, and having a more trustworthy or believable perspective. As with internal audits, the results of an external audit may be used solely by management as part of the decision-making process, or they may be shared outside the organization for marketing/regulatory purposes. In the IT/InfoSec realm, external audits often take the form of vulnerability scans and penetration tests.</li>
+<li><b>Audit Preparation:</b> Typically, the parameters of an audit engagement (duration, physical/logical locations, and so on) are negotiated prior to the start of the audit. Limitations are placed on which offices, artifacts, systems, and so on will be inspected as part of the audit. This is referred to as the <i>scope</i> of the audit. (<i>Scoping</i> is sometimes used as a verb, where <i>scoping</i> the audit means “determining which aspects of the organization will be included.”) This is a crucial part of the overall audit process as crafting the scope can determine the impact, price, and usefulness of results of the audit.</li>
+<li><b>Audit Processes/Methods:</b> Generally, audits are not exhaustive, detailed inspections of every single aspect of the target; this would be impractical and expensive and entail more impact than the results could realistically be worth. Instead, auditors will review the overall population of the environment (described in the scoping statement), select a suitable sample size, and then verify the configuration/controls/utility of the performance/controls in the sample. If the sample is suitably representative of the population, the results of the audit are taken to be meaningful for the population as a whole. There <span epub:type="pagebreak" role="doc-pagebreak" title="139" id="Page_139"></span>are various types of audits (and therefore, auditors), using a variety of tools/techniques depending on the desired target/population (financial, IT, and/or security audits, and so forth).</li>
+<li><b>Audit Results:</b> The auditors collect findings, report on gaps between the intended outcomes and the actual environment, and present these findings to the client/target. Auditors may note shortcomings and sort those shortcomings into categories (for instance, “significant” findings that need immediate attention or “routine” findings that can be addressed in the normal course of the operational pace). Typically, auditors should <i>not</i> recommend solutions for shortcomings as this would put the auditor in the role of consultant/advisor, which is a conflict of interest (the auditor must remain impartial, including to the eventual success of the target organization). An auditor finding a grievous flaw or shortcoming might only publish an audit report with “qualifications” or “reservations,” noting that the auditor feels there is a material or fundamental problem with the organization’s approach to either the audit itself or the business process being audited.</li>
+</ul>
+<p>In a traditional customer/provider relationship, the customer would prefer to perform an audit (or have an audit performed, at the customer’s behest and supervision, by an auditor of the customer’s choosing) of the provider, at the provider’s location and using data/material taken directly from the provider.</p>
+<p>Unfortunately, the cloud provider’s unwillingness to allow physical access to the facility also applies to the customer’s auditors, and in most cases auditors probably won’t even have access to data streams and documentary artifacts necessary to perform a reasonable audit with a suitable level of veracity. This is especially troubling for those organizations that have regulatory requirements for performing audits and providing audit reports to their stakeholders (including regulators).</p>
+<section class="feature3" id="c06-feafxd-0007">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> The lack of physical access to the cloud provider’s facility also means that the preferred means of attenuating data remanence risks and ensuring secure data disposal (such as physical destruction of the host devices, drives, and media) will not be available to the customer. We’ve discussed the current best alternatives in other chapters, so I won’t repeat them here.</p>
+</section>
+<p>For auditing purposes, then, what the customer is likely to get instead is audit reports performed by licensed and chartered auditors on the provider’s behalf, made known to the customers and the public. It is, of course, in the provider’s best interest to publish these audits, in the hope of increasing public perception of the reliability and trustworthiness of the provider’s services and thus increasing customer satisfaction and market share. However, the provider does not want to share a detailed audit of security controls for the very same reason they don’t want to allow physical access: a security control audit that revealed specific aspects and configuration of controls would provide a roadmap of attack for malicious actors.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="140" id="Page_140"></span>Instead, the provider is likely to publish an audit assurance statement: something from the auditor that states, in formal terms, that an audit was performed and that the auditor finds the results suitable for the purposes of the provider’s operations—a seal of approval, if you will.</p>
+<p>Currently, this usually takes the form of an SOC 3 audit report. Let’s delve into the SOC reports and their intended purpose, because this material is significant for both exam and practical purposes.</p>
+<p>The <i>SOC reports</i> are part of the SSAE reporting format created by the American Institute of Certified Public Accountants (AICPA). These are uniformly recognized as being acceptable for regulatory purposes in many industries, although they were specifically designed as mechanisms for ensuring compliance with the Sarbanes–Oxley Act (colloquially referred to as SOX), which governs publicly traded corporations.</p>
+<p>There are three SOC report categories: SOC 1, SOC 2, and SOC 3. Each of them is meant for a specific purpose, and there are further subclasses of reports as well.</p>
+<p>SOC 1 reports are strictly for auditing the financial reporting instruments of a corporation, and therefore have little to do with our field. It’s worth knowing that they exist (SOC 1 is mentioned in the CBK, and it’s important to know the distinction between SOC 1 reports and SOC 2 and SOC 3 reports) and that there are two subclasses of SOC 1 reports: Type 1 and Type 2. Other than that, you should never have to deal with them in practice because they are not germane to computer security or cloud computing.</p>
+<p>SOC 2 reports are the ones that are particular to our field. They are specifically intended to report audits of any controls on an organization’s security, availability, processing integrity, confidentiality, and privacy. Therefore, a cloud provider intending to prove its trustworthiness can demonstrate it with a SOC 2 report.</p>
+<p>SOC 2 reports also come in two subclasses: Type 1 and Type 2. The SOC 2 Type 1 is not extremely useful for determining the security and trust of an organization. The SOC 2 Type 1 only reviews the <i>design</i> of controls, not how they are implemented and maintained or their function. The SOC 2 Type 2 report, however, does just that. This is why the SOC 2 Type 2 is the sort of report that is extremely useful for getting a true assessment of an organization’s security posture.</p>
+<p>However, cloud vendors are reluctant to share the SOC 2 Type 2 report outside the provider’s organization. The SOC 2 Type 2 report is extremely detailed and provides exactly the kind of description and configuration that the cloud provider is trying to restrict from wide dissemination. It’s basically a handbook for attacking that cloud provider.</p>
+<p>In recent years, though, many cloud providers have become willing to share the SOC 2 Type 2 reports with some customers. Usually, the provider will only share this information with customers that the provider has specifically vetted and has reason to trust, and then only if the customer is willing to sign a nondisclosure agreement or undergo additional security measures to protect the report. In some cases, the customer can only view the report material under certain conditions or in certain locations.</p>
+<p>Cloud customers are, however, welcome to view the SOC 3 report (as is everyone else; SOC 3 reports are designed to be shared with the public). The SOC 3 is the “seal of approval” mentioned earlier in this section. It contains no actual data about the security <span epub:type="pagebreak" role="doc-pagebreak" title="141" id="Page_141"></span>controls of the audit target and is instead just an assertion that the audit was conducted and that the target organization passed. That’s it.</p>
+<p>This makes the SOC 3 report of dubious use for verifying the trustworthiness of an organization. Instead of taking the word of a company that the company is trustworthy, with no evidence offered in support of its word, we are asked to take the word of an auditor hired by that company that the company is trustworthy, with no evidence offered to support the auditor’s assertion.</p>
+<p>The lack of physical access to the provider’s facility and the SOC reporting issues are not the only challenges to performing audits in the cloud environment. There are other challenges that should be considered:</p>
+<ul id="c06-list-0022">
+<li><b>Sampling:</b> Unlike a traditional IT environment, with a discrete number of machines/users/etc., the cloud environment is difficult to scope because of the very nature of cloud computing—scalability/flexibility/elasticity lead to an environment where the number of individual systems may be constantly fluctuating. It may be hard to properly scope an audit in a cloud environment for this reason. Selecting an appropriate, indicative sample size could pose significant difficulty.</li>
+<li><b>Virtualization:</b> The use of virtualized machines might be either a hindrance or a benefit for audit purposes. From a problematic perspective, the virtualized environment may be difficult for the auditor to inspect; the level of permissions/administrative access necessary to determine the actual implementation/functionality of the configuration/controls may not be available to the cloud customer (and therefore, not available to the auditor, either). From a beneficial perspective, virtualization might address the previous problem of sample size: if all systems in the customer’s (target’s) IT environment are built from one specific, honed virtual image (the “Golden Build”), then an auditor could simply review that single image to determine compliance/suitability and know that all other virtualized machines made from it are satisfactory (or not).</li>
+<li><b>Multitenancy:</b> In a traditional audit, the scope of the audit usually only includes property owned by the target organization; in the cloud, this is often not the case as the shared resources of the cloud data center are often in simultaneous use by other customers…and the auditor has no right/permission to view any activity of those other customers (in fact, to do so may violate laws in a significant way).</li>
+</ul>
+<section class="feature3" id="c06-feafxd-0008">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Tip" width="52" height="43"> There are other forms of certification available and widely used in the cloud computing industry, such as the CSA Security, Trust, Assurance, and Risk (STAR) program, which is available for free: (<a class="codeLabel" href="https://cloudsecurityalliance.org/star/">https://cloudsecurityalliance.org/star/</a>).</p>
+</section>
+<p>Theoretically, an audit, when performed correctly by trusted and trained auditors, should lend the customer some level of assurance that the provider’s controls, risk management program, and processes are sound and secure. Because the cloud customer must rely on audit reports as almost the only way to review a provider’s capabilities/governance (and <span epub:type="pagebreak" role="doc-pagebreak" title="142" id="Page_142"></span>quite possibly the only form of due diligence the customer has in a cloud-based relationship), audits are essential for cloud-managed services’ arrangements.</p></section>
+<section id="c06-sec-0026">
+<h3><a id="usec0026"></a>Shared Policy</h3>
+<p>In addition to the (most likely SOC 3) audit reports, the cloud customer will have to rely on the contract and the SLAs to ensure that the provider is securing the data to an extent and with the controls sufficient for the customer’s purposes, including compliance with regulatory structures. These tools (the contract and the SLAs) will not obviate the customer’s legal responsibilities in the event of a breach, but they <i>will</i> help the customer seek financial restitution for damages caused to the customer and their end clients in a breach that occurred because of negligence or malfeasance on the part of the provider.</p>
+<p>In pursuit of this effort, and as contractual elements, the customer and provider may agree to share doctrinal mechanisms in common, such as industry standards, guidelines, vendor documentation, and other policy and procedural artifacts. This could be true whether the service is IaaS, PaaS, or SaaS. If the parties choose this type of arrangement, both must agree to work from the same version of each artifact and must involve the other in any change management process that affects the documents (even if that involvement is limited to notification). This process and any limitations must be codified in the contract from the outset of the relationship.</p></section>
+<section id="c06-sec-0027">
+<h3><a id="usec0027"></a>Shared Monitoring and Testing</h3>
+<p>Another area where providers and customers may find common ground in sharing responsibilities is security monitoring and testing. The provider may allow the customer access to data streams or administrative capabilities on devices in order for the customer to perform their own monitoring and testing activities in conjunction with or (more likely) in addition to the provider’s own efforts.</p>
+<p>Again, because of the provider’s inherent requirements to ensure security throughout the cloud environment, this access is most probably going to be very limited. The customer will be granted access only to those specific aspects of the enterprise that will not affect or give any insight into any of the provider’s other customers residing in the cloud. The provider’s concern is twofold: not allowing any specific customer or user enough capability to cause significant harm to the enterprise through accident or malicious intent and not disclosing any customer’s data or operation to any other customer.</p>
+<p>Even with this limited amount of transparency, though, it is possible for the customer to have a greater certainty and trust in the security controls and performance of the cloud provider. This assurance is gained by allowing the customer to monitor and test the data and behavior of the network and to ensure that the general set of security controls and protective measures available to all customers are sufficient and not problematic for the customer’s specific data set.</p>
+<p>For instance, the provider may allow the customer to access audit and performance logs or to even configure settings on resources limited to that customer’s use. Or the provider <span epub:type="pagebreak" role="doc-pagebreak" title="143" id="Page_143"></span>may deliver SIEM log data to the customer so that the customer might perform their own analysis and internal reporting with it.</p>
+<p>Also, the provider might act in concert with the customer to configure and deploy a DLP solution that could issue alerts or reports on any data egress activity—limited, of course, to the customer’s own specific data. This may be more cumbersome and challenging because of the nature of shared resources in the cloud environment (shared between customers) and because of the wide use of virtualization (requiring DLP solutions expressly designed for the purpose).</p>
+<p>For testing purposes, the provider may allow the customer access to a scaled-down, limited portion of the cloud environment that mimics the overall infrastructure in order for the customer to perform small-scale testing of their data and usage in a sandboxed, isolated manner. This could improve the customer’s confidence in the production environment, enhancing their trust in the provider’s ability to protect the customer’s data and to administer the network in such a way that there is no untoward impact to the customer’s critical functions.</p>
+<p>Again, these capabilities would necessarily be limited and must be formally agreed to by both parties, in the contract and SLAs, prior to the commencement of the business arrangement.</p></section>
+</section>
+<section id="c06-sec-0028">
+<h2><a id="usec0028"></a>Summary</h2>
+<p>In this chapter, we have explored how both parties will be able to act independently and in concert to assure for themselves and each other that the security of the network and the data on it will not be unduly affected. We discussed which responsibilities might be distinct to each party in different cloud models and which aspects might be shared.</p></section>
+<section id="c06-sec-0029">
+<h2><a id="usec0029"></a>Exam Essentials</h2>
+<p><b>Know the cloud provider’s responsibilities for providing secure physical, logical, and networking elements in the data center. </b>Understand how the provider will use secure processes, methods, and controls to provide the customer with a trusted environment in which to conduct business. Know the various network security components and tools. Be familiar with the process of mapping specific security controls and control groups to applicable regulatory guidance.</p>
+<p><b>Understand which party will most likely have which specific security responsibilities in each of the cloud service models. </b>Know what the provider and customer each are tasked with in IaaS, PaaS, and SaaS configurations.</p>
+<p><b>Understand which responsibilities the cloud customer and cloud provider are likely to share. </b>Know that OS and application baselining and management responsibilities are likely to be shared, as are identity and access management, to some degree.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="144" id="Page_144"></span><b>Know the different types of audit reports most likely to be used for cloud data centers. </b> Understand the difference between SOC 1, 2, and 3 reports and Types 1 and 2 of SOC 2. Know which is preferred for detailed analysis and which the cloud customer is most likely to have easy access to.</p></section>
+<section id="c06-sec-0030">
+<h2><a id="usec0030"></a>Written Labs</h2>
+<p>You can find the answers to the written labs in <a href="Appendix A Answers to Written Labs _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix A</a>.</p>
+<ol id="c06-list-0023">
+<li>Visit the web page for the CSA’s STAR program (<a class="codeLabel" href="https://cloudsecurityalliance.org/star/">https://cloudsecurityalliance .org/star/</a>).</li>
+<li>Download the Consensus Assessments Initiative Questionnaire: <a class="codeLabel" href="https://cloudsecurityalliance.org/download/consensus-assessments-initiative-questionnaire-v3-0-1/">https:// cloudsecurityalliance.org/download/ consensus-assessments-initiative-questionnaire-v3-0-1/</a>.</li>
+<li>Review the questionnaire. Understand the operational security aspects a cloud data service provider will be expected to verify and attest to. Think of these aspects in terms of what you’ve learned so far from this book.</li>
+<li>Visit the actual Registry itself: <a class="codeLabel" href="https://cloudsecurityalliance.org/star/registry">https://cloudsecurityalliance.org/star/registry</a>.</li>
+<li>Select any registered provider, and download its (completed) questionnaire.</li>
+<li>In one page or less, describe three security aspects of the registered provider’s responses that you find interesting or troubling or that should be of concern to a cloud customer considering using that provider.</li>
+</ol><section class="exercises">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="145" id="Page_145"></span><a id="c06-exsec-0001"></a>Review Questions</h2>
+<p>You can find the answers to the review questions in <a href="Appendix B Answers to Review Questions _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix B</a>.</p><section class="questionSet">
+<ol class="questionList">
+<li class="essay">
+<div class="question">
+<p>What is the cloud service model in which the customer is responsible for administration of the OS?</p><ol id="c06-list-0024" class="upper-latin">
+<li>IaaS</li>
+<li>PaaS</li>
+<li>SaaS</li>
+<li>QaaS</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>To address shared monitoring and testing responsibilities in a cloud configuration, the provider might offer all these to the cloud customer except ___________________.</p><ol id="c06-list-0025" class="upper-latin">
+<li>Access to audit logs and performance data</li>
+<li>SIM, SIEM, and SEM logs</li>
+<li>DLP solution results</li>
+<li>Security control administration</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In addition to whatever audit results the provider shares with the customer, what other mechanism does the customer have to ensure trust in the provider’s performance and duties?</p><ol id="c06-list-0026" class="upper-latin">
+<li>Statutes</li>
+<li>The contract</li>
+<li>Security control matrix</li>
+<li>HIPAA</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which kind of SSAE audit report is a cloud customer most likely to receive from a cloud provider?</p><ol id="c06-list-0027" class="upper-latin">
+<li>SOC 1 Type 1</li>
+<li>SOC 2 Type 2</li>
+<li>SOC 1 Type 2</li>
+<li>SOC 3</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which kind of SSAE audit report is most beneficial for a cloud customer, even though it’s unlikely the cloud provider will share it without additional protections?</p><ol id="c06-list-0028" class="upper-latin">
+<li>SOC 1 Type 1</li>
+<li>SOC 2 Type 2</li>
+<li>SOC 1 Type 2</li>
+<li>SOC 3</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="146" id="Page_146"></span>The auditor should not ___________________.</p><ol id="c06-list-0029" class="upper-latin">
+<li>Review documents</li>
+<li>Physically visit the business location</li>
+<li>Perform system scans</li>
+<li>Deliver consulting services</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Hardening the operating system refers to all of the following except ___________________.</p><ol id="c06-list-0030" class="upper-latin">
+<li>Limiting administrator access</li>
+<li>Removing anti-malware agents</li>
+<li>Closing unused ports</li>
+<li>Removing unnecessary services and libraries</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The cloud customer’s trust in the cloud provider can be enhanced by all of the following except ___________________.</p><ol id="c06-list-0031" class="upper-latin">
+<li>Audits</li>
+<li>Shared administration</li>
+<li>Real-time environmental controls</li>
+<li>SLAs</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>User access to the cloud environment can be administered in all of the following ways except: ___________________.</p><ol id="c06-list-0032" class="upper-latin">
+<li>Customer directly administers access</li>
+<li>Customer provides administration on behalf of the provider</li>
+<li>Provider provides administration on behalf the customer</li>
+<li>Third party provides administration on behalf of the customer</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which kind of SSAE audit reviews the organization’s controls for assuring the confidentiality, integrity, and availability of data?</p><ol id="c06-list-0033" class="upper-latin">
+<li>SOC 1</li>
+<li>SOC 2</li>
+<li>SOC 3</li>
+<li>SOC 4</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which kind of SSAE report provides only an attestation by a certified auditor?</p><ol id="c06-list-0034" class="upper-latin">
+<li>SOC 1</li>
+<li>SOC 2</li>
+<li>SOC 3</li>
+<li>SOC 4</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="147" id="Page_147"></span>Which of the following is a cloud provider likely to provide to its customers in order to enhance the customer’s trust in the provider?</p><ol id="c06-list-0035" class="upper-latin">
+<li>Site visit access</li>
+<li>Financial reports to shareholders</li>
+<li>Audit and performance log data</li>
+<li>Backend administrative access</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In all cloud models, the customer will be given access and ability to modify which of the following?</p><ol id="c06-list-0036" class="upper-latin">
+<li>Data</li>
+<li>Security controls</li>
+<li>User permissions</li>
+<li>OS</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In all cloud models, security controls are driven by which of the following?</p><ol id="c06-list-0037" class="upper-latin">
+<li>Virtualization engine</li>
+<li>Hypervisor</li>
+<li>SLAs</li>
+<li>Business requirements</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In all cloud models, the ___________________ will retain ultimate liability and responsibility for any data loss or disclosure.</p><ol id="c06-list-0038" class="upper-latin">
+<li>Vendor</li>
+<li>Customer</li>
+<li>State</li>
+<li>Administrator</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Why will cloud providers be unlikely to allow physical access to their data centers?</p><ol id="c06-list-0039" class="upper-latin">
+<li>They want to enhance security by keeping information about physical layout and controls confidential.</li>
+<li>They want to enhance exclusivity for their customers, so only an elite tier of higher-paying clientele will be allowed physical access.</li>
+<li>They want to minimize traffic in those areas to maximize efficiency of operational personnel.</li>
+<li>Most data centers are inhospitable to human life, so minimizing physical access also minimizes safety concerns.</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="148" id="Page_148"></span>Which type of software is most likely to be reviewed by the most personnel, with the most varied perspectives?</p><ol id="c06-list-0040" class="upper-latin">
+<li>Database management software</li>
+<li>Open-source software</li>
+<li>Secure software</li>
+<li>Proprietary software</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>A firewall can use all of the following techniques for controlling traffic except ___________________.</p><ol id="c06-list-0041" class="upper-latin">
+<li>Rule sets</li>
+<li>Behavior analysis</li>
+<li>Content filtering</li>
+<li>Randomization</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>A honeypot should contain ___________________ data.</p><ol id="c06-list-0042" class="upper-latin">
+<li>Raw</li>
+<li>Production</li>
+<li>Useless</li>
+<li>Sensitive</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Vulnerability assessments cannot detect which of the following?</p><ol id="c06-list-0043" class="upper-latin">
+<li>Malware</li>
+<li>Defined vulnerabilities</li>
+<li>Zero-day exploits</li>
+<li>Programming flaws</li>
+</ol></div>
+</li></ol>
+</section></section></section>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+</body></html>

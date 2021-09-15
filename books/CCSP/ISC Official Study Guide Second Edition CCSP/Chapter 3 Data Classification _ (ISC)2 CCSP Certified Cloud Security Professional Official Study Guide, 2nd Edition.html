@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603375">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 3 Data Classification | (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+        <script src="public/orm.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+
+
+
+  <meta itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603375/" data-react-helmet="true"><meta property="og:url" itemprop="url" content="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition","type":"book","identifier":"9781119603375","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603375-/Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2019-12-24","title":"Chapter 3 Data Classification"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 3 Data Classification" data-react-helmet="true"><meta property="og:title" content="Chapter 3 Data Classification" data-react-helmet="true"><meta itemprop="name" content="Chapter 3 Data Classification" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+Chapter 3
+Data Classification
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.3...." data-react-helmet="true"><meta name="twitter:description" content="
+
+Chapter 3
+Data Classification
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.3...." data-react-helmet="true"></head>
+  <body>
+
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper"><a href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-large orm-Input-withIcon"><label for="input-09sh73wvp1zl" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-09sh73wvp1zl" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 2 Design Requirements _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 2 Design Requirements</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 3 Data Classification</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 4 Cloud Data Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="title--1b0fU">Chapter 4 Cloud Data Security</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="43" id="Page_43"></span><a id="start"></a><span class="chapterNumber">Chapter 3</span>
+<br><span class="chapterTitle">Data Classification</span></h1>
+</header>
+<section id="c03-sec-0001">
+<p><b>THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:</b></p>
+<ul id="c03-list-0001">
+<li><b>Domain 1: Cloud Concepts, Architecture, and Design</b>
+<ul id="c03-list-0002">
+<li>1.3. Understand Security Concepts Relevant to Cloud Computing
+<ul id="c03-list-0003">
+<li>1.3.3. Data and Media Sanitization</li>
+</ul></li>
+<li>1.4. Understand Design Principles of Secure Cloud Computing
+<ul id="c03-list-0004">
+<li>1.4.1. Cloud Secure Data Lifecycle</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 2: Cloud Data Security</b>
+<ul id="c03-list-0005">
+<li>2.1. Describe Cloud Data Concepts
+<ul id="c03-list-0006">
+<li>2.1.1. Cloud Data Lifecycle Phases</li>
+</ul></li>
+<li>2.4. Implement Data Discovery
+<ul id="c03-list-0007">
+<li>2.4.1. Structured Data</li>
+<li>2.4.2. Unstructured Data</li>
+</ul></li>
+<li>2.5. Implement Data Classification
+<ul id="c03-list-0008">
+<li>2.5.1. Mapping</li>
+<li>2.5.2. Labeling</li>
+<li>2.5.3. Sensitive Data</li>
+</ul></li>
+<li>2.6. Design and Implement Information Rights Management (IRM)
+<ul id="c03-list-0009">
+<li>2.6.1. Objectives</li>
+<li>2.6.2. Appropriate Tools</li>
+</ul></li>
+<li>2.7. Plan and Implement Data Retention, Deletion, and Archiving Policies
+<ul id="c03-list-0010">
+<li>2.7.1. Data Retention Policies</li>
+<li>2.7.2. Data Deletion Procedures and Mechanisms</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="44" id="Page_44"></span>2.7.3. Data Archiving Procedures and Mechanisms</li>
+<li>2.7.4. Legal Hold</li>
+</ul></li>
+<li>2.8. Design and Implement Auditability, Traceability, and Accountability of Data Events
+<ul id="c03-list-0011">
+<li>2.8.2. Logging, Storage, and Analysis of Data Events</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 3: Cloud Platform and Infrastructure Security</b>
+<ul id="c03-list-0012">
+<li>3.4. Design and Plan Security Controls
+<ul id="c03-list-0013">
+<li>3.4.5. Audit Mechanisms</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 5: Cloud Security Operations</b>
+<ul id="c03-list-0014">
+<li>5.7. Manage Security Operations
+<ul id="c03-list-0015">
+<li>5.7.3. Log Capture and Analysis</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 6: Legal, Risk, and Compliance</b>
+<ul id="c03-list-0016">
+<li>6.1. Articulate Legal Requirements and Unique Risks Within the Cloud Environment
+<ul id="c03-list-0017">
+<li>6.1.3. Legal Frameworks and Guidelines</li>
+<li>6.1.4. eDiscovery</li>
+</ul></li>
+<li>6.2 Understand Privacy Issues
+<ul>
+<li>6.2.3 Jurisdictional Differences in Data Privacy</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="45" id="Page_45"></span><img src="public/clogo.jpg" alt="" width="150" height="150"> Data is an asset. As with all other assets, knowing what data you have, where it is (logically and physically), and its relative value and need for protection is absolutely essential for properly apportioning security resources. In this chapter, we will discuss how data is categorized and classified, why the location of the data matters, intellectual property concepts and practices, and various aspects of data retention and deletion requirements.</p></section>
+<section id="c03-sec-0002">
+<h2><a id="usec0002"></a>Data Inventory and Discovery</h2>
+<p>In the previous chapter, we discussed the importance of creating an asset inventory; part of that effort will require identifying all the data owned by the organization.</p><section id="c03-sec-0003">
+<h3><a id="usec0003"></a>Data Ownership</h3>
+<p>When we talk about data, we must assign responsibilities according to who has possession and legal ownership of that data. In the cloud computing motif, we tend to assign roles to allocate those responsibilities.</p>
+<p>In most cases:</p>
+<ul id="c03-list-0018">
+<li>The <i>data owner</i> is the organization that has collected or created the data, in general terms. Within the organization, we often assign a specific data owner as being the individual with rights and responsibilities for that data; this is usually the department head or business unit manager for the office that has created or collected a certain dataset. From a cloud perspective, the cloud customer is usually the data owner. Many international treaties and frameworks refer to the data owner as the <i>data controller</i>.</li>
+<li>The <i>data custodian</i> is any person or entity that is tasked with the daily maintenance and administration of the data. The custodian also has the role of applying the proper security controls and processes as directed by the data owner. Within an organization, the custodian might be a database administrator.</li>
+<li><i>Processing</i> is anything that can be done to data: copying it, printing it, destroying it, utilizing it. The <i>data processor</i> is any organization or person who manipulates, stores, or moves the data on behalf of the data owner. From an international law perspective, the cloud provider is a data processor.</li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="46" id="Page_46"></span>Here are essential points to remember about the rights and responsibilities of data ownership and custody:</p>
+<ul id="c03-list-0019">
+<li>Data processors do not necessarily all have direct relationships with data owners; processors can be third parties, or even further removed down the supply chain.</li>
+<li>Data owners remain legally responsible for all data they own. This is true even if data is compromised by a data processor several times removed from the data owner.</li>
+<li>Ownership, custody, rights, responsibilities, and liability are all relative to the dataset in question and therefore are only specific to that data in that circumstance. For instance, a cloud provider is usually the data processor for a cloud customer’s data, but the provider is the data owner for information that the provider collects and creates, such as the provider’s own customer list, asset inventory, and billing information.</li>
+</ul></section>
+<section id="c03-sec-0004">
+<h3><a id="usec0004"></a>The Data Lifecycle</h3>
+<p>The data lifecycle is represented in <a id="figureanchor3-1" role="doc-backlink" href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure3-1">Figure 3.1</a>.</p>
+<figure>
+<img class="center" src="public/c03f001.jpg" alt="The figure shows two concentric circles illustrating different stages of the data lifecycle. Where the innermost circle is divided into six parts and each part represents different symbols. The outermost circle is also divided into six parts, labeled “create,” “store,” “use,” “share,” “achieve” and “destroy” (in clock-wise direction).” " width="600" height="600">
+<figcaption>
+<p><span class="figureLabel"><a id="figure3-1" role="doc-backlink" href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor3-1"><b>Figure 3.1</b></a> Data lifecycle</span></p>
+</figcaption>
+</figure>
+<p>It is important to know the phases of the data lifecycle, in order, both for the CCSP exam and for your understanding of data security concepts. In this section of the chapter, we’re mostly concerned with the first phase: Create.</p>
+<p>The data owner will be identified in the Create phase. Many data security and management responsibilities require action on the part of the data owner at this point of the lifecycle.</p>
+<section class="feature3" id="c03-feafxd-0001">
+<h4 style="background-color: #E7E7E8;"><span epub:type="pagebreak" role="doc-pagebreak" title="47" id="Page_47"></span>Going with the Flow</h4>
+<p>In order to apply controls in a sensible way throughout the lifecycle, taking into consideration which aspects are overseen by the cloud customer and which by the provider, it is useful to diagram the way data moves through the various production processes. This can be done with traditional business-oriented flow charts and line diagrams, in order to visually portray the steps in a process, or with more system-oriented data flow diagrams (DFDs). A DFD is extremely useful in systems/software engineering in order to establish functional requirements before selection of the technology takes place; this obviates the likelihood that a choice of platform or component will drive the business process instead of the other way around.</p>
+<p>In a cloud-based environment, diagramming allows the cloud customer to determine where specific controls need to be added and which are already supported by the provider (as stated in the contract/terms of service) and can aid in the choice and implementation of controls as well.</p>
+</section>
+<section id="c03-sec-0005">
+<h4><a id="usec0005"></a>Data Categorization</h4>
+<p>The data owner will be in the best position to understand how the data is going to be used by the organization. This allows the data owner to appropriately categorize the data. The organization can have any number of categories or types of information; these might be clearly defined and reused throughout the organization, or they might be arbitrarily assigned by data owners during the Create phase.</p>
+<p>Here are some ways an organization might categorize data:</p>
+<p><b>Regulatory Compliance </b>Different business activities are governed by different regulations. The organization may want to create categories based on which regulations apply to a specific dataset. This might include the Graham-Leach-Bliley Act (GLBA), Payment Card Industry (PCI), Sarbanes-Oxley (SOX), Health Insurance Portability and Accountability Act (HIPAA), General Data Protection Regulation (GDPR), and/or various other forms of international, national, and local compliance.</p>
+<p><b>Business Function </b>The organization might want to have specific categories for different uses of data. Perhaps the data is tagged based on its use in billing, marketing, or operations.</p>
+<p><b>Functional Unit </b>Each department or office might have its own category and keep all data it controls within its own category.</p>
+<p><b>By Project </b>Some organizations might define datasets by the projects they are associated with as a means of creating discrete, compartmentalized projects.</p>
+<p>There is literally no limit to how an organization might categorize data. Whatever motif the organization uses, however, should be adopted and enforced uniformly throughout the organization. Ad hoc categorization is the same as having no categorization at all.</p></section>
+<section id="c03-sec-0006">
+<h4><a id="usec0006"></a><span epub:type="pagebreak" role="doc-pagebreak" title="48" id="Page_48"></span>Data Classification</h4>
+<p>Much like categorization, data classification is the responsibility of the data owner, takes place in the Create phase, and is assigned according to an overall organizational policy based on a specific characteristic of the given dataset. The classification, like the categorization, can take any form defined by the organization and should be uniformly applied.</p>
+<p>Types of classification might include the following:</p>
+<p><b>Sensitivity </b>This is the classification model used by the US military. Data is assigned a classification according to the sensitivity of the data, based on the negative impact an unauthorized disclosure would cause. In models of this kind, classification must be assigned to all data, even in the negative, so material that is not deemed to be sensitive must be assigned the “unclassified” label. We will discuss labeling shortly.</p>
+<p><b>Jurisdiction </b>The geophysical location of the source or storage point of the data might have significant bearing on how that data is treated and handled. For instance, personally identifiable information (PII) data gathered from citizens of the European Union (EU) is subject to the EU privacy laws, which are much stricter and more comprehensive than privacy laws in the United States.</p>
+<section class="feature3" id="c03-feafxd-0002">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Personally identifiable information (PII) is but one of many types of sensitive data. PII is discussed further in many chapters of this book.</p>
+</section>
+<p><b>Criticality </b>Data that is deemed critical to organizational survival might be classified in a manner distinct from trivial, basic operational data. As we know from previous chapters, the business impact analysis (BIA) helps us determine which material would be classified this way.</p>
+<section class="feature3" id="c03-feafxd-0003">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> There are no industry-defined, statutory-mandated definitions for “categorization” versus “classification” of data, except in those areas covered by specific regulations (for instance, the US military uses classification constructs defined by federal law). The terms can often be used interchangeably. For the purposes of discussion in this book, I will try to adhere to this understanding of the terms: data is categorized by its use and classified by a certain trait. Again, this is not an industry standard, and (ISC)<sup>2</sup> does not create a bright-line distinction between the terms.</p>
+</section>
+</section>
+<section id="c03-sec-0007">
+<h4><a id="usec0007"></a>Data Mapping</h4>
+<p>Data between organizations (or sometimes even between departments) must be normalized and translated so that it conforms in a way meaningful to both parties. This is typically referred to as <i>data mapping</i>. When used in the context of classification efforts, mapping is necessary so that data that is known as sensitive (and in need of protection) in one system/<span epub:type="pagebreak" role="doc-pagebreak" title="49" id="Page_49"></span>organization is recognized as such by the receiving system/organization so that those protections can continue. Without proper mapping efforts, data classified at a specific level might be exposed to undue risk or threats.</p></section>
+<section id="c03-sec-0008">
+<h4><a id="usec0008"></a>Data Labeling</h4>
+<p>When the data owner creates, categorizes, and classifies the data, the data also needs to be labeled. The label should indicate who the data owner is, usually in terms of the office or role instead of an individual name or identity (because, of course, personnel can change roles with an organization or leave for other organizations). The label should take whatever form is necessary for it to be enduring, understandable, and consistent; for instance, labels on data in hardcopy might be printed headers and footers, whereas labels on electronic files might be embedded in the filename and nomenclature. Labels should be evident and communicate the pertinent concepts without necessarily disclosing the data they describe.</p>
+<p>Depending on the needs of the organization and the nature of its operations, labels might include the following kinds of information:</p>
+<ul id="c03-list-0020">
+<li>Date of creation</li>
+<li>Date of scheduled destruction/disposal</li>
+<li>Confidentiality level</li>
+<li>Handling directions</li>
+<li>Dissemination/distribution instructions</li>
+<li>Access limitations</li>
+<li>Source</li>
+<li>Jurisdiction</li>
+<li>Applicable regulation</li>
+</ul>
+<section class="feature3" id="c03-feafxd-0004">
+<h4 style="background-color: #E7E7E8;"><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> Labels Work Both Ways</h4>
+<p>Labels can aid in security efforts by readily indicating the nature of certain information and how it should be handled and protected. For instance, in the US military and federal government, classified data in hardcopy is labeled in a number of ways, including the use of cover sheets. Cover sheets convey only one characteristic of the data: the sensitivity of the material (in military taxonomy, this is called “classification,” with a somewhat different meaning than used in this book). Sensitivity is indicated in at least two ways: the title of the class (e.g., Secret, Top Secret) in large, bold letters, and the color of&nbsp;the sheet and markings (blue for Confidential, red for Secret, and so forth). This reminds the user (the person carrying or reading the documents) in a very simple way how to secure the material when it is not in use or is unattended. It also informs anyone else how to react if they <span epub:type="pagebreak" role="doc-pagebreak" title="50" id="Page_50"></span>come across such material unattended; a manager leaving the office at the end of the workday might do one last walk-through of the workspace, and a red cover sheet left on a desk will immediately catch the eye.</p>
+<p>Of course, this also has the same effect for malicious actors; the cover sheet lets someone with ill intent instantly know the potential value of specific material: the pages with the red cover sheet are more valuable than the ones with the blue cover sheet.</p>
+</section>
+</section>
+</section>
+<section id="c03-sec-0009">
+<h3><a id="usec0009"></a>Data Discovery Methods</h3>
+<p>To determine and accurately inventory the data under its control, the organization can employ various tools and techniques. <i>Data discovery</i> is a term that can be used to refer to&nbsp;several kinds of tasks: it might mean that the organization is attempting to create an initial inventory of data it owns or that the organization is involved in electronic discovery (<i>e-discovery</i>, the legal term for how electronic evidence is collected as part of an investigation or lawsuit; we’ll discuss this in more depth in <a href="Chapter 11 Legal and Compliance Part 2 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapter 11</a>, “Legal and Compliance Part 2”), and it can also mean the modern use of datamining tools to discover trends and relations in the data already in the organization’s inventory.</p><section id="c03-sec-0010">
+<h4><a id="usec0010"></a>Label-Based Discovery</h4>
+<p>Obviously, the labels created by data owners in the Create phase of the data lifecycle will greatly aid any data discovery effort. With accurate and sufficient labels, the organization can readily determine what data it controls and what amounts of each kind. This is another reason the habit and process of labeling is so important.</p>
+<p>Labels can be especially useful when the discovery effort is undertaken in response to a mandate with a specific purpose, such as a court order or a regulatory demand: if all data related to X is required, and all such data is readily labeled, it is easy to collect and disclose all the appropriate data, and only the appropriate data.</p></section>
+<section id="c03-sec-0011">
+<h4><a id="usec0011"></a>Metadata-Based Discovery</h4>
+<p>In addition to labels, metadata can be useful for discovery purposes. Colloquially referred to as “data about data,” metadata is a listing of traits and characteristics about specific data elements or sets. Metadata is often automatically created at the same time as the data, often by the hardware or software used to create the parent data. For instance, most modern digital cameras create a vast amount of metadata every time a photograph is taken, such as date, time, and location where the photo was shot, make and model of the camera, and so forth; all that metadata is embedded in the picture file and is copied and transferred whenever the image itself is copied or moved.</p>
+<p>Data discovery can therefore use metadata in the same way labels might be used; specific fields of the metadata might be scanned for particular terms, and all matching data elements collected for a certain purpose.</p></section>
+<section id="c03-sec-0012">
+<h4><span epub:type="pagebreak" role="doc-pagebreak" title="51" id="Page_51"></span><a id="usec0012"></a>Content-Based Discovery</h4>
+<p>Even without labels or metadata, discovery tools can be used to locate and identify specific kinds of data by delving into the content of datasets. This technique can be as basic as term searches or can use sophisticated pattern-matching technology.</p>
+<section class="feature3" id="c03-feafxd-0005">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Content analysis can also be used for more-specific security controls as well as discovery; we will discuss egress monitoring solutions in <a href="Chapter 4 Cloud Data Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapter 4</a>, “Cloud Data Security.”</p>
+</section>
+</section>
+<section id="c03-sec-0013">
+<h4><a id="usec0013"></a>Data Analytics</h4>
+<p>Current technological options provide additional options for finding and assigning types to data. In many cases, these modern tools create new data feeds from sets of data that already exist within the environment. These include the following:</p>
+<p><b>Datamining </b>The term for the family of activities from which the other options on this list derive. This kind of data analysis is an outgrowth of the possibilities offered by regular use of the cloud, also known as “big data.” When the organization has collected various data streams and can run queries across these various feeds, the organization can detect and analyze previously unknown trends and patterns that can be extremely useful.</p>
+<p><b>Real-Time Analytics </b>In some cases, tools can provide datamining functionality concurrently with data creation and use. These tools rely on automation and require efficiency to perform properly.</p>
+<p><b>Agile Business Intelligence </b>State-of-the-art datamining involves recursive, iterative tools and processes that can detect trends in trends and identify even more oblique patterns in historical and recent data.</p></section>
+<section id="c03-sec-0014">
+<h4><a id="usec0014"></a>Structured vs. Unstructured Data</h4>
+<p>Data that is sorted according to meaningful, discrete types and attributes, such as data in a database, is said to be <i>structured</i>. Unsorted data (such as the content of various emails in a user’s Sent folder, which could include discussion of any topic or contain all types of content) is considered <i>unstructured</i>. It is typically much easier to perform data discovery actions on structured data because that data is already situated and arranged.</p>
+<section class="feature3" id="c03-feafxd-0006">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> It’s worth your time to understand data analytics options, both for purposes of the exam as well as possible security implications in your organization.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="c03-sec-0015">
+<h2><a id="usec0015"></a>Jurisdictional Requirements</h2>
+<p>Various legal constructs exist across the globe, and being in the cloud means your organization may be subject to many simultaneously. This can create additional risks for your organization and more complications for you as a security practitioner. It will be your duty to <span epub:type="pagebreak" role="doc-pagebreak" title="52" id="Page_52"></span>be aware of which laws affect the organization, and you must have a general idea of how to ensure your organization can comply with them all.</p>
+<p>Unfortunately, the use of cloud computing comes with some challenges in terms of awareness and compliance with specific jurisdictions. For instance, because of the way resources are dynamically assigned, the cloud user might not know exactly where, in terms of both data centers and geographic locations, the organization’s data is physically located at any given moment; the data may cross city limits, state lines, or even national borders as the cloud provider manages virtualized images, stored data, and operational data. (Indeed, depending on the level of automation and data center design, the cloud provider might not even know, moment by moment, which city, state, or country specific data is located in.)</p>
+<p>So both for the CCSP exam and for the protection of your organization, you should be familiar with several legal constructs that may significantly affect the data in your charge. The book addresses many of these in some detail in <a href="Chapter 10 Legal and Compliance Part 1 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapters 10</a> and <a href="Chapter 11 Legal and Compliance Part 2 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">11</a>; I’m simply going to list some of them here, with brief notes, to introduce the concepts.</p>
+<p><b>The United States </b>The United States offers strong protections for intellectual property. There is no singular, overarching federal privacy statute; instead, the United States tends to address privacy with industry-specific legislation (GLBA for banking/insurance, HIPAA for medical care, and so forth) or with contractual obligations (PCI). Many strong, granular data breach notification laws exist that are enforced by states and localities (especially New York and California).</p>
+<p><b>Europe </b>Europe provides good intellectual property protections. It has massive, exhaustive, comprehensive personal privacy protections, including the EU General Data Protection Regulation.</p>
+<p><b>Asia </b>Asia has disparate levels of intellectual property protection. Data privacy protection levels differ greatly by country. With its Act on the Protection of Personal Information, Japan adheres to the EU model, and Singapore does the same. Other countries follow much-reduced guidance. China, for example, has a legal requirement that is the opposite of privacy: all IT traffic and communications in China must be accessible by the Chinese government.</p>
+<p><b>South/Central America </b>South America and Central America have various intellectual property mechanisms. Most countries lack privacy protection frameworks, with the notable exception of Argentina, which with its Personal Data Protection Act is in direct correlation with the EU legislation.</p>
+<p><b>Australia/New Zealand </b>Australia and New Zealand provide strong intellectual property protections and very strong privacy protections, with the Australian Privacy Act mapping directly to the EU statutes.</p>
+<section class="feature3" id="c03-feafxd-0007">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> The EU privacy laws will be a big driver for any organization wanting to do business in or with Europe. For exam purposes, you should be versed in the EU General Data Protection Regulation as well as the mechanisms used in the United States to comply with these laws (known as the Privacy Shield). These are addressed further in <a href="Chapter 10 Legal and Compliance Part 1 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapters 10</a> and <a href="Chapter 11 Legal and Compliance Part 2 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">11</a>.</p>
+</section>
+</section>
+<section id="c03-sec-0016">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="53" id="Page_53"></span><a id="usec0016"></a>Information Rights Management (IRM)</h2>
+<p>Managing information in accordance with who has rights to it is part of information rights management (IRM). The term DRM is also often used in our industry, sometimes taken to mean “digital rights management” or “data rights management.” Other terms used to convey similar meanings include ERM (enterprise rights management”) and offshoots such as E-DRM. There is no conclusive international or industry standard defining these terms or how they might be applied in a given process or tool.</p>
+<p>Suffice it to say, the concept of “rights management,” regardless of the preceding modifier, entails the use of specific controls that act in concert with or in addition to the organization’s other access control mechanisms to protect certain types of assets, usually at the file level. For example, an organization might have an overall access control program that requires users to log in to the systems that they use for performing job functions. Beyond that basic access, specific files the users manipulate, such as sensitive financial documents, might have additional protections for “rights management” that prevent the users from deleting, modifying, or copying those files.</p>
+<p>For study purposes, bear in mind that the (ISC)<sup>2</sup> DCO favors the term IRM to discuss this concept. This book will use IRM for this purpose.</p><section id="c03-sec-0017">
+<h3><a id="usec0017"></a>Intellectual Property Protections</h3>
+<p>Intellectual property is that class of valuable belongings that are intangible; literally, assets of the mind. In many countries, there are many legal protections for intellectual property, and you should be familiar with them.</p><section id="c03-sec-0018">
+<h4><a id="usec0018"></a>Copyright</h4>
+<p>The legal protection for expressions of ideas is known as <i>copyright</i>. In the United States, copyright is granted to anyone who first creates an expression of an idea. Usually, this involves literary works, films, music, software, and artistic works.</p>
+<section class="feature3" id="c03-feafxd-0008">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Oddly, copyright does not include titles of works. For instance, while you cannot copy and sell the film <i>Star Wars</i>, you could, theoretically, write, produce, and sell a new movie that you call <i>Star Wars</i>, as long as it does not cover the same material as the other film with that name. I don’t, however, recommend it.</p>
+</section>
+<p>Copyright does not cover ideas, specific words, slogans, recipes, or formulae. Those things can often be secured with other intellectual property protections; we’ll discuss them later in this section.</p>
+<section class="feature3" id="c03-feafxd-0009">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="54" id="Page_54"></span><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Copyright protects the tangible expression of an idea, not the form of an idea. For instance, copyright protects the content of a book, not the hardcopy version of a book itself; illegal copying of a book’s contents would be a copyright infringement, whereas stealing a physical book would be theft. The copyright belongs to the author or whomever the author sells or grants the rights to, not to someone who currently holds the physical copy of the book.</p>
+</section>
+<p>The duration of copyrights vary based on the terms under which they were created, depending on if an individual created the work themselves or if the work was created under contract (a “work-for-hire”). Typically, copyright lasts for either 70 years after the author’s death or 120 years after the first publication of a work for hire.</p>
+<p>Copyright gives exclusive use of the work to the creator, with some exceptions. The creator is the only entity legally allowed to do the following:</p>
+<ul id="c03-list-0021">
+<li>Perform the work publically.</li>
+<li>Profit from the work.</li>
+<li>Make copies of the work.</li>
+<li>Make derivative works from the original.</li>
+<li>Import or export the work.</li>
+<li>Broadcast the work.</li>
+<li>Sell or otherwise assign these rights.</li>
+</ul>
+<section>
+<p>This discussion goes beyond the scope of the CCSP, but there are exceptions to the exclusivity of copyright:</p>
+<ul id="c03-list-0022">
+<li><b>Fair Use:</b> There is a family of exceptions to copyright exclusivity, known as “fair use.” Fair use includes the following scenarios:
+<ul id="c03-list-0023">
+<li><b>Academic Fair Use:</b> Instructors can make limited copies or presentations of copyrighted works for educational purposes.</li>
+<li><b>Critique:</b> Portions of the work may be used in critical reviews, discussing or assessing its merit.</li>
+<li><b>News Reporting:</b> Because an informed populace is essential to a free society, we have waived some intellectual property protections for reporting purposes.</li>
+<li><b>Scholarly Research:</b> Similar to academic fair use, but among researchers instead of teachers and students.</li>
+<li><b>Satire:</b> A mocking sendup of the work may be created using a significant portion of the original work.</li>
+</ul></li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="55" id="Page_55"></span><b>Library Preservation:</b> Libraries and archives are allowed to make limited numbers of copies of original works in order to preserve the work itself.</li>
+<li><b>Personal Backup:</b> Someone who has legally purchased a licensed work may make a single backup copy for themselves, for use if the original fails. This explicitly includes computer programs.</li>
+<li><b>Versions for People with Physical Disabilities:</b> It is legal to make specialized copies of licensed works for use by someone with a disability.</li>
+</ul>
+<p>These exceptions are not unlimited. Anyone using a copyright exception has to consider many subjective factors, including the possible commercial market for the work and the size, scope, and nature of the original work.</p>
+</section>
+<p>The fact that something is copyrighted is often communicated by attaching the copyright symbol to it, sometimes with additional text that emphasizes this fact. See <a id="figureanchor3-2" role="doc-backlink" href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure3-2">Figure 3.2</a>.</p>
+<figure>
+<img class="center" src="public/c03f002.jpg" alt="The figure shows the copyright symbol. " width="304" height="179">
+<figcaption>
+<p><span class="figureLabel"><a id="figure3-2" role="doc-backlink" href="Chapter 3 Data Classification _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor3-2"><b>Figure 3.2</b></a> The copyright symbol</span></p>
+</figcaption>
+</figure>
+<section class="feature3" id="c03-feafxd-0011">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Copyright infringement is usually dealt with as a civil case: the copyright owner has to bring a lawsuit against someone they believe has illegally copied or used their work. However, in some cases, demonstrated willful infringement can be investigated by the government as a criminal matter and often referred to as <i>piracy</i>.</p>
+</section>
+<p>Different countries view copyrights in various ways. Although the creator automatically owns the copyright in the United States, in some jurisdictions the copyright belongs to the person who first registers the work in that jurisdiction.</p>
+<section class="feature3" id="c03-feafxd-0012">
+<h4 style="background-color: #E7E7E8;"><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> The DMCA</h4>
+<p>The Digital Millennium Copyright Act (DMCA) is a notorious piece of legislation ostensibly created to provide additional protections to creative works in digital formats. It is generally viewed as both crafted for too specific a purpose and also used in an overly broad <span epub:type="pagebreak" role="doc-pagebreak" title="56" id="Page_56"></span>manner. It also puts the burden of proof on those accused of copyright infringement and requires presumptive action upon accusation.</p>
+<p>The details of how the DMCA came into being might be beyond the scope of the CCSP exam, but they are interesting: The Hollywood film industry was using an electronic encryption mechanism known as CSS—the Content Scramble System—to protect content on DVDs from being illegally copied. A group of people created a program to remove this encryption from DVDs; this program was known as DeCSS. Lobbyists for content producers, under specific direction from the Motion Picture Association of America and eventually with the participation of the Recording Industry Association of America, convinced Congress to pass the DMCA to make DeCSS and programs like it illegal; this would include writing, distributing, and publishing anti-encryption software. The intent was to protect copyrighted material (movies and songs, for the most part) from piracy.</p>
+<p>In practice, however, the effect has been quite different. Certain provisions of the DMCA, namely the “takedown notice” process, have been abused as a matter of course. Under the takedown notice clause, any web hosting service must remove content from the Internet if anyone makes the accusation that it is or includes copyrighted material, and that material has to remain off the web until whoever published it can prove either that the material is not copyrighted or that they own the copyright. This has led to a significant use of the takedown notice for frivolous or malicious reasons. This is just one of many unintended consequences of the DMCA.</p>
+</section>
+</section>
+<section id="c03-sec-0019">
+<h4><a id="usec0019"></a>Trademarks</h4>
+<p>Unlike copyrights, trademark protection is intended to be applied to specific words and graphics. Trademarks are representations of an organization—its brand. A trademark is meant to protect the esteem and goodwill that an organization has built among the marketplace, especially in public perception.</p>
+<p>A trademark can be the name of an organization, a logo, a phrase associated with an organization, even a specific color or sound, or some combination of these.</p>
+<p>In order to have a trademark protected by law, it must be registered within a jurisdiction. Commonly, that is the US Patent and Trademark Office (USPTO), the federal entity for registering trademarks. Trademarks registered with the USPTO can use the ® symbol to signify registration. States also offer trademark registration, and trademarks registered with state offices often use the ™ symbol.</p>
+<p>Trademarks last into perpetuity, as long as the trademark owner continues to use them for commercial purposes. Trademark infringement is actionable, and trademark owners can sue in court for remedy for infringement.</p></section>
+<section id="c03-sec-0020">
+<h4><a id="usec0020"></a>Patents</h4>
+<p>The USPTO, as the name indicates, is also responsible for registering patents. Patents are the legal mechanism for protecting intellectual property in the form of inventions, <span epub:type="pagebreak" role="doc-pagebreak" title="57" id="Page_57"></span>processes, materials, decorations, and plant life. In securing a patent, the patent owner gains exclusivity in the production, sale, and importation of the patented property.</p>
+<p>Patents typically last for 20 years from the time of the patent application. There is some provision for extension, since the process of getting a patent can take many months, or even years.</p>
+<p>Patent infringement, as with the other intellectual property protections, is cause to sue for relief in federal court.</p>
+<p>Globally, prospective patent holders might apply to the World Intellectual Property Office (WIPO) for approval under the Patent Cooperation Treaty, which has 152 signatory member nations. If a patent is approved by the WIPO, the property protected by the patent will be recognized in each of the member countries.</p></section>
+<section id="c03-sec-0021">
+<h4><a id="usec0021"></a>Trade Secrets</h4>
+<p>Trade secrets are intellectual property that involve many of the same aspects as patented material: processes, formulas, commercial methods, and so forth. They can also include some things that aren’t patentable, such as aggregations of information (this might include lists of clients or suppliers, for instance).</p>
+<p>Trade secrets are also somewhat like copyrights in the United States, in that protections for them exist upon creation, without any additional requirement for registration.</p>
+<p>However, unlike other intellectual property protections, material considered trade secrets must be just that: secret. They cannot be disclosed to the public, and efforts must be made to maintain secrecy in order to keep this legal protection.</p>
+<p>Trade secrets are then provided legal protection from illicit acquisition; anyone who tries to acquire trade secrets by theft or misappropriation can be sued in civil court (similar to other forms of intellectual property), but they can also be prosecuted in federal court for this crime.</p>
+<p>Trade secret protection does not, however, confer the exclusivity granted by other intellectual property protections. Anyone other than the owner of the trade secret who discovers or invents the same or similar methods, processes, and information through legal means is justified and legally free to use that knowledge to their own benefit. In fact, someone who discovers someone else’s trade secret through legitimate means is also free to patent it (assuming there is no existing patent on the same material or concept).</p>
+<p>Like a trademark, a trade secret lasts into perpetuity, as long as the owner is still using it in commercial activity.</p></section>
+</section>
+<section id="c03-sec-0022">
+<h3><a id="usec0022"></a>IRM Tool Traits</h3>
+<p>IRM can be implemented in enterprises by manufacturers, vendors, or content creators. Usually, material protected by IRM solutions need some form of labeling or metadata associated with the material in order for the IRM tool to function properly.</p>
+<p>IRM implementations can vary in technological sophistication and technique. Here are some ways that IRM has been or could be applied:</p>
+<p><b>Rudimentary Reference Checks </b>The content itself can automatically check for proper usage or ownership. For instance, in many vintage computer games, the game would pause in operation until the player entered some information that could only have been acquired <span epub:type="pagebreak" role="doc-pagebreak" title="58" id="Page_58"></span>with the purchase of a licensed copy of the game, like a word or a phrase from the manual that shipped with the game.</p>
+<p><b>Online Reference Checks </b>Microsoft software packages, including Windows operating systems and Office programs, are often locked in the same manner, requiring users to enter a product key at installation; the program would then later check the product key against an online database when the system connected to the Internet.</p>
+<p><b>Local Agent Checks </b>The user installs a reference tool that checks the protected content against the user’s license. Again, gaming engines often work this way, with gamers having to download an agent of Steam or GOG.com when installing any games purchased from those distributors; the agents check the user’s system against the online license database to ensure the games are not pirated.</p>
+<p><b>Presence of Licensed Media </b>Some IRM tools require the presence of licensed media, such as disks, in the system while the content is being used. The IRM engine is on the media, often installed with some cryptographic engine that identifies the unique disk and the licensed content and allowing usage based on that relationship.</p>
+<p><b>Support-Based Licensing </b>Some IRM implementations are predicated on the need of continual support for content; this is particularly true of production software. Licensed software might be allowed ready access to updates and patches, while the vendor could prevent unlicensed versions from getting this type of support.</p>
+<p>IRM implementations usually include adding another layer of access control (beyond what the enterprise employs for its own operational purposes) on files and objects containing protected material. IRM can also be used to implement localized information security policies; specific users or groups of users might have all content they create specially tagged and marked with appropriate access restrictions, for instance.</p>
+<p>Employing IRM in the cloud poses some challenges, though. These include the following:</p>
+<p><b>Replication Restrictions </b>Because IRM often involves preventing unauthorized duplication, and the cloud necessitates creating, closing, and replicating virtualized host instances (including user-specific content stored locally on the virtual host), IRM might interfere with automatic resource allocation processes.</p>
+<p><b>Jurisdictional Conflicts </b>The cloud extends across boundaries and borders, often in a manner unknown or uncontrolled by the data owner, which can pose problems when intellectual property rights are restricted by locale.</p>
+<p><b>Agent/Enterprise Conflicts </b>IRM solutions that require local installation of software agents for enforcement purposes might not always function properly in the cloud environment, with virtualization engines, or with the various platforms used in a bring your own device (BYOD) enterprise.</p>
+<p><b>Mapping Identity and Access Management (IAM) and IRM </b>Because of the extra layer of access control (often involving content-specific access control lists, or ACLs), the IRM IAM processes might conflict or not work properly with the enterprise/cloud IAM. A conflict is even more possible when cloud IAM functions are outsourced to a third party, such as a cloud access security broker (CASB).</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="59" id="Page_59"></span><b>API Conflicts </b>Because the IRM tool is often incorporated into the content, usage of the material might not offer the same level of performance across different applications, such as content readers or media players.</p>
+<p>In general terms, IRM should provide the following functions, regardless of type of content or format:</p>
+<p><b>Persistent Protection </b>The IRM should follow the content it protects, regardless of where that content is located, whether it is a duplicate copy or the original file, or how it is being utilized. This protection should not be easy to circumvent.</p>
+<p><b>Dynamic Policy Control </b>The IRM tool should allow content creators and data owners to modify ACLs and permissions for the protected data under their control.</p>
+<p><b>Automatic Expiration </b>Because of the nature of some legal protections of intellectual property (described earlier in this chapter), a significant amount of digital content will not be protected in perpetuity. The IRM protections should cease when the legal protections cease. Conversely, licenses also expire; access and permissions for protected content should likewise expire, no matter where that content exists at the end of the license period.</p>
+<p><b>Continuous Auditing </b>The IRM should allow for comprehensive monitoring of the content’s use and access history.</p>
+<p><b>Replication Restrictions </b>Much of the purpose of IRM is to restrict illegal or unauthorized duplication of protected content. Therefore, IRM solutions should enforce these restrictions across the many forms of copying that exist, to include screen-scraping, printing, electronic duplication, email attachments, and so on.</p>
+<p><b>Remote Rights Revocation </b>The owner of the rights to specific intellectual property should have the ability to revoke those rights at any time; this capability might be used as a result of litigation or infringement.</p></section>
+</section>
+<section id="c03-sec-0023">
+<h2><a id="usec0023"></a>Data Control</h2>
+<p>The organization also needs to protect data in lifecycle phases other than Create. You will need to make, use, and enforce a set of data management policies and practices that cover topics such as data retention, audit, and disposal. The following sections will address each of those in turn.</p>
+<section class="feature3" id="c03-feafxd-0013">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Tip" width="52" height="43"> Each aspect of data management—retention, audit, and disposal—will need a specific policy addressing it. There is no reason, however, that you cannot include all three policies under one overarching policy, such as a data management policy. Just be sure each area is addressed thoroughly and with sufficient granularity; don’t let any individual subpolicy be inferior in quality or comprehensiveness simply because you’re aggregating your required governance.</p>
+</section>
+<section id="c03-sec-0024">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="60" id="Page_60"></span><a id="usec0024"></a>Data Retention</h3>
+<p>As with all matters involving our profession, the organization’s data retention program should start with and be based on a strong, coherent policy. The data retention policy should include the following:</p>
+<p><b>Retention Periods </b>The retention period is the length of time that the organization should keep data. This usually refers to data that is being archived for long-term storage—that is, data not currently being used in the production environment. The retention period is often expressed in a number of years and is frequently set by regulation or legislation (see the next item). Data retention periods can also be mandated or modified by contractual agreements.</p>
+<p><b>Applicable Regulation </b>As just mentioned, the retention period can be mandated by statute or contract; the retention policy should refer to all applicable regulatory guidance. This is especially true in cases where there is conflicting regulation; the policy should then also highlight any such disparity, and include mention of senior management’s decision for how to approach and resolve this conflict with the policy as an appropriate mechanism.&nbsp;For instance, laws may impose different retention periods for specific kinds of data, and the organization might operate in states with differing mandated periods; the policy should then explicitly explain the conflicting periods as well as the period senior management determined as the solution.</p>
+<p><b>Retention Formats </b>The policy should contain a description of how the data is actually archived—that is, what type of media it is stored on and any handling specifications particular to the data. For example, some types of data are required by regulation to be kept encrypted while in storage. In these cases, the policy should include a description of the encryption engine, key storage and retrieval procedures, and reference to the applicable regulations.</p>
+<p><b>Data Classification </b>Highly sensitive or regulated data may entail specific retention periods, by mandate or contract or best practice. The organization can use the classification level of data to determine how long specific datasets or types of data need to be retained. Conversely, the retention period, if mandated, should be considered when the organization crafts the classification policy as a means to describe/create classification levels (e.g., the longer the retention period, the higher the classification).</p>
+<p><b>Archiving and Retrieval Procedures </b>Having data in storage is useful; stored data can be used to correct production errors, can serve as business continuity and disaster recovery (BC/DR) backups, and can be datamined for business intelligence purposes. But stored data is only useful if it can be retrieved and put back into production in an efficient and cost-effective manner. The policy should mandate the creation of a detailed description of the processes both for sending data into storage and for recovering it. The detailed processes might be included as an attachment to the policy or mentioned by reference to the actual documentation for the processes; the processes might require more frequent updates and editing than the policy and could be kept separate.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="61" id="Page_61"></span><b>Monitoring, Maintenance, and Enforcement </b>As with all policies in the organization, the policy should list, in detail, how often it will be reviewed and amended, by whom, consequences for failure to adhere to the policy, and which entity within the organization is responsible for enforcement.</p>
+<section class="feature3" id="c03-feafxd-0014">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Backups are great; a lot of organizations do regular, thorough backups. However, all too often, these same organizations don’t practice recovery from backup, so they are unprepared for those situations where recovery is necessary and recovery efforts are hampered or fail. It is useful, and in some cases required by regulation, to test your organization’s recovery from backup in order to ensure this won’t happen to you.</p>
+</section>
+<p>Managing data retention in the cloud can be especially tricky; it may be difficult to ensure, for instance, that the cloud provider is not retaining the organization’s data beyond the retention period (part of the appeal of the cloud is how good cloud providers are at retaining data, and not losing it; purposefully getting rid of data is a whole other matter). When considering cloud migration, and during negotiations with potential cloud providers, the organization should make a point of ensuring the provider can support the organization’s retention policy.</p>
+<section class="feature3" id="c03-feafxd-0015">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> The data retention policy addresses the activities that take place in the Archive phase of the data lifecycle.</p>
+</section>
+<section id="c03-sec-0025">
+<h4><a id="usec0025"></a>Legal Hold</h4>
+<p>In some jurisdictions, the concept of a “legal hold” severely affects an organization’s data retention and destruction policies because it supercedes them. When an organization is notified that either (a) a law enforcement/regulatory entity is commencing an investigation or (b) a private entity is commencing litigation against the organization, the organization must suspend all relevant data destruction activities until the investigation/lawsuit has been fully resolved. (All “relevant” data destruction activities are those related to the particular case in question. The organization can continue to destroy data/material that is not associated with the particular case.)</p>
+<p>This usually takes precedence over any other existing organizational policy, applicable law, contractual agreement, or motivation. For instance, in the United States, this concept is dictated by the Federal Rules of Evidence, which mandates that a legal hold notice has primacy, even over federal laws (such as HIPAA) that would require data to be destroyed at the end of a retention period.</p>
+<p>Therefore, a legal hold can be considered a temporary paramount retention period.</p></section>
+</section>
+<section id="c03-sec-0026">
+<h3><a id="usec0026"></a>Data Audit</h3>
+<p>As with all other assets, the organization needs to regularly review, inventory, and inspect the usage and condition of the data it owns. Data audit is a powerful tool for these purposes.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="62" id="Page_62"></span>As with the other elements of data management, the organization should have a policy for conducting audits of its data. The policy should include detailed descriptions of the following items:</p>
+<ul id="c03-list-0024">
+<li>Audit periods</li>
+<li>Audit scope</li>
+<li>Audit responsibilities (internal and/or external)</li>
+<li>Audit processes and procedures</li>
+<li>Applicable regulations</li>
+<li>Monitoring, maintenance, and enforcement</li>
+</ul>
+<section class="feature3" id="c03-feafxd-0016">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> As with all types of audits, the organization should be particularly careful about ensuring that auditors do not report to anyone in the management structure that owns or is affected by the data being audited; conflicts of interest must be avoided for the audits to have validity and utility.</p>
+</section>
+<p>In most organizations and enterprises, audit is predicated on logging. Logging can happen in many forms: event logging, security logging, traffic logging, and so forth. Logs can be generated by applications, OSs, and devices and for general or specific purposes (e.g., devices that collect logs as a byproduct of operations, such as servers, or devices that do logging as their main purpose, such as IDSs [intrusion detection systems] and SIEMs [security information and event monitoring systems]).</p>
+<p>Log review and audit is a specialized task for personnel with specific training and experience. Logging is fairly easy; most software and devices in modern enterprises can effectively log anything and everything the organization might want to capture. Reading and analyzing these logs, however, can prove challenging:</p>
+<p><b>Log review and analysis is not often a priority. </b>Most organizations do not have the wherewithal to dedicate the personnel required to effectively analyze log data. Usually, log review becomes an additional duty for someone tasked to another office (the security department, for instance). And many additional duties do not get accomplished because the personnel assigned to them become task-saturated with their other, regular job tasks.</p>
+<p><b>Log review is mundane and repetitive. </b>Reviewing logs takes a certain kind of person: someone who can sift through loads of data in order to spot the fractional portion that might vary from the norm. This is not exciting work, and even the best analyst can become lax due to repetition.</p>
+<p><b>Log review requires someone both new to the field and experienced. </b>This can become a management quandary: the log reviewer must be someone junior enough that they can be assigned to perform log reviews without incurring too much trade-off cost to the organization (that is, other functions they might be performing are not more expensive or valuable than the log reviews), yet the person needs to have sufficient experience and training to perform the activity in a worthwhile manner.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="63" id="Page_63"></span><b>The reviewer needs to have an understanding of the operation. </b>If the reviewer cannot distinguish between what is authorized activity and what is not, they are not adding security value to the process.</p>
+<section class="feature3" id="c03-feafxd-0017">
+<p><img style="vertical-align: middle;" src="public/tip.jpg" alt="Image of Tip" width="52" height="43"> It might serve the organization well for log reviews to only be a part-time function of a specific individual. If a person is only doing log analysis and has no other duties, repetition and boredom might lead to the person missing something in the review that would have otherwise been noticed. However, the person assigned to review logs must perform the task often enough that they recognize baseline activity, and therefore deviations from it; long periods between analysis sessions might lead to the analyst losing institutional knowledge and some atrophy of the skillset.</p>
+</section>
+<p>Logs are like data backups, though: many organizations perform logging; logs are easy to set, acquire, and store. The challenge, then, is to determine how often logs will be reviewed or audited, by whom, the processes for doing so, and so forth. Having the logs is one thing; reviewing the logs you have is something else.</p>
+<section class="feature3" id="c03-feafxd-0018">
+<p><img style="vertical-align: middle;" src="public/warn.jpg" alt="Image of Warning" width="69" height="40"> A natural inclination of a security practitioner might be to log everything; people in our field are notoriously loathe to part with data and want to know everything about everything. The problem with doing so? Logging everything creates additional risks and costs. Having so much log data aggregated creates additional vulnerabilities and requires additional protections, and the storage required for logging everything will entail a wholesale duplication of storage systems and space.</p>
+</section>
+<p>Data audit in the cloud can pose some almost insurmountable challenges. The cloud provider may not want to (or, indeed, even be able to, for operational or contractual reasons) disclose log data to the customer for security, liability, or competitive reasons. Therefore, the organization must consider, again, specific audit requirements when opting for cloud migration and include any such specifications in the contract with the cloud provider.</p>
+<section class="feature3" id="c03-feafxd-0019">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> The data audit policy addresses activities that take place in <i>all</i> phases of the data lifecycle.</p>
+</section>
+</section>
+<section id="c03-sec-0027">
+<h3><a id="usec0027"></a>Data Destruction/Disposal</h3>
+<p>In the traditional environment, where the organization has ownership and control of all the infrastructure, including the data, hardware, and software, data disposal options are direct and straightforward. In the cloud, data disposal is much more difficult and risky.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="64" id="Page_64"></span>First, a review of data disposal options in the traditional environment:</p>
+<p><b>Physical Destruction of Media and Hardware </b>Any hardware or portable media containing the data in question can be destroyed by burning, melting, impact (beating, drilling, grinding, and so forth), or industrial shredding. This is the preferred method of sanitization since the data is physically unrecoverable.</p>
+<p><b>Degaussing </b>This involves applying strong magnetic fields to the hardware and media where the data resides, effectively making them blank. It does not work with solid-state drives.</p>
+<p><b>Overwriting </b>Multiple passes of random characters are written to the storage areas (particular disk sectors) where the data resides, with a final pass of all zeroes or ones. This can be extremely time-consuming for large storage areas. This is also not an effective technique for sold-state drives, which are resistant to overwriting.</p>
+<p><b>Crypto-Shredding (Cryptographic Erasure) </b>This involves encrypting the data with a strong encryption engine and then taking the keys generated in that process, encrypting them with a different encryption engine, and destroying the resulting keys of the second round of encryption.</p>
+<section class="feature3" id="c03-feafxd-0020">
+<p><img style="vertical-align: middle;" src="public/warn.jpg" alt="Image of Warning" width="69" height="40"> Hardware and media can never be sanitized by simply deleting the data. Deleting, as an operation, does not erase the data; it simply removes the logical pointers to the data for processing purposes.</p>
+</section>
+<p>In the cloud, many of these options are unavailable or not feasible. Because the cloud provider, not the data owner, owns the hardware, physical destruction is usually out of the question. Moreover, because of the difficulty of knowing the actual specific physical locations of the data at any given moment (or historically), it would be next to impossible to determine all the components and media that would need to be destroyed. Likewise, for that same reason, overwriting is not a practical means of sanitizing data in the cloud. Moreover, in a multitenant environment (such as a public cloud), a customer cannot physically destroy or overwrite storage space/media as that would affect other customers’ data.</p>
+<p>That leaves crypto-shredding as the sole pragmatic option for data disposal in the cloud.</p>
+<p>As with the other data management functions, the organization needs to create a policy for data disposal. This policy should include detailed descriptions of the following:</p>
+<ul id="c03-list-0025">
+<li>The process for data disposal</li>
+<li>Applicable regulations</li>
+<li>Clear direction of when data should be destroyed</li>
+</ul>
+<p>Of course, we are also concerned with data remanence—that is, any data left over after sanitization and disposal methods have been attempted. If crypto-shredding is performed correctly, there should be no remanence; however, material that is somehow not included <span epub:type="pagebreak" role="doc-pagebreak" title="65" id="Page_65"></span>in the original encryption (say, a virtual instance that was offline during the encryption process, then added to the cloud environment) might be considered remanence. As in all cryptographic practices, proper implementation is essential for success.</p>
+<section class="feature3" id="c03-feafxd-0021">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> The data disposal policy addresses activities that take place in the Destroy phase of the data lifecycle.</p>
+</section>
+</section>
+</section>
+<section id="c03-sec-0028">
+<h2><a id="usec0028"></a>Summary</h2>
+<p>In this chapter, we have discussed data management functions within the data lifecycle, including data retention, auditing, and disposal. The various roles, rights, and responsibilities associated with data ownership were described. We also reviewed intellectual property concepts and legal protections for intellectual property as well as IRM solution objectives and functionality. This chapter discussed inventorying data assets and the added value data discovery offers the organization. We touched on some jurisdictional concerns for data, which we will cover in more detail in <a href="Chapter 11 Legal and Compliance Part 2 _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Chapter 11</a>. For all these topics, we also covered some of the challenges and risks cloud computing poses.</p></section>
+<section id="c03-sec-0029">
+<h2><a id="usec0029"></a>Exam Essentials</h2>
+<p><b>Know the different forms of data analytics. </b>Be familiar with the descriptions of datamining, real-time analytics, and agile business intelligence.</p>
+<p><b>Understand the various roles, rights, and responsibilities related to data ownership. </b>Know who the data subject, owner, controller, processor, and custodian are. Understand the rights and responsibilities associated with each.</p>
+<p><b>Understand the purpose and method of data categorization/classification. </b>Know why and how data owners assign categories and classifications to specific datasets under their control.</p>
+<p><b>Be familiar with data discovery methods. </b>Know how and when data is labeled, and by whom. Also be aware of content-based discovery and the use of metadata in discovery efforts.</p>
+<p><b>Know the data lifecycle. </b>Know all the phases of the data lifecycle, in order. Know which phases include data labeling, content creation, IRM activities, data disposal, data retention, and data audits.</p>
+<p><b>Be familiar with the various intellectual property protections. </b>Know the protections for copyrights, trademarks, patents, and trade secrets.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="66" id="Page_66"></span><b>Know what should be included in policies for data retention, audit, and disposal. </b> Understand essential aspects like terms of <i>retention</i> and <i>disposal</i>, retention formats, how regulations dictate these things, and how every policy needs to include details for maintenance, monitoring, and enforcement.</p></section>
+<section id="c03-sec-0030">
+<h2><a id="usec0030"></a>Written Labs</h2>
+<p>You can find the answers to the written labs in <a href="Appendix A Answers to Written Labs _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix A</a>.</p>
+<ol id="c03-list-0026">
+<li>Read the NIST guidelines for cryptographic erasure inNIST SP 800-88 (rev. 1), Appendix D: <a class="codeLabel" href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST .SP.800-88r1.pdf</a>.</li>
+<li>Select a sample device for lab purposes. Using the sample format shown in 800-88, D.1, answer the suitability questions regarding cryptoshredding for the device you have selected.</li>
+</ol><section class="exercises">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="67" id="Page_67"></span><a id="c03-exsec-0001"></a>Review Questions</h2>
+<p>You can find the answers in <a href="Appendix B Answers to Review Questions _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix B</a>.</p><section class="questionSet">
+<ol class="questionList">
+<li class="essay">
+<div class="question">
+<p>All of these are methods of data discovery except:</p><ol id="c03-list-0027" class="upper-latin">
+<li>Content-based</li>
+<li>User-based</li>
+<li>Label-based</li>
+<li>Metadata-based</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Data labels could include all the following except:</p><ol id="c03-list-0028" class="upper-latin">
+<li>Date data was created</li>
+<li>Data owner</li>
+<li>Data value</li>
+<li>Date of scheduled destruction</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Data labels could include all the following except:</p><ol id="c03-list-0029" class="upper-latin">
+<li>Source</li>
+<li>Delivery vendor</li>
+<li>Handling restrictions</li>
+<li>Jurisdiction</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Data labels could include all the following except:</p><ol id="c03-list-0030" class="upper-latin">
+<li>Confidentiality level</li>
+<li>Distribution limitations</li>
+<li>Access restrictions</li>
+<li>Multifactor authentication</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>All the following are data analytics modes except:</p><ol id="c03-list-0031" class="upper-latin">
+<li>Real-time analytics</li>
+<li>Datamining</li>
+<li>Agile business intelligence</li>
+<li>Refractory iterations</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>In the cloud, the data owner is usually:</p><ol id="c03-list-0032" class="upper-latin">
+<li>In another jurisdiction</li>
+<li>The cloud customer</li>
+<li>The cloud provider</li>
+<li>The cloud access security broker</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="68" id="Page_68"></span>In the cloud, the data processor is usually:</p><ol id="c03-list-0033" class="upper-latin">
+<li>The party that assigns access rights</li>
+<li>The cloud customer</li>
+<li>The cloud provider</li>
+<li>The cloud access security broker</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is not an acceptable means of sanitizing hardware?</p><ol id="c03-list-0034" class="upper-latin">
+<li>Burning</li>
+<li>Deletion</li>
+<li>Industrial Shredding</li>
+<li>Drilling</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>All policies within the organization should include a section that includes all of the following except:</p><ol id="c03-list-0035" class="upper-latin">
+<li>Policy maintenance</li>
+<li>Policy monitoring</li>
+<li>Policy enforcement</li>
+<li>Policy transference</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The most pragmatic option for data disposal in the cloud is which of the following?</p><ol id="c03-list-0036" class="upper-latin">
+<li>Melting</li>
+<li>Crypto-shredding</li>
+<li>Cold fusion</li>
+<li>Overwriting</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the intellectual property protection for the tangible expression of a creative idea?</p><ol id="c03-list-0037" class="upper-latin">
+<li>Copyright</li>
+<li>Patent</li>
+<li>Trademark</li>
+<li>Trade secret</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the intellectual property protection for a useful manufacturing innovation?</p><ol id="c03-list-0038" class="upper-latin">
+<li>Copyright</li>
+<li>Patent</li>
+<li>Trademark</li>
+<li>Trade secret</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="69" id="Page_69"></span>What is the intellectual property protection for a very valuable set of sales leads?</p><ol id="c03-list-0039" class="upper-latin">
+<li>Copyright</li>
+<li>Patent</li>
+<li>Trademark</li>
+<li>Trade secret</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the intellectual property protection for a confidential recipe for muffins?</p><ol id="c03-list-0040" class="upper-latin">
+<li>Copyright</li>
+<li>Patent</li>
+<li>Trademark</li>
+<li>Trade secret</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the intellectual property protection for the logo of a new video game?</p><ol id="c03-list-0041" class="upper-latin">
+<li>Copyright</li>
+<li>Patent</li>
+<li>Trademark</li>
+<li>Trade secret</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the aspect of the DMCA that has often been abused and places the burden of proof on the accused?</p><ol id="c03-list-0042" class="upper-latin">
+<li>Toll exemption</li>
+<li>Decryption program prohibition</li>
+<li>Takedown notice</li>
+<li>Puppet plasticity</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the US federal agency that accepts applications for new patents?</p><ol id="c03-list-0043" class="upper-latin">
+<li>USDA</li>
+<li>USPTO</li>
+<li>OSHA</li>
+<li>SEC</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>IRM tools use a variety of methods for enforcement of intellectual property rights. These include all the following except:</p><ol id="c03-list-0044" class="upper-latin">
+<li>Support-based licensing</li>
+<li>Local agent enforcement</li>
+<li>Dip switch validity</li>
+<li>Media-present checks</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="70" id="Page_70"></span>Which of the following does not have a personal privacy law that limits the way all citizens and entities can share personal data?</p><ol id="c03-list-0045" class="upper-latin">
+<li>Japan</li>
+<li>Belgium</li>
+<li>Argentina</li>
+<li>The United States</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>IRM solutions should generally include all the following functions except:</p><ol id="c03-list-0046" class="upper-latin">
+<li>Persistency</li>
+<li>Automatic self-destruct</li>
+<li>Automatic expiration</li>
+<li>Dynamic policy control</li>
+</ol></div>
+</li></ol>
+</section></section></section>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+</body></html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603375/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603375">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 5 Security in the Cloud | (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+        <script src="public/orm.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.js.download" defer=""></script>
+
+
+
+
+  <meta itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603375/" data-react-helmet="true"><meta property="og:url" itemprop="url" content="Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition","type":"book","identifier":"9781119603375","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603375-/Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2019-12-24","title":"Chapter 5 Security in the Cloud"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 5 Security in the Cloud" data-react-helmet="true"><meta property="og:title" content="Chapter 5 Security in the Cloud" data-react-helmet="true"><meta itemprop="name" content="Chapter 5 Security in the Cloud" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+Chapter 5
+Security in the Cloud
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.2...." data-react-helmet="true"><meta name="twitter:description" content="
+
+Chapter 5
+Security in the Cloud
+
+
+ THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:
+
+Domain 1: Cloud Concepts, Architecture, and Design
+
+1.2...." data-react-helmet="true"></head>
+  <body>
+
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper"><a href="Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-large orm-Input-withIcon"><label for="input-09sh73wvp1zl" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-09sh73wvp1zl" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 4 Cloud Data Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 4 Cloud Data Security</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 5 Security in the Cloud</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 6 Responsibilities in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html"><span class="title--1b0fU">Chapter 6 Responsibilities in the Cloud</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="93" id="Page_93"></span><a id="start"></a><span class="chapterNumber">Chapter 5</span>
+<br><span class="chapterTitle">Security in the Cloud</span></h1>
+</header>
+<section id="c05-sec-0001">
+<p><b>THE OBJECTIVE OF THIS CHAPTER IS TO ACQUAINT THE READER WITH THE FOLLOWING CONCEPTS:</b></p>
+<ul id="c05-list-0001">
+<li><b>Domain 1: Cloud Concepts, Architecture, and Design</b>
+<ul id="c05-list-0002">
+<li>1.2. Describe Cloud Reference Architecture
+<ul id="c05-list-0003">
+<li>1.2.5. Cloud Shared Considerations</li>
+</ul></li>
+<li>1.4. Understand Design Principles of Secure Cloud Computing
+<ul id="c05-list-0004">
+<li>1.4.2. Cloud Based Disaster Recovery (DR) and Business Continuity (BC) Planning</li>
+<li>1.4.4. Functional Security Requirements</li>
+<li>1.4.5. Security Considerations for Different Cloud Categories</li>
+</ul></li>
+</ul></li>
+<li><b>Domain 3: Cloud Platform and Infrastructure Security</b>
+<ul id="c05-list-0005">
+<li>3.1. Comprehend Cloud Infrastructure Components
+<ul id="c05-list-0006">
+<li>3.1.4. Virtualization</li>
+</ul></li>
+<li>3.3. Analyze Risks Associated with Cloud Infrastructure
+<ul id="c05-list-0007">
+<li>3.3.2. Cloud Vulnerabilities, Threats, and Attacks</li>
+<li>3.3.3. Virtualization Risks</li>
+<li>3.3.4. Counter-Measure Strategies</li>
+</ul></li>
+<li>3.4. Design and Plan Security Controls
+<ul id="c05-list-0008">
+<li>3.4.3. Virtualization Systems Protection</li>
+</ul></li>
+<li>3.5. Plan Disaster Recovery (DR) and Business Continuity (BC) Management
+<ul id="c05-list-0009">
+<li>3.5.3. Business Continuity/Disaster Recovery Strategy</li>
+</ul></li>
+</ul></li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="94" id="Page_94"></span><b>Domain 5: Cloud Security Operations</b>
+<ul id="c05-list-0010">
+<li>5.4. Implement Operational Controls and Standards
+<ul>
+<li>5.4.5. Incident Management</li>
+<li>5.4.6. Problem Management</li>
+<li>5.4.8. Deployment Management</li>
+</ul></li></ul></li>
+<li><b>Domain 6: Legal, Risk, and Compliance</b>
+<ul>
+<li>6.4. Understand Implications of Cloud to Enterprise Risk Management
+<ul id="c05-list-0013">
+<li>6.4.2. Difference Between Data Owner/Controller vs. Data Custodian/Processor</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="95" id="Page_95"></span><img src="public/clogo.jpg" alt="" width="150" height="150"> In this chapter, we will discuss the various rights and responsibilities involved in cloud computing, how those should be apportioned between the cloud provider and customer, specific risks posed by each cloud platform and service, and BC/DR strategies for use in the cloud.</p></section>
+<section id="c05-sec-0002">
+<h2><a id="usec0002"></a>Shared Cloud Platform Risks and Responsibilities</h2>
+<p>Because the cloud customer and provider will each be processing data that, at least in some part, belongs to the customer, they will share responsibilities and risks associated with that data. Simply put, these risks and responsibilities will be codified in the service contract between the parties. That contract, however, will be the result of a complex process of deliberation and negotiation.</p>
+<p>Although the risks and responsibilities will be shared between the cloud provider and customer, the ultimate legal liability for unauthorized and illicit data disclosures will remain with the customer as the data owner. The cloud provider may be financially responsible, in whole or in part, depending on the terms of the contract, but the legal responsibility will be the customer’s. This concept will be repeated throughout the book, as it’s repeated throughout the CCSP CBK.</p>
+<p>As an example of what this means and how it could affect the customer, let’s say an unauthorized disclosure of PII that belongs to the customer occurs because of some failure on the part of the cloud provider. For the sake of argument, we’ll also assume that the contract stipulates that the provider is financially liable for damages resulting from this failure.</p>
+<p>Depending on the jurisdiction where the breach occurred and the jurisdiction of the subjects of the PII (that is, the state or country of citizenship/residence of the people whose PII was lost), statutes could dictate specific monetary damages owed by the cloud customer (again, the data owner) to either the government or the subjects or both. It is possible for the customer to eventually recover those damages from the provider (because of the contract and the fault), but the government will not seek them from the provider; the government will seek damages from the customer. It is the customer that the government will serve injunctions and orders to, not the provider. In addition, depending on the jurisdiction and the breach itself, it is the customer’s officers who could face imprisonment, not the provider.</p>
+<p>Moreover, even if the customer is protected by the provider’s acceptance of financial responsibility, the legal repercussions are not the only negative impact the customer faces. <span epub:type="pagebreak" role="doc-pagebreak" title="96" id="Page_96"></span>The customer will likely be adversely affected by negative publicity, loss of faith among its clientele, perhaps decreased market share and a drop in share price (if the customer is publicly traded), and an increase in insurance premiums. It is therefore important for the customer to realize that the cash involved in damage awards and assignment of liability is only one aspect of the risk.</p>
+<p>Of paramount importance is to understand that the customer’s ultimate legal liability for data it owns remains true <i>even if the provider’s failure was the result of negligence or malice.</i> That is a very considerable burden of risk, especially because it’s a much higher standard than what we usually face in the security profession.</p>
+<p>That said, the provider and customer still must come to terms regarding their particular responsibilities and obligations under the contract. To some degree, this will be driven by the nature of the service in question and what service and model the customer is purchasing. A graphical depiction of the general gradations of the various arrangements is shown in <a id="figureanchor5-1" role="doc-backlink" href="Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure5-1">Figure 5.1</a>.</p>
+<figure>
+<img class="center" src="public/c05f001.jpg" alt="The figure shows a graphical depiction of the general gradations of the various arrangements (responsibilities according to service model). " width="800" height="514">
+<figcaption>
+<p><span class="figureLabel"><a id="figure5-1" role="doc-backlink" href="Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figureanchor5-1"><b>Figure 5.1</b></a> Responsibilities according to service model</span></p>
+</figcaption>
+</figure>
+<p>Again, this is not prescriptive, but a guide for possible contract negotiation.</p>
+<p>There will be some dichotomy because of the two perspectives. The cloud provider and the customer are most concerned with two different things. The cloud customer is concerned about the data. The production environment being hosted on the cloud data center is the customer’s lifeblood. Breaches, failures, and lack of availability are the things that most affect the customer. The provider, on the other hand, is mostly concerned with the security and operation of their data center, which is the provider’s core competency and the way it survives and maintains profitability.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="97" id="Page_97"></span>Therefore, the customer will be seeking maximal control over their data, with all the administrative power and insight into the data center operations it can acquire. The customer will want to impose policy, get logging data, and audit the performance and security of the data center.</p>
+<p>The provider will be attempting to limit customer access as much as possible. The provider wants to refute control, deny insight, and refrain from disclosing any information that might be used for malicious purposes, which includes the list of security controls used for protecting the data center, procedures, and live monitoring equipment and data. In some cases, the provider might not even want to disclose the physical location of the data center, believing that secrecy can lead to security.</p>
+<p>This creates an adversarial dynamic in the negotiation. Both parties must have a clear awareness of what outcomes they’re seeking and the best means to get them. In many cases, the provider will have an advantage in this regard because the provider understands the function and design of the data center and therefore the known and expected outcomes of operation much better than most customers do. Organizations that are new to managed services in general and cloud computing specifically may not be aware of what, exactly, to ask for in the negotiation. It is therefore advisable that organizations without a core technical competency and familiarity with cloud operations seek external consultation when initially considering cloud migration and entering negotiations with providers.</p>
+<section class="feature3" id="c05-feafxd-0001">
+<p class="h4" style="background-color: #E7E7E8;">Cloud Customers, Providers, and Similar Terms</p>
+<p>In this chapter, we talk specifically about the <i>cloud customer</i> (the company, individual, or other entity that hires the cloud provider to take care of their data) and the <i>cloud provider</i> (the company that is hired to provide services, platforms, and/or applications that help with managing the cloud customer’s data). In the real world, you might also see terms such as <i>data customer</i>, <i>data owner</i>, <i>data controller</i>, <i>data provider</i>, <i>data custodian</i>, and <i>data processor</i>. These terms are all attempts at describing who owns the data and who handles the data, which generally sifts out to being the cloud customer and the cloud provider, which are the terms we will use pretty consistently for our discussion.</p>
+</section>
+</section>
+<section id="c05-sec-0003">
+<h2><a id="usec0003"></a>Cloud Computing Risks by Deployment Model</h2>
+<p>To prepare for cloud migration and the requisite contract negotiation (and for familiarization with CCSP CBK content), it is useful to review the risks particular to each of the cloud deployment models. These include the private, community, public, and hybrid cloud models.</p><section id="c05-sec-0004">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="98" id="Page_98"></span><a id="usec0004"></a>Private Cloud</h3>
+<p>A <i>private cloud</i> is a distributed computing environment with only one customer (as opposed to the more common multitenant environment, typified by a public cloud). A private cloud can be implemented by an organization (running its own data center, and supplying cloud services to its employees, vendors, and clientele), or it can be hosted by a provider.</p>
+<p>In some situations, the provider will own the hardware that contains the private cloud, hosted in the provider’s data center. The customer will be granted exclusive access to that particular set of hardware, and no other customers will have their cloud hosted on those same devices. In some cases, the customer owns the hardware, which is hosted, physically inside the provider’s data center (often referred to as a <i>co-lo</i>, or colocation center).</p>
+<p>A private cloud might be a more appropriate cloud option for customer organizations that exist in highly regulated industries or that process a significant amount/degree of sensitive information; the private cloud allows the customer to dictate and specify a much more detailed level of security controls and overall governance. This will, of course, be more expensive (in terms of the amount paid to the provider) than the public cloud model and will impede the elasticity/scaling of the cloud (instead of having theoretically infinite capacity, the private cloud capacity will reach a natural maximum of whatever components are dedicated to the customer’s environment).</p>
+<p>All private cloud operators face the following risks:</p>
+<p><b>Personnel Threats </b>This includes both inadvertent and malicious threats. If a managed provider/data center is used, the provider’s administrators remain outside the customer’s control.</p>
+<p><b>Natural Disasters </b>All the deployment and service models are still susceptible to natural disasters.</p>
+<p><b>External Attacks </b>These attacks can take many forms, such as unauthorized access, eavesdropping, denial of service (DoS)/distributed denial of service (DDoS), and so on.</p>
+<p><b>Regulatory Noncompliance </b>While the customer has much more control over the configuration and controls in a private cloud model (compared to a public cloud), regulators will still enforce mandates.</p>
+<p><b>Malware </b>This can be considered an external or internal threat, depending on the source of the infection.</p>
+<p>None of these risks are unique to the private cloud, but having a greater degree of control and specificity may give the customer a greater level of assurance in combatting them.</p></section>
+<section id="c05-sec-0005">
+<h3><a id="usec0005"></a>Community Cloud</h3>
+<p>In a <i>community cloud</i> configuration, resources are shared and dispersed among an affinity group. Infrastructure can be owned and/or operated jointly, individually, centrally, across the community, or in any combination and mixture of these options.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="99" id="Page_99"></span>The benefits of this deployment model each come with attendant risks:</p>
+<p><b>Resiliency through Shared Ownership </b>Because the network ownership and operation is scattered among users, the environment is more likely to survive the loss of a significant number of nodes without affecting the others. However, this introduces additional risks because each node is its own point of entry and a vulnerability in any one node can result in an intrusion on the others. This, of course, means that unity of configuration management and baselines is almost impossible (and very difficult to enforce). With distributed ownership comes distributed decision-making in terms of policy and administration.</p>
+<p><b>Shared Costs </b>Overhead and cost of the infrastructure is shared among the members of the community, but so is access and control.</p>
+<p><b>No Need for Centralized Administration for Performance and Monitoring </b>Although this removes many burdens of centralized administration, it also removes the reliability of centralized and homogenized standards for performance and security monitoring.</p>
+<section class="feature3" id="c05-feafxd-0002">
+<h4 style="background-color: #E7E7E8;"><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> Online Gaming as a Community Cloud</h4>
+<p>Online gaming is an excellent example of the community cloud model. Each individual gamer owns their own device (a console or a computer). The individual gamer is responsible for the purchase price of the device, maintaining the device, and establishing/maintaining a connection to the Internet. Each individual gamer can also disconnect their own device voluntarily, whenever they feel like it (or even destroy their own device, if they choose, because they own the device completely).</p>
+<p>Then there is usually a centralized identification and access management (IAM) node involved in the gaming setup. Some entity (such as Microsoft or Sony) acts as the validator of identity/permission for each individual gamer; this entity has full control/ownership of the IAM function and must pay to create/maintain that node. Individual gamers log into the centralized IAM node in order to get access to the shared game environment.</p>
+<p>Finally, there is often another, distinct entity that is the game host; they run the server that handles the online interactions between the verified players. These backend game machines are wholly owned and maintained by the game host (often the game manufacturer or distributor).</p>
+<p>Each entity is responsible for their own components and participation in the community; each takes part voluntarily and can leave at any time. Ownership, processing, and storage are shared among the participants, depending on their role in the interaction.</p>
+</section>
+</section>
+<section id="c05-sec-0006">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="100" id="Page_100"></span><a id="usec0006"></a>Public Cloud</h3>
+<p>This is the deployment model that has the most focus in the CCSP CBK and is most likely to provide the greatest benefit to the largest number of cloud customers. In the <i>public cloud</i>, a company offers cloud services to any entity that wants to become a cloud customer, be it an individual, company, government agency, or other organization.</p>
+<p>Many of the same risks exist in the public cloud as in the private cloud: personnel threats (inadvertent and malicious), external threats, natural disasters, and so forth. Some of them are obviated by the public cloud’s similarity to the community cloud, such as distributed infrastructure, shared costs, and reduced need for administrative capability. However, it is these same benefits that entail the additional risks of the public cloud. The organization will lose control, oversight, audit, and enforcement capabilities—basically, all the assurance of maintaining a private cloud internal to the organization.</p>
+<p>There are some additional risks that are unique to the public cloud that also must be considered. We’ll discuss those in some detail in the following subsections.</p><section id="c05-sec-0007">
+<h4><a id="usec0007"></a>Vendor Lock-In</h4>
+<p>In ceding control of the production environment and data to an external party, the organization creates a dependency on that provider. The expense and trouble of moving the data out of the provider’s data center could be crippling to the customer, especially if the customer chose to do so before the end of the contract term. In a sense, this can make the customer a hostage of the provider and allow the provider to decrease service levels and/or increase prices as the provider sees fit. It’s important to stress that this is <i>not</i> a commonplace occurrence. I do not mean to suggest that cloud providers are maliciously luring customers into unfavorable arrangements. However, the possibility exists for that dependency, and dependency is a risk.</p>
+<p><i>Vendor lock-in</i> (also known as provider lock-in) can be caused by other circumstances as well. For instance, if the provider uses a proprietary data format or medium to store information, the customer may not be able to move their data to another provider. The contract itself can be considered a form of lock-in, too, if it is punitive and puts an undue onus on the customer if the customer chooses to go to another provider. Alternatively, vendor lock-in can be caused by some sort of regulatory constraint, where finding another provider that will meet the specific regulatory needs of the organization could be difficult.</p>
+<p>To avoid lock-in, the organization has to think in terms of <i>portability</i> when considering migration. We use the term <i>portability</i> to describe the general level of ease or difficulty when transferring data out of a provider’s data center (regardless of whether it’s being moved to another provider or to a private cloud).</p>
+<p>There are several things an organization can do to enhance the portability of its data:</p>
+<p><b>Ensure favorable contract terms for portability. </b>Make sure the organization considers an exit strategy, even while creating the initial agreement with the provider at the outset of cloud service acquisition. Is there a reduced-rate trial period in the provider environment? What is the penalty for early transfer (severing the contract)? At the end of the contract term, will there be any difficulty, contractually or in terms of performance, in moving the data to another provider? (See the real-world example “Ambiguity Is Scary.”)</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="101" id="Page_101"></span><b>Avoid proprietary formats. </b>Don’t sign with a provider unless the raw data can be recovered in a format that could be used at another provider’s site. This might involve using some form of conversion before moving the data, and that conversion should be simple and inexpensive if the customer chooses to move.</p>
+<p><b>Ensure there are no physical limitations to moving. </b>Make sure that the bandwidth leaving the old provider is sufficient for the purposes of moving your organization’s entire data set and that the new provider can handle that size of importation.</p>
+<p><b>Check for regulatory constraints. </b>There should be more than one cloud provider that can handle your organization’s specific compliance needs. If your needs are bizarrely unique and restrictive (for instance, if your organization is a medical college that takes credit card payments, thus requiring you to simultaneously comply with FERPA, PCI, and HIPAA), that number of providers may be extremely limited.</p>
+<section class="feature3" id="c05-feafxd-0003">
+<h4 style="background-color: #E7E7E8;"><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> Ambiguity Is Scary</h4>
+<p>In the case of one public cloud provider, the contract stipulated a set of maximum monthly upload/download parameters, with additional fees assessed if these bounds were exceeded in any given month. This is commonplace and the usual way cloud providers establish rates and provide for the appropriate level of resources to meet their customers’ regular needs and still allow for cloud bursting.</p>
+<p>Elsewhere in the contract, the terms for leaving at the end of any contract period were detailed to include a duration in which the customer could move their data away from the provider (it was 30 days).</p>
+<p>What the contract <i>didn’t</i> state was whether the same monthly limits (and fees for exceeding those limits) would be in effect during the month-long movement of data out of the provider’s space in the event the customer chose to leave.</p>
+<p>It seems obvious that the limits wouldn’t be enforced during the transition period. Otherwise, how could a customer reasonably leave the provider? Assuming the customer was making maximal use of the service and uploading <i>x</i> bytes of data each month of a year-long contract term, there would be 12<i>x</i> bytes (12 times the established monthly limit) stored in the provider’s data center at the end of the contract. If the limits were still in place, the customer would be facing considerable penalties in fees to move 12<i>x</i> bytes in that final month. Can the customer assume that this reasonable conclusion was the intention of the contract?</p>
+<p>Of course not. We can never assume anything, especially when crafting contracts. Therefore, this is a question that would have to be resolved in writing and agreed to as an amendment or addition to the contract before both parties sign.</p>
+</section>
+</section>
+<section id="c05-sec-0008">
+<h4><span epub:type="pagebreak" role="doc-pagebreak" title="102" id="Page_102"></span><a id="usec0008"></a>Vendor Lock-Out</h4>
+<p>Another problem associated with ceding control of the organization’s data and production environment is referred to as <i>vendor lock-out</i> (also known as provider lock-out). Vendor lock-out can be caused when the cloud provider goes out of business, is acquired by another company, or ceases operation for any reason. In these circumstances, the concern is whether the customer can still readily access and recover their data.</p>
+<p>We cannot really plan for all the possible reasons vendor lock-out might occur. We can, however, be aware that the possibility exists and make decisions accordingly. We may want to consider the following factors when selecting a cloud provider:</p>
+<p><b>Provider Longevity </b>How long has the provider been in business? Does it seem to be a market leader? This aspect may be more difficult than others to assess, because IT is an extremely volatile field and new providers are constantly entering while stalwarts often leave with little warning. Cloud technology and services on a large scale, in particular, are a fairly recent development and may be more prone to significant and unexpected turbulence.</p>
+<p><b>Core Competency </b>Can this provider offer your organization what it needs? Is it capable of meeting all your service requirements? Does it have the staff, resources, and infrastructure to handle your organization’s demands, as well as those of its other customers? One measure of the possible strength and suitability of a given provider is whether a cloud service is central to its offerings or is an additional function for its company.</p>
+<p><b>Jurisdictional Suitability </b>What country is the provider in, and which state? This question must be asked in terms of both where it is chartered and where it operates. Where is the data center? Where is its long-term storage and backup capability? Will your organization’s data be crossing boundaries and borders? Can your organization use this provider and remain compliant with all applicable regulations?</p>
+<p><b>Supply Chain Dependencies </b>Does the provider rely on any other entities for its critical functions, both upstream and downstream? Are there essential suppliers, vendors, and utilities without which the provider could not perform? This aspect will be very difficult to investigate without considerable disclosure on the part of the provider.</p>
+<p><b>Legislative Environment </b>What pending statutes might affect your organization’s ability to use that provider? This facet might carry the most potential impact for cloud customers and also be the most challenging to predict. For instance, almost nobody foresaw that Great Britain would leave the European Union in 2016, and the Brexit referendum entailed significant political and regulatory modifications for companies operating in both jurisdictions.</p>
+<section class="feature3" id="c05-feafxd-0004">
+<h4 style="background-color: #E7E7E8;">Not If, But When</h4>
+<p>Some people might think that a provider’s record of incidents should be used as a discriminator when considering vendor lock-out and that if a given vendor has proven susceptible to breaches or attacks or failures in the past, this should be a telling portent of <span epub:type="pagebreak" role="doc-pagebreak" title="103" id="Page_103"></span>its ability to survive in the future. This may not be the most useful method for measuring the suitability of a vendor. Instead, knowing that a vendor has suffered through incidents may indicate that this is a vendor you should strongly consider handling your business. Simply put: Everyone can and will be breached at some point, every system fails, and every organization experiences security issues. We should not be expecting a zero-fault environment. We should be looking for a fault-tolerant environment. How did the provider respond to the incidents? What did it do? What didn’t it do? How did the market (and its customers) respond to the provider’s handling of the matter? We can learn more from a provider that has dealt with past security issues (and how) than from a provider that claims to have never had any.</p>
+</section>
+</section>
+<section id="c05-sec-0009">
+<h4><a id="usec0009"></a>Multitenant Environments</h4>
+<p>Going into a public cloud means entering a multitenant environment. There will be no providers that will host your organization as their sole customer. (Indeed, you should be wary of any provider that would <i>want</i> to be in that position. It doesn’t scale and wouldn’t be profitable.) There are therefore specific risks in the public cloud configuration that do not exist in other models, including these:</p>
+<p><b>Conflict of Interest </b>Provider personnel who administer your data and systems should not also be involved with any of your competitors who might also be that provider’s customers. The provider should be careful to not create these situations or even the perception that they might exist.</p>
+<p><b>Escalation of Privilege </b>Authorized users may try to acquire unauthorized permissions. This might include users from organizations other than your own. A user who gains illicit administrative access may be able to gain control of devices that process other customers’ data.</p>
+<p><b>Information Bleed </b>With multiple customers processing and storing data over the same infrastructure, there is the possibility that data belonging to one customer will be read or received by another. Moreover, even if this does not happen with raw data, it might be possible for one customer to detect telltale information about another customer’s activity, such as when the customer is processing data, how long the procedure takes, and so on.</p>
+<p><b>Legal Activity </b>Data and devices within a data center may be subpoenaed or seized as evidence in a criminal investigation or as part of discovery for litigation purposes. This is of concern to any cloud customer because of the possibility that a particular asset might contain not only data that is the specific target of the investigation/litigation, it might also include data belonging to other customers. (In other words, your data might be seized because it’s on the same box as the data of another customer who is a target of law enforcement or plaintiffs.)</p>
+<section class="feature3" id="c05-feafxd-0005">
+<h4 style="background-color: #E7E7E8;"><span epub:type="pagebreak" role="doc-pagebreak" title="104" id="Page_104"></span>The Brewer-Nash Model</h4>
+<p>Although the Brewer and Nash model is not part of the official material and you don’t need to know it for the exam, it’s useful to understand. Also known by the title of the paper in which it was proposed, “The Chinese Wall Security Policy” (<a class="codeLabel" href="https://www.cs.purdue.edu/homes/ninghui/readings/AccessControl/brewer_nash_89.pdf">https://www.cs.purdue.edu/homes/ninghui/readings/AccessControl/brewer_nash_89.pdf</a>), it is the concept of aligning separation of duties and least privilege with dataflows to prevent conflicts of interest.</p>
+<p>Brewer and Nash is perhaps the most relevant model for cloud computing because of the nature of cloud administrators—inside a cloud data center, administrators working for the cloud provider could have physical (and perhaps logical) access to every cloud customer served by that facility. This might include customers in direct competition in the same industry. This creates a conflict of interest for the cloud administrator as well as a potential avenue for corruption.</p>
+<p>Proper use of the Brewer and Nash model might address these issues by reducing their likelihood and creating a policy that supports and enforces the model.</p>
+</section>
+</section>
+</section>
+<section id="c05-sec-0010">
+<h3><a id="usec0010"></a>Hybrid Cloud</h3>
+<p>A <i>hybrid cloud</i> is simply a combination of two or more of the other models. Hybrid cloud configurations, of course, include all the risks of the various models they combine. An organization considering utilizing a hybrid cloud setup ought to be aware of all the risks discussed in each of the previous sections that are applicable to their particular choice of hybrid.</p></section>
+</section>
+<section id="c05-sec-0011">
+<h2><a id="usec0011"></a>Cloud Computing Risks by Service Model</h2>
+<p>Another consideration in cloud migration and contract negotiation is the risks inherent in each of the cloud service models. The most common cloud service models include infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). In addition to the concerns specific to each service model, the service models inherit the risks of whichever deployment model they are used with. This coverage is by no means exhaustive or prescriptive and should only be taken as a means to inform the reader and stimulate consideration of possible security activity.</p><section id="c05-sec-0012">
+<h3><a id="usec0012"></a>Infrastructure as a Service (IaaS)</h3>
+<p>In the infrastructure as a service (IaaS) model, the customer will have the most control over their resources, which might alleviate some concerns about trusting the provider or lacking <span epub:type="pagebreak" role="doc-pagebreak" title="105" id="Page_105"></span>insight into the environment. However, there are still risks that exist in the IaaS motif, although they are not usually unique to that configuration:</p>
+<p><b>Personnel Threats </b>Again, a malicious or negligent insider (working for the provider) may cause significant negative impact to the customer, in large part because they have physical access to the resources within the data center where the customer’s data resides.</p>
+<p><b>External Threats </b>These include malware, hacking, DoS/DDoS, man-in-the-middle attacks, and so forth.</p>
+<p><b>Lack of Specific Skillsets </b>Because so much of the environment will be administered by the customer, and all access will be via remote connections, there will be a significant burden on the customer’s administrators and staff to provide both operational and security functions in IaaS. An organization that does not have sufficient personnel with the training and experience necessary for conducting these tasks in a cloud environment is introducing a sizable risk to its operations.</p></section>
+<section id="c05-sec-0013">
+<h3><a id="usec0013"></a>Platform as a Service (PaaS)</h3>
+<p>The platform as a service (PaaS) model will have other risks in addition to those included in the IaaS model. These include the following:</p>
+<p><b>Interoperability Issues </b>Because the OS will be administered and updated by the provider, the customer’s software may or may not function properly with each new adjustment to the environment.</p>
+<p><b>Persistent Backdoors </b>PaaS is often used for software development and development operations (DevOps) efforts because the customer can install any software (production or testbed) over the infrastructure (hardware and OS) within the cloud environment. This model lends itself well to serving as a testbed for new applications. It can mimic the production environment with a structured sampling of all the systems from the live enterprise, and it also tests the interface with various platforms through the remote access capability and opportunity to spread the test over multiple OSs. With all these benefits for DevOps, it is important to remember a significant risk that comes with that industry: backdoors left by developers after the final product ships. These are used for efficient editing and test cases so that the developer doesn’t have to run the program all the way from the beginning to find the particular function that needs to be addressed. However, backdoors also serve as attack vectors if discovered and exploited by malicious parties. What was yesterday’s development tool is tomorrow’s zero-day exploit.</p>
+<p><b>Virtualization </b>Because most PaaS offerings utilize virtualized OSs, the threats and risks associated with virtualization must be considered in this model. Please see the section “Virtualization” later in this chapter for more information about this.</p>
+<p><b>Resource Sharing </b>Programs and instances run by the customer will operate on the same devices used by other customers, sometimes simultaneously. The possibility of information bleed and side-channel attacks exists and must be considered.</p></section>
+<section id="c05-sec-0014">
+<h3><span epub:type="pagebreak" role="doc-pagebreak" title="106" id="Page_106"></span><a id="usec0014"></a>Software as a Service (SaaS)</h3>
+<p>All the risks inherent in the PaaS and IaaS models remain in the software as a service (SaaS) environment along with these additional risks:</p>
+<p><b>Proprietary Formats </b>The provider may be collecting, storing, and displaying data in a format owned by and unique to that provider. This can lead to vendor lock-in and decrease portability.</p>
+<p><b>Virtualization </b>The risks from virtualization are enhanced in the SaaS environment because even more resource sharing and simultaneous multitenancy is going to occur. For more information, refer to the next section, “Virtualization.”</p>
+<p><b>Web Application Security </b>Most SaaS offerings will rely on access through a browser, with some kind of application programming interface (API). Potential weaknesses within web apps pose a wide variety of risks and threats.</p></section>
+</section>
+<section id="c05-sec-0015">
+<h2><a id="usec0015"></a>Virtualization</h2>
+<p>We have discussed the importance of virtualization throughout the book. We’ll now discuss the risks related to the use of virtualization in the cloud. Many of these possibilities require attenuation through use of controls that can only be implemented by the cloud provider, so the cloud customer must rely on contractual provisions for implementation and enforcement.</p>
+<p><b>Attacks on the Hypervisor </b>Instead of attacking a virtualized instance, which might only result in successfully breaching the content of one (virtualized) workstation, malicious actors might attempt to penetrate the hypervisor, which is the system that acts as the interface and controller between the virtualized instances and the resources of the given host devices on which they reside.</p>
+<p>There are two types of hypervisors, known as Type 1 and Type 2. <i>Type 1</i> is also called a bare-metal or hardware hypervisor. It resides directly on the host machine, often as bootable software. <i>Type 2</i> is a software hypervisor, and it runs on top of the OS that runs on a host device.</p>
+<p>Attackers prefer Type 2 hypervisors because of the larger surface area. They can attack the hypervisor itself, the underlying OS, and the machine directly, whereas Type 1 attacks are restricted to the hypervisor and the machine. OSs are also more complex than hypervisors, creating the increased potential for included vulnerabilities.</p>
+<p><b>Guest Escape </b>An improperly designed or poorly configured virtualized machine or hypervisor might allow for a user to leave the confines of their own virtualized instance. This is referred to as <i>guest escape</i> or <i>virtual machine (VM) escape</i>. A user who has successfully performed guest escape might be able to access other virtualized instances on the same host and view, copy, or modify data stored there. Worse, the user might be able to access the <span epub:type="pagebreak" role="doc-pagebreak" title="107" id="Page_107"></span>host itself and therefore be able to affect all the instances on the machine. And the worst potential situation is known as <i>host escape</i>, where a user can not only leave their own virtualized instance, they can even leave the host machine, accessing other devices on the network. This may be unlikely, as it would only result from some rather egregious failures in hardware, software, policy, and personnel performance (or significant combinations thereof), but it is a risk and must be considered.</p>
+<p><b>Information Bleed </b>This is another risk stemming from malfunctions or failures. The possibility exists that processing performed on one virtualized instance may be detected, in whole or in part, by other instances on the same host. In order for this risk to be detrimental, the loss does not even have to involve the raw data itself. It might instead be only indicative of the processing occurring on the affected instance. For example, it might be possible to detect that a certain operation is happening on the affected instance and that the operation lasts for a specific duration. This kind of process-specific information can tell a malicious actor about the types of security controls on the instance or what kind of operations are being conducted. This can provide the attacker with an advantage because they might be able to narrow down a list of possible attack vectors to only those that will function in that circumstance, or they might gain an insight into what types of material might be acquired from a successful attack. This tactic is often referred to as a <i>side channel</i> or <i>covert channel</i> attack.</p>
+<p><b>Data Seizure </b>Legal activity might result in a host machine being confiscated or inspected by law enforcement or plaintiffs’ attorneys, and the host machine might include virtualized instances belonging to your organization, even though your organization was not the target.</p>
+<p>Cloud data centers can be perceived as similar to DMZs in legacy enterprises. Because everything in the cloud can be accessed remotely, it can be considered exposed to the Internet, to a greater or lesser extent. Instead of the discrete perimeter of a private network, cloud configurations may be more porous or might be considered to have no specific perimeter boundary at all.</p>
+<p>In the following sections, we’ll discuss threats to specific cloud platforms and countermeasures that may facilitate trust in cloud usage.</p><section id="c05-sec-0016">
+<h3><a id="usec0016"></a>Threats</h3>
+<p>Although many of the threats to cloud computing are the same as those we faced in traditional IT operations, they might manifest in novel ways or pose a greater risk. In this section, we’ll examine the threats to the private, community, public, and hybrid cloud models. This coverage is by no means exhaustive or prescriptive and should only be taken as a means to inform the reader and stimulate consideration of possible security activity.</p>
+<p><b>Malware </b>Malicious software downloaded from the Internet or uploaded to the internal network can cause a wide variety of problems, including data loss, loss of control of devices, interruption of operations, and so forth. This is less likely in an SaaS environment because the customer has no ability to install software.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="108" id="Page_108"></span><b>Internal Threats </b>These can be the result of malicious or accidental activity on the part of employees or others who have been granted access (such as contractors and maintenance personnel).</p>
+<p><b>External Attackers </b>Entities outside the organization may want to attack the network for any number of reasons, including financial gain, hacktivism, political goals, perceived grievances, and so on. These attacks can take many forms and manifest a variety of effects, including DoS/DDoS, data breach, legal repercussions, syn flooding, brute force, and more.</p>
+<p><b>Man-in-the-Middle Attacks </b>This is the colloquial term for any attack where attackers insert themselves between the sender and receiver. This can take the form of simple eavesdropping to acquire data, or it can be a more advanced attack, such as the attacker posing as one of the participants in order to gain further control/access or modifying data traffic to introduce false or damaging information into the communication. The remote access capability of a private cloud enhances the exposure to this type of threat, compared to legacy configurations where all network access was limited to internal users.</p>
+<p><b>Theft/Loss of Devices </b>Again, the convenience and enhanced operational capability of remote access also comes with additional threats. In a BYOD environment, especially, the loss or theft of a user’s device can lead to unauthorized access and exploitation of the organization’s cloud network.</p>
+<p><b>Regulatory Violations </b>Regulations affect almost all IT operations, but a private cloud adds greater risk that the organization will not be able to maintain compliance. The increased opportunity and efficiency for disseminating information also increases the likelihood of violating applicable regulations.</p>
+<p><b>Natural Disasters </b>All operations are prone to disruption from natural disasters, and no geographical region is free of risk from this threat. They only differ in location. (Location and climate dictate the types and frequencies of disasters, such as hurricanes, floods, wildfires, tornadoes, earthquakes, volcanoes, mudslides, and so on.)</p>
+<p><b>Loss of Policy Control </b>Because ownership is distributed in the cloud, centralized policy promulgation and enforcement is not usually an option.</p>
+<p><b>Loss of Physical Control </b>Lack of physical control equates to a relative decrease in physical security. This threat can be accentuated in a community cloud if ownership is distributed among many participants.</p>
+<p><b>Lack of Audit Access </b>Tied to the loss of physical control, it may be impractical or impossible to conduct audits in a distributed environment.</p>
+<p><b>Rogue Administrator </b>This is an enhanced form of the insider threat. The public cloud incurs the possibility that an insider with more than just basic access may act in a malicious or irresponsible manner. Because public cloud providers will be managing your systems and data, a bad actor or careless employee could take the form of a network/system architect, engineer, or administrator, potentially causing far more damage than a user in the legacy environment could accomplish.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="109" id="Page_109"></span><b>Escalation of Privilege </b>This is another extension of the insider threat category. This type of threat is what happens when authorized users try to increase their level of access/permissions for either malicious or operational reasons. (Not all attempts to escalate privilege are malicious in nature. Some users are willing to violate policy in order to increase their own ability to perform their tasks or to avoid annoying or cumbersome controls.) The likelihood of this type of threat increases in the cloud because users are faced with not one but at least two sets of governance—that of their own organization and that of the provider. This can cause delays in requests to modify or grant additional access/permission, which can in turn lead to user attempts to circumvent policy.</p>
+<p><b>Contractual Failure </b>A poorly crafted contract can lead to vendor lock-in, unfavorable terms, lack of necessary services, and other risks, and it should be perceived as a threat.</p>
+<section class="feature3" id="c05-feafxd-0006">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Although natural disasters can still affect the public cloud architecture, the public cloud can actually provide some protection and insulation from natural disasters as well. In fact, one of the advantages of migrating to a public cloud configuration is the security offered by fast replication, regular backups, and distributed, remote processing and storage of data offered by cloud providers (assuming the provider has appropriately apportioned resources and the customer is utilizing the resources properly).</p>
+</section>
+</section>
+<section id="c05-sec-0017">
+<h3><a id="usec0017"></a>Countermeasure Methodology</h3>
+<p>The following is a discussion of some countermeasures that can be adopted in order to address the threats for each of the cloud models discussed in the preceding sections. This coverage is by no means exhaustive or prescriptive and should only be taken as a means to inform the reader and stimulate consideration of possible security activity.</p>
+<p><b>Malware </b>Host-based and network-based anti-malware applications and agents can be employed in actual host devices and virtualized instances. Specific training can be provided for all users regarding the methods used for introducing malware into a cloud environment and how to defeat them. Continual monitoring of network traffic and baseline configurations can be used to detect anomalous activity and performance degradation that may be indicative of infections. Regular updates and patches should be implemented, perhaps including automatic checks for virtual machines as they are instantiated at every boot.</p>
+<p><b>Internal Threats </b>Before hiring new personnel, the organization should conduct aggressive background checks, resume/reference confirmation, and skills and knowledge testing. For addressing the risks associated with existing employees, the organization should have appropriate personnel policies that might include comprehensive and recurring training, mandatory vacation and job rotation, and two-person integrity in those situations where it makes financial and operational sense. Solid workflow policies should include separation of duties and least privilege. Active surveillance and monitoring programs, both physical and electronic, can be used. Data should be masked, reducing the view of all personnel who <span epub:type="pagebreak" role="doc-pagebreak" title="110" id="Page_110"></span>don’t need to work directly with raw data. Egress monitoring should be implemented as well (using DLP solutions).</p>
+<p><b>External Attackers </b>Countermeasures include hardened physical devices, hypervisors, and virtual machines, with a solid security baseline and thorough configuration and change management protocols, as well as strong access controls, possibly even outsourced to a third party such as a cloud access security broker (CASB). It’s also important for the organization to understand how it is perceived by adversaries; this kind of data can be used for threat assessment and identification as well as offering some predictive capability, which could provide a much more timely response than a reactive way of handling threats. Threat intelligence services offer this functionality.</p>
+<section class="feature3" id="c05-feafxd-0007">
+<h4 style="background-color: #E7E7E8;"><img src="public/real.png" alt="Image of Real World Scenario" width="234" height="36"><br> Protection vs. Security</h4>
+<p>In 2011, Sony sued a man named George Hotz after Hotz published an exploit that allowed PlayStation 3 owners to subvert internal controls on the game console and take full control of the device. Sony’s actions are understandable. The company intended to protect its brand by obviating opportunities for PlayStation users to breach IRM solutions and infringe on software copyrights. Hotz’s position is likewise reasonable. Hotz asserted that the owner of a device should be allowed to utilize it in any manner they see fit and that preventing such capabilities on the pretense that this ability might be abused by malicious actors ought not restrict those who have no such intent.</p>
+<p>Sony’s legal right to defend its property notwithstanding, the action was seen by some as abusive. Sony, a multinational giant with vast resources, was pursuing what was obviously a punitive course against an individual with limited resources and supposedly no ill intent. The hacking group known as Anonymous considered Hotz a kindred spirit and took umbrage at Sony’s actions. A hacker claiming to act on behalf of Anonymous launched a three-day attack against Sony’s PlayStation Network (PSN), resulting in a breach that exposed account information of 77 million PSN users (arguably the largest known breach at that time) and an extended shutdown of the game service. The eventual cost of the attack, according to statements attributed to Sony in news reports, exceeded $171 million, including lost revenue, legal fees, and customer restitution.</p>
+<p>It’s difficult to imagine the loss of root control over PlayStation devices costing Sony more than the damages related to the hack. This in no way suggests that the illegal attack on PSN is justifiable or reasonable. However, Sony’s failure to understand public perception of its position and action exposed Sony to a much greater threat than the one the company was trying to prevent. In handling security matters, even when your organization is legally and ethically in the right, an objective, holistic view can be useful to attenuate unintentional escalation of risk.</p>
+<p>Sony and Hotz reached an out-of-court settlement, the full terms of which are not available.</p>
+</section>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="111" id="Page_111"></span><b>Man-in-the-Middle (MitM) Attacks </b>One way to mitigate these attacks is to encrypt data in transit, including authentication activity. You can also use secure session technology and enforcement.</p>
+<p><b>Social Engineering </b>Training, training, training. Use incentive programs (perhaps including spot bonuses and accolades) to identify personnel who resist social engineering attempts and alert the security office.</p>
+<p><b>Data Loss from Theft/Loss of Devices </b>Countermeasures include encryption of stored material to attenuate the efficacy of theft, strict physical access controls, limited or no USB functionality (up to and including physically destroying USB ports), detailed and comprehensive inventory control and monitoring, and remote wipe or remote kill switch capability for portable devices.</p>
+<p><b>Regulatory Violations </b>Hire knowledgeable, trained personnel with applicable skillsets. Defer to general counsel in planning and managing your systems. Implement IRM solutions. Use encryption and obfuscation and masking as necessary.</p>
+<p><b>Natural Disasters </b>The cloud provider should ensure multiple redundancies for all systems and services for the data center, including ISPs and utilities. The cloud customer can arrange for a disaster backup with the same cloud provider, with another cloud provider, or offline. For further discussion of this topic, see the section “Disaster Recovery (DR) and Business Continuity (BC)” later in this chapter.</p>
+<p><b>Loss of Policy Control </b>Strong contractual terms should be employed that ensure the provider is adhering to a security program that is at least as effective and thorough as what the customer would institute in an enterprise the customer owned and controlled. Detailed and extensive audits should be conducted by the customer or a trusted third party.</p>
+<p><b>Loss of Physical Control </b>You can use all of the protections listed in the internal threats, theft/loss of devices, and loss of policy control entries in this list.</p>
+<p><b>Lack of Audit Access </b>If the provider refuses to allow the customer to directly audit the facility, the customer must rely on a trusted third party instead. If the provider limits access to full third-party reports, the customer must insist on contractual protections to transfer as much of the financial liability for security failures to the provider as possible, including additional punitive damages.</p>
+<p><b>Rogue Administrator </b>Countermeasures include all the controls listed in the internal threats entry in this list, with additional physical, logical, and administrative controls for all privileged accounts and personnel, including thorough and secure logging of all administrative activities, locked racks, monitoring of physical access to devices in real time, implementation of video surveillance, and financial monitoring of privileged personnel (where legally allowed).</p>
+<p><b>Escalation of Privilege </b>Extensive access control and authentication tools and techniques should be implemented. Countermeasures also include analysis and review of all log data by trained, skilled personnel on a frequent basis combined with automated tools such as SIEM/SIM/SEM solutions.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="112" id="Page_112"></span><b>Contractual Failure </b>To protect against vendor lock-in/lock-out, the customer might consider full off-site backups, secured and kept by the customer or a trusted third-party vendor, for reconstitution with another cloud provider in the event of severe contractual disagreement.</p>
+<p><b>Legal Seizure </b>Legal action (either for prosecutorial or litigatory purposes) might result in unannounced or unexpected loss or disclosure of the organization’s data. The organization may consider using encryption of its data in the cloud or possibly employing data dispersion (spreading the data across multiple logical/physical locations). The revised BIA should take this possibility into account, and we need to consider the use of encryption for data in the cloud.</p>
+<section class="feature3" id="c05-feafxd-0008">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> Virtual machine introspection (VMI) is an agentless means of ensuring a VM’s security baseline does not change over time by examining things such as physical address, network settings, and installed OS. These ensure that the baseline has not been inadvertently or maliciously tampered with.</p>
+</section>
+</section>
+</section>
+<section id="c05-sec-0018">
+<h2><a id="usec0018"></a>Disaster Recovery (DR) and Business Continuity (BC)</h2>
+<p>Entire books have been written about this topic. We’re not going to be able to address it completely in this one. Instead, we’ll focus on those areas of BC/DR most applicable to cloud computing, specifically with the CCSP CBK and exam in mind. In the following sections, we’ll go over BIA concerns specific to cloud platforms and the establishment of shared BC/DR planning and responsibilities between the cloud provider and customer.</p><section id="c05-sec-0019">
+<h3><a id="usec0019"></a>Cloud-Specific BIA Concerns</h3>
+<p>In migrating to a cloud service architecture, your organization will want to review its existing business impact analysis (BIA) and consider a new BIA, or at least a partial assessment, for cloud-specific concerns and the new risks and opportunities offered by the cloud. Some of the potential impacts are things you should have already included in your original BIA, but these may be more significant and take new forms in the cloud. For instance, the loss of an internet service provider (ISP) might have affected your organization in its previous (non-cloud) configuration, but losing connectivity after migration might have a more detrimental effect. Unlike in a traditional IT environment, an organization conducting operations in the cloud will not be able to conduct scaled-back, local computing without connectivity to the provider.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="113" id="Page_113"></span>Potential emergent BIA concerns include, but are not limited to, the following:</p>
+<p><b>New Dependencies </b>Your data and operations will be reliant on external parties in whole new ways after migration. Not only will you have to depend on the cloud provider to meet your organization’s needs, but all the downstream and upstream dependencies associated with the provider as well, including the provider’s vendors, suppliers, utilities, personnel, and so on. The BIA should take into account possibilities involving the provider’s inability to meet service requirements in addition to similar failings on the part of any of the provider’s requisite entities.</p>
+<p><b>Regulatory Failure </b>The efficiency and ease of data distribution in the cloud enhances potential violations of regulations as users and administrators alike promulgate and disseminate data in new ways. The cloud provider presents another potential point of failure for regulatory compliance as well. Even if your organization is fully compliant internally, the provider might be unable or unwilling to adhere to your policies. Regulatory failures could include insufficient protection for PII/ePHI data to comply with statutory requirements such as GDPR, GLBA, HIPAA, FERPA, or SOX, and they might also take the form of contractual inadequacies, such as copyright licensing violations. The BIA needs to include discussion of possible impacts from this situation.</p>
+<p><b>Data Breach/Inadvertent Disclosure </b>Cloud computing magnifies the likelihood and impact of two existing risks: internal personnel and remote access. Moreover, because full legal liability for breaches of PII can’t be transferred to the provider, the cloud customer must reassess the potential impact and effect of an unauthorized disclosure, especially in terms of costs resulting from data breach notification legislative mandates. Other potential adverse results from breaches that should be addressed in the revised BIA include, but aren’t limited to, public disclosure of deleterious internal communication and reporting; loss of competitive advantage; negative effect on customer, supplier, and vendor goodwill; and contractual violations.</p>
+<p><b>Vendor Lock-In/Lock-Out </b>The BIA should take these risks into account for any operations migrated to the cloud. Much of the data for this part of the report should be readily available and won’t have to be re-created for the BIA as it should have been performed as part of the cost-benefit analysis when the organization first considered migration.</p></section>
+<section id="c05-sec-0020">
+<h3><a id="usec0020"></a>Customer/Provider Shared BC/DR Responsibilities</h3>
+<p>The negotiation between the customer and the provider will be extensive, addressing service needs, policy enforcement, audit capabilities, and so forth. One of the elements that definitely should be included in this discussion should be provisions for BC/DR, how and where it will be done, who is responsible for each part of the process, and so on. In the following sections, I’ll describe aspects of cloud BC/DR that should be considered in these negotiations.</p><section id="c05-sec-0021">
+<h4><span epub:type="pagebreak" role="doc-pagebreak" title="114" id="Page_114"></span><a id="usec0021"></a>Logical Location of Backup Data/Systems</h4>
+<p>There are three general means of using cloud backups for BC/DR. For discussion purposes in this section, we’ll be referring to both replicated data and systems as “backups.” The basic ways of using cloud backups for BC/DR include the following:</p>
+<p><b>Private Architecture, Cloud Service as Backup </b>If the organization maintains its own traditional IT data center for the primary production environment, BC/DR plans can include the use of a cloud provider as the backup. Negotiations with providers will have to include periodic upload bandwidth costs (which often include monthly caps as the limiting factor); frequency of backups; whether the organization will use a full, incremental, or differential backup schedule; the security of the data and systems at the backup data center; and ISP costs. In this methodology, the customer should determine when failover will occur—that is, the customer can decide what constitutes an emergency situation and when normal (internal) operations will cease and the backup will be utilized as the operational network. This may involve a formal declaration to include notifying the provider and will almost certainly require additional cost for the duration of the crisis event. Failover might take the form of using the cloud service as a remote network (in an IaaS, PaaS, or SaaS arrangement), or it might require downloading the backup data from the cloud to another physical production site for contingency operations. The negotiation between customer and provider should determine how and when that download occurs, how long it should take, and how and when data will be restored to the normal operations location at the end of the crisis event.</p>
+<p><b>Cloud Operations, Cloud Provider as Backup </b>One of the attractive benefits of cloud operations is the resiliency and redundancy offered by cloud data centers, especially from market leaders. Cloud providers might offer a backup solution as a feature of their service—a backup located at another data center owned by the provider in case of disaster-level events. In this motif, the provider will have all the responsibility for determining the location and configuration of the backup and most of the responsibility for assessing and declaring disaster events. The customer may have some minimal participation in the failover process, but that’s the exception rather than the rule. BC/DR activity, including failover, should usually be transparent to the customer in this case. Moreover, if this feature is offered as part of the normal cloud operation, it will usually be at no or little additional cost.</p>
+<p><b>Cloud Operations, Third-Party Cloud Backup Provider </b>In this situation, regular operations are hosted by one cloud provider, but contingency operations require failover to another cloud provider. The customer may opt for this selection in order to distribute risk, enhance redundancy, or preemptively attenuate the possibility of vendor lock-out/lock-in. This may be the most complicated BC/DR arrangement to negotiate because it will have to involve preparations and coordination between all three parties and roles and responsibilities must be explicitly and thoroughly delineated. Under this arrangement, both the primary cloud provider and the cloud customer will take part in emergency assessment and declaration, and failover may require joint effort. This can impede the process, especially during crises when cooperation and clear communication is most difficult. The cloud customer will also have to negotiate all the terms in the first model in this list (private <span epub:type="pagebreak" role="doc-pagebreak" title="115" id="Page_115"></span>architecture, cloud service as a backup), with both the primary and backup cloud providers. Usually, this will also be a relatively expensive methodology—the backup provider will not be a cost bundled with other features offered by the primary provider, and both failover and contingency operations will entail additional expenses. (However, some of the increased costs might be offset by payments from the primary provider if conditions of SLAs are not met because of the crisis event.) Also, data format/system interoperability may be a significant concern; the customer may need to perform additional activity when porting data from one cloud provider to another in order for the data to be used properly at the destination.</p></section>
+<section id="c05-sec-0022">
+<h4><a id="usec0022"></a>Declaration</h4>
+<p>The declaration of disaster events is a crucial step in the BC/DR process. The cloud customer and provider must decide, prior to the contingency, who specifically will be authorized to make this decision and the explicit process for communicating when it has been made.</p>
+<p>Within the customer organization, this authority should be formally assigned to a specific office or person, and there should be a deputy or backup named in case the primary is unavailable. Both the primary and backups should receive detailed emergency operations training that should include extensive and thorough understanding of the organization’s specific BC/DR plan. The persons selected for this authority should be empowered by senior management to have the full capability to declare the emergency and initiate failover procedures.</p>
+<p>The organization should have a warning system in place to assess impending disaster situations. This is not always possible with certain kinds of contingencies, but some may be anticipated with at least slight notice. The organization should be prepared to fail over in advance of the actual crisis event in order to maintain continuity of operations. The customer and the provider must agree on what will constitute formal notice so that failover occurs, but they may set up a preliminary schedule of preparatory communications before formal declaration is finalized and announced.</p>
+<p>If the cloud provider has to conduct some failover activity, the contract should stipulate the time in which this has to be done after notice has been received (for example, within 10 minutes of formal declaration). If failover is automated and fully controlled by the customer, that should also be expressly detailed in the contract.</p>
+<p>Resumption of normal activities following a contingency event will likewise require formal notification. Early return to operations may cause an extension of the disaster or result in the loss of data or assets. As with emergency declaration, return to normal operations should be tasked to a specific entity within the customer’s organization, and the person making that decision should be fully aware of the risks and implications inherent in it. The process for doing so should also be enumerated within the contract.</p>
+<section class="feature3" id="c05-feafxd-0009">
+<p><img style="vertical-align: middle;" src="public/note.jpg" alt="Image of Note" width="71" height="44"> As in all things related to security practices, but especially in disaster situations, health and human safety are the paramount concern of any plan or process.</p>
+</section>
+</section>
+<section id="c05-sec-0023">
+<h4><span epub:type="pagebreak" role="doc-pagebreak" title="116" id="Page_116"></span><a id="usec0023"></a>Testing</h4>
+<p>Having backups is an admirable practice, fulfills statutory requirements, and satisfies some legal due care obligations. However, merely creating a backup is not sufficient. If you never try to use your backups until an actual crisis event, you have no assurance that they will function as planned.</p>
+<p>Failover testing (and return to normal operations) must be performed in order to demonstrate the efficacy of the plan and procedures. It also hones the skills of the personnel involved and allows for additional training opportunities. Of course, the testing itself constitutes an interruption in normal service and ought not be taken lightly. There is risk and cost involved with performing the test.</p>
+<p>Most industry guidance stipulates that such testing occur at least annually. This amount might be increased depending on the nature of the organization and its operations.</p>
+<p>BC/DR testing will have to be coordinated with the cloud provider. This should be planned well in advance of the scheduled testing. Care should be taken to determine and assign specific responsibilities to participants, and all liability for problems incurred during the failover or in returning to normal operations should be detailed in the contract.</p></section>
+</section>
+</section>
+<section id="c05-sec-0024">
+<h2><a id="usec0024"></a>Summary</h2>
+<p>In this chapter, we’ve discussed the shared and distinct responsibilities of the cloud customer and provider in terms of managing risk as well as BC/DR activities. We also explored the specific risks associated with each of the cloud computing platforms (private, community, public, hybrid, IaaS, PaaS, and SaaS) and detailed countermeasures for dealing with them. Finally, we discussed some of the potential threats and vulnerabilities that constitute the cloud attack surface.</p></section>
+<section id="c05-sec-0025">
+<h2><a id="usec0025"></a>Exam Essentials</h2>
+<p><b>Know how responsibilities are shared between the customer and provider. </b>Understand the notional chart depicted in <a role="doc-backlink" href="Chapter 5 Security in the Cloud _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html#figure5-1">Figure 5.1</a> at the beginning of the chapter and how the level of responsibility for each party largely depends on the amount of service being provided.</p>
+<p><b>Know the risks associated with each type of cloud platform. </b>Memorizing the list might not be necessary, but you should understand the material sufficiently to the point where you could determine which risks are relevant to which particular platform.</p>
+<p><b>Have a thorough understanding of countermeasures used in cloud computing. </b>Again, rote memorization is probably not the best technique for familiarizing yourself with this important material, but you, as a practitioner as well as a student, should have a degree of comprehension of each potential risk and threat sufficient to match it to specific security controls for attenuation.</p>
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="117" id="Page_117"></span><b>Understand BC/DR in the cloud. </b>Be aware of the similarities to BC/DR plans and activities in the traditional environment, but pay particular attention to the increased complexity of arrangements necessary between cloud customer and provider and the significant importance of the contract in this regard.</p></section>
+<section id="c05-sec-0026">
+<h2><a id="usec0026"></a>Written Labs</h2>
+<p>You can find the answer to the written labs in <a href="Appendix A Answers to Written Labs _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix A</a>.</p>
+<ol id="c05-list-0014">
+<li>Locate two cloud providers online. Review their posted policies (preferably, boilerplate versions of their service contracts) regarding real-time or regular full backups, particularly in the context of BC/DR.</li>
+<li>In less than one page, compare and contrast the two offerings, specifically discussing how each deals with bandwidth for backups, pricing structure, and their suitability for data portability to other cloud providers.</li>
+</ol><section class="exercises">
+<h2><span epub:type="pagebreak" role="doc-pagebreak" title="118" id="Page_118"></span><a id="c05-exsec-0001"></a>Review Questions</h2>
+<p>You can find the answers to the review questions in <a href="Appendix B Answers to Review Questions _ (ISC)2 CCSP Certified Cloud Security Professional Official Study Guide, 2nd Edition.html">Appendix B</a>.</p><section class="questionSet">
+<ol class="questionList">
+<li class="essay">
+<div class="question">
+<p>What is the term we use to describe the general ease and efficiency of moving data from one cloud provider either to another cloud provider or down from the cloud?</p><ol id="c05-list-0015" class="upper-latin">
+<li>Mobility</li>
+<li>Elasticity</li>
+<li>Obfuscation</li>
+<li>Portability</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The various models generally available for cloud BC/DR activities include all of the following except ___________________.</p><ol id="c05-list-0016" class="upper-latin">
+<li>Private architecture, cloud backup</li>
+<li>Cloud provider, backup from same provider</li>
+<li>Cloud provider, backup from another cloud provider</li>
+<li>Cloud provider, backup from private provider</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Countermeasures for protecting cloud operations against external attackers include all of the following except ___________________.</p><ol id="c05-list-0017" class="upper-latin">
+<li>Continual monitoring for anomalous activity</li>
+<li>Detailed and extensive background checks</li>
+<li>Hardened devices and systems, including servers, hosts, hypervisors, and virtual machines</li>
+<li>Regular and detailed configuration/change management activities</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>All of the following are techniques to enhance the portability of cloud data in order to minimize the potential of vendor lock-in except: ___________________.</p><ol id="c05-list-0018" class="upper-latin">
+<li>Avoid proprietary data formats</li>
+<li>Use IRM and DLP solutions widely throughout the cloud operation</li>
+<li>Ensure there are no physical limitations to moving</li>
+<li>Ensure favorable contract terms to support portability</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Which of the following is a technique used to attenuate risks to the cloud environment, resulting in loss or theft of a device used for remote access?</p><ol id="c05-list-0019" class="upper-latin">
+<li>Remote kill switch</li>
+<li>Dual control</li>
+<li>Muddling</li>
+<li>Safe harbor</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="119" id="Page_119"></span>Each of the following are dependencies that must be considered when reviewing the BIA after cloud migration except ___________________.</p><ol id="c05-list-0020" class="upper-latin">
+<li>The cloud provider’s suppliers</li>
+<li>The cloud provider’s vendors</li>
+<li>The cloud provider’s utilities</li>
+<li>The cloud provider’s resellers</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>When reviewing the BIA after a cloud migration, the organization should take into account new factors related to data breach impacts. One of these new factors is: ___________________.</p><ol id="c05-list-0021" class="upper-latin">
+<li>Legal liability can’t be transferred to the cloud provider</li>
+<li>Many states have data breach notification laws</li>
+<li>Breaches can cause the loss of proprietary data</li>
+<li>Breaches can cause the loss of intellectual property</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>The cloud customer will have the most control of their data and systems, and the cloud provider will have the least amount of responsibility, in which cloud computing arrangement?</p><ol id="c05-list-0022" class="upper-latin">
+<li>IaaS</li>
+<li>PaaS</li>
+<li>SaaS</li>
+<li>Community cloud</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>After a cloud migration, the BIA should be updated to include a review of the new risks and impacts associated with cloud operations; this review should include an analysis of the possibility of vendor lock-in/lock-out. Analysis of this risk may not have to be performed as a new effort because a lot of the material that would be included is already available from which of the following?</p><ol id="c05-list-0023" class="upper-latin">
+<li>NIST</li>
+<li>The cloud provider</li>
+<li>The cost-benefit analysis the organization conducted when deciding on cloud migration</li>
+<li>Open-source providers</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>A poorly negotiated cloud service contract could result in all the following detrimental effects except ___________________.</p><ol id="c05-list-0024" class="upper-latin">
+<li>Vendor lock-in</li>
+<li>Malware</li>
+<li>Unfavorable terms</li>
+<li>Lack of necessary services</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="120" id="Page_120"></span>All of the following are cloud computing risks in a multitenant environment except ___________________.</p><ol id="c05-list-0025" class="upper-latin">
+<li>Risk of loss/disclosure due to legal seizures</li>
+<li>Information bleed</li>
+<li>DoS/DDoS</li>
+<li>Escalation of privilege</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Countermeasures for protecting cloud operations against internal threats include all of the following except ___________________.</p><ol id="c05-list-0026" class="upper-latin">
+<li>Aggressive background checks</li>
+<li>Hardened perimeter devices</li>
+<li>Skills and knowledge testing</li>
+<li>Extensive and comprehensive training programs, including initial, recurring, and refresher sessions</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Countermeasures for protecting cloud operations against internal threats include all of the following except ___________________.</p><ol id="c05-list-0027" class="upper-latin">
+<li>Active physical surveillance and monitoring</li>
+<li>Active electronic surveillance and monitoring</li>
+<li>Redundant ISPs</li>
+<li>Masking and obfuscation of data for all personnel without need to know for raw data</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Countermeasures for protecting cloud operations against internal threats at the provider’s data center include all of the following except ___________________.</p><ol id="c05-list-0028" class="upper-latin">
+<li>Broad contractual protections to ensure the provider is ensuring an extreme level of trust in its own personnel</li>
+<li>Financial penalties for the cloud provider in the event of negligence or malice on the part of its own personnel</li>
+<li>DLP solutions</li>
+<li>Scalability</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Countermeasures for protecting cloud operations against internal threats at the provider’s data center include all of the following except ___________________.</p><ol id="c05-list-0029" class="upper-latin">
+<li>Separation of duties</li>
+<li>Least privilege</li>
+<li>Conflict of interest</li>
+<li>Mandatory vacation</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="121" id="Page_121"></span>Benefits for addressing BC/DR offered by cloud operations include all of the following except ___________________.</p><ol id="c05-list-0030" class="upper-latin">
+<li>One-time pads</li>
+<li>Distributed, remote processing of, and storage of data</li>
+<li>Fast replication</li>
+<li>Regular backups offered by cloud providers</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>All of the following methods can be used to attenuate the harm caused by escalation of privilege except ___________________.</p><ol id="c05-list-0031" class="upper-latin">
+<li>Extensive access control and authentication tools and techniques</li>
+<li>Analysis and review of all log data by trained, skilled personnel on a frequent basis</li>
+<li>Periodic and effective use of cryptographic sanitization tools</li>
+<li>The use of automated analysis tools such as SIM, SIEM, and SEM solutions</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the hypervisor malicious attackers would prefer to attack?</p><ol id="c05-list-0032" class="upper-latin">
+<li>Type 1</li>
+<li>Type 2</li>
+<li>Type 3</li>
+<li>Type 4</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>What is the term used to describe loss of access to data because the cloud provider has ceased operation?</p><ol id="c05-list-0033" class="upper-latin">
+<li>Closing</li>
+<li>Vendor lock-out</li>
+<li>Vendor lock-in</li>
+<li>Masking</li>
+</ol></div>
+</li>
+<li class="essay">
+<div class="question">
+<p>Because PaaS implementations are so often used for software development, what is one of the vulnerabilities that should always be kept in mind?</p><ol id="c05-list-0034" class="upper-latin">
+<li>Malware</li>
+<li>Loss/theft of portable devices</li>
+<li>Backdoors</li>
+<li>DoS/DDoS</li>
+</ol></div>
+</li></ol>
+</section></section></section>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+</body></html>
