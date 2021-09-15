@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 4 Domain 4_ Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603498/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603498/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603498">
+
+
+        <link rel="preload" href="public/orm.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="public/main.4899f247a06b19f70f6b.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 4 Domain 4: Cloud Application Security | (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a06b19f70f6b.css">
+        <link rel="stylesheet" href="public/main.4899f247a06b19f70f6b.css">
+
+
+
+
+
+
+
+        <script src="public/orm.4899f247a06b19f70f6b..download" defer=""></script>
+
+      <script src="public/main.4899f247a06b19f70f6b.download" defer=""></script>
+
+
+  <script src="public/f(1).txt"></script><meta itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603498/" data-react-helmet="true"><meta property="og:url" itemprop="url" content="Chapter 4 Domain 4_ Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition","type":"book","identifier":"9781119603498","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603498-/Chapter 4 Domain 4_ Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2020-02-19","title":"Chapter 4 Domain 4: Cloud Application Security"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 4 Domain 4: Cloud Application Security" data-react-helmet="true"><meta property="og:title" content="Chapter 4 Domain 4: Cloud Application Security" data-react-helmet="true"><meta itemprop="name" content="Chapter 4 Domain 4: Cloud Application Security" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+CHAPTER 4Domain 4: Cloud Application Security
+
+
+
+
+ The fourth domain of the Certified Cloud Security Professional (CCSP) Exam Outline covers applications in the cloud, from software development..." data-react-helmet="true"><meta name="twitter:description" content="
+
+CHAPTER 4Domain 4: Cloud Application Security
+
+
+
+
+ The fourth domain of the Certified Cloud Security Professional (CCSP) Exam Outline covers applications in the cloud, from software development..." data-react-helmet="true"></head>
+  <body>
+      <noscript>
+        <iframe src='https://127.0.0.1/ns.html?id=GTM-5P4V6Z'
+          height='0' width='0' style='display:none;visibility:hidden'></iframe>
+      </noscript>
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper"><a href="Chapter 4 Domain 4_ Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-large orm-Input-withIcon"><label for="input-gvbcxn70exg" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-gvbcxn70exg" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 3 Domain 3_ Cloud Platform and Infrastructure Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 3 Domain 3: Cloud Platform and Infrastructure Security</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 4 Domain 4: Cloud Application Security</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 5 Domain 5_ Cloud Security Operations _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html"><span class="title--1b0fU">Chapter 5 Domain 5: Cloud Security Operations</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="85" id="Page_85"></span><span class="chapterNumber">CHAPTER 4</span><br><span class="chapterTitle">Domain 4: Cloud Application Security</span></h1>
+</header>
+<p class="chapterAuthor"></p>
+
+<section id="c04-sec-0001">
+<p>The fourth domain of the Certified Cloud Security Professional (CCSP) Exam Outline covers applications in the cloud, from software development to challenges involved in migrating apps from the traditional IT environment. It also addresses software security and performance testing methods as well as proper identity and access management (IAM) principles. Because it is weighted less than the previous domains (according to this table published by (ISC)<sup>2</sup>, <a href="Chapter 4 Domain 4_ Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html">https://cccure.training/m/articles/view/CISSP-domains-weight-percentage-on-the-real-exam</a>), there are considerably fewer questions in this chapter.</p>
+<section class="exercises">
+<section class="questionSet">
+<ol class="questionList">
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="86" id="Page_86"></span>ISO 27034 mandates a framework for application security within an organization. According to the standard, each organization should have a(n) _______________, and each application within the organization should have its own _______________.</p>
+<ol id="c04-list-0001" class="upper-latin">
+<li>Organizational Normative Framework (ONF), Application Normative Framework (ANF)</li>
+<li>Application Normative Framework (ANF), Organizational Normative Framework (ONF)</li>
+<li>Standard Application Security (SAS), Application Normative Framework (ANF)</li>
+<li>Organizational Normative Framework (ONF), Standard Application Security (SAS)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>According to ISO 27034, there is one Organizational Normative Framework (ONF) in the organization, and _______________ Application Normative Framework (ANF[s]) for each application within that organization.</p>
+<ol id="c04-list-0002" class="upper-latin">
+<li>Many</li>
+<li>Three</li>
+<li>No</li>
+<li>One</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What language is used in the Simple Object Access Protocol (SOAP) application design protocol?</p>
+<ol id="c04-list-0003" class="upper-latin">
+<li>Hypertext Markup Language (HTML)</li>
+<li>X.509</li>
+<li>Extensible Markup Language (XML)</li>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Typically, representational state transfer (REST) interactions do <i>not</i> require _______________.</p>
+<ol id="c04-list-0004" class="upper-latin">
+<li>Credentials</li>
+<li>Sessions</li>
+<li>Servers</li>
+<li>Clients</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Representational state transfer&nbsp;(REST) application programming interfaces (APIs) use _______________ protocol verbs.</p>
+<ol id="c04-list-0005" class="upper-latin">
+<li>Hypertext Markup Language (HTML)</li>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+<li>Extensible Markup Language (XML)</li>
+<li>American Standard Code for Information Interchange (ASCII)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The architecture of the World Wide Web, as it works today, is _______________.</p>
+<ol id="c04-list-0006" class="upper-latin">
+<li>JavaScript Open Notation (JSON)</li>
+<li>Denial of service (DoS)</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="87" id="Page_87"></span>Representational state transfer (REST)</li>
+<li>Extensible Markup Language (XML)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>RESTful responses can come from the server in _______________ or _______________ formats.</p>
+<ol id="c04-list-0007" class="upper-latin">
+<li>Extensible Markup Language (XML), JavaScript Open Notation (JSON)</li>
+<li>Hypertext Transfer Protocol (HTTP), X.509</li>
+<li>American Standard Code for Information Interchange (ASCII), text</li>
+<li>Hypertext Markup Language (HTML), Extensible Markup Language (XML)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is an informal industry term for moving applications from a traditional environment into the cloud?</p>
+<ol id="c04-list-0008" class="upper-latin">
+<li>Instantiation</li>
+<li>Porting</li>
+<li>Grandslamming</li>
+<li>Forklifting</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Developers creating software for the cloud environment should bear in mind cloud-specific risks such as _______________ and _______________ .</p>
+<ol id="c04-list-0009" class="upper-latin">
+<li>DoS and DDoS (denial of service and distributed denial of service)</li>
+<li>Multitenancy and third-party administrators</li>
+<li>Unprotected servers and unprotected clients</li>
+<li>Default configurations and user error</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>When an organization considers cloud migrations, the organization’s software developers will need to know which _______________ and which _______________ the organization will be using, in order to properly and securely create suitable applications.</p>
+<ol id="c04-list-0010" class="upper-latin">
+<li>Geographic location, native language</li>
+<li>Legal restrictions, specific ISP</li>
+<li>Service model, deployment model</li>
+<li>Available bandwidth, telecommunications country code</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is perhaps the best method for reducing the risk of a specific application <i>not</i> delivering the proper level of functionality and performance when it is moved from the traditional environment into the cloud?</p>
+<ol id="c04-list-0011" class="upper-latin">
+<li>Remove the application from the organization’s production environment and replace it with something else.</li>
+<li>Negotiate and conduct a trial run in the cloud environment for that application before permanently migrating.</li>
+<li>Make sure the application is fully updated and patched according to all vendor specifications.</li>
+<li>Run the application in an emulator.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="88" id="Page_88"></span>Software developers designing applications for the cloud should expect to include options to ensure all of the following capabilities <i>except</i> _______________.</p>
+<ol id="c04-list-0012" class="upper-latin">
+<li>Encryption of data at rest</li>
+<li>Encryption of data in transit</li>
+<li>Data masking</li>
+<li>Hashing database fields</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In a platform as a service (PaaS) model, who should <i>most</i> likely be responsible for the security of the applications in the production environment?</p>
+<ol id="c04-list-0013" class="upper-latin">
+<li>Cloud customer</li>
+<li>Cloud provider</li>
+<li>Regulator</li>
+<li>Programmers</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In the testing phase of the software development lifecycle (SDLC), software performance and _______________ should both be reviewed.</p>
+<ol id="c04-list-0014" class="upper-latin">
+<li>Quality</li>
+<li>Brevity</li>
+<li>Requirements</li>
+<li>Security</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Regardless of which model the organization uses for system development, in which phase of the software development lifecycle (SDLC) will user input be requested and considered?</p>
+<ol id="c04-list-0015" class="upper-latin">
+<li>Define</li>
+<li>Design</li>
+<li>Develop</li>
+<li>Detect</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which phase of the software development lifecycle (SDLC) is most likely to involve crypto-shredding?</p>
+<ol id="c04-list-0016" class="upper-latin">
+<li>Define</li>
+<li>Design</li>
+<li>Test</li>
+<li>Disposal</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Where are business requirements most likely to be mapped to software construction?</p>
+<ol id="c04-list-0017" class="upper-latin">
+<li>Define</li>
+<li>Design</li>
+<li>Test</li>
+<li>Secure Operations</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="89" id="Page_89"></span>All of the following are usually nonfunctional requirements <i>except</i> _______________.</p>
+<ol id="c04-list-0018" class="upper-latin">
+<li>Color</li>
+<li>Sound</li>
+<li>Security</li>
+<li>Function</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Designers making applications for the cloud have to take into consideration risks and operational constraints that did not exist or were not as pronounced in the traditional environment. Which of the following is an element cloud app designers may have to consider incorporating in software for the cloud that may not have been as important in the traditional environment?</p>
+<ol id="c04-list-0019" class="upper-latin">
+<li>Identity and access management (IAM) capability</li>
+<li>Distributed denial of service (DDoS) resistance</li>
+<li>Encryption for data at rest and in motion</li>
+<li>Field validation</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Designers making applications for the cloud have to take into consideration risks and operational constraints that did not exist or were not as pronounced in the traditional environment. Which of the following is an element cloud app designers may have to consider incorporating in software for the cloud that might not have been as important in the traditional environment?</p>
+<ol id="c04-list-0020" class="upper-latin">
+<li>Application isolation</li>
+<li>Inference framing</li>
+<li>Known secure library components</li>
+<li>Testing that uses known bad data</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Designers making applications for the cloud have to take into consideration risks and operational constraints that did not exist or were not as pronounced in the traditional environment. Which of the following is an element cloud app designers may not be able to use as readily in the cloud environment as it was deployed in the traditional environment?</p>
+<ol id="c04-list-0021" class="upper-latin">
+<li>Cryptography</li>
+<li>STRIDE testing</li>
+<li>Field validation</li>
+<li>Logging</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>All of these can affect the quality of service expected from an application <i>except</i> _______________.</p>
+<ol id="c04-list-0022" class="upper-latin">
+<li>Encryption</li>
+<li>Egress monitoring</li>
+<li>Anti-malware tools</li>
+<li>Use of known secure libraries/components</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="90" id="Page_90"></span>The possibility that a user could gain access or control of an application so as to take on administrator or management capabilities is called _______________.</p>
+<ol id="c04-list-0023" class="upper-latin">
+<li>Inversion</li>
+<li>Spoofing</li>
+<li>Repudiation</li>
+<li>Escalation of privilege</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is <i>not</i> checked when using the STRIDE threat model?</p>
+<ol id="c04-list-0024" class="upper-latin">
+<li>The ability of users to gain administrative access rights without proper permission</li>
+<li>The ability of internal personnel to trigger business continuity/disaster recovery activities</li>
+<li>The ability of a participant in a transaction to refute that they’ve taken part in the transaction</li>
+<li>The ability of an unauthorized user to pretend to be an authorized user</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>It is very likely that your organization’s users will use unapproved application programming interfaces (APIs), especially in a bring your own device (BYOD) environment, because _______________.</p>
+<ol id="c04-list-0025" class="upper-latin">
+<li>Users are constantly trying to break the security of your environment</li>
+<li>APIs can’t ever be secure</li>
+<li>Hackers are constantly infiltrating all APIs</li>
+<li>Users enhance their productivity however they can</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Some current software developers are not aware of security problems within the programs they’re creating because _______________.</p>
+<ol id="c04-list-0026" class="upper-latin">
+<li>Young programmers are not nearly as disciplined in their coding practices as older programmers</li>
+<li>Some current programmers don’t write code line by line and instead use code component libraries</li>
+<li>Coding languages have not been secure for 20 years</li>
+<li>Users are not clear in defining their requirements at the outset of the software development lifecycle (SDLC)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the <i>most</i> secure form of code testing and review?</p>
+<ol id="c04-list-0027" class="upper-latin">
+<li>Open source</li>
+<li>Proprietary/internal</li>
+<li>Neither open source nor proprietary</li>
+<li>Combination of open source and proprietary</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the major difference between authentication and authorization?</p>
+<ol id="c04-list-0028" class="upper-latin">
+<li>Code verification/code implementation</li>
+<li>Identity validation/access permission</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="91" id="Page_91"></span>Inverse incantation/obverse instantiation</li>
+<li>User access/privileged access</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Access should be based on _______________.</p>
+<ol id="c04-list-0029" class="upper-latin">
+<li>Regulatory mandates</li>
+<li>Business needs and acceptable risk</li>
+<li>User requirements and management requests</li>
+<li>Optimum performance and security provision</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Who should determine which users have access to which specific objects?</p>
+<ol id="c04-list-0030" class="upper-latin">
+<li>The cloud provider</li>
+<li>Senior management</li>
+<li>Data owners</li>
+<li>System administrators</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>All of the following are identity federation standards commonly found in use today <i>except</i> _______________.</p>
+<ol id="c04-list-0031" class="upper-latin">
+<li>WS-Federation</li>
+<li>OpenID</li>
+<li>OAuth (Open Authorization)</li>
+<li>Pretty Good Privacy (PGP)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a federation standard/protocol that does <i>not</i> rely on Simple Object Access Protocol (SOAP), Security Assertion Markup Language (SAML), or Extensible Markup Language (XML)?</p>
+<ol id="c04-list-0032" class="upper-latin">
+<li>WS-Federation</li>
+<li>OpenID Connect</li>
+<li>Service Organization Control (SOC) 2</li>
+<li>Open Web Application Security Project (OWASP)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Authentication mechanisms typically include any or all of the following <i>except</i> _______________.</p>
+<ol id="c04-list-0033" class="upper-latin">
+<li>Something you know</li>
+<li>Someone you know</li>
+<li>Something you have</li>
+<li>Something you are</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following constitutes a multifactor authentication process or procedure?</p>
+<ol id="c04-list-0034" class="upper-latin">
+<li>Using an automated teller machine (ATM) to get cash with your credit or debit card</li>
+<li>Using a password and personal identification number (PIN) to log into a website</li>
+<li>Presenting a voice sample and fingerprint to access a secure facility</li>
+<li>Displaying a birth certificate and a credit card</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="92" id="Page_92"></span>Typically, multifactor authentication should be used _______________.</p>
+<ol id="c04-list-0035" class="upper-latin">
+<li>In every IT transaction</li>
+<li>For high-risk operations and data that is particularly sensitive</li>
+<li>When remote users are logging into the cloud environment</li>
+<li>Only in the traditional environment</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A web application firewall (WAF) usually operates at Layer _______________ of the Open Systems Interconnection (OSI) model.</p>
+<ol id="c04-list-0036" class="upper-latin">
+<li>2</li>
+<li>3</li>
+<li>7</li>
+<li>Q</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A web application firewall (WAF) can understand and act on _______________ traffic.</p>
+<ol id="c04-list-0037" class="upper-latin">
+<li>Malicious</li>
+<li>Simple Mail Transfer Protocol (SMTP)</li>
+<li>Internet Control Message Protocol (ICMP)</li>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>WAFs can be used to reduce the likelihood that _______________ attacks will be successful.</p>
+<ol id="c04-list-0038" class="upper-latin">
+<li>Social engineering</li>
+<li>Physical theft</li>
+<li>Obverse inflection</li>
+<li>Cross-site scripting</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A database activity monitor (DAM) tool usually operates at Layer _______________ of the Open Systems Interconnection (OSI) model.</p>
+<ol id="c04-list-0039" class="upper-latin">
+<li>2</li>
+<li>3</li>
+<li>7</li>
+<li>Q</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Database activity monitors (DAMs) can be used to reduce the potential success of _______________ attacks.</p>
+<ol id="c04-list-0040" class="upper-latin">
+<li>SQL injection</li>
+<li>Cross-site scripting</li>
+<li>Insecure direct-object reference</li>
+<li>Social engineering</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="93" id="Page_93"></span>Which security tool can perform content inspection of Secure File Transfer Protocol (SFTP) communications?</p>
+<ol id="c04-list-0041" class="upper-latin">
+<li>Web application firewall (WAF)</li>
+<li>Database activity monitor (DAM)</li>
+<li>Extensible Markup Language (XML) gateway</li>
+<li>Single sign-on&nbsp;(SSO)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>To deploy a set of microservices to clients instead of building one monolithic application, it is best to use a(n) _______________ to coordinate client requests.</p>
+<ol id="c04-list-0042" class="upper-latin">
+<li>Extensible Markup Language (XML) gateway</li>
+<li>Application programming interface (API) gateway</li>
+<li>Web application firewall (WAF)</li>
+<li>Database activity monitor (DAM)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Firewalls can detect attack traffic by using all these methods <i>except</i> _______________.</p>
+<ol id="c04-list-0043" class="upper-latin">
+<li>Known past behavior in the environment</li>
+<li>Identity of the malicious user</li>
+<li>Point of origination</li>
+<li>Signature matching</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Transport Layer Security (TLS) provides _______________ and _______________ for communications.</p>
+<ol id="c04-list-0044" class="upper-latin">
+<li>Privacy, security</li>
+<li>Security, optimization</li>
+<li>Privacy, integrity</li>
+<li>Enhancement, privacy</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Transport Layer Security (TLS) uses a new _______________ for each secure connection.</p>
+<ol id="c04-list-0045" class="upper-latin">
+<li>Symmetric key</li>
+<li>Asymmetric key</li>
+<li>Public-private key pair</li>
+<li>Inverse comparison</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A virtual private network (VPN) is used to protect data in transit by _______________.</p>
+<ol id="c04-list-0046" class="upper-latin">
+<li>Securing each end of a client-server connection</li>
+<li>Creating an encrypted tunnel between two endpoints</li>
+<li>Encrypting databases</li>
+<li>Restricting key access to only eight parties</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="94" id="Page_94"></span>The employment of users in dynamic software testing should best be augmented by _______________.</p>
+<ol id="c04-list-0047" class="upper-latin">
+<li>Having the developers review the code</li>
+<li>Having the developers perform dynamic testing</li>
+<li>Using automated agents to perform dynamic testing</li>
+<li>Social engineering</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Why do developers have an inherent conflict of interest in testing software they’ve created?</p>
+<ol id="c04-list-0048" class="upper-latin">
+<li>They are notoriously bad, as a group, at testing.</li>
+<li>They work for the same department as the testing personnel.</li>
+<li>They have a vested interest in having the software perform well.</li>
+<li>They are never trained on testing procedures.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Sandboxing can often be used for _______________.</p>
+<ol id="c04-list-0049" class="upper-latin">
+<li>Optimizing the production environment by moving processes that are not frequently used into the sandbox</li>
+<li>Allowing secure remote access for users who need resources in the cloud environment</li>
+<li>Running malware for analysis purposes</li>
+<li>Creating secure subnets of the production environment</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Sandboxing can often be used for _______________.</p>
+<ol id="c04-list-0050" class="upper-latin">
+<li>Testing user awareness and training</li>
+<li>Testing security response capabilities</li>
+<li>Testing software before putting it into production</li>
+<li>Testing regulatory response to new configurations and modifications</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Application virtualization can typically be used for _______________.</p>
+<ol id="c04-list-0051" class="upper-latin">
+<li>Running an application in a non-native environment</li>
+<li>Installing updates to a system’s operating system (OS)</li>
+<li>Preventing escalation of privilege by untrusted users</li>
+<li>Enhancing performance of systems</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Application virtualization can typically be used for _______________.</p>
+<ol id="c04-list-0052" class="upper-latin">
+<li>Denying access to untrusted users</li>
+<li>Detecting and mitigating distributed denial of service (DDoS) attacks</li>
+<li>Replacing encryption as a necessary control</li>
+<li>Running an application on an endpoint without installing it</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="95" id="Page_95"></span>Any organization that complies with ISO 27034 will have a maximum of _______________ Organizational Normative Framework(s) (ONF)(s).</p>
+<ol id="c04-list-0053" class="upper-latin">
+<li>0</li>
+<li>1</li>
+<li>5</li>
+<li>25</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Under ISO 27034, every application within a given organization will have an attendant set of controls assigned to it; the controls for a given application are listed in the _______________.</p>
+<ol id="c04-list-0054" class="upper-latin">
+<li>ONF</li>
+<li>ANF</li>
+<li>TTF</li>
+<li>FTP</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Static application security testing (SAST) is usually considered a _______________ form of testing.</p>
+<ol id="c04-list-0055" class="upper-latin">
+<li>White-box</li>
+<li>Black-box</li>
+<li>Gray-box</li>
+<li>Parched field</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Static application security testing (SAST) examines _______________.</p>
+<ol id="c04-list-0056" class="upper-latin">
+<li>Software outcomes</li>
+<li>User performance</li>
+<li>System durability</li>
+<li>Source code</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Dynamic application security testing (DAST) is usually considered a _______________ form of testing.</p>
+<ol id="c04-list-0057" class="upper-latin">
+<li>White-box</li>
+<li>Black-box</li>
+<li>Gray-box</li>
+<li>Parched field</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Dynamic application security testing (DAST) checks software functionality in _______________.</p>
+<ol id="c04-list-0058" class="upper-latin">
+<li>The production environment</li>
+<li>A runtime state</li>
+<li>The cloud</li>
+<li>An IaaS configuration</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="96" id="Page_96"></span>Vulnerability scans are dependent on _______________ in order to function.</p>
+<ol id="c04-list-0059" class="upper-latin">
+<li>Privileged access</li>
+<li>Vulnerability signatures</li>
+<li>Malware libraries</li>
+<li>Forensic analysis</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Due to their reliance on vulnerability signatures, vulnerability scanners will not detect _______________.</p>
+<ol id="c04-list-0060" class="upper-latin">
+<li>User error</li>
+<li>Improper control selection</li>
+<li>Cloud vulnerabilities</li>
+<li>Unknown vulnerabilities</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Penetration testing is a(n) _______________ form of security assessment.</p>
+<ol id="c04-list-0061" class="upper-latin">
+<li>Active</li>
+<li>Comprehensive</li>
+<li>Total</li>
+<li>Inexpensive</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Dynamic software security testing should include _______________.</p>
+<ol id="c04-list-0062" class="upper-latin">
+<li>Source code review</li>
+<li>User training</li>
+<li>Penetration testing</li>
+<li>Known bad data</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>According to Open Web Application Security Project (OWASP) recommendations, active software security testing should include all of the following <i>except</i> _______________.</p>
+<ol id="c04-list-0063" class="upper-latin">
+<li>Information gathering</li>
+<li>User surveys</li>
+<li>Configuration and deployment management testing</li>
+<li>Identity management testing</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>According to Open Web Application Security Project (OWASP) recommendations, active software security testing should include all of the following <i>except</i> _______________.</p>
+<ol id="c04-list-0064" class="upper-latin">
+<li>Authentication testing</li>
+<li>Authorization testing</li>
+<li>Session management testing</li>
+<li>Privacy review testing</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="97" id="Page_97"></span>According to Open Web Application Security Project (OWASP) recommendations, active software security testing should include all of the following <i>except</i> _______________.</p>
+<ol id="c04-list-0065" class="upper-latin">
+<li>Session initiation testing</li>
+<li>Input validation testing</li>
+<li>Testing for error handling</li>
+<li>Testing for weak cryptography</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>According to Open Web Application Security Project (OWASP) recommendations, active software security testing should include all of the following <i>except</i> _______________.</p>
+<ol id="c04-list-0066" class="upper-latin">
+<li>Business logic testing</li>
+<li>Client-side testing</li>
+<li>Intuition testing</li>
+<li>Information gathering</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Static software security testing typically uses _______________ as a measure of how thorough the testing was.</p>
+<ol id="c04-list-0067" class="upper-latin">
+<li>Number of testers</li>
+<li>Flaws detected</li>
+<li>Code coverage</li>
+<li>Malware hits</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Dynamic software security testing typically uses _______________ as a measure of how thorough the testing was.</p>
+<ol id="c04-list-0068" class="upper-latin">
+<li>User coverage</li>
+<li>Code coverage</li>
+<li>Path coverage</li>
+<li>Total coverage</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Software security testing should involve both known good and known bad data in order to simulate both _______________ and _______________.</p>
+<ol id="c04-list-0069" class="upper-latin">
+<li>Managers, users</li>
+<li>Regulators, users</li>
+<li>Vendors, users</li>
+<li>Users, attackers</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="98" id="Page_98"></span>Training programs should be tracked and monitored in order to fulfill both _______________ and _______________ requirements. Choose the best response.</p>
+<ol id="c04-list-0070" class="upper-latin">
+<li>Business, security</li>
+<li>Regulatory, legal</li>
+<li>User, managerial</li>
+<li>Vendor, supplier</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Task-centric training is typically for _______________.</p>
+<ol id="c04-list-0071" class="upper-latin">
+<li>All personnel</li>
+<li>Specific personnel</li>
+<li>Management personnel</li>
+<li>HR personnel</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Awareness training is typically for _______________.</p>
+<ol id="c04-list-0072" class="upper-latin">
+<li>All personnel</li>
+<li>Specific personnel</li>
+<li>Management personnel</li>
+<li>HR personnel</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Why is cloud security training particularly important for software developers?</p>
+<ol id="c04-list-0073" class="upper-latin">
+<li>Software developers are the mainstay of every cloud environment.</li>
+<li>You can’t have a cloud environment without software developers.</li>
+<li>Security controls cannot be added to software after the fact and must be included from the very first steps of software development.</li>
+<li>Many modern software developers don’t understand how the code underlying the libraries they use actually works.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Software developers should receive cloud-specific training that highlights the challenges involved with having a production environment that operates in the cloud. One of these challenges is _______________.</p>
+<ol id="c04-list-0074" class="upper-latin">
+<li>The massive additional hacking threat, especially from foreign sources</li>
+<li>The prevalent use of encryption in all data life-cycle phases</li>
+<li>Drastic increase of risk due to distributed denial of service (DDoS) attacks</li>
+<li>Additional regulatory mandates</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Software developers should receive cloud-specific training that highlights the challenges involved with having a production environment that operates in the cloud. One of these challenges is _______________.</p>
+<ol id="c04-list-0075" class="upper-latin">
+<li>Lack of management oversight</li>
+<li>Additional workload in creating governance for two environments (the cloud data center and client devices)</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="99" id="Page_99"></span>Increased threat of malware</li>
+<li>The need for process isolation</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which security technique is <i>most</i> preferable when creating a limited functionality for customer service personnel to review account data related to sales made to your clientele?</p>
+<ol id="c04-list-0076" class="upper-latin">
+<li>Anonymization</li>
+<li>Masking</li>
+<li>Encryption</li>
+<li>Training</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>At which phase of the software development lifecycle (SDLC) is user involvement <i>most</i> crucial?</p>
+<ol id="c04-list-0077" class="upper-latin">
+<li>Define</li>
+<li>Design</li>
+<li>Develop</li>
+<li>Test</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>At which phase of the software development lifecycle (SDLC) should security personnel first be involved?</p>
+<ol id="c04-list-0078" class="upper-latin">
+<li>Define</li>
+<li>Design</li>
+<li>Develop</li>
+<li>Test</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>At which phase of the software development lifecycle (SDLC) is it probably <i>most</i> useful to involve third-party personnel?</p>
+<ol id="c04-list-0079" class="upper-latin">
+<li>Define</li>
+<li>Design</li>
+<li>Develop</li>
+<li>Test</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In software development lifecycle (SDLC) implementations that include a Secure Operations phase, which of the following security techniques or tools are implemented during that phase?</p>
+<ol id="c04-list-0080" class="upper-latin">
+<li>Vulnerability assessments and penetration testing</li>
+<li>Performance testing and security control validation</li>
+<li>Requirements fulfillment testing</li>
+<li>Threat modeling and secure design review</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="100" id="Page_100"></span>A cloud environment that lacks security controls is vulnerable to exploitation, data loss, and interruptions. Conversely, excessive use of security controls _______________.</p>
+<ol id="c04-list-0081" class="upper-latin">
+<li>Can lead to data breaches</li>
+<li>Causes electromagnetic interference</li>
+<li>Will affect quality of service</li>
+<li>Can cause regulatory noncompliance</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A cloud environment that lacks security controls is vulnerable to exploitation, data loss, and interruptions. Conversely, excessive use of security controls _______________.</p>
+<ol id="c04-list-0082" class="upper-latin">
+<li>Can lead to distributed denial of service (DDoS)</li>
+<li>Allows malware infections</li>
+<li>Increases the risk of adverse environmental effects</li>
+<li>Is an unnecessary expense</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A cloud environment that lacks security controls is vulnerable to exploitation, data loss, and interruptions. Conversely, excessive use of security controls _______________.</p>
+<ol id="c04-list-0083" class="upper-latin">
+<li>Can lead to customer dissatisfaction</li>
+<li>Is a risk to health and human safety</li>
+<li>Brings down the organization’s stock price</li>
+<li>Negates the need for insurance</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also dictate which application programming interfaces (APIs) can be used to access and manipulate company data and the process for getting an API added to the list of approved programs. You conduct an approved scan of the company data set in the cloud, with the provider’s permission. This allows you to catalog all APIs that have accessed and manipulated company data through authorized user accounts in the last month. The scan reveals that 300 different APIs were used by authorized personnel. Of these, 30 had been approved by the company and were on the list. Of the following, what is the <i>most</i> reasonable immediate action?</p>
+<ol id="c04-list-0084" class="upper-latin">
+<li>Delete accounts of all users who had utilized unapproved APIs to access company data.</li>
+<li>Suspend access for all users who had utilized unapproved APIs to access company data.</li>
+<li>Block all unapproved APIs from accessing company data.</li>
+<li>Notify whomever you report to in the company hierarchy, and suggest bringing the matter to the attention of senior management immediately.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="101" id="Page_101"></span>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also dictate which application programming interfaces (APIs) can be used to access and manipulate company data and the process for getting an API added to the list of approved programs. You conduct an approved scan of the company data set in the cloud, with the provider’s permission. This allows you to catalog all APIs that have accessed and manipulated company data through authorized user accounts in the last month. The scan reveals that 300 different APIs were used by authorized personnel. Of these, 30 had been approved by the company and were on the list. You’ve brought the matter to the attention of the chief executive officer (CEO), who understands the issue and asks for your recommendation. What is probably the best suggestion?</p>
+<ol id="c04-list-0085" class="upper-latin">
+<li>Gather more data about how users are utilizing the APIs and for what purposes.</li>
+<li>Delete accounts of all users who had utilized unapproved APIs to access company data.</li>
+<li>Suspend access for all users who had utilized unapproved APIs to access company data.</li>
+<li>Block all unapproved APIs from accessing company data.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also dictate which application programming interfaces (APIs) can be utilized to access and manipulate company data and the process for getting an API added to the list of approved programs. You conduct an approved scan of the company data set in the cloud, with the provider’s permission. This allows you to catalog all APIs that have accessed and manipulated company data through authorized user accounts in the last month. The scan reveals that 300 different APIs were used by authorized personnel. Of these, 30 had been approved by the company and were on the list. Upon performing an information-gathering investigation at the behest of the chief executive officer (CEO), you determine that these APIs increased productivity 387 percent over the period since they were adopted, at a cost that is negligible compared to getting even one API through the company’s current approval process. What is your suggestion on how to handle the situation?</p>
+<ol id="c04-list-0086" class="upper-latin">
+<li>Retroactively put all the APIs currently in use through the formal approval process, and require that all future APIs users want to install also get approved.</li>
+<li>Have the CEO waive formal approval processing for all APIs currently in use, granting them approval, but require all future APIs be approved through that process.</li>
+<li>Punish all employees who have installed or used any of the rogue APIs for violating company policy.</li>
+<li>Change the policy.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="102" id="Page_102"></span>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also dictate which application programming interfaces (APIs) can be utilized to access and manipulate company data and the process for getting an API added to the list of approved programs. You conduct an approved scan of the company data set in the cloud, with the provider’s permission. This allows you to catalog all APIs that have accessed and manipulated company data through authorized user accounts in the last month. The scan reveals that 300 different APIs were used by authorized personnel. Of these, 30 had been approved by the company and were on the list. As a subject matter expert, what should you also recommend to the chief executive officer (CEO)?</p>
+<ol id="c04-list-0087" class="upper-latin">
+<li>Reward the users who committed the infractions, for aiding the company even when they were violating the policy.</li>
+<li>Replace all the personnel that violated the policy, and have the new personnel use the new policy from their start of hire.</li>
+<li>Restrict user access to possible APIs.</li>
+<li>Augment the current set of security controls used by the company in order to offset risks posed by the anticipated use of even more APIs from unknown sources.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also allow users to select which application programming interfaces (APIs) they install and use on their own devices in order to access and manipulate company data. Of the following, what is a security control you’d like to implement to offset the risk(s) incurred by this practice?</p>
+<ol id="c04-list-0088" class="upper-latin">
+<li>Encrypt all routers between mobile users and the cloud.</li>
+<li>Use additional anti-malware detection capabilities on both user devices and the environment to which they connect.</li>
+<li>Implement strong multifactor authentication on all user-owned devices.</li>
+<li>Employ regular performance monitoring in the cloud environment to ensure that the cloud provider is meeting the service level agreement (SLA) targets.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also allow users to select which application programming interfaces (APIs) they install and use on their own devices in order to access and manipulate company data. Of the following, what is a security control you’d like to implement to offset the risk(s) incurred by this practice?</p>
+<ol id="c04-list-0089" class="upper-latin">
+<li>Regular and widespread integrity checks on sampled data throughout the managed environment</li>
+<li>More extensive and granular background checks on all employees, particularly new hires</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="103" id="Page_103"></span>Inclusion of references to all applicable regulations in the policy documents</li>
+<li>Increased enforcement of separation of duties for all workflows</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are the security manager for an online retail sales company with 100 employees and a production environment hosted in a platform as a service (PaaS) model with a major cloud provider. According to your company policies, personnel are allowed to work equally from the company offices and their own homes or other locations, using their personal IT devices. The policies also allow users to select which application programming interfaces (APIs) they install and use on their own devices in order to access and manipulate company data. Of the following, what is a security control you’d like to implement to offset the risk(s) incurred by this practice?</p>
+<ol id="c04-list-0090" class="upper-latin">
+<li>Enact secure connections between the user devices and the cloud environment using end-to-end encryption.</li>
+<li>Enact secure connections between the user devices and the cloud environment using link encryption.</li>
+<li>Employ additional user training.</li>
+<li>Tunnel all connections with a virtual private network (VPN).</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Users in your organization have been leveraging application programming interfaces (APIs) for enhancing their productivity in the cloud environment. To ensure that you are securing API access to the production environment, you should deploy _______________ and _______________.</p>
+<ol id="c04-list-0091" class="upper-latin">
+<li>Secure Sockets Layer (SSL) and message-level cryptography</li>
+<li>Transport Layer Security (TLS) and message-level cryptography</li>
+<li>SSL and whole drive encryption</li>
+<li>TLS and whole drive encryption</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You implement identity and access management (IAM) in order to control access between subjects and objects. What is the ultimate purpose of this effort?</p>
+<ol id="c04-list-0092" class="upper-latin">
+<li>Identification. Determine who the specific, individual subjects are.</li>
+<li>Authentication. Verify and validate any identification assertions.</li>
+<li>Authorization. Grant subjects permissions to objects once they’ve been authenticated.</li>
+<li>Accountability. Be able to reconstruct a narrative of who accessed what.</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>_______________ is perhaps the main external factor driving identity and access management (IAM) efforts.</p>
+<ol id="c04-list-0093" class="upper-latin">
+<li>Regulation</li>
+<li>Business need</li>
+<li>The evolving threat landscape</li>
+<li>Monetary value</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="104" id="Page_104"></span>Whether in a cloud or traditional environment, it is important to implement both _______________ and _______________ access controls.</p>
+<ol id="c04-list-0094" class="upper-latin">
+<li>Internal and managed</li>
+<li>Provider and customer</li>
+<li>Physical and logical</li>
+<li>Administrative and technical</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Access to specific data sets should be granted by _______________.</p>
+<ol id="c04-list-0095" class="upper-latin">
+<li>The data subjects</li>
+<li>The data owners</li>
+<li>The data processors</li>
+<li>The data regulators</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Access should be granted based on all of the following <i>except</i> _______________.</p>
+<ol id="c04-list-0096" class="upper-latin">
+<li>Policy</li>
+<li>Business needs</li>
+<li>Performance</li>
+<li>Acceptable risk</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Federation allows _______________ across organizations.</p>
+<ol id="c04-list-0097" class="upper-latin">
+<li>Role replication</li>
+<li>Encryption</li>
+<li>Policy</li>
+<li>Access</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Federation should be _______________ to the users.</p>
+<ol id="c04-list-0098" class="upper-latin">
+<li>Hostile</li>
+<li>Proportional</li>
+<li>Transparent</li>
+<li>Expensive</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A web application firewall (WAF) understands which protocol(s)?</p>
+<ol id="c04-list-0099" class="upper-latin">
+<li>All protocols that use the Internet as a medium</li>
+<li>Transport Layer Security (TLS)</li>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+<li>File Transfer Protocol (FTP)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="105" id="Page_105"></span>Web application firewalls and database activity monitors function at levels _______________ and _______________ of the Open Systems Interconnection (OSI) model, respectively.</p>
+<ol id="c04-list-00100" class="upper-latin">
+<li>1 and 7</li>
+<li>7 and 1</li>
+<li>7 and 7</li>
+<li>3 and 4</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What can tokenization be used for?</p>
+<ol id="c04-list-00101" class="upper-latin">
+<li>Encryption</li>
+<li>Compliance with the Payment Card Industry Data Security Standard (PCI DSS)</li>
+<li>Enhancing the user experience</li>
+<li>Giving management oversight to e-commerce functions</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Merchants who accept credit card payments can avoid some of the compliance burden for the Payment Card Industry Data Security Standard (PCI DSS) by outsourcing the tokenization function to _______________.</p>
+<ol id="c04-list-00102" class="upper-latin">
+<li>A third party</li>
+<li>The data owner</li>
+<li>The data subject</li>
+<li>The PCI Security Standards Council</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is an example of useful and sufficient data masking of the string “CCSP”?</p>
+<ol id="c04-list-00103" class="upper-latin">
+<li>XCSP</li>
+<li>PSCC</li>
+<li>TtLp</li>
+<li>3X91</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A cloud-based sandbox should <i>not</i> be used for _______________.</p>
+<ol id="c04-list-00104" class="upper-latin">
+<li>Application interoperability testing</li>
+<li>Processing sensitive data</li>
+<li>Application security testing</li>
+<li>Malware analysis</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following should occur at each stage of the software development lifecycle (SDLC)?</p>
+<ol id="c04-list-00105" class="upper-latin">
+<li>Added functionality</li>
+<li>Management review</li>
+<li>Verification and validation</li>
+<li>Repurposing of any newly developed components</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="106" id="Page_106"></span>Software that includes security elements from the outset of the software development lifecycle (SDLC) process will be _______________.</p>
+<ol id="c04-list-00106" class="upper-latin">
+<li>More secure in deployment</li>
+<li>Less secure in deployment</li>
+<li>More likely to malfunction</li>
+<li>Less likely to malfunction</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Software that includes security elements from the outset of the software development lifecycle (SDLC) process will _______________.</p>
+<ol id="c04-list-00107" class="upper-latin">
+<li>Be less expensive to operate securely in the production environment</li>
+<li>Be more expensive to operate securely in the production environment</li>
+<li>Not be interoperable with other software and systems in the production environment</li>
+<li>Have a greater likelihood of interoperability with other software and systems in the production environment</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The inclusion of security controls in the software design process is dictated by _______________.</p>
+<ol id="c04-list-00108" class="upper-latin">
+<li>The National Institute of Standards and Technology (NIST) 800-37</li>
+<li>The American Institute of Certified Public Accountants (AICPA)</li>
+<li>ISO 27034</li>
+<li>The Health Insurance Portability and Accountability Act (HIPAA)</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Software development should be perceived as _______________.</p>
+<ol id="c04-list-00109" class="upper-latin">
+<li>Including all members of the organization</li>
+<li>The paramount goal of the organization</li>
+<li>The greatest risk to the organization</li>
+<li>A lifecycle</li>
+</ol><p>
+</p></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Dynamic testing of software is perhaps most useful for _______________.</p>
+<ol id="c04-list-00110" class="upper-latin">
+<li>Simulating negative test cases</li>
+<li>Finding errors in the source code</li>
+<li>Determining the effect of social engineering</li>
+<li>Penetration tests</li>
+</ol><p>
+</p></div>
+</li></ol>
+</section>
+</section>
+</section>
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_v5.5.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" data-testid="icon" style="height: 1.75rem;"><span class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true" style="font-size: 1.75rem; width: 1.75rem; height: 1.75rem;"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+<div></div><div></div><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script>
+<script type="text/javascript" id="">var callback=function(videoPlayerIframe,kWidget){var contentTitle=google_tag_manager["GTM-5P4V6Z"].macro(16);kWidget.addReadyCallback(function(playerId){var kdp=videoPlayerIframe.contentDocument.getElementById(playerId);kdp.kBind("firstPlay.fp",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"play","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});kdp.kBind("firstQuartile.1q",function(){dataLayer.push({"event":"eventTracker",
+"eventCat":"video plays","eventAct":"25%","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});kdp.kBind("secondQuartile.2q",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"50%","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});kdp.kBind("thirdQuartile.3q",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays",
+"eventAct":"75%","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});var ninetyPercent=false;var ninetyFivePercent=false;kdp.kBind("playerUpdatePlayhead.myPlugin",function(data,id){var pos=kdp.evaluate("{video.player.currentTime}");var dur=kdp.evaluate("{mediaProxy.entry.duration}");var pct=parseFloat(data/dur)*100;if(pct>95&&!ninetyPercent){ninetyPercent=true;dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"95%",
+"eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})}});kdp.kBind("playerPlayEnd.pe",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"End","eventLbl":document.querySelector(".prevContainer--30LmH").innerText,"eventVal":0,"nonInteraction":0})})})};
+if(!top.ormGtmVideoTimerHandle)top.ormGtmVideoTimerHandle=setInterval(function(){var videoPlayerIframe=document.querySelector('iframe[title\x3d"Video"]');if(!videoPlayerIframe)return;var contentWindow=videoPlayerIframe.contentWindow;if(!contentWindow)return;var kalturaFrame=contentWindow.frames["orm-kaltura-widget_ifp"];if(!kalturaFrame)return;var kWidget=kalturaFrame.kWidget;if(kWidget){callback(videoPlayerIframe,kWidget);clearInterval(top.ormGtmVideoTimerHandle)}},100);</script>
+
+
+
+
+
+<script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script></body></html>

@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)Chapter 3 Domain 3_ Cloud Platform and Infrastructure Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B9002D">
+    <meta data-react-helmet="true" property="og:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603498/"><meta data-react-helmet="true" name="twitter:image" content="https://127.0.0.1/covers/urn:orm:book:9781119603498/"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="twitter:creator" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:site" content="@OReillyMedia"><meta data-react-helmet="true" name="twitter:title" content="O&#39;Reilly Media - Technology and Business Training"><meta data-react-helmet="true" property="twitter:account_id" content="4503599627559754"><meta data-react-helmet="true" property="og:site_name" content="O&#39;Reilly Online Learning"><meta data-react-helmet="true" name="publisher" content="Sybex"><meta data-react-helmet="true" property="og:book:author" itemprop="author" content="Ben Malisow"><meta data-react-helmet="true" itemprop="isPartOf" content="/library/view/isc-2-ccsp-certified/9781119603498/"><meta data-react-helmet="true" property="og:type" content="book"><meta data-react-helmet="true" property="og:book:isbn" itemprop="isbn" content="9781119603498">
+
+
+        <link rel="preload" href="public/orm.4899f247a0.css" as="style">
+        <link rel="preload" href="public/main.4899f247a.css" as="style">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+        <link rel="preload" href="https://127.0.0.1/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2" as="font" type="font/woff2" crossorigin="&quot;anonymous&quot;">
+
+
+    <link rel="shortcut icon" href="https://127.0.0.1/favicon.ico">
+
+      <title>Chapter 3 Domain 3: Cloud Platform and Infrastructure Security | (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition</title>
+
+
+        <link rel="stylesheet" href="public/orm.4899f247a0.css">
+        <link rel="stylesheet" href="public/main.4899f247a.css">
+
+
+
+
+
+
+
+        <script src="public/orm.4899f.download" defer=""></script>
+
+      <script src="public/main.4899.download" defer=""></script>
+
+
+
+  <script src="public/f(1).txt"></script><meta property="og:url" itemprop="url" content="Chapter 3 Domain 3_ Cloud Platform and Infrastructure Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html" data-react-helmet="true"><script data-react-helmet="true">
+        var gtmInitialDimensions = {"product":{"title":"(ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition","type":"book","identifier":"9781119603498","topic":"CCSP (Certified Cloud Security Professional)"},"content":{"identifier":"9781119603498-/Chapter 3 Domain 3_ Cloud Platform and Infrastructure Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html","publisher":"Sybex","free":"no","subdirectory":"none","subTopic":"none","parentTopic":"none","formatType":"book-chapter","author":"Ben Malisow","releaseDate":"2020-02-19","title":"Chapter 3 Domain 3: Cloud Platform and Infrastructure Security"}};
+        window.dataLayer = window.dataLayer || [];
+        var dataLayer = window.dataLayer;
+        dataLayer.push(gtmInitialDimensions);
+      </script><meta name="search-title" content="Chapter 3 Domain 3: Cloud Platform and Infrastructure Security" data-react-helmet="true"><meta property="og:title" content="Chapter 3 Domain 3: Cloud Platform and Infrastructure Security" data-react-helmet="true"><meta itemprop="name" content="Chapter 3 Domain 3: Cloud Platform and Infrastructure Security" data-react-helmet="true"><meta property="og:description" itemprop="description" content="
+
+CHAPTER 3Domain 3: Cloud Platform and Infrastructure Security
+
+
+
+
+ The third domain of the Certified Cloud Security Professional (CCSP) Exam Outline concerns the underlying infrastructure of the..." data-react-helmet="true"><meta name="twitter:description" content="
+
+CHAPTER 3Domain 3: Cloud Platform and Infrastructure Security
+
+
+
+
+ The third domain of the Certified Cloud Security Professional (CCSP) Exam Outline concerns the underlying infrastructure of the..." data-react-helmet="true"></head>
+  <body>
+      <noscript>
+        <iframe src='https://127.0.0.1/ns.html?id=GTM-5P4V6Z'
+          height='0' width='0' style='display:none;visibility:hidden'></iframe>
+      </noscript>
+    <div id="root"><div class="orm-ff-Shell-shell__wrapper"><a href="Chapter 3 Domain 3_ Cloud Platform and Infrastructure Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html#main" class="orm-ff-Shell-skipLink">Skip to content</a><div class="orm-ff-Shell-content__wrapper"><div class="orm-ff-Shell-search orm-ff-Shell-search__wrapper orm-ff-Shell-collapsedSearch"><div class="orm-ff-SearchBarView-searchBarContainer orm-ff-SearchBarView-searchBarWithNewInput"><form role="search" class="orm-ff-SearchBarView-root"><div class="orm-ff-SearchBarView-searchContainer"><div class="orm-Input-root orm-ff-SearchBarView-searchInput  orm-Input-large orm-Input-withIcon"><label for="input-dzgm00j4f5n" class="orm-Input-inputLabel"><span class="orm-Icon-root orm-Input-iconRoot " aria-hidden="true" data-testid="icon" style="height: 1.5rem;"><span class="orm-Icon-icon orm-Input-icon  orm-icon-search " aria-hidden="true" style="font-size: 1.5rem; width: 1.5rem; height: 1.5rem;"></span><span class="orm-Icon-title">search</span></span><input aria-invalid="false" autocomplete="off" class="orm-Input-input orm-ff-SearchBarView-newInput " id="input-dzgm00j4f5n" name="value" placeholder="Search for books, videos, live events, and more" type="search" value=""><span class="orm-Input-labelTxt">Search</span></label></div></div></form></div><div class="orm-ff-Shell-userProfileSection orm-ff-UserProfileWidget-userProfileWrapper"><button aria-expanded="false" aria-label="Your profile" class="orm-Button-root orm-ff-UserProfileWidget-disclosureButton "><span class="orm-Button-btnContentWrap"><span class="orm-Icon-root" data-testid="icon" style="height: 2rem;"><span class="orm-Icon-icon orm-icon-person " aria-hidden="true" style="font-size: 2rem; width: 2rem; height: 2rem;"></span><span class="orm-Icon-title">person</span></span> <span class="orm-Icon-root" data-testid="icon" style="height: 1rem;"><span class="orm-Icon-icon orm-icon-chevron-down " aria-hidden="true" style="font-size: 1rem; width: 1rem; height: 1rem;"></span><span class="orm-Icon-title">chevron down</span></span></span></button><div></div></div></div><div class="orm-ff-Shell-content white--6tN8i ucvMode-white  orm-ff-Shell-authContent orm-ff-Shell-collapsedContent" data-scroll-top=""><main role="main" class="orm-ff-Shell-main orm-ff-Shell-authMain orm-ff-Shell-collapsedMain" id="main" tabindex="-1"><section class="contentContainer--2mK5p white--hhcbS ucvMode-white"><div class="navContainer--2_xPC"><nav class="statusBar--2xaib white--khrWc" data-testid="statusBar"><section class="status--1uP5q"><div class="prevContainer--30LmH"><a class="orm-Link-root" href="Chapter 2 Domain 2_ Cloud Data Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html"><span class="caret--nhhCZ prev--ARW--"></span> <span class="title--1b0fU">Chapter 2 Domain 2: Cloud Data Security</span></a></div><div data-datadog-id="ucv-nav-title" class="currentTitle--1dL5i">Chapter 3 Domain 3: Cloud Platform and Infrastructure Security</div><div class="nextContainer--2OsHF"><a class="orm-Link-root" href="Chapter 4 Domain 4_ Cloud Application Security _ (ISC)2 CCSP Certified Cloud Security Professional Official Practice Tests, 2nd Edition.html"><span class="title--1b0fU">Chapter 4 Domain 4: Cloud Application Security</span> <span class="caret--nhhCZ next--2QWlj"></span></a></div></section></nav></div><article class="contentSection--3h7uJ"><section class="contentViewer--1W37P"><div class="annotatable--2YgjA"><div id="book-content"><div class="readerContainer--2F4Ft white--13FSs" style="font-size: 1em; max-width: 70ch;"><div id="sbo-rt-content"><section epub:type="chapter" role="doc-chapter">
+<header>
+<h1><span epub:type="pagebreak" role="doc-pagebreak" title="59" id="Page_59"></span><span class="chapterNumber">CHAPTER 3</span><br><span class="chapterTitle">Domain 3: Cloud Platform and Infrastructure Security</span></h1>
+</header>
+<p class="chapterAuthor"></p>
+
+<section id="c03-sec-0001">
+<p>The third domain of the Certified Cloud Security Professional (CCSP) Exam Outline concerns the underlying infrastructure of the cloud, including both hardware and software, the concept of pooled resources, and a detailed discussion of identity and access management (IAM).</p>
+<section class="exercises">
+<section class="questionSet">
+<ol class="questionList">
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="60" id="Page_60"></span>You are in charge of creating the business continuity and disaster recovery (BC/DR) plan and procedures for your organization. Your organization has its production environment hosted in a cloud environment. You are considering using cloud backup services for your BC/DR purposes as well. What would probably be the best strategy for this approach, in terms of redundancy and resiliency?
+</p>
+<ol id="c03-list-0001" class="upper-latin">
+<li>Have your cloud provider also provide BC/DR backup.</li>
+<li>Keep a BC/DR backup on the premises of your corporate headquarters.</li>
+<li>Use another cloud provider for the BC/DR backup.</li>
+<li>Move your production environment back into your corporate premises, and use your cloud provider to host your BC/DR backup.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are in charge of creating the business continuity and disaster recovery (BC/DR) plan and procedures for your organization. You decide to have a tabletop test of the BC/DR activity. Which of the following will offer the best value during the test?</p>
+<ol id="c03-list-0002" class="upper-latin">
+<li>Have all participants conduct their individual activities via remote meeting technology.</li>
+<li>Task a moderator well versed in BC/DR actions to supervise and present scenarios to the participants, including randomized special events.</li>
+<li>Provide copies of the BC/DR policy to all participants.</li>
+<li>Allow all users in your organization to participate.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are in charge of creating the business continuity and disaster recovery (BC/DR) plan and procedures for your organization. Your organization has its production environment hosted by a cloud provider, and you have appropriate protections in place. Which of the following is a significant consideration for your BC/DR backup?</p>
+<ol id="c03-list-0003" class="upper-latin">
+<li>Enough personnel at the BC/DR recovery site to ensure proper operations</li>
+<li>Good cryptographic key management</li>
+<li>Access to the servers where the BC/DR backup is stored</li>
+<li>Forensic analysis capabilities</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>You are in charge of creating the business continuity and disaster recovery (BC/DR) plan and procedures for your organization. You are going to conduct a full test of the BC/DR plan. Which of the following strategies is an optimum technique to avoid major issues?</p>
+<ol id="c03-list-0004" class="upper-latin">
+<li>Have another full backup of the production environment stored prior to the test.</li>
+<li>Assign all personnel tasks to perform during the test.</li>
+<li>Have the cloud provider implement a simulated disaster at a random moment in order to maximize realistic testing.</li>
+<li>Have your regulators present at the test so they can monitor performance.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="61" id="Page_61"></span>A Security Assertion Markup Language (SAML) identity assertion token uses the ___________________ protocol.</p>
+<ol id="c03-list-0005" class="upper-latin">
+<li>Extensible Markup Language (XML)</li>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+<li>Hypertext Markup Language (HTML)</li>
+<li>American Standard Code for Information Interchange (ASCII)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The minimum essential characteristics of a cloud data center are often referred to as “ping, power, pipe.” What does this term mean?</p>
+<ol id="c03-list-0006" class="upper-latin">
+<li>Remote access for customer to racked devices in the data center; electrical utilities; connectivity to an Internet service provider (ISP)/the Internet</li>
+<li>Application suitability; availability; connectivity</li>
+<li>Infrastructure as a service (IaaS); software as a service (SaaS); platform as a service (PaaS)</li>
+<li>Anti-malware tools; controls against distributed denial-of-service (DDoS) attacks; physical/environmental security controls, including fire suppression</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>To support all aspects of the CIA triad (confidentiality, integrity, availability), all of the following aspects of a cloud data center need to be engineered with redundancies <i>except</i> ___________________.</p>
+<ol id="c03-list-0007" class="upper-latin">
+<li>Power supply</li>
+<li>HVAC</li>
+<li>Administrative offices</li>
+<li>Internet service provider (ISP)/connectivity lines</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Who is the cloud carrier?</p>
+<ol id="c03-list-0008" class="upper-latin">
+<li>The cloud customer</li>
+<li>The cloud provider</li>
+<li>The regulator overseeing the cloud customer’s industry</li>
+<li>The ISP between the cloud customer and provider</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following terms describes a means to centralize logical control of all networked nodes in the environment, abstracted from the physical connections to each?</p>
+<ol id="c03-list-0009" class="upper-latin">
+<li>Virtual private network (VPN)</li>
+<li>Software-defined network (SDN)</li>
+<li>Access control lists (ACLs)</li>
+<li>Role-based access control (RBAC)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="62" id="Page_62"></span>In software-defined networking (SDN), the northbound interface (NBI) usually handles traffic between the ___________________ and the ___________________.</p>
+<ol id="c03-list-0010" class="upper-latin">
+<li>Cloud customer; ISP</li>
+<li>SDN controllers; SDN applications</li>
+<li>Cloud provider; ISP</li>
+<li>Router; host</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Software-defined networking (SDN) allows network administrators and architects to perform all the following functions <i>except</i> ___________________.</p>
+<ol id="c03-list-0011" class="upper-latin">
+<li>Reroute traffic based on current customer demand</li>
+<li>Create logical subnets without having to change any actual physical connections</li>
+<li>Filter access to resources based on specific rules or settings</li>
+<li>Deliver streaming media content in an efficient manner by placing it closer to the end user</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a device specially purposed to handle the issuance, distribution, and storage of cryptographic keys?</p>
+<ol id="c03-list-0012" class="upper-latin">
+<li>Key management box (KMB)</li>
+<li>Hardware security module (HSM)</li>
+<li>Ticket-granting ticket (TGT)</li>
+<li>Trusted computing base (TCB)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>When discussing the cloud, we often segregate the data center into the terms <i>compute</i>, <i>storage</i>, and <i>networking</i>. <i>Compute</i> is made up of ___________________ and ___________________.</p>
+<ol id="c03-list-0013" class="upper-latin">
+<li>Routers; hosts</li>
+<li>Application programming interface (APIs); northbound interface (NBIs)</li>
+<li>Central processing unit (CPU); random-access memory (RAM)</li>
+<li>Virtualized; actual hardware devices</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>All of the following can be used to properly apportion cloud resources <i>except</i> ___________________.</p>
+<ol id="c03-list-0014" class="upper-latin">
+<li>Reservations</li>
+<li>Shares</li>
+<li>Cancellations</li>
+<li>Limits</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="63" id="Page_63"></span>Which of the following is a method for apportioning resources that involves setting guaranteed minimums for all tenants/customers within the environment?</p>
+<ol id="c03-list-0015" class="upper-latin">
+<li>Reservations</li>
+<li>Shares</li>
+<li>Cancellations</li>
+<li>Limits</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a method for apportioning resources that involves setting maximum usage amounts for all tenants/customers within the environment?</p>
+<ol id="c03-list-0016" class="upper-latin">
+<li>Reservations</li>
+<li>Shares</li>
+<li>Cancellations</li>
+<li>Limits</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a method for apportioning resources that involves prioritizing resource requests to resolve contention situations?</p>
+<ol id="c03-list-0017" class="upper-latin">
+<li>Reservations</li>
+<li>Shares</li>
+<li>Cancellations</li>
+<li>Limits</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A bare-metal hypervisor is Type ___________________.</p>
+<ol id="c03-list-0018" class="upper-latin">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A hypervisor that runs inside another operating system (OS) is a Type ___________________ hypervisor.</p>
+<ol id="c03-list-0019" class="upper-latin">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A Type ___________________ hypervisor is probably more difficult to defend than other hypervisors.</p>
+<ol id="c03-list-0020" class="upper-latin">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>One of the security challenges of operating in the cloud is that additional controls must be placed on file storage systems because ___________________.</p>
+<ol id="c03-list-0021" class="upper-latin">
+<li>File stores are always kept in plain text in the cloud</li>
+<li>There is no way to sanitize file storage space in the cloud</li>
+<li>Virtualization necessarily prevents the use of application-based security controls</li>
+<li>Virtual machines are stored as snapshotted files when not in use</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="64" id="Page_64"></span>What is the main reason virtualization is used in the cloud?</p>
+<ol id="c03-list-0022" class="upper-latin">
+<li>Virtual machines (VMs) are easier to administer.</li>
+<li>If a VM is infected with malware, it can be easily replaced.</li>
+<li>With VMs, the cloud provider does not have to deploy an entire hardware device for every new user.</li>
+<li>VMs are easier to operate than actual devices.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Orchestrating resource calls is the job of the ___________________.</p>
+<ol id="c03-list-0023" class="upper-latin">
+<li>Administrator</li>
+<li>Router</li>
+<li>VM</li>
+<li>Hypervisor</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following terms describes a cloud storage area that uses a filesystem/hierarchy?</p>
+<ol id="c03-list-0024" class="upper-latin">
+<li>Volume storage</li>
+<li>Object storage</li>
+<li>Logical unit number (LUN)</li>
+<li>Block storage</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Typically, which form of cloud storage is used in the near term for snapshotted virtual machine (VM) images?</p>
+<ol id="c03-list-0025" class="upper-latin">
+<li>Volume storage</li>
+<li>Object storage</li>
+<li>Logical unit number (LUN)</li>
+<li>Block storage</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Who operates the management plane?</p>
+<ol id="c03-list-0026" class="upper-latin">
+<li>Regulators</li>
+<li>End consumers</li>
+<li>Privileged users</li>
+<li>Privacy data subjects</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is probably the <i>optimum</i> way to avoid vendor lock-in?</p>
+<ol id="c03-list-0027" class="upper-latin">
+<li>Use nonproprietary data formats.</li>
+<li>Use industry-standard media.</li>
+<li>Use strong cryptography.</li>
+<li>Use favorable contract language.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="65" id="Page_65"></span>Who will determine whether your organization’s cloud migration is satisfactory from a compliance perspective?</p>
+<ol id="c03-list-0028" class="upper-latin">
+<li>The cloud provider</li>
+<li>The cloud customer</li>
+<li>The regulator(s)</li>
+<li>The Internet service provider (ISP)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is probably the best way to avoid problems associated with vendor lock-out?</p>
+<ol id="c03-list-0029" class="upper-latin">
+<li>Use strong contract language.</li>
+<li>Use nonproprietary data and media formats.</li>
+<li>Use strong cryptography.</li>
+<li>Use another provider for backup purposes.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In a public cloud services arrangement, who creates governance that will determine which controls are selected for the data center and how they are deployed?</p>
+<ol id="c03-list-0030" class="upper-latin">
+<li>The cloud provider</li>
+<li>The cloud customer</li>
+<li>The regulator(s)</li>
+<li>The end user</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the term that describes the situation when a malicious user or attacker can exit the restrictions of a virtual machine (VM) and access another VM residing on the same host?</p>
+<ol id="c03-list-0031" class="upper-latin">
+<li>Host escape</li>
+<li>Guest escape</li>
+<li>Provider exit</li>
+<li>Escalation of privileges</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the term that describes the situation when a malicious user or attacker can exit the restrictions of a single host and access other nodes on the network?</p>
+<ol id="c03-list-0032" class="upper-latin">
+<li>Host escape</li>
+<li>Guest escape</li>
+<li>Provider exit</li>
+<li>Escalation of privileges</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>___________________ is/are probably the main cause of virtualization sprawl.</p>
+<ol id="c03-list-0033" class="upper-latin">
+<li>Malicious attackers</li>
+<li>Lack of provider controls</li>
+<li>Lack of customer controls</li>
+<li>Ease of use</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="66" id="Page_66"></span>Sprawl is mainly a(n) ___________________ problem.</p>
+<ol id="c03-list-0034" class="upper-latin">
+<li>Technical</li>
+<li>External</li>
+<li>Management</li>
+<li>Logical</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following risks exists in the traditional environment but is dramatically increased by moving into the cloud?</p>
+<ol id="c03-list-0035" class="upper-latin">
+<li>Physical security breaches</li>
+<li>Loss of utility power</li>
+<li>Financial upheaval</li>
+<li>Man-in-the-middle attacks</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A fundamental aspect of security principles, ___________________ should be implemented in the cloud as well as in traditional environments.</p>
+<ol id="c03-list-0036" class="upper-latin">
+<li>Continual uptime</li>
+<li>Defense in depth</li>
+<li>Multifactor authentication</li>
+<li>Separation of duties</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>From a security perspective, automation of configuration aids in ___________________.</p>
+<ol id="c03-list-0037" class="upper-latin">
+<li>Enhancing performance</li>
+<li>Reducing potential attack vectors</li>
+<li>Increasing ease of use of the systems</li>
+<li>Reducing need for administrative personnel</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>___________________ is the <i>most</i> prevalent protocol used in identity federation.</p>
+<ol id="c03-list-0038" class="upper-latin">
+<li>Hypertext Transfer Protocol (HTTP)</li>
+<li>Security Assertion Markup Language (SAML)</li>
+<li>File Transfer Protocol (FTP)</li>
+<li>WS-Federation</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A user signs on to a cloud-based social media platform. In another browser tab, the user finds an article worth posting to the social media platform. The user clicks on the platform’s icon listed on the article’s website, and the article is automatically posted to the user’s account on the social media platform. This is an example of what?</p>
+<ol id="c03-list-0039" class="upper-latin">
+<li>Single sign-on</li>
+<li>Insecure direct identifiers</li>
+<li>Identity federation</li>
+<li>Cross-site scripting</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="67" id="Page_67"></span>A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to review each other, for compliance with security governance and standards they all find acceptable, what is this federation model called?</p>
+<ol id="c03-list-0040" class="upper-latin">
+<li>Cross-certification</li>
+<li>Proxy</li>
+<li>Single sign-on</li>
+<li>Regulated</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to hire a third party to review each organization, for compliance with security governance and standards they all find acceptable, what is this federation model called?</p>
+<ol id="c03-list-0041" class="upper-latin">
+<li>Cross-certification</li>
+<li>Proxy</li>
+<li>Single sign-on</li>
+<li>Regulated</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to use the web of trust model for federation, who is/are the identity provider(s)?</p>
+<ol id="c03-list-0042" class="upper-latin">
+<li>Each organization</li>
+<li>A trusted third party</li>
+<li>The regulator overseeing their industry</li>
+<li>All of their patients</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to use the web of trust model for federation, who is/are the service providers?</p>
+<ol id="c03-list-0043" class="upper-latin">
+<li>Each organization</li>
+<li>A trusted third party</li>
+<li>The regulator overseeing their industry</li>
+<li>All of their patients</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A group of clinics decides to create an identification federation for their users (medical providers and clinicians). In this federation, all of the participating organizations would need to be in compliance with what U.S. federal regulation?</p>
+<ol id="c03-list-0044" class="upper-latin">
+<li>Gramm-Leach-Bliley Act (GLBA)</li>
+<li>Family and Medical Leave Act (FMLA)</li>
+<li>Payment Card Industry Data Security Standard (PCI DSS)</li>
+<li>Health Information Portability and Accountability Act (HIPAA)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="68" id="Page_68"></span>What is the process of granting access to resources?</p>
+<ol id="c03-list-0045" class="upper-latin">
+<li>Identification</li>
+<li>Authentication</li>
+<li>Authorization</li>
+<li>Federation</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The process of identity management includes all the following elements <i>except</i> ___________________.</p>
+<ol id="c03-list-0046" class="upper-latin">
+<li>Provisioning</li>
+<li>Maintenance</li>
+<li>Deprovisioning</li>
+<li>Redaction</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which organizational entity usually performs the verification part of the provisioning element of the identification process?</p>
+<ol id="c03-list-0047" class="upper-latin">
+<li>Information technology (IT)</li>
+<li>Security</li>
+<li>Human resources (HR)</li>
+<li>Sales</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Of the following options, which is a reason cloud data center audits are often less easy to verify than traditional audits?</p>
+<ol id="c03-list-0048" class="upper-latin">
+<li>Data in the cloud can’t be audited.</li>
+<li>Controls in the cloud can’t be audited.</li>
+<li>Getting physical access can be difficult.</li>
+<li>There are no regulators for cloud operations.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Of the following options, which is a reason cloud data center audits are often less easy to verify than traditional audits?</p>
+<ol id="c03-list-0049" class="upper-latin">
+<li>Cryptography is present.</li>
+<li>Auditors don’t like the cloud.</li>
+<li>Cloud equipment is resistant to audit.</li>
+<li>They often rely on data the provider chooses to disclose.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Of the following options, which is a reason cloud data center audits are often less easy to verify than audits in standard data centers?</p>
+<ol id="c03-list-0050" class="upper-latin">
+<li>They frequently rely on third parties.</li>
+<li>The standards are too difficult to follow.</li>
+<li>The paperwork is cumbersome.</li>
+<li>There aren’t enough auditors.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="69" id="Page_69"></span>The cloud customer will usually not have physical access to the cloud data center. This enhances security by ___________________.</p>
+<ol id="c03-list-0051" class="upper-latin">
+<li>Reducing the need for qualified personnel</li>
+<li>Limiting access to sensitive information</li>
+<li>Reducing jurisdictional exposure</li>
+<li>Ensuring statutory compliance</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following controls would be useful to build into a virtual machine baseline image for a cloud environment?</p>
+<ol id="c03-list-0052" class="upper-latin">
+<li>GPS tracking/locator</li>
+<li>Automated vulnerability scan on system startup</li>
+<li>Access control list (ACL) of authorized personnel</li>
+<li>Write protection</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following controls would be useful to build into a virtual machine baseline image for a cloud environment?</p>
+<ol id="c03-list-0053" class="upper-latin">
+<li>Automatic registration with the configuration management system</li>
+<li>Enhanced user training and awareness media</li>
+<li>Mechanisms that prevent the file from being copied</li>
+<li>Keystroke loggers</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Virtual machine (VM) configuration management (CM) tools should probably include ___________________.</p>
+<ol id="c03-list-0054" class="upper-latin">
+<li>Biometric recognition</li>
+<li>Anti-tampering mechanisms</li>
+<li>Log file generation</li>
+<li>Hackback capabilities</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Using a virtual machine baseline image could be very useful for which of the following options?</p>
+<ol id="c03-list-0055" class="upper-latin">
+<li>Physical security</li>
+<li>Auditing</li>
+<li>Training</li>
+<li>Customization</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What can be revealed by an audit of a baseline virtual image, used in a cloud environment?</p>
+<ol id="c03-list-0056" class="upper-latin">
+<li>Adequate physical protections in the data center</li>
+<li>Potential criminal activity before it occurs</li>
+<li>Whether necessary security controls are in place and functioning properly</li>
+<li>Lack of user training and awareness</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="70" id="Page_70"></span>Using one cloud provider for your operational environment and another for your BC/DR backup will also give you the additional benefit of ___________________.</p>
+<ol id="c03-list-0057" class="upper-latin">
+<li>Allowing any custom VM builds you use to be instantly ported to another environment</li>
+<li>Avoiding vendor lock-in/lock-out</li>
+<li>Increased performance</li>
+<li>Lower cost</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Having your BC/DR backup stored with the same cloud provider as your production environment can help you ___________________.</p>
+<ol id="c03-list-0058" class="upper-latin">
+<li>Maintain regulatory compliance</li>
+<li>Spend less of your budget on traveling</li>
+<li>Train your users about security awareness</li>
+<li>Recover quickly from minor incidents</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>If you use the cloud for BC/DR purposes, even if you don’t operate your production environment in the cloud, you can cut costs by eliminating your ___________________.</p>
+<ol id="c03-list-0059" class="upper-latin">
+<li>Security personnel</li>
+<li>BC/DR policy</li>
+<li>Old access credentials</li>
+<li>Need for a physical hot site/warm site</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>If the cloud is used for BC/DR purposes, the loss of ___________________ could gravely affect your organization’s RTO.</p>
+<ol id="c03-list-0060" class="upper-latin">
+<li>Any cloud administrator</li>
+<li>A specific VM</li>
+<li>Your policy and contract documentation</li>
+<li>ISP connectivity</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the <i>most</i> important asset to protect in cloud BC/DR activities?</p>
+<ol id="c03-list-0061" class="upper-latin">
+<li>Intellectual property</li>
+<li>Hardware at the cloud data center</li>
+<li>Personnel</li>
+<li>Data on portable media</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>When considering cloud data replication strategies (i.e., whether you are making backups at the block, file, or database level), which element of your organization’s BC/DR plan will be <i>most</i> affected by your choice?</p>
+<ol id="c03-list-0062" class="upper-latin">
+<li>Recovery time objective</li>
+<li>Recovery point objective</li>
+<li>Maximum allowable downtime</li>
+<li>Mean time to failure</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="71" id="Page_71"></span>In addition to BC/DR, what other benefit can your data archive/backup provide?</p>
+<ol id="c03-list-0063" class="upper-latin">
+<li>Physical security enforcement</li>
+<li>Access control methodology</li>
+<li>Security control against data breach</li>
+<li>Availability for data lost accidentally</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following risks is probably <i>most</i> significant when choosing to use one cloud provider for your operational environment and another for BC/DR backup/archive?</p>
+<ol id="c03-list-0064" class="upper-latin">
+<li>Physical intrusion</li>
+<li>Proprietary formats/lack of interoperability</li>
+<li>Vendor lock-in/lock-out</li>
+<li>Natural disasters</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Return to normal operations is a phase in BC/DR activity when the emergency is over and regular production can resume. Which of the following can sometimes be the result when the organization uses two different cloud providers for the production and BC/DR environments?</p>
+<ol id="c03-list-0065" class="upper-latin">
+<li>Both providers are affected by the emergency, extending the time before return to normal can occur.</li>
+<li>The BC/DR provider becomes the new normal production environment.</li>
+<li>Regulators will find the organization in violation of compliance guidance.</li>
+<li>All data is lost irretrievably.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of these determines the critical assets, recovery time objective (RTO), and recover point objective (RPO) for BC/DR purposes?</p>
+<ol id="c03-list-0066" class="upper-latin">
+<li>Business drivers</li>
+<li>User input</li>
+<li>Regulator mandate</li>
+<li>Industry standards</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What artifact—which should already exist within the organization—can be used to determine the critical assets necessary to protect in the BC/DR activity?</p>
+<ol id="c03-list-0067" class="upper-latin">
+<li>Quantitative risk analysis</li>
+<li>Qualitative risk analysis</li>
+<li>Business impact analysis</li>
+<li>Risk appetite</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is probably the <i>most</i> important element to address if your organization is using two different cloud providers for the production and BC/DR environments?</p>
+<ol id="c03-list-0068" class="upper-latin">
+<li>Do they cost the same?</li>
+<li>Do they have similar facility protections in place?</li>
+<li>What level of end-user support do they each offer?</li>
+<li>Can the backup provider meet the same SLA requirements as the primary?</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="72" id="Page_72"></span>In a managed cloud services arrangement, who invokes a BC/DR action?</p>
+<ol id="c03-list-0069" class="upper-latin">
+<li>The cloud provider</li>
+<li>The cloud customer</li>
+<li>Depends on the contract</li>
+<li>Any user</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What do you need to do in order to fully ensure that a BC/DR action will function during a contingency?</p>
+<ol id="c03-list-0070" class="upper-latin">
+<li>Audit all performance functions.</li>
+<li>Audit all security functions.</li>
+<li>Perform a full-scale test.</li>
+<li>Mandate this capability in the contract.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is probably the <i>most</i> important activity, of those listed?</p>
+<ol id="c03-list-0071" class="upper-latin">
+<li>Regularly update the BC/DR plan/process.</li>
+<li>Have contact information for all personnel in the organization.</li>
+<li>Have contact information for essential BC/DR personnel.</li>
+<li>Have contact information for local law enforcement.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The BC/DR plan/policy should include all of the following <i>except</i> ___________________.</p>
+<ol id="c03-list-0072" class="upper-latin">
+<li>Tasking for the office responsible for maintaining/enforcing the plan</li>
+<li>Contact information for essential entities, including BC/DR personnel and emergency services agencies</li>
+<li>Copies of the laws/regulations/standards governing specific elements of the plan</li>
+<li>Checklists for BC/DR personnel to follow</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The BC/DR plan/process should be written and documented in such a way that it can be used by ___________________.</p>
+<ol id="c03-list-0073" class="upper-latin">
+<li>Users</li>
+<li>Essential BC/DR team members</li>
+<li>Regulators</li>
+<li>Someone with the requisite skills</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following probably poses the <i>most</i> significant risk to the organization?</p>
+<ol id="c03-list-0074" class="upper-latin">
+<li>Not having essential BC/DR personnel available during a contingency</li>
+<li>Not including all BC/DR elements in the cloud contract</li>
+<li>Returning to normal operations too soon</li>
+<li>Telecommunications outages</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="73" id="Page_73"></span>Which of the following probably poses the <i>most</i> significant risk to the organization?</p>
+<ol id="c03-list-0075" class="upper-latin">
+<li>Lack of data confidentiality during a contingency</li>
+<li>Lack of regulatory compliance during a contingency</li>
+<li>Returning to normal operations too late</li>
+<li>Lack of encrypted communications during a contingency</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Why does the physical location of your data backup and/or BC/DR failover environment matter?</p>
+<ol id="c03-list-0076" class="upper-latin">
+<li>It may affect regulatory compliance.</li>
+<li>Lack of physical security.</li>
+<li>Environmental factors such as humidity.</li>
+<li>It doesn’t matter. Data can be saved anywhere without consequence.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>According to the European Union Agency for Network and Information Security (ENISA), a cloud risk assessment should provide a means for customers to accomplish all these assurance tasks <i>except</i> ___________________.</p>
+<ol id="c03-list-0077" class="upper-latin">
+<li>Assess risks associated with cloud migration</li>
+<li>Compare offerings from different cloud providers</li>
+<li>Reduce the risk of regulatory noncompliance</li>
+<li>Reduce the assurance burden on cloud providers</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The European Union Agency for Network and Information Security’s (ENISA’s) definition of cloud computing differs slightly from the definition offered by (ISC)<sup>2</sup> (and, for instance, NIST). What is one of the characteristics listed by ENISA but <i>not</i> included in the (ISC)<sup>2</sup> definition?</p>
+<ol id="c03-list-0078" class="upper-latin">
+<li>Metered service</li>
+<li>Shared resources</li>
+<li>Scalability</li>
+<li>Programmatic management</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Risk should always be considered from a business perspective. Risk is often balanced by corresponding ___________________.</p>
+<ol id="c03-list-0079" class="upper-latin">
+<li>Profit</li>
+<li>Performance</li>
+<li>Cost</li>
+<li>Opportunity</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="74" id="Page_74"></span>When considering the option to migrate from an on-premise environment to a hosted cloud service, an organization should weigh the risks of allowing external entities to access the cloud data for collaborative purposes against ___________________.</p>
+<ol id="c03-list-0080" class="upper-latin">
+<li>Not securing the data in the traditional environment</li>
+<li>Disclosing the data publicly</li>
+<li>Inviting external personnel into the traditional workspace in order to enhance collaboration</li>
+<li>Sending the data outside the traditional environment for collaborative purposes</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>There are many ways to handle risk. However, the usual methods for addressing risk are not all possible in the cloud because ___________________.</p>
+<ol id="c03-list-0081" class="upper-latin">
+<li>Cloud data risks cannot be mitigated</li>
+<li>Migrating into a cloud environment necessarily means you are accepting all risks</li>
+<li>Some risks cannot be transferred to a cloud provider</li>
+<li>Cloud providers cannot avoid risk</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In which cloud service model does the customer lose the <i>most</i> control over governance?</p>
+<ol id="c03-list-0082" class="upper-latin">
+<li>Infrastructure as a service (IaaS)</li>
+<li>Platform as a service (PaaS)</li>
+<li>Software as a service (SaaS)</li>
+<li>Private cloud</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following poses a <i>new</i> risk in the cloud, not affecting the traditional, on-premise IT environment?</p>
+<ol id="c03-list-0083" class="upper-latin">
+<li>Internal threats</li>
+<li>Multitenancy</li>
+<li>Natural disasters</li>
+<li>Distributed denial-of-service (DDoS) attacks</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In addition to the security offered by the cloud provider, a cloud customer must consider the security offered by ___________________.</p>
+<ol id="c03-list-0084" class="upper-latin">
+<li>The respective regulator</li>
+<li>The end user(s)</li>
+<li>Any vendor the cloud customer previously used in the on-premise environment</li>
+<li>Any third parties the provider depends on</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following poses a <i>new</i> risk in the cloud, not affecting the traditional, on-premise IT environment?</p>
+<ol id="c03-list-0085" class="upper-latin">
+<li>User carelessness</li>
+<li>Inadvertent breach</li>
+<li>Device failure</li>
+<li>Resource exhaustion</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="75" id="Page_75"></span>Where is isolation failure probably <i>least</i> likely to pose a significant risk?</p>
+<ol id="c03-list-0086" class="upper-latin">
+<li>Public cloud</li>
+<li>Private cloud</li>
+<li>PaaS environment</li>
+<li>SaaS environment</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following poses a <i>new</i> risk in the cloud, not affecting the traditional, on-premise environment?</p>
+<ol id="c03-list-0087" class="upper-latin">
+<li>Fire</li>
+<li>Legal seizure of another firm’s assets</li>
+<li>Mandatory privacy data breach notifications</li>
+<li>Flooding</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of these does the cloud customer need to ensure protection of intellectual property created in the cloud?</p>
+<ol id="c03-list-0088" class="upper-latin">
+<li>Digital rights management (DRM) solutions</li>
+<li>Identity and access management (IAM) solutions</li>
+<li>Strong contractual clauses</li>
+<li>Crypto-shredding</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What could be the result of failure of the cloud provider to secure the hypervisor in such a way that one user on a virtual machine can see the resource calls of another user’s virtual machine?</p>
+<ol id="c03-list-0089" class="upper-latin">
+<li>Unauthorized data disclosure</li>
+<li>Inference attacks</li>
+<li>Social engineering</li>
+<li>Physical intrusion</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Key generation in a cloud environment might have less entropy than the traditional environment for all the following reasons <i>except</i> ___________________.</p>
+<ol id="c03-list-0090" class="upper-latin">
+<li>Lack of direct input devices</li>
+<li>No social factors</li>
+<li>Uniform build</li>
+<li>Virtualization</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Lack of industry-wide standards for cloud computing creates a potential for ___________________.</p>
+<ol id="c03-list-0091" class="upper-latin">
+<li>Privacy data breach</li>
+<li>Privacy data disclosure</li>
+<li>vendor lock-in</li>
+<li>vendor lock-out</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="76" id="Page_76"></span>What can hamper the ability of a cloud customer to protect their assets in a managed services arrangement?</p>
+<ol id="c03-list-0092" class="upper-latin">
+<li>Prohibitions on port scanning and penetration testing</li>
+<li>Geographical dispersion</li>
+<li>Rules against training users</li>
+<li>Laws that prevent them from doing so</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Cloud administration almost necessarily violates the principles of the ___________________ security model.</p>
+<ol id="c03-list-0093" class="upper-latin">
+<li>Brewer-Nash (Chinese Wall)</li>
+<li>Graham-Denning</li>
+<li>Bell-LaPadula</li>
+<li>Biba</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The physical layout of a cloud data center campus should include redundancies of all the following <i>except</i> ___________________.</p>
+<ol id="c03-list-0094" class="upper-latin">
+<li>Physical perimeter security controls (fences, lights, walls, etc.)</li>
+<li>The administration/support staff building</li>
+<li>Electrical utility lines</li>
+<li>Communications connectivity lines</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Best practice for planning the physical resiliency for a cloud data center facility includes ___________________.</p>
+<ol id="c03-list-0095" class="upper-latin">
+<li>Having one point of egress for personnel</li>
+<li>Ensuring that any cabling/connectivity enters the facility from different sides of the building/property</li>
+<li>Ensuring that all parking areas are near generators so that personnel in high-traffic areas are always illuminated by emergency lighting, even when utility power is not available</li>
+<li>Ensuring that the foundation of the facility is rated to withstand earthquake tremors</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The physical layout of a cloud data center campus should include redundancies of all the following <i>except</i> ___________________.</p>
+<ol id="c03-list-0096" class="upper-latin">
+<li>Generators</li>
+<li>HVAC units</li>
+<li>Generator fuel storage</li>
+<li>Points of personnel ingress</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="77" id="Page_77"></span>There are two reasons to conduct a test of the organization’s recovery from backup in an&nbsp;environment other than the primary production environment. Which of the following is one of them?</p>
+<ol id="c03-list-0097" class="upper-latin">
+<li>It costs more to conduct a test at the same location as the primary workplace.</li>
+<li>You don’t want to waste travel budget on what is only a test.</li>
+<li>The risk of negative impact to both production and backup is too high.</li>
+<li>There won’t be enough room for everyone to sit in the primary facility.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>There are two reasons to conduct a test of the organization’s recovery from backup in an&nbsp;environment other than the primary production environment. Which of the following is one of them?</p>
+<ol id="c03-list-0098" class="upper-latin">
+<li>It is good to invest in more than one community.</li>
+<li>You want to approximate contingency conditions, which includes not operating in the primary location.</li>
+<li>It is good for your personnel to see other places occasionally.</li>
+<li>Your regulators won’t follow you off-site, so you’ll be unobserved during your test.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>In an IaaS arrangement, who accepts responsibility for securing cloud-based applications?</p>
+<ol id="c03-list-0099" class="upper-latin">
+<li>The cloud provider</li>
+<li>The cloud customer</li>
+<li>The regulator</li>
+<li>The end user/client</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Industry best practices dictate that cloud customers do not ___________________.</p>
+<ol id="c03-list-00100" class="upper-latin">
+<li>Create their own identity and access management (IAM) solutions</li>
+<li>Create contract language that favors them over the provider</li>
+<li>Retrain personnel for cloud operations</li>
+<li>Encrypt data before it reaches the cloud</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>It is possible for the cloud customer to transfer ___________________ risk to the provider, but the cloud customer always retains ultimate legal risk.</p>
+<ol id="c03-list-00101" class="upper-latin">
+<li>Market</li>
+<li>Perception</li>
+<li>Data</li>
+<li>Financial</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A process for ___________________ can aid in protecting against data disclosure due to lost devices.</p>
+<ol id="c03-list-00102" class="upper-latin">
+<li>User punishment</li>
+<li>Credential revocation</li>
+<li>Law enforcement notification</li>
+<li>Device tracking</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="78" id="Page_78"></span>All of the following can be used in the process of anomaly detection <i>except</i> ___________________.</p>
+<ol id="c03-list-00103" class="upper-latin">
+<li>The ratio of failed to successful logins</li>
+<li>Transactions completed successfully</li>
+<li>Event time of day</li>
+<li>Multiple concurrent logins</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Critical components should be protected with ___________________.</p>
+<ol id="c03-list-00104" class="upper-latin">
+<li>Strong passwords</li>
+<li>Chain-link fences</li>
+<li>Homomorphic encryption</li>
+<li>Multifactor authentication</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>It’s important to maintain a current asset inventory list, including surveying your environment on a regular basis, in order to ___________________.</p>
+<ol id="c03-list-00105" class="upper-latin">
+<li>Prevent unknown, unpatched assets from being used as back doors to the environment</li>
+<li>Ensure that any lost devices are automatically entered into the acquisition system for repurchasing and replacement</li>
+<li>Maintain user morale by having their devices properly catalogued and annotated</li>
+<li>Ensure that billing for all devices is handled by the appropriate departments</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following can enhance data portability?</p>
+<ol id="c03-list-00106" class="upper-latin">
+<li>Interoperable export formats</li>
+<li>Egress monitoring solutions</li>
+<li>Strong physical protections</li>
+<li>Agile business intelligence</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following can enhance application portability?</p>
+<ol id="c03-list-00107" class="upper-latin">
+<li>Using the same cloud provider for the production environment and archiving</li>
+<li>Conducting service trials in an alternate cloud provider environment</li>
+<li>Providing cloud-usage training for all users</li>
+<li>Tuning web application firewalls (WAFs) to detect anomalous activity in inbound communications</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What should the cloud customer do to ensure that disaster recovery activities don’t exceed the maximum allowable downtime (MAD)?</p>
+<ol id="c03-list-00108" class="upper-latin">
+<li>Make sure any alternate provider can support the application needs of the organization.</li>
+<li>Ensure that contact information for all first responder agencies are correct and up-to-date at all times.</li>
+<li>Select an appropriate recovery time objective (RTO).</li>
+<li>Regularly review all regulatory directives for disaster response.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="79" id="Page_79"></span>Which of the following would probably best aid an organization in deciding whether to migrate from a traditional environment to a particular cloud provider?</p>
+<ol id="c03-list-00109" class="upper-latin">
+<li>Rate sheets comparing a cloud provider to other cloud providers</li>
+<li>Cloud provider offers to provide engineering assistance during the migration</li>
+<li>The cost/benefit measure of closing the organization’s relocation site (hot site/warm site) and using the cloud for disaster recovery instead</li>
+<li>SLA satisfaction surveys from other (current and past) cloud customers</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A cloud provider will probably require all of the following <i>except</i> ___________________ before a customer conducts a penetration test.</p>
+<ol id="c03-list-00110" class="upper-latin">
+<li>Notice</li>
+<li>Description of scope of the test</li>
+<li>Physical location of the launch point</li>
+<li>Knowledge of time frame/duration</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Cloud providers will probably not allow ___________________ as part of a customer’s penetration test.</p>
+<ol id="c03-list-00111" class="upper-latin">
+<li>Network mapping</li>
+<li>Vulnerability scanning</li>
+<li>Reconnaissance</li>
+<li>Social engineering</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>A cloud customer performing a penetration test without the provider’s permission is risking ___________________.</p>
+<ol id="c03-list-00112" class="upper-latin">
+<li>Malware contamination</li>
+<li>Excessive fees for SLA violations</li>
+<li>Loss of market share</li>
+<li>Prosecution</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>When a customer performs a penetration test in the cloud, why isn’t the test an optimum simulation of attack conditions?</p>
+<ol id="c03-list-00113" class="upper-latin">
+<li>Attackers don’t use remote access for cloud activity.</li>
+<li>Advanced notice removes the element of surprise.</li>
+<li>When cloud customers use malware, it’s not the same as when attackers use malware.</li>
+<li>Regulator involvement changes the attack surface.</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Managed cloud services exist because the service is less expensive for each customer than creating the same services for themselves in a traditional environment. What is the technology that creates most of the cost savings in the cloud environment?</p>
+<ol id="c03-list-00114" class="upper-latin">
+<li>Emulation</li>
+<li>Secure remote access</li>
+<li>Crypto-shredding</li>
+<li>Virtualization</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="80" id="Page_80"></span>Managed cloud services exist because the service is less expensive for each customer than creating the same services for themselves in a traditional environment. From the customer perspective, most of the cost differential created between the traditional environment and the cloud through virtualization is achieved by removing ___________________.</p>
+<ol id="c03-list-00115" class="upper-latin">
+<li>External risks</li>
+<li>Internal risks</li>
+<li>Regulatory compliance</li>
+<li>Sunk capital investment</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Managed cloud services exist because the service is less expensive for each customer than creating the same services for themselves in a traditional environment. Using a managed service allows the customer to realize significant cost savings through the reduction of ___________________.</p>
+<ol id="c03-list-00116" class="upper-latin">
+<li>Risk</li>
+<li>Security controls</li>
+<li>Personnel</li>
+<li>Data</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a risk posed by the use of virtualization?</p>
+<ol id="c03-list-00117" class="upper-latin">
+<li>Internal threats interrupting service through physical accidents (spilling drinks, tripping over cables, etc.)</li>
+<li>The ease of transporting stolen virtual machine images</li>
+<li>Increased susceptibility of virtual systems to malware</li>
+<li>Electromagnetic pulse</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The tasks performed by the hypervisor in the virtual environment can be most likened to the tasks of the ___________________ in the traditional environment.</p>
+<ol id="c03-list-00118" class="upper-latin">
+<li>Central processing unit (CPU)</li>
+<li>Security team</li>
+<li>Operating system (OS)</li>
+<li>Pretty Good Privacy (PGP)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Mass storage in the cloud will most likely currently involve ___________________.</p>
+<ol id="c03-list-00119" class="upper-latin">
+<li>Spinning platters</li>
+<li>Tape drives</li>
+<li>Magnetic disks</li>
+<li>Solid-state drives (SSDs)</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the type of cloud storage arrangement that involves the use of associating metadata with the saved data?</p>
+<ol id="c03-list-00120" class="upper-latin">
+<li>Volume</li>
+<li>Block</li>
+<li><span epub:type="pagebreak" role="doc-pagebreak" title="81" id="Page_81"></span>Object</li>
+<li>Redundant</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>According to the <i>NIST Cloud Computing Reference Architecture</i>, which of the following is most likely a cloud carrier?</p>
+<ol id="c03-list-00121" class="upper-latin">
+<li>Amazon Web Services</li>
+<li>Netflix</li>
+<li>Verizon</li>
+<li>Nessus</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Resolving resource contentions in the cloud will most likely be the job of the ___________________.</p>
+<ol id="c03-list-00122" class="upper-latin">
+<li>Router</li>
+<li>Emulator</li>
+<li>Regulator</li>
+<li>Hypervisor</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Security controls installed on a guest virtual machine operating system (VM OS) will <i>not</i> function when ___________________.</p>
+<ol id="c03-list-00123" class="upper-latin">
+<li>The user is accessing the VM remotely</li>
+<li>The OS is not scanned for vulnerabilities</li>
+<li>The OS is not subject to version control</li>
+<li>The VM is not active while in storage</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Typically, SSDs are ___________________.</p>
+<ol id="c03-list-00124" class="upper-latin">
+<li>More expensive than spinning platters</li>
+<li>Larger than tape backup</li>
+<li>Heavier than tape libraries</li>
+<li>More subject to malware than legacy drives</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Typically, SSDs are ___________________.</p>
+<ol id="c03-list-00125" class="upper-latin">
+<li>Harder to install than magnetic memory</li>
+<li>Faster than magnetic drives</li>
+<li>Harder to administer than tape libraries</li>
+<li>More likely to fail than spinning platters</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Typically, SSDs are ___________________.</p>
+<ol id="c03-list-00126" class="upper-latin">
+<li>Impossible to destroy physically</li>
+<li>Not vulnerable to degaussing</li>
+<li>Subject to a longer warranty</li>
+<li>Protected by international trade laws</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="82" id="Page_82"></span>Of the following control techniques/solutions, which can be combined to enhance the protections offered by each?</p>
+<ol id="c03-list-00127" class="upper-latin">
+<li>Fences/firewalls</li>
+<li>Asset inventories/personnel training</li>
+<li>Data dispersion/encryption</li>
+<li>Intrusion prevention solutions/intrusion detection solutions</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Of the following control techniques/solutions, which can be combined to enhance the protections offered by each?</p>
+<ol id="c03-list-00128" class="upper-latin">
+<li>Razor tape/background checks</li>
+<li>Least privilege/generators</li>
+<li>DLP/DRM</li>
+<li>Personnel badging/secure baselines</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Risk assessment is the responsibility of ___________________.</p>
+<ol id="c03-list-00129" class="upper-latin">
+<li>Companies offering managed cloud services</li>
+<li>Regulatory bodies</li>
+<li>Every organization</li>
+<li>Legislative entities</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which entity can <i>best</i> aid the organization in avoiding vendor lock-in?</p>
+<ol id="c03-list-00130" class="upper-latin">
+<li>Senior management</li>
+<li>The IT security office</li>
+<li>General counsel</li>
+<li>The cloud security representative</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Perhaps the best method for avoiding vendor lock-out is also a means for enhancing BC/DR capabilities. This is ___________________.</p>
+<ol id="c03-list-00131" class="upper-latin">
+<li>Having a warm site within 250 miles of the primary production environment</li>
+<li>Using one cloud provider for primary production and another for backup purposes</li>
+<li>Building a data center above the flood plain</li>
+<li>Cross-training all personnel</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>___________________ can often be the result of inadvertent activity.</p>
+<ol id="c03-list-00132" class="upper-latin">
+<li>DDoS</li>
+<li>Phishing</li>
+<li>Sprawl</li>
+<li>Disasters</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="83" id="Page_83"></span>Of the following, which is probably the <i>most</i> significant risk in a managed cloud environment?</p>
+<ol id="c03-list-00133" class="upper-latin">
+<li>DDoS</li>
+<li>Management plane breach</li>
+<li>Guest escape</li>
+<li>Physical attack on the utility service lines</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>What is the optimal number of entrances to the cloud data center campus?</p>
+<ol id="c03-list-00134" class="upper-latin">
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+<li>Four</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>The cloud data center campus physical access point should include all of the following <i>except</i> ___________________.</p>
+<ol id="c03-list-00135" class="upper-latin">
+<li>Reception area</li>
+<li>Video surveillance</li>
+<li>Badging procedure</li>
+<li>Mantrap structures</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Where should multiple egress points be included?</p>
+<ol id="c03-list-00136" class="upper-latin">
+<li>At the power distribution substation</li>
+<li>Within the data center</li>
+<li>In every building on the campus</li>
+<li>In the security operations center</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a risk in the cloud environment that does not exist or is not as prevalent in the traditional environment?</p>
+<ol id="c03-list-00137" class="upper-latin">
+<li>DDoS</li>
+<li>Isolation failure</li>
+<li>External attack</li>
+<li>Internal attack</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>All security controls necessarily ___________________.</p>
+<ol id="c03-list-00138" class="upper-latin">
+<li>Are expensive</li>
+<li>Degrade performance</li>
+<li>Require senior management approval</li>
+<li>Will work in the cloud environment as well as they worked in the traditional environment</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p><span epub:type="pagebreak" role="doc-pagebreak" title="84" id="Page_84"></span>Which of the following is a risk in the cloud environment that does not exist or is not as prevalent in the traditional environment?</p>
+<ol id="c03-list-00139" class="upper-latin">
+<li>Legal liability in multiple jurisdictions</li>
+<li>Loss of productivity due to DDoS</li>
+<li>Ability of users to gain access to their physical workplace</li>
+<li>Fire</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Which of the following is a risk in the cloud environment that does not exist or is not as prevalent in the traditional environment?</p>
+<ol id="c03-list-00140" class="upper-latin">
+<li>Loss of availability due to DDoS</li>
+<li>Loss of value due to DDoS</li>
+<li>Loss of confidentiality due to DDoS</li>
+<li>Loss of liability due to DDoS</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>DDoS attacks do not affect ___________________ for cloud customers.</p>
+<ol id="c03-list-00141" class="upper-latin">
+<li>Productivity</li>
+<li>Availability</li>
+<li>Connectivity</li>
+<li>Integrity</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>Sprawl in the cloud can lead to significant additional costs to the organization because of ___________________.</p>
+<ol id="c03-list-00142" class="upper-latin">
+<li>Larger necessary physical footprint</li>
+<li>Much larger utility consumption</li>
+<li>Software licensing</li>
+<li>Requisite additional training</li>
+</ol></div>
+</li>
+
+<li class="essay">
+<div class="question">
+<p>It is best to use variables in ___________________.</p>
+<ol id="c03-list-00143" class="upper-latin">
+<li>Baseline configurations</li>
+<li>Security control implementations</li>
+<li>Contract language</li>
+<li>BC/DR tests</li>
+</ol></div>
+</li></ol>
+</section></section></section>
+
+
+
+</section>
+</div></div><link rel="stylesheet" href="public/WileyTemplate_.css" crossorigin="anonymous"></div></div></section><section class="iconMenu--fqXlz" data-testid="sidebarWidget"><div class="icon--1vOa0"><section><button aria-label="Table of Contents" class="widgetBtn--1TMR4" title="Table of Contents"><span class="orm-Icon-root" style="height:1.75rem" data-testid="icon"><span style="font-size:1.75rem;width:1.75rem;height:1.75rem" class="orm-Icon-icon icon--46dsv  orm-icon-bullet-list " aria-hidden="true"></span><span class="orm-Icon-title">table of contents</span></span></button></section></div><div class="icon--1vOa0"><section><button aria-label="Search" class="widgetBtn--2hGLF" title="Search"><span class="orm-Icon-root" style="height:1.75rem" data-testid="icon"><span style="font-size:1.75rem;width:1.75rem;height:1.75rem" class="orm-Icon-icon icon--1FK59  orm-icon-search " aria-hidden="true"></span><span class="orm-Icon-title">search</span></span></button></section></div><div class="icon--1vOa0"><section class="widget--1j29M"><button aria-label="Reader Settings" class="widgetBtn--2pDg1" aria-expanded="false" title="Reader Settings"><span class="orm-Icon-root" style="height:1.75rem" data-testid="icon"><span style="font-size:1.75rem;width:1.75rem;height:1.75rem" class="orm-Icon-icon icon--X2sbG  orm-icon-settings " aria-hidden="true"></span><span class="orm-Icon-title">Settings</span></span></button></section></div><div class="icon--1vOa0"><div tabindex="-1"><div><div class="playlistsDropdown--SMk5s"><div class="dropdownContainer--3VH-P" data-testid="dropdownContainer" tabindex="-1"><button class="playlistsButton--3nCUs button--3qqlT"><span class="orm-Icon-root" style="height:1.5rem" data-testid="icon"><span style="font-size:1.5rem;width:1.5rem;height:1.5rem" class="orm-Icon-icon playlistIcon--2s7d1  orm-icon-queue " aria-hidden="true"></span><span class="orm-Icon-title">queue</span></span></button></div></div></div></div></div></section></article></section></main></div></div></div></div>
+
+
+<div></div><div></div><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script>
+<script type="text/javascript" id="">var callback=function(videoPlayerIframe,kWidget){var contentTitle=google_tag_manager["GTM-5P4V6Z"].macro(16);kWidget.addReadyCallback(function(playerId){var kdp=videoPlayerIframe.contentDocument.getElementById(playerId);kdp.kBind("firstPlay.fp",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"play","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});kdp.kBind("firstQuartile.1q",function(){dataLayer.push({"event":"eventTracker",
+"eventCat":"video plays","eventAct":"25%","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});kdp.kBind("secondQuartile.2q",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"50%","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});kdp.kBind("thirdQuartile.3q",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays",
+"eventAct":"75%","eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})});var ninetyPercent=false;var ninetyFivePercent=false;kdp.kBind("playerUpdatePlayhead.myPlugin",function(data,id){var pos=kdp.evaluate("{video.player.currentTime}");var dur=kdp.evaluate("{mediaProxy.entry.duration}");var pct=parseFloat(data/dur)*100;if(pct>95&&!ninetyPercent){ninetyPercent=true;dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"95%",
+"eventLbl":document.querySelector('div[data-datadog-id\x3d"ucv-nav-title"]').innerText,"eventVal":0,"nonInteraction":0})}});kdp.kBind("playerPlayEnd.pe",function(){dataLayer.push({"event":"eventTracker","eventCat":"video plays","eventAct":"End","eventLbl":document.querySelector(".prevContainer--30LmH").innerText,"eventVal":0,"nonInteraction":0})})})};
+if(!top.ormGtmVideoTimerHandle)top.ormGtmVideoTimerHandle=setInterval(function(){var videoPlayerIframe=document.querySelector('iframe[title\x3d"Video"]');if(!videoPlayerIframe)return;var contentWindow=videoPlayerIframe.contentWindow;if(!contentWindow)return;var kalturaFrame=contentWindow.frames["orm-kaltura-widget_ifp"];if(!kalturaFrame)return;var kWidget=kalturaFrame.kWidget;if(kWidget){callback(videoPlayerIframe,kWidget);clearInterval(top.ormGtmVideoTimerHandle)}},100);</script>
+
+
+
+
+
+<iframe src="public/pixel.html" style="display: none;"></iframe><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script><script type="text/javascript" id="">dataLayer.push({"ld.experiment":void 0,"ld.variation":void 0,"product.title":void 0,"product.type":void 0,"product.identifier":void 0,"content.title":void 0,"content.formatType":void 0,"content.identifier":void 0,"content.author":void 0,"content.publisher":void 0,"content.releaseDate":void 0,"content.parentTopic":void 0,"product.topic":void 0,"content.free":void 0,"content.subdirectory":void 0,"content.subTopic":void 0});</script></body></html>
