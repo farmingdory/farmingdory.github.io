@@ -1,0 +1,32 @@
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.backends import default_backend
+import os
+
+# Function to encrypt data using AES (CBC mode)
+def encrypt_data(plaintext, key):
+    iv = os.urandom(16)  # Generate a random 16-byte IV
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    encryptor = cipher.encryptor()
+
+    # Pad the plaintext to be a multiple of the block size (16 bytes for AES)
+    padding_length = 16 - len(plaintext) % 16
+    padded_plaintext = plaintext + bytes([padding_length]) * padding_length
+
+    # Encrypt the data
+    ciphertext = encryptor.update(padded_plaintext) + encryptor.finalize()
+
+    # Return the IV and the ciphertext (IV prepended to the ciphertext)
+    return iv + ciphertext
+
+# Example usage:
+key = os.urandom(32)  # AES-256 key (32 bytes)
+plaintext = b"Hello, this is a secret message!"
+
+# Encrypt the data
+encrypted_data = encrypt_data(plaintext, key)
+
+# Save the encrypted data to a file (optional)
+with open('encrypted_file.enc', 'wb') as f:
+    f.write(encrypted_data)
+
+print(f"Encrypted data (hex): {encrypted_data.hex()}")
