@@ -1,0 +1,69 @@
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.backends import default_backend
+import os
+
+# Function to encrypt a file using AES (CBC mode)
+def encrypt_file(input_file, output_file, key):
+    # Generate a random IV (16 bytes for AES block size)
+    iv = os.urandom(16)
+
+    # Create a cipher object using the AES key and IV (CBC mode)
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    encryptor = cipher.encryptor()
+
+    # Open the input file and read the content
+    with open(input_file, 'rb') as f:
+        file_data = f.read()
+
+    # Pad the data to make its length a multiple of 16 (block size for AES)
+    padding_length = 16 - len(file_data) % 16
+    padded_file_data = file_data + bytes([padding_length]) * padding_length
+
+    # Encrypt the padded data
+    encrypted_data = encryptor.update(padded_file_data) + encryptor.finalize()
+
+    # Write the IV and the encrypted data to the output file (IV is prepended)
+    with open(output_file, 'wb') as f:
+        f.write(iv + encrypted_data)
+
+    print(f"File successfully encrypted and saved to {output_file}")
+
+# Function to decrypt a file using AES (CBC mode)
+def decrypt_file(input_file, output_file, key):
+    # Read the encrypted file content
+    with open(input_file, 'rb') as f:
+        encrypted_data = f.read()
+
+    # Extract the IV from the first 16 bytes
+    iv = encrypted_data[:16]
+    ciphertext = encrypted_data[16:]
+
+    # Create a cipher object using the AES key and IV (CBC mode)
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    decryptor = cipher.decryptor()
+
+    # Decrypt the data
+    decrypted_data = decryptor.update(ciphertext) + decryptor.finalize()
+
+    # Remove padding
+    padding_length = decrypted_data[-1]
+    original_data = decrypted_data[:-padding_length]
+
+    # Write the decrypted data to the output file
+    with open(output_file, 'wb') as f:
+        f.write(original_data)
+
+    print(f"File successfully decrypted and saved to {output_file}")
+
+# Example usage
+key = os.urandom(32)  # AES-256 key (32 bytes for AES-256)
+
+input_file = 'file_to_encrypt.txt'  # Replace with your file to encrypt
+encrypted_file = 'encrypted_file.enc'  # Output file for the encrypted content
+decrypted_file = 'decrypted_file.txt'  # Output file for the decrypted content
+
+# Encrypt the file
+encrypt_file(input_file, encrypted_file, key)
+
+# Decrypt the file (use the same key for decryption)
+decrypt_file(encrypted_file, decrypted_file, key)
