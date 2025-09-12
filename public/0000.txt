@@ -1,0 +1,52 @@
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.backends import default_backend
+import os
+
+# Function to generate a random key
+def generate_key():
+    return os.urandom(32)  # 32 bytes = 256 bits for AES
+
+# Function to encrypt data
+def encrypt_data(data, key):
+    iv = os.urandom(16)  # Initialization vector for CBC mode
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    encryptor = cipher.encryptor()
+
+    # Padding data to be a multiple of block size (16 bytes for AES)
+    padding_length = 16 - len(data) % 16
+    data += bytes([padding_length]) * padding_length
+
+    encrypted_data = encryptor.update(data) + encryptor.finalize()
+    return iv + encrypted_data  # Prepend IV to encrypted data
+
+# Function to read a file and return its content
+def read_file(file_path):
+    with open(file_path, 'rb') as f:
+        return f.read()
+
+# Function to write encrypted data to a new file
+def write_encrypted_file(file_path, encrypted_data):
+    with open(file_path, 'wb') as f:
+        f.write(encrypted_data)
+
+# Encrypt the already encrypted file
+def double_encrypt_file(input_file, output_file):
+    # Read the already encrypted file
+    encrypted_data = read_file(input_file)
+    
+    # Generate a new encryption key
+    new_key = generate_key()
+    
+    # Encrypt the data again with the new key
+    double_encrypted_data = encrypt_data(encrypted_data, new_key)
+    
+    # Write the double-encrypted data to a new file
+    write_encrypted_file(output_file, double_encrypted_data)
+
+    print(f"File successfully double-encrypted and saved to: {output_file}")
+
+# Example usage
+input_file = 'encrypted_file.enc'  # The file to be double-encrypted
+output_file = 'double_encrypted_file.enc'  # The file to save the double-encrypted result
+
+double_encrypt_file(input_file, output_file)
